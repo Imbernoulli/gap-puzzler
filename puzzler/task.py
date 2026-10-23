@@ -18,6 +18,7 @@ class Variant:
     piece_yaw:float=0.
     friction:float=.65
     grasp_bias:float=0.
+    scattered:bool=False
 
 def sample(seed,mode='flat'):
     rng=np.random.default_rng(seed)
@@ -49,6 +50,28 @@ def staging():
             result[name]=(np.array([center,.27 if side==0 else -.27,m.RADIUS+.001]),yaw,side)
     return result
 
+def scattered_staging(seed):
+    """Episode generation only: random non-overlapping loose pieces, both sides.
+
+    This function is never imported by the visual controller. It defines the
+    scene distribution; it is not an observation or a source-position lookup.
+    """
+    rng=np.random.default_rng(seed)
+    for restart in range(30):
+        occupied=[];result={}
+        for name in rng.permutation(list(m.CELLS)):
+            for attempt in range(1500):
+                side=int(rng.integers(2));yaw=float(rng.uniform(-np.pi,np.pi))
+                center=np.array([rng.uniform(-.28,.23),rng.uniform(.235,.34)*(1 if side==0 else -1),m.RADIUS+.001])
+                points=m.local_beads(name)@m.rotation(yaw).T+center
+                if (np.abs(points[:,1]).max()>.39 or np.abs(points[:,1]).min()<.19
+                    or points[:,0].min()<-.31 or points[:,0].max()>.29):continue
+                if occupied and np.linalg.norm(points[:,None]-np.concatenate(occupied)[None,:],axis=2).min()<.030:continue
+                occupied.append(points);result[name]=(center,yaw,side);break
+            else:break
+        if len(result)==len(m.CELLS):return result
+    raise RuntimeError('Could not sample a non-overlapping loose-piece layout')
+
 def scene(v=Variant(), *, completed=False, robot=True):
     import robosimstudio as rss
     from robosimstudio.specs import AssetSpec
@@ -59,7 +82,7 @@ def scene(v=Variant(), *, completed=False, robot=True):
     sc.add(rss.body(name='board',asset=AssetSpec(**a['board']),at=tuple(b),quat=q,mass=.28,
                     friction=v.friction,ke=1.e5,kd=1000.,color=(.055,.06,.065)))
     rng=np.random.default_rng(v.seed)
-    stage=staging()
+    stage=scattered_staging(v.seed) if v.scattered else staging()
     for name in m.CELLS:
         if not completed and v.mode!='completion' and name not in v.preset_pieces:
             at,yaw,side=stage[name];at=at.copy()

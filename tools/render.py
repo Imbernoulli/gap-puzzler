@@ -17,6 +17,8 @@ def render(episode,out,stride=4):
     out=Path(out);out.parent.mkdir(exist_ok=True,parents=True)
     verdict=('PRESET DIAGNOSTIC '+('PASS' if result.get('diagnostic_success') else 'FAILURE')
              if result.get('diagnostic_preset') else 'SUCCESS' if result['success'] else 'FAILURE')
+    if result.get('diagnostic_subset'):
+        verdict='RGB SUBSET DIAGNOSTIC '+('PASS' if result.get('single_piece_physical_diagnostic',{}).get('success') else 'FAILURE')
     with iio.get_writer(str(out),fps=12,codec='libx264',quality=7,
                         output_params=['-threads','1']) as writer:
         for i,f in enumerate(frames):

@@ -1,0 +1,1128 @@
+{
+  "nodes": [
+    {
+      "id": "n_0000",
+      "name": "anchor",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0001",
+      "name": "cyan",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0002",
+      "name": "cyan_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0003",
+      "name": "finish",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0004",
+      "name": "done",
+      "node_type": "end",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0005",
+      "name": "abort",
+      "node_type": "end",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0006",
+      "name": "anchor_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/anchor.py",
+      "started_at": 1792727584.5416887,
+      "finished_at": 1792727599.2913141,
+      "duration_ms": 14749.63,
+      "status": "ok",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": true,
+      "has_output": true,
+      "visits": 1,
+      "assets": []
+    },
+    {
+      "id": "n_0007",
+      "name": "anchor_sg.ready",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0008",
+      "name": "cyan_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/cyan.py",
+      "started_at": 1792727599.3058896,
+      "finished_at": 1792727617.980965,
+      "duration_ms": 18675.08,
+      "status": "error",
+      "condition": null,
+      "condition_result": null,
+      "error_message": "Node 'cyan_sg.act' failed: RuntimeError: Cannot plan grasp with unobserved obstacles: ['azure']",
+      "has_inputs": true,
+      "has_output": false,
+      "visits": 1,
+      "assets": []
+    },
+    {
+      "id": "n_0009",
+      "name": "cyan_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0010",
+      "name": "cyan_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0011",
+      "name": "finish_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/finish.py",
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0012",
+      "name": "finish_sg.complete",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0013",
+      "name": "finish_sg.failed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "n_0000",
+      "to": "n_0001",
+      "from_id": "n_0000",
+      "to_id": "n_0001",
+      "from_name": "anchor",
+      "to_name": "cyan"
+    },
+    {
+      "from": "n_0000",
+      "to": "n_0005",
+      "from_id": "n_0000",
+      "to_id": "n_0005",
+      "from_name": "anchor",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0001",
+      "to": "n_0003",
+      "from_id": "n_0001",
+      "to_id": "n_0003",
+      "from_name": "cyan",
+      "to_name": "finish"
+    },
+    {
+      "from": "n_0001",
+      "to": "n_0005",
+      "from_id": "n_0001",
+      "to_id": "n_0005",
+      "from_name": "cyan",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0001",
+      "to": "n_0002",
+      "from_id": "n_0001",
+      "to_id": "n_0002",
+      "from_name": "cyan",
+      "to_name": "cyan_retry1"
+    },
+    {
+      "from": "n_0002",
+      "to": "n_0003",
+      "from_id": "n_0002",
+      "to_id": "n_0003",
+      "from_name": "cyan_retry1",
+      "to_name": "finish"
+    },
+    {
+      "from": "n_0002",
+      "to": "n_0005",
+      "from_id": "n_0002",
+      "to_id": "n_0005",
+      "from_name": "cyan_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0002",
+      "to": "n_0005",
+      "from_id": "n_0002",
+      "to_id": "n_0005",
+      "from_name": "cyan_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0003",
+      "to": "n_0004",
+      "from_id": "n_0003",
+      "to_id": "n_0004",
+      "from_name": "finish",
+      "to_name": "done"
+    },
+    {
+      "from": "n_0003",
+      "to": "n_0005",
+      "from_id": "n_0003",
+      "to_id": "n_0005",
+      "from_name": "finish",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0003",
+      "to": "n_0005",
+      "from_id": "n_0003",
+      "to_id": "n_0005",
+      "from_name": "finish",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0006",
+      "to": "n_0007",
+      "from_id": "n_0006",
+      "to_id": "n_0007",
+      "from_name": "anchor_sg.act",
+      "to_name": "anchor_sg.ready"
+    },
+    {
+      "from": "n_0008",
+      "to": "n_0009",
+      "from_id": "n_0008",
+      "to_id": "n_0009",
+      "from_name": "cyan_sg.act",
+      "to_name": "cyan_sg.placed"
+    },
+    {
+      "from": "n_0008",
+      "to": "n_0010",
+      "from_id": "n_0008",
+      "to_id": "n_0010",
+      "from_name": "cyan_sg.act",
+      "to_name": "cyan_sg.retry"
+    },
+    {
+      "from": "n_0011",
+      "to": "n_0012",
+      "from_id": "n_0011",
+      "to_id": "n_0012",
+      "from_name": "finish_sg.act",
+      "to_name": "finish_sg.complete"
+    },
+    {
+      "from": "n_0011",
+      "to": "n_0013",
+      "from_id": "n_0011",
+      "to_id": "n_0013",
+      "from_name": "finish_sg.act",
+      "to_name": "finish_sg.failed"
+    }
+  ],
+  "events": [
+    {
+      "seq": 0,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.5401933,
+      "node_id": "n_0000",
+      "node_name": "anchor",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 1,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.5402048,
+      "node_id": "n_0001",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 2,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.5402093,
+      "node_id": "n_0002",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 3,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.540212,
+      "node_id": "n_0003",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 4,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.540215,
+      "node_id": "n_0004",
+      "node_name": "done",
+      "status": null,
+      "detail": {
+        "node_type": "end"
+      }
+    },
+    {
+      "seq": 5,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.5402184,
+      "node_id": "n_0005",
+      "node_name": "abort",
+      "status": null,
+      "detail": {
+        "node_type": "end"
+      }
+    },
+    {
+      "seq": 6,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.5402272,
+      "node_id": "n_0000",
+      "node_name": "anchor",
+      "status": null,
+      "detail": {
+        "from_name": "anchor",
+        "to_name": "cyan",
+        "to_id": "n_0001"
+      }
+    },
+    {
+      "seq": 7,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.54023,
+      "node_id": "n_0000",
+      "node_name": "anchor",
+      "status": null,
+      "detail": {
+        "from_name": "anchor",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 8,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.5402322,
+      "node_id": "n_0001",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "from_name": "cyan",
+        "to_name": "finish",
+        "to_id": "n_0003"
+      }
+    },
+    {
+      "seq": 9,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.5402336,
+      "node_id": "n_0001",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "from_name": "cyan",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 10,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.5402353,
+      "node_id": "n_0001",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "from_name": "cyan",
+        "to_name": "cyan_retry1",
+        "to_id": "n_0002"
+      }
+    },
+    {
+      "seq": 11,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.540237,
+      "node_id": "n_0002",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_retry1",
+        "to_name": "finish",
+        "to_id": "n_0003"
+      }
+    },
+    {
+      "seq": 12,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.5402384,
+      "node_id": "n_0002",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_retry1",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 13,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.5402396,
+      "node_id": "n_0002",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_retry1",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 14,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.5402415,
+      "node_id": "n_0003",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "from_name": "finish",
+        "to_name": "done",
+        "to_id": "n_0004"
+      }
+    },
+    {
+      "seq": 15,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.5402431,
+      "node_id": "n_0003",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "from_name": "finish",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 16,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.5402448,
+      "node_id": "n_0003",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "from_name": "finish",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 17,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.5402489,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 18,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.5402527,
+      "node_id": "n_0007",
+      "node_name": "anchor_sg.ready",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 19,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.540256,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "anchor_sg.act",
+        "to_name": "anchor_sg.ready",
+        "to_id": "n_0007"
+      }
+    },
+    {
+      "seq": 20,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.5402591,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 21,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.5402617,
+      "node_id": "n_0009",
+      "node_name": "cyan_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 22,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.5402646,
+      "node_id": "n_0010",
+      "node_name": "cyan_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 23,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.5402682,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_sg.act",
+        "to_name": "cyan_sg.placed",
+        "to_id": "n_0009"
+      }
+    },
+    {
+      "seq": 24,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.54027,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_sg.act",
+        "to_name": "cyan_sg.retry",
+        "to_id": "n_0010"
+      }
+    },
+    {
+      "seq": 25,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.5402737,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 26,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.5402763,
+      "node_id": "n_0012",
+      "node_name": "finish_sg.complete",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 27,
+      "event_type": "node_registered",
+      "timestamp": 1792727584.5402787,
+      "node_id": "n_0013",
+      "node_name": "finish_sg.failed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 28,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.5402808,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "finish_sg.act",
+        "to_name": "finish_sg.complete",
+        "to_id": "n_0012"
+      }
+    },
+    {
+      "seq": 29,
+      "event_type": "edge_registered",
+      "timestamp": 1792727584.5402822,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "finish_sg.act",
+        "to_name": "finish_sg.failed",
+        "to_id": "n_0013"
+      }
+    },
+    {
+      "seq": 30,
+      "event_type": "node_started",
+      "timestamp": 1792727584.54169,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": "running",
+      "detail": {}
+    },
+    {
+      "seq": 31,
+      "event_type": "inputs_recorded",
+      "timestamp": 1792727584.5425901,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0,
+        "keys": []
+      }
+    },
+    {
+      "seq": 32,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727584.552254,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 0,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 33,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727589.1476753,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 1,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 34,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727589.1492856,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 2,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 35,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727593.9355376,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 3,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 36,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727596.692136,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 4,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 37,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727597.3149486,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 5,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 38,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727597.3306692,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 6,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 39,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727599.2782328,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 7,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 40,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727599.2903357,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 8,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 41,
+      "event_type": "output_recorded",
+      "timestamp": 1792727599.2912984,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0
+      }
+    },
+    {
+      "seq": 42,
+      "event_type": "node_finished",
+      "timestamp": 1792727599.2913277,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": "ok",
+      "detail": {
+        "success": true,
+        "duration_ms": 14749.63
+      }
+    },
+    {
+      "seq": 43,
+      "event_type": "node_started",
+      "timestamp": 1792727599.3058918,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": "running",
+      "detail": {}
+    },
+    {
+      "seq": 44,
+      "event_type": "inputs_recorded",
+      "timestamp": 1792727599.3069193,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0,
+        "keys": []
+      }
+    },
+    {
+      "seq": 45,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727603.4472013,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 0,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 46,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727603.459997,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 1,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 47,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727603.4757652,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 2,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 48,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727603.9973338,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 3,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 49,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727604.0094926,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 4,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 50,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727607.8904233,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 5,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 51,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727607.8932726,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 6,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 52,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727609.903835,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 7,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 53,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727611.4416015,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 8,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 54,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727612.0312839,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 9,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 55,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727612.0578039,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 10,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 56,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727614.014972,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 11,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 57,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727614.026008,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 12,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 58,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727617.9807885,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 13,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 59,
+      "event_type": "node_finished",
+      "timestamp": 1792727617.9809866,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": "error",
+      "detail": {
+        "success": false,
+        "duration_ms": 18675.08
+      }
+    },
+    {
+      "seq": 60,
+      "event_type": "error_recorded",
+      "timestamp": 1792727617.9810004,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": "error",
+      "detail": {
+        "error": "Node 'cyan_sg.act' failed: RuntimeError: Cannot plan grasp with unobserved obstacles: ['azure']"
+      }
+    }
+  ]
+}

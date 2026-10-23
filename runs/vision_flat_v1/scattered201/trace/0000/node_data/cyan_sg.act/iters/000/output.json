@@ -1,0 +1,6 @@
+{
+  "route": "retry",
+  "failure": "visually_measured_grasp_miss",
+  "piece": "cyan",
+  "rise_m": -3.1471448077580177e-06
+}

@@ -1,0 +1,28 @@
+{
+  "route": "complete",
+  "visual_assessment": {
+    "bead_error_m": {
+      "yellow": 0.19521803844534757,
+      "purple": 0.2019796908200689,
+      "cyan": 0.0011625203447384448,
+      "lime": 0.28227914899136425,
+      "mint": 0.22967366385212304,
+      "maroon": 0.20169782920308596,
+      "teal": 0.27280953479067477,
+      "orange": 0.2960009165373673,
+      "navy": 0.286490073858135,
+      "pink": 0.24432938573716442,
+      "red": 0.3460809870293808,
+      "azure": 0.2341760294551487
+    },
+    "all_visible": true,
+    "goal_geometry_consistent": false,
+    "source": "RGB pose estimates and public goal CAD; not evaluator success"
+  },
+  "displacement_m": {
+    "cyan": 0.000171041394482633
+  },
+  "diagnostic_subset": [
+    "cyan"
+  ]
+}

@@ -1,9 +1,10 @@
 # IQ Puzzler Pro — oracle-state physical-control baseline
 
-**This is not a vision-only policy.** The current controller reads simulator-provided
-object poses through `puzzle.observe`. Camera images are used for reconstruction,
-recording, and visual comparison, not runtime object recognition. The requested
-vision-only GaP policy is **not implemented or validated**.
+**The published full-assembly results are oracle-state baselines.** Their
+controllers read simulator-provided object poses through `puzzle.observe`.
+A separate **RGB-only GaP prototype** now performs image detection, calibrated
+multi-view pose fitting and closed-loop single-piece grasp/place diagnostics.
+It has not established a complete visual assembly policy.
 
 The retained experiments demonstrate physical grasping and assembly with known
 object poses. They are an **oracle-state control baseline**, not evidence of
@@ -13,6 +14,7 @@ vision-only observations.
 [Project website](https://bohanlyu.com/gap-puzzler/) ·
 [Evidence report](results/REPORT.md) ·
 [Complete experimental archive](https://github.com/Imbernoulli/gap-puzzler/releases/tag/v1.0.0) ·
+[RGB prototype evidence](https://github.com/Imbernoulli/gap-puzzler/releases/tag/v1.1.0-vision-prototype) ·
 [Source demonstration](https://www.youtube.com/watch?v=PSgC31TvdxA)
 
 ## Baseline results
@@ -42,7 +44,7 @@ Failed placement checks and graph retries are retained.
 | Requirement | Status |
 | --- | --- |
 | Contact-driven assembly using known object poses | Demonstrated in the baseline |
-| Vision-only runtime observations | Not implemented or validated |
+| RGB-only runtime observations | Implemented in a separate restricted prototype; single-piece diagnostics only |
 | Reliable arbitrary loose-piece arrangements | Not demonstrated |
 | Disassemble the flat puzzle, then build the pyramid | Not implemented or validated |
 | Real-hardware execution | Not demonstrated |
@@ -58,6 +60,40 @@ Ground-truth object poses and hidden simulator state belong in a separate
 evaluator, not in policy inputs. Existing baseline results must not be relabeled
 as successes for that future implementation.
 
+## RGB-only prototype
+
+[Observation audit and primary-source checks](results/OBSERVATION_AUDIT.md)
+document the original leaks and the new boundary. [Visual experiment notes](results/VISION.md)
+separate perception, single-piece diagnostics and complete assembly.
+
+The estimator uses colour detection and known bead CAD with four calibrated RGB
+views. It receives no object truth, depth, instance IDs, contact state, hidden
+physics parameters or evaluator outcomes. The GaP tool whitelist and visual
+checkpoints enforce the same interface during execution. Robot encoders and
+kinematic models remain available. Board localization currently assumes level
+table support and a limited yaw range; this is a declared geometric prior.
+
+Three randomized non-overlapping simulated scenes yielded 36/36 detected pieces,
+with a maximum matched bead error of 1.06 mm. Two development single-cyan runs
+passed the visual workflow and independent released-pose diagnostic, with final
+maximum bead errors of 0.99 and 0.50 mm after the robot-only IK input fix.
+These results do not establish general assembly; earlier attempts and the
+full-scene IK seed audit finding are retained with their actual provenance.
+
+```bash
+# Frozen single-piece diagnostic; all twelve pieces start loose.
+./tools/rss.sh -m puzzler.episode \
+  --graph graphs/vision_flat_v1 --observation rgb \
+  --out runs/my_rgb_diagnostic --seed 102 --max-steps 6000
+
+# Independent perception evaluation on new scattered scenes.
+./tools/rss.sh -m tools.check_vision --out dist/my_rgb_check --seeds 401,402,403
+```
+
+`success` remains false for a subset diagnostic because the full puzzle is not
+complete. Inspect `single_piece_physical_diagnostic` and
+`independent_subset_audit` for that explicitly limited outcome.
+
 ## Included source and evidence
 
 - `puzzler/`: geometry, dynamic RSS task, controller, oracle observations, IK tools,
@@ -71,7 +107,8 @@ as successes for that future implementation.
 - `results/` and `runs/`: recordings, all episode outcome records, source hashes,
   independent audit reports, frozen-protocol summaries, and the failure ledger.
 - `tools/`, `tests/`, `fleet/`: CPU setup, audits, rendering, local evaluation,
-  parameter search, the original 20 tests, and optional cloud infrastructure.
+  parameter search, 32 tests including the observation-boundary regressions,
+  and optional cloud infrastructure.
 - `site/`: the English project website and interactive evidence viewer.
 
 The [versioned release](https://github.com/Imbernoulli/gap-puzzler/releases/tag/v1.0.0)

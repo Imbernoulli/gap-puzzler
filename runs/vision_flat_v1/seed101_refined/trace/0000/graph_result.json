@@ -1,0 +1,6 @@
+{
+  "graph_result": {
+    "result": "ExecutionResult(success=True, exit_status='success', outputs={'anchor_sg': {}, 'cyan_sg': {}, 'finish_sg': {}}, trace_path=PosixPath('runs/vision_flat_v1/seed101_refined/trace/0000'), checkpoint_results=[CheckpointResult(name='anchor_visual_estimate', subgraph='anchor_sg', passed=True, eval_error=None, diagnostics=None, eval_time_s=6.273109465837479e-05), CheckpointResult(name='cyan_visual_estimate', subgraph='cyan_sg', passed=True, eval_error=None, diagnostics=None, eval_time_s=0.00010470207780599594), CheckpointResult(name='finish_visual_estimate', subgraph='finish_sg', passed=True, eval_error=None, diagnostics=None, eval_time_s=4.751095548272133e-05)], error=None, duration_s=89.39203041093424, latency=None)"
+  },
+  "steps": 2175
+}

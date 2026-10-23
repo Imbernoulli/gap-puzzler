@@ -1,0 +1,1796 @@
+{
+  "nodes": [
+    {
+      "id": "n_0000",
+      "name": "anchor",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0001",
+      "name": "cyan",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0002",
+      "name": "cyan_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0003",
+      "name": "finish",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0004",
+      "name": "done",
+      "node_type": "end",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0005",
+      "name": "abort",
+      "node_type": "end",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0006",
+      "name": "anchor_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/anchor.py",
+      "started_at": 1792727699.2992,
+      "finished_at": 1792727714.1950774,
+      "duration_ms": 14895.88,
+      "status": "ok",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": true,
+      "has_output": true,
+      "visits": 1,
+      "assets": []
+    },
+    {
+      "id": "n_0007",
+      "name": "anchor_sg.ready",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0008",
+      "name": "cyan_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/cyan.py",
+      "started_at": 1792727764.5281293,
+      "finished_at": 1792727797.8083825,
+      "duration_ms": 33280.25,
+      "status": "error",
+      "condition": null,
+      "condition_result": null,
+      "error_message": "Node 'cyan_sg.act' failed: RuntimeError: RGB perception uncertain: {'board': 'case outline dimensions inconsistent'}",
+      "has_inputs": true,
+      "has_output": true,
+      "visits": 2,
+      "assets": []
+    },
+    {
+      "id": "n_0009",
+      "name": "cyan_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0010",
+      "name": "cyan_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0011",
+      "name": "finish_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/finish.py",
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0012",
+      "name": "finish_sg.complete",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0013",
+      "name": "finish_sg.failed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "n_0000",
+      "to": "n_0001",
+      "from_id": "n_0000",
+      "to_id": "n_0001",
+      "from_name": "anchor",
+      "to_name": "cyan"
+    },
+    {
+      "from": "n_0000",
+      "to": "n_0005",
+      "from_id": "n_0000",
+      "to_id": "n_0005",
+      "from_name": "anchor",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0001",
+      "to": "n_0003",
+      "from_id": "n_0001",
+      "to_id": "n_0003",
+      "from_name": "cyan",
+      "to_name": "finish"
+    },
+    {
+      "from": "n_0001",
+      "to": "n_0005",
+      "from_id": "n_0001",
+      "to_id": "n_0005",
+      "from_name": "cyan",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0001",
+      "to": "n_0002",
+      "from_id": "n_0001",
+      "to_id": "n_0002",
+      "from_name": "cyan",
+      "to_name": "cyan_retry1"
+    },
+    {
+      "from": "n_0002",
+      "to": "n_0003",
+      "from_id": "n_0002",
+      "to_id": "n_0003",
+      "from_name": "cyan_retry1",
+      "to_name": "finish"
+    },
+    {
+      "from": "n_0002",
+      "to": "n_0005",
+      "from_id": "n_0002",
+      "to_id": "n_0005",
+      "from_name": "cyan_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0002",
+      "to": "n_0005",
+      "from_id": "n_0002",
+      "to_id": "n_0005",
+      "from_name": "cyan_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0003",
+      "to": "n_0004",
+      "from_id": "n_0003",
+      "to_id": "n_0004",
+      "from_name": "finish",
+      "to_name": "done"
+    },
+    {
+      "from": "n_0003",
+      "to": "n_0005",
+      "from_id": "n_0003",
+      "to_id": "n_0005",
+      "from_name": "finish",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0003",
+      "to": "n_0005",
+      "from_id": "n_0003",
+      "to_id": "n_0005",
+      "from_name": "finish",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0006",
+      "to": "n_0007",
+      "from_id": "n_0006",
+      "to_id": "n_0007",
+      "from_name": "anchor_sg.act",
+      "to_name": "anchor_sg.ready"
+    },
+    {
+      "from": "n_0008",
+      "to": "n_0009",
+      "from_id": "n_0008",
+      "to_id": "n_0009",
+      "from_name": "cyan_sg.act",
+      "to_name": "cyan_sg.placed"
+    },
+    {
+      "from": "n_0008",
+      "to": "n_0010",
+      "from_id": "n_0008",
+      "to_id": "n_0010",
+      "from_name": "cyan_sg.act",
+      "to_name": "cyan_sg.retry"
+    },
+    {
+      "from": "n_0011",
+      "to": "n_0012",
+      "from_id": "n_0011",
+      "to_id": "n_0012",
+      "from_name": "finish_sg.act",
+      "to_name": "finish_sg.complete"
+    },
+    {
+      "from": "n_0011",
+      "to": "n_0013",
+      "from_id": "n_0011",
+      "to_id": "n_0013",
+      "from_name": "finish_sg.act",
+      "to_name": "finish_sg.failed"
+    }
+  ],
+  "events": [
+    {
+      "seq": 0,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.2925377,
+      "node_id": "n_0000",
+      "node_name": "anchor",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 1,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.2925491,
+      "node_id": "n_0001",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 2,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.2925532,
+      "node_id": "n_0002",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 3,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.292556,
+      "node_id": "n_0003",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 4,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.2925587,
+      "node_id": "n_0004",
+      "node_name": "done",
+      "status": null,
+      "detail": {
+        "node_type": "end"
+      }
+    },
+    {
+      "seq": 5,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.2925613,
+      "node_id": "n_0005",
+      "node_name": "abort",
+      "status": null,
+      "detail": {
+        "node_type": "end"
+      }
+    },
+    {
+      "seq": 6,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2925692,
+      "node_id": "n_0000",
+      "node_name": "anchor",
+      "status": null,
+      "detail": {
+        "from_name": "anchor",
+        "to_name": "cyan",
+        "to_id": "n_0001"
+      }
+    },
+    {
+      "seq": 7,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2925715,
+      "node_id": "n_0000",
+      "node_name": "anchor",
+      "status": null,
+      "detail": {
+        "from_name": "anchor",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 8,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2925737,
+      "node_id": "n_0001",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "from_name": "cyan",
+        "to_name": "finish",
+        "to_id": "n_0003"
+      }
+    },
+    {
+      "seq": 9,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2925756,
+      "node_id": "n_0001",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "from_name": "cyan",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 10,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2925768,
+      "node_id": "n_0001",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "from_name": "cyan",
+        "to_name": "cyan_retry1",
+        "to_id": "n_0002"
+      }
+    },
+    {
+      "seq": 11,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2925782,
+      "node_id": "n_0002",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_retry1",
+        "to_name": "finish",
+        "to_id": "n_0003"
+      }
+    },
+    {
+      "seq": 12,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2925801,
+      "node_id": "n_0002",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_retry1",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 13,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2925808,
+      "node_id": "n_0002",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_retry1",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 14,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2925828,
+      "node_id": "n_0003",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "from_name": "finish",
+        "to_name": "done",
+        "to_id": "n_0004"
+      }
+    },
+    {
+      "seq": 15,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2925842,
+      "node_id": "n_0003",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "from_name": "finish",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 16,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2925851,
+      "node_id": "n_0003",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "from_name": "finish",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 17,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.2925887,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 18,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.2925918,
+      "node_id": "n_0007",
+      "node_name": "anchor_sg.ready",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 19,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2925947,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "anchor_sg.act",
+        "to_name": "anchor_sg.ready",
+        "to_id": "n_0007"
+      }
+    },
+    {
+      "seq": 20,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.2925978,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 21,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.2926002,
+      "node_id": "n_0009",
+      "node_name": "cyan_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 22,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.292602,
+      "node_id": "n_0010",
+      "node_name": "cyan_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 23,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.292605,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_sg.act",
+        "to_name": "cyan_sg.placed",
+        "to_id": "n_0009"
+      }
+    },
+    {
+      "seq": 24,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2926064,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_sg.act",
+        "to_name": "cyan_sg.retry",
+        "to_id": "n_0010"
+      }
+    },
+    {
+      "seq": 25,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.2926095,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 26,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.2926123,
+      "node_id": "n_0012",
+      "node_name": "finish_sg.complete",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 27,
+      "event_type": "node_registered",
+      "timestamp": 1792727699.2926145,
+      "node_id": "n_0013",
+      "node_name": "finish_sg.failed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 28,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2926161,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "finish_sg.act",
+        "to_name": "finish_sg.complete",
+        "to_id": "n_0012"
+      }
+    },
+    {
+      "seq": 29,
+      "event_type": "edge_registered",
+      "timestamp": 1792727699.2926183,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "finish_sg.act",
+        "to_name": "finish_sg.failed",
+        "to_id": "n_0013"
+      }
+    },
+    {
+      "seq": 30,
+      "event_type": "node_started",
+      "timestamp": 1792727699.299203,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": "running",
+      "detail": {}
+    },
+    {
+      "seq": 31,
+      "event_type": "inputs_recorded",
+      "timestamp": 1792727699.3001125,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0,
+        "keys": []
+      }
+    },
+    {
+      "seq": 32,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727699.315331,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 0,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 33,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727705.431338,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 1,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 34,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727705.434909,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 2,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 35,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727708.9467301,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 3,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 36,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727711.6385825,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 4,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 37,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727712.2094748,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 5,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 38,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727712.2224941,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 6,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 39,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727714.1820178,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 7,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 40,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727714.1942482,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 8,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 41,
+      "event_type": "output_recorded",
+      "timestamp": 1792727714.1950622,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0
+      }
+    },
+    {
+      "seq": 42,
+      "event_type": "node_finished",
+      "timestamp": 1792727714.195116,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": "ok",
+      "detail": {
+        "success": true,
+        "duration_ms": 14895.88
+      }
+    },
+    {
+      "seq": 43,
+      "event_type": "node_started",
+      "timestamp": 1792727714.2067466,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": "running",
+      "detail": {}
+    },
+    {
+      "seq": 44,
+      "event_type": "inputs_recorded",
+      "timestamp": 1792727714.2085593,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0,
+        "keys": []
+      }
+    },
+    {
+      "seq": 45,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727719.8159053,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 0,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 46,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727719.829147,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 1,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 47,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727719.8470252,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 2,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 48,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727720.36421,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 3,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 49,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727720.3751037,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 4,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 50,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727725.919407,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 5,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 51,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727725.923299,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 6,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 52,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727727.7502398,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 7,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 53,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727729.3801122,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 8,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 54,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727729.9745665,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 9,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 55,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727729.989163,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 10,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 56,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727731.867659,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 11,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 57,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727731.877933,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 12,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 58,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727737.371142,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 13,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 59,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727737.3776135,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 14,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 60,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727737.3947892,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 15,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 61,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727737.414435,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 16,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 62,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727737.4286163,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 17,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 63,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727738.0596578,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 18,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 64,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727738.0786302,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 19,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 65,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727740.1008523,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 20,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 66,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727740.1135345,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 21,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 67,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727742.6256921,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 22,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 68,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727743.264327,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 23,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 69,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727743.2792344,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 24,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 70,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727743.8418565,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 25,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 71,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727749.5738451,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 26,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 72,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727749.5878894,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 27,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 73,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727749.6053183,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 28,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 74,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727750.5822623,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 29,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 75,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727756.217665,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 30,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 76,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727756.2325528,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 31,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 77,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727756.2509282,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 32,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 78,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727756.954762,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 33,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 79,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727757.626415,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 34,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 80,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727757.6418178,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 35,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 81,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727758.2342312,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 36,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 82,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727758.8964312,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 37,
+        "tool": "robot.wait_steps"
+      }
+    },
+    {
+      "seq": 83,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727764.5206723,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 38,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 84,
+      "event_type": "output_recorded",
+      "timestamp": 1792727764.5216002,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0
+      }
+    },
+    {
+      "seq": 85,
+      "event_type": "node_finished",
+      "timestamp": 1792727764.521637,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": "ok",
+      "detail": {
+        "success": true,
+        "duration_ms": 50314.88
+      }
+    },
+    {
+      "seq": 86,
+      "event_type": "node_started",
+      "timestamp": 1792727764.528135,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": "running",
+      "detail": {}
+    },
+    {
+      "seq": 87,
+      "event_type": "inputs_recorded",
+      "timestamp": 1792727764.529172,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0,
+        "keys": []
+      }
+    },
+    {
+      "seq": 88,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727770.1407084,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 0,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 89,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727770.1551583,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 1,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 90,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727770.1683624,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 2,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 91,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727770.1869183,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 3,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 92,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727770.7606761,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 4,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 93,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727776.3978622,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 5,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 94,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727776.399533,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 6,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 95,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727776.412347,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 7,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 96,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727776.970702,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 8,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 97,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727777.6288865,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 9,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 98,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727777.643397,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 10,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 99,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727779.7804348,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 11,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 100,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727779.792636,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 12,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 101,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727785.410677,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 13,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 102,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727785.4155943,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 14,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 103,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727785.4339943,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 15,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 104,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727785.4494,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 16,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 105,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727785.464636,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 17,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 106,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727786.154243,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 18,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 107,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727786.1693666,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 19,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 108,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727788.4608963,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 20,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 109,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727788.475701,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 21,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 110,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727790.8442106,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 22,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 111,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727791.6237729,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 23,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 112,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727791.6413324,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 24,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 113,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727792.2362576,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 25,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 114,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727797.8082306,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 26,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 115,
+      "event_type": "node_finished",
+      "timestamp": 1792727797.8083975,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": "error",
+      "detail": {
+        "success": false,
+        "duration_ms": 33280.25
+      }
+    },
+    {
+      "seq": 116,
+      "event_type": "error_recorded",
+      "timestamp": 1792727797.8084083,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": "error",
+      "detail": {
+        "error": "Node 'cyan_sg.act' failed: RuntimeError: RGB perception uncertain: {'board': 'case outline dimensions inconsistent'}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "route": "retry",
+  "piece": "cyan",
+  "visual_error_m": 0.004903443653435001,
+  "visual_rise_m": 0.08218277036166,
+  "failure": "visual_goal_residual",
+  "observation_source": "calibrated_rgb_only"
+}

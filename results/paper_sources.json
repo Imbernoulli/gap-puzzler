@@ -1,0 +1,37 @@
+[
+  {
+    "title": "RoboSimStudio",
+    "arxiv": "2610.18835v2",
+    "url": "https://arxiv.org/abs/2610.18835v2",
+    "download_sha256": "b147368259119b8bf70b9fb0cb7fa7a3781f5bde4b172af632c11764e44b3c24",
+    "sections_checked": [
+      "Robot Interfaces",
+      "spatial-temporal development feedback"
+    ],
+    "scope": "Relevant sections checked; not a full experimental reproduction"
+  },
+  {
+    "title": "GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness",
+    "arxiv": "2607.05369v1",
+    "url": "https://arxiv.org/abs/2607.05369v1",
+    "download_sha256": "64d8f12afef21edbae7b11a97f1d20a13cd0e53efd5699e7e86ea4781efbb0ef",
+    "sections_checked": [
+      "Section 3: Problem Definition"
+    ],
+    "scope": "Relevant sections checked; not a full experimental reproduction"
+  },
+  {
+    "title": "Scaling Online Exploration for Robot Agents (RAX)",
+    "arxiv": "2610.22496v1",
+    "url": "https://arxiv.org/abs/2610.22496v1",
+    "download_sha256": "eb4e7cc51311c4064b872e10b51d550bd4aa0cd280599768e5f1a33cc2865934",
+    "sections_checked": [
+      "Sections 3.1\u20133.3",
+      "Section 5.3.2",
+      "Appendix A",
+      "Appendix C.2",
+      "Appendix G.2.1"
+    ],
+    "scope": "Relevant sections checked; not a full experimental reproduction"
+  }
+]

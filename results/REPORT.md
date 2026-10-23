@@ -1,9 +1,12 @@
 # IQ Puzzler Pro: oracle-state baseline evidence
 
-**The current controller is not vision-only.** It obtains object positions and
+**The full-assembly baseline controller is not vision-only.** It obtains object positions and
 orientations directly from the simulator through `puzzle.observe`. Images support
 reconstruction, recording, and comparison; they are not the runtime perception
-input. The requested vision-only GaP implementation is not completed or validated.
+input. A separate RGB-only prototype now runs perception and single-piece
+closed-loop diagnostics; see [visual results](VISION.md) and the
+[observation-boundary audit](OBSERVATION_AUDIT.md). Complete visual assembly
+has not been established.
 
 The experiments below establish physical execution under privileged object-pose
 observations. They must not be presented as visual manipulation or general-policy

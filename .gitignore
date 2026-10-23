@@ -16,6 +16,7 @@ video/*.mp4
 video/*.part
 # Full traces are distributed in the versioned evidence release.
 runs/**/frames.json
+runs/**/rgb/*.npz
 runs/**/outputs.tar.gz
 runs/**/request.json
 runs/**/request.meta.json

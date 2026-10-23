@@ -1,0 +1,1640 @@
+{
+  "nodes": [
+    {
+      "id": "n_0000",
+      "name": "anchor",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0001",
+      "name": "cyan",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0002",
+      "name": "cyan_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0003",
+      "name": "finish",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0004",
+      "name": "done",
+      "node_type": "end",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0005",
+      "name": "abort",
+      "node_type": "end",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0006",
+      "name": "anchor_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/anchor.py",
+      "started_at": 1792727850.5552797,
+      "finished_at": 1792727865.9034598,
+      "duration_ms": 15348.18,
+      "status": "ok",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": true,
+      "has_output": true,
+      "visits": 1,
+      "assets": []
+    },
+    {
+      "id": "n_0007",
+      "name": "anchor_sg.ready",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0008",
+      "name": "cyan_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/cyan.py",
+      "started_at": 1792727865.918056,
+      "finished_at": 1792727921.3844614,
+      "duration_ms": 55466.41,
+      "status": "ok",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": true,
+      "has_output": true,
+      "visits": 1,
+      "assets": []
+    },
+    {
+      "id": "n_0009",
+      "name": "cyan_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0010",
+      "name": "cyan_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0011",
+      "name": "finish_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/finish.py",
+      "started_at": 1792727921.3896368,
+      "finished_at": 1792727939.9156325,
+      "duration_ms": 18526.0,
+      "status": "ok",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": true,
+      "has_output": true,
+      "visits": 1,
+      "assets": []
+    },
+    {
+      "id": "n_0012",
+      "name": "finish_sg.complete",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0013",
+      "name": "finish_sg.failed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "n_0000",
+      "to": "n_0001",
+      "from_id": "n_0000",
+      "to_id": "n_0001",
+      "from_name": "anchor",
+      "to_name": "cyan"
+    },
+    {
+      "from": "n_0000",
+      "to": "n_0005",
+      "from_id": "n_0000",
+      "to_id": "n_0005",
+      "from_name": "anchor",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0001",
+      "to": "n_0003",
+      "from_id": "n_0001",
+      "to_id": "n_0003",
+      "from_name": "cyan",
+      "to_name": "finish"
+    },
+    {
+      "from": "n_0001",
+      "to": "n_0005",
+      "from_id": "n_0001",
+      "to_id": "n_0005",
+      "from_name": "cyan",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0001",
+      "to": "n_0002",
+      "from_id": "n_0001",
+      "to_id": "n_0002",
+      "from_name": "cyan",
+      "to_name": "cyan_retry1"
+    },
+    {
+      "from": "n_0002",
+      "to": "n_0003",
+      "from_id": "n_0002",
+      "to_id": "n_0003",
+      "from_name": "cyan_retry1",
+      "to_name": "finish"
+    },
+    {
+      "from": "n_0002",
+      "to": "n_0005",
+      "from_id": "n_0002",
+      "to_id": "n_0005",
+      "from_name": "cyan_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0002",
+      "to": "n_0005",
+      "from_id": "n_0002",
+      "to_id": "n_0005",
+      "from_name": "cyan_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0003",
+      "to": "n_0004",
+      "from_id": "n_0003",
+      "to_id": "n_0004",
+      "from_name": "finish",
+      "to_name": "done"
+    },
+    {
+      "from": "n_0003",
+      "to": "n_0005",
+      "from_id": "n_0003",
+      "to_id": "n_0005",
+      "from_name": "finish",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0003",
+      "to": "n_0005",
+      "from_id": "n_0003",
+      "to_id": "n_0005",
+      "from_name": "finish",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0006",
+      "to": "n_0007",
+      "from_id": "n_0006",
+      "to_id": "n_0007",
+      "from_name": "anchor_sg.act",
+      "to_name": "anchor_sg.ready"
+    },
+    {
+      "from": "n_0008",
+      "to": "n_0009",
+      "from_id": "n_0008",
+      "to_id": "n_0009",
+      "from_name": "cyan_sg.act",
+      "to_name": "cyan_sg.placed"
+    },
+    {
+      "from": "n_0008",
+      "to": "n_0010",
+      "from_id": "n_0008",
+      "to_id": "n_0010",
+      "from_name": "cyan_sg.act",
+      "to_name": "cyan_sg.retry"
+    },
+    {
+      "from": "n_0011",
+      "to": "n_0012",
+      "from_id": "n_0011",
+      "to_id": "n_0012",
+      "from_name": "finish_sg.act",
+      "to_name": "finish_sg.complete"
+    },
+    {
+      "from": "n_0011",
+      "to": "n_0013",
+      "from_id": "n_0011",
+      "to_id": "n_0013",
+      "from_name": "finish_sg.act",
+      "to_name": "finish_sg.failed"
+    }
+  ],
+  "events": [
+    {
+      "seq": 0,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.553654,
+      "node_id": "n_0000",
+      "node_name": "anchor",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 1,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.5536637,
+      "node_id": "n_0001",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 2,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.5536683,
+      "node_id": "n_0002",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 3,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.5536706,
+      "node_id": "n_0003",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 4,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.5536735,
+      "node_id": "n_0004",
+      "node_name": "done",
+      "status": null,
+      "detail": {
+        "node_type": "end"
+      }
+    },
+    {
+      "seq": 5,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.553676,
+      "node_id": "n_0005",
+      "node_name": "abort",
+      "status": null,
+      "detail": {
+        "node_type": "end"
+      }
+    },
+    {
+      "seq": 6,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.553682,
+      "node_id": "n_0000",
+      "node_name": "anchor",
+      "status": null,
+      "detail": {
+        "from_name": "anchor",
+        "to_name": "cyan",
+        "to_id": "n_0001"
+      }
+    },
+    {
+      "seq": 7,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5536847,
+      "node_id": "n_0000",
+      "node_name": "anchor",
+      "status": null,
+      "detail": {
+        "from_name": "anchor",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 8,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5536866,
+      "node_id": "n_0001",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "from_name": "cyan",
+        "to_name": "finish",
+        "to_id": "n_0003"
+      }
+    },
+    {
+      "seq": 9,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5536878,
+      "node_id": "n_0001",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "from_name": "cyan",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 10,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.553689,
+      "node_id": "n_0001",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "from_name": "cyan",
+        "to_name": "cyan_retry1",
+        "to_id": "n_0002"
+      }
+    },
+    {
+      "seq": 11,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5536904,
+      "node_id": "n_0002",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_retry1",
+        "to_name": "finish",
+        "to_id": "n_0003"
+      }
+    },
+    {
+      "seq": 12,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5536914,
+      "node_id": "n_0002",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_retry1",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 13,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5536923,
+      "node_id": "n_0002",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_retry1",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 14,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5536938,
+      "node_id": "n_0003",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "from_name": "finish",
+        "to_name": "done",
+        "to_id": "n_0004"
+      }
+    },
+    {
+      "seq": 15,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5536947,
+      "node_id": "n_0003",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "from_name": "finish",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 16,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5536957,
+      "node_id": "n_0003",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "from_name": "finish",
+        "to_name": "abort",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 17,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.5536993,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 18,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.553702,
+      "node_id": "n_0007",
+      "node_name": "anchor_sg.ready",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 19,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5537052,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "anchor_sg.act",
+        "to_name": "anchor_sg.ready",
+        "to_id": "n_0007"
+      }
+    },
+    {
+      "seq": 20,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.5537078,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 21,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.55371,
+      "node_id": "n_0009",
+      "node_name": "cyan_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 22,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.5537124,
+      "node_id": "n_0010",
+      "node_name": "cyan_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 23,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.553715,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_sg.act",
+        "to_name": "cyan_sg.placed",
+        "to_id": "n_0009"
+      }
+    },
+    {
+      "seq": 24,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5537162,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_sg.act",
+        "to_name": "cyan_sg.retry",
+        "to_id": "n_0010"
+      }
+    },
+    {
+      "seq": 25,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.553719,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 26,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.5537233,
+      "node_id": "n_0012",
+      "node_name": "finish_sg.complete",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 27,
+      "event_type": "node_registered",
+      "timestamp": 1792727850.5537255,
+      "node_id": "n_0013",
+      "node_name": "finish_sg.failed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 28,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5537271,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "finish_sg.act",
+        "to_name": "finish_sg.complete",
+        "to_id": "n_0012"
+      }
+    },
+    {
+      "seq": 29,
+      "event_type": "edge_registered",
+      "timestamp": 1792727850.5537286,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "finish_sg.act",
+        "to_name": "finish_sg.failed",
+        "to_id": "n_0013"
+      }
+    },
+    {
+      "seq": 30,
+      "event_type": "node_started",
+      "timestamp": 1792727850.555281,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": "running",
+      "detail": {}
+    },
+    {
+      "seq": 31,
+      "event_type": "inputs_recorded",
+      "timestamp": 1792727850.5560834,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0,
+        "keys": []
+      }
+    },
+    {
+      "seq": 32,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727850.567672,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 0,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 33,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727856.9469812,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 1,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 34,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727856.9481177,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 2,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 35,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727860.5901048,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 3,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 36,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727863.331007,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 4,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 37,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727863.9180114,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 5,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 38,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727863.9321246,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 6,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 39,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727865.889805,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 7,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 40,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727865.9021661,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 8,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 41,
+      "event_type": "output_recorded",
+      "timestamp": 1792727865.903438,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0
+      }
+    },
+    {
+      "seq": 42,
+      "event_type": "node_finished",
+      "timestamp": 1792727865.903502,
+      "node_id": "n_0006",
+      "node_name": "anchor_sg.act",
+      "status": "ok",
+      "detail": {
+        "success": true,
+        "duration_ms": 15348.18
+      }
+    },
+    {
+      "seq": 43,
+      "event_type": "node_started",
+      "timestamp": 1792727865.9180598,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": "running",
+      "detail": {}
+    },
+    {
+      "seq": 44,
+      "event_type": "inputs_recorded",
+      "timestamp": 1792727865.9196165,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0,
+        "keys": []
+      }
+    },
+    {
+      "seq": 45,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727875.4261503,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 0,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 46,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727875.4377952,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 1,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 47,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727875.4538314,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 2,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 48,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727875.9738178,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 3,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 49,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727875.9857273,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 4,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 50,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727882.54731,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 5,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 51,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727882.5502622,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 6,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 52,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727884.3884292,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 7,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 53,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727886.0266304,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 8,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 54,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727886.6040008,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 9,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 55,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727886.6172438,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 10,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 56,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727888.4969819,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 11,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 57,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727888.5085647,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 12,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 58,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727894.0541017,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 13,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 59,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727894.059288,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 14,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 60,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727894.076388,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 15,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 61,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727894.0973485,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 16,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 62,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727894.1123009,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 17,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 63,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727894.7375836,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 18,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 64,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727894.7572958,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 19,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 65,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727896.7737556,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 20,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 66,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727896.7877407,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 21,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 67,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727899.3458793,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 22,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 68,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727899.9930234,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 23,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 69,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727900.008797,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 24,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 70,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727900.57474,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 25,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 71,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727906.371546,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 26,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 72,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727906.3843658,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 27,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 73,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727906.3998013,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 28,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 74,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727907.3943546,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 29,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 75,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727913.0176847,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 30,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 76,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727913.0303075,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 31,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 77,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727913.0478578,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 32,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 78,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727913.6768184,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 33,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 79,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727914.3861997,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 34,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 80,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727914.4033418,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 35,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 81,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727915.040455,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 36,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 82,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727915.7457876,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 37,
+        "tool": "robot.wait_steps"
+      }
+    },
+    {
+      "seq": 83,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727921.3831687,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 38,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 84,
+      "event_type": "output_recorded",
+      "timestamp": 1792727921.3844416,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0
+      }
+    },
+    {
+      "seq": 85,
+      "event_type": "node_finished",
+      "timestamp": 1792727921.3844874,
+      "node_id": "n_0008",
+      "node_name": "cyan_sg.act",
+      "status": "ok",
+      "detail": {
+        "success": true,
+        "duration_ms": 55466.41
+      }
+    },
+    {
+      "seq": 86,
+      "event_type": "node_started",
+      "timestamp": 1792727921.3896422,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": "running",
+      "detail": {}
+    },
+    {
+      "seq": 87,
+      "event_type": "inputs_recorded",
+      "timestamp": 1792727921.3915293,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0,
+        "keys": []
+      }
+    },
+    {
+      "seq": 88,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727921.401052,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 0,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 89,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727922.1271355,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 1,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 90,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727922.1458986,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 2,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 91,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727922.7420194,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 3,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 92,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727923.854554,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 4,
+        "tool": "robot.go_home"
+      }
+    },
+    {
+      "seq": 93,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727923.86749,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 5,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 94,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727924.5455084,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 6,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 95,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727924.5611956,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 7,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 96,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727925.147883,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 8,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 97,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727926.3811707,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 9,
+        "tool": "robot.go_home"
+      }
+    },
+    {
+      "seq": 98,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727927.8405902,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 10,
+        "tool": "robot.wait_steps"
+      }
+    },
+    {
+      "seq": 99,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727933.5126667,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 11,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 100,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727934.2615156,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 12,
+        "tool": "robot.wait_steps"
+      }
+    },
+    {
+      "seq": 101,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792727939.91471,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 13,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 102,
+      "event_type": "output_recorded",
+      "timestamp": 1792727939.9156272,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0
+      }
+    },
+    {
+      "seq": 103,
+      "event_type": "node_finished",
+      "timestamp": 1792727939.9156399,
+      "node_id": "n_0011",
+      "node_name": "finish_sg.act",
+      "status": "ok",
+      "detail": {
+        "success": true,
+        "duration_ms": 18526.0
+      }
+    }
+  ]
+}

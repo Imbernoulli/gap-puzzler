@@ -1,0 +1,8 @@
+{
+  "graph_result": {
+    "result": "ExecutionResult(success=False, exit_status='failure', outputs={'anchor_sg': {}, 'cyan_sg': {}}, trace_path=PosixPath('runs/vision_flat_v1/seed101/trace/0000'), checkpoint_results=[CheckpointResult(name='anchor_visual_estimate', subgraph='anchor_sg', passed=True, eval_error=None, diagnostics=None, eval_time_s=3.7910882383584976e-05)], error=PipelineError(\"workflow terminated at end node 'abort' (failure); first node error -- cyan_sg.act: Node 'cyan_sg.act' failed: RuntimeError: Cannot plan grasp with unobserved obstacles: ['azure']\"), duration_s=33.48448769003153, latency=None)"
+  },
+  "steps": 869,
+  "graph_error": "PipelineError: workflow terminated at end node 'abort' (failure); first node error -- cyan_sg.act: Node 'cyan_sg.act' failed: RuntimeError: Cannot plan grasp with unobserved obstacles: ['azure']",
+  "graph_traceback": "Traceback (most recent call last):\n  File \"/srv/home/bohanlyu/gap-puzzler-web/third_party/graph-as-policy-runtime/gap/runtime/execute.py\", line 192, in execute\n    executor.execute()\n  File \"/srv/home/bohanlyu/gap-puzzler-web/third_party/graph-as-policy-runtime/gap/runtime/executor.py\", line 347, in execute\n    self._run_top_level()\n  File \"/srv/home/bohanlyu/gap-puzzler-web/third_party/graph-as-policy-runtime/gap/runtime/executor.py\", line 419, in _run_top_level\n    raise PipelineError(\ngap_core.errors.PipelineError: workflow terminated at end node 'abort' (failure); first node error -- cyan_sg.act: Node 'cyan_sg.act' failed: RuntimeError: Cannot plan grasp with unobserved obstacles: ['azure']\n"
+}

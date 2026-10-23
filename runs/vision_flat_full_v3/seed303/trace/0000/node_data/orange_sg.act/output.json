@@ -1,0 +1,8 @@
+{
+  "route": "placed",
+  "piece": "orange",
+  "visual_error_m": 0.0011173362281680164,
+  "visual_rise_m": 0.07773596907298386,
+  "failure": "",
+  "observation_source": "calibrated_rgb_only"
+}

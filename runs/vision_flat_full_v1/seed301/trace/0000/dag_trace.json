@@ -1,0 +1,5806 @@
+{
+  "nodes": [
+    {
+      "id": "n_0000",
+      "name": "anchor",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0001",
+      "name": "orange",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0002",
+      "name": "orange_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0003",
+      "name": "purple",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0004",
+      "name": "purple_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0005",
+      "name": "yellow",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0006",
+      "name": "yellow_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0007",
+      "name": "lime",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0008",
+      "name": "lime_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0009",
+      "name": "teal",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0010",
+      "name": "teal_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0011",
+      "name": "cyan",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0012",
+      "name": "cyan_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0013",
+      "name": "azure",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0014",
+      "name": "azure_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0015",
+      "name": "navy",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0016",
+      "name": "navy_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0017",
+      "name": "pink",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0018",
+      "name": "pink_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0019",
+      "name": "maroon",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0020",
+      "name": "maroon_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0021",
+      "name": "mint",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0022",
+      "name": "mint_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0023",
+      "name": "red",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0024",
+      "name": "red_retry1",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0025",
+      "name": "finish",
+      "node_type": "subgraph",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0026",
+      "name": "done",
+      "node_type": "end",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0027",
+      "name": "abort",
+      "node_type": "end",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0028",
+      "name": "anchor_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/anchor.py",
+      "started_at": 1792728209.0825517,
+      "finished_at": 1792728223.7816806,
+      "duration_ms": 14699.13,
+      "status": "ok",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": true,
+      "has_output": true,
+      "visits": 1,
+      "assets": []
+    },
+    {
+      "id": "n_0029",
+      "name": "anchor_sg.ready",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0030",
+      "name": "orange_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/orange.py",
+      "started_at": 1792728223.79012,
+      "finished_at": 1792728274.5428371,
+      "duration_ms": 50752.72,
+      "status": "ok",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": true,
+      "has_output": true,
+      "visits": 1,
+      "assets": []
+    },
+    {
+      "id": "n_0031",
+      "name": "orange_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0032",
+      "name": "orange_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0033",
+      "name": "purple_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/purple.py",
+      "started_at": 1792728274.5483694,
+      "finished_at": 1792728325.204981,
+      "duration_ms": 50656.61,
+      "status": "ok",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": true,
+      "has_output": true,
+      "visits": 1,
+      "assets": []
+    },
+    {
+      "id": "n_0034",
+      "name": "purple_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0035",
+      "name": "purple_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0036",
+      "name": "yellow_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/yellow.py",
+      "started_at": 1792728325.262407,
+      "finished_at": 1792728361.7562869,
+      "duration_ms": 36493.88,
+      "status": "error",
+      "condition": null,
+      "condition_result": null,
+      "error_message": "Node 'yellow_sg.act' failed: RuntimeError: RGB perception uncertain: {'yellow': 'inconsistent or occluded silhouettes'}",
+      "has_inputs": true,
+      "has_output": false,
+      "visits": 1,
+      "assets": []
+    },
+    {
+      "id": "n_0037",
+      "name": "yellow_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0038",
+      "name": "yellow_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0039",
+      "name": "lime_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/lime.py",
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0040",
+      "name": "lime_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0041",
+      "name": "lime_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0042",
+      "name": "teal_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/teal.py",
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0043",
+      "name": "teal_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0044",
+      "name": "teal_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0045",
+      "name": "cyan_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/cyan.py",
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0046",
+      "name": "cyan_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0047",
+      "name": "cyan_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0048",
+      "name": "azure_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/azure.py",
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0049",
+      "name": "azure_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0050",
+      "name": "azure_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0051",
+      "name": "navy_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/navy.py",
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0052",
+      "name": "navy_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0053",
+      "name": "navy_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0054",
+      "name": "pink_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/pink.py",
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0055",
+      "name": "pink_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0056",
+      "name": "pink_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0057",
+      "name": "maroon_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/maroon.py",
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0058",
+      "name": "maroon_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0059",
+      "name": "maroon_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0060",
+      "name": "mint_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/mint.py",
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0061",
+      "name": "mint_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0062",
+      "name": "mint_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0063",
+      "name": "red_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/red.py",
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0064",
+      "name": "red_sg.placed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0065",
+      "name": "red_sg.retry",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0066",
+      "name": "finish_sg.act",
+      "node_type": "script",
+      "service": null,
+      "method": null,
+      "script": "scripts/finish.py",
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0067",
+      "name": "finish_sg.complete",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    },
+    {
+      "id": "n_0068",
+      "name": "finish_sg.failed",
+      "node_type": "noop",
+      "service": null,
+      "method": null,
+      "script": null,
+      "started_at": 0.0,
+      "finished_at": 0.0,
+      "duration_ms": 0.0,
+      "status": "pending",
+      "condition": null,
+      "condition_result": null,
+      "error_message": null,
+      "has_inputs": false,
+      "has_output": false,
+      "visits": 0,
+      "assets": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "n_0000",
+      "to": "n_0001",
+      "from_id": "n_0000",
+      "to_id": "n_0001",
+      "from_name": "anchor",
+      "to_name": "orange"
+    },
+    {
+      "from": "n_0000",
+      "to": "n_0027",
+      "from_id": "n_0000",
+      "to_id": "n_0027",
+      "from_name": "anchor",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0001",
+      "to": "n_0003",
+      "from_id": "n_0001",
+      "to_id": "n_0003",
+      "from_name": "orange",
+      "to_name": "purple"
+    },
+    {
+      "from": "n_0001",
+      "to": "n_0027",
+      "from_id": "n_0001",
+      "to_id": "n_0027",
+      "from_name": "orange",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0001",
+      "to": "n_0002",
+      "from_id": "n_0001",
+      "to_id": "n_0002",
+      "from_name": "orange",
+      "to_name": "orange_retry1"
+    },
+    {
+      "from": "n_0002",
+      "to": "n_0003",
+      "from_id": "n_0002",
+      "to_id": "n_0003",
+      "from_name": "orange_retry1",
+      "to_name": "purple"
+    },
+    {
+      "from": "n_0002",
+      "to": "n_0027",
+      "from_id": "n_0002",
+      "to_id": "n_0027",
+      "from_name": "orange_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0002",
+      "to": "n_0027",
+      "from_id": "n_0002",
+      "to_id": "n_0027",
+      "from_name": "orange_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0003",
+      "to": "n_0005",
+      "from_id": "n_0003",
+      "to_id": "n_0005",
+      "from_name": "purple",
+      "to_name": "yellow"
+    },
+    {
+      "from": "n_0003",
+      "to": "n_0027",
+      "from_id": "n_0003",
+      "to_id": "n_0027",
+      "from_name": "purple",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0003",
+      "to": "n_0004",
+      "from_id": "n_0003",
+      "to_id": "n_0004",
+      "from_name": "purple",
+      "to_name": "purple_retry1"
+    },
+    {
+      "from": "n_0004",
+      "to": "n_0005",
+      "from_id": "n_0004",
+      "to_id": "n_0005",
+      "from_name": "purple_retry1",
+      "to_name": "yellow"
+    },
+    {
+      "from": "n_0004",
+      "to": "n_0027",
+      "from_id": "n_0004",
+      "to_id": "n_0027",
+      "from_name": "purple_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0004",
+      "to": "n_0027",
+      "from_id": "n_0004",
+      "to_id": "n_0027",
+      "from_name": "purple_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0005",
+      "to": "n_0007",
+      "from_id": "n_0005",
+      "to_id": "n_0007",
+      "from_name": "yellow",
+      "to_name": "lime"
+    },
+    {
+      "from": "n_0005",
+      "to": "n_0027",
+      "from_id": "n_0005",
+      "to_id": "n_0027",
+      "from_name": "yellow",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0005",
+      "to": "n_0006",
+      "from_id": "n_0005",
+      "to_id": "n_0006",
+      "from_name": "yellow",
+      "to_name": "yellow_retry1"
+    },
+    {
+      "from": "n_0006",
+      "to": "n_0007",
+      "from_id": "n_0006",
+      "to_id": "n_0007",
+      "from_name": "yellow_retry1",
+      "to_name": "lime"
+    },
+    {
+      "from": "n_0006",
+      "to": "n_0027",
+      "from_id": "n_0006",
+      "to_id": "n_0027",
+      "from_name": "yellow_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0006",
+      "to": "n_0027",
+      "from_id": "n_0006",
+      "to_id": "n_0027",
+      "from_name": "yellow_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0007",
+      "to": "n_0009",
+      "from_id": "n_0007",
+      "to_id": "n_0009",
+      "from_name": "lime",
+      "to_name": "teal"
+    },
+    {
+      "from": "n_0007",
+      "to": "n_0027",
+      "from_id": "n_0007",
+      "to_id": "n_0027",
+      "from_name": "lime",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0007",
+      "to": "n_0008",
+      "from_id": "n_0007",
+      "to_id": "n_0008",
+      "from_name": "lime",
+      "to_name": "lime_retry1"
+    },
+    {
+      "from": "n_0008",
+      "to": "n_0009",
+      "from_id": "n_0008",
+      "to_id": "n_0009",
+      "from_name": "lime_retry1",
+      "to_name": "teal"
+    },
+    {
+      "from": "n_0008",
+      "to": "n_0027",
+      "from_id": "n_0008",
+      "to_id": "n_0027",
+      "from_name": "lime_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0008",
+      "to": "n_0027",
+      "from_id": "n_0008",
+      "to_id": "n_0027",
+      "from_name": "lime_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0009",
+      "to": "n_0011",
+      "from_id": "n_0009",
+      "to_id": "n_0011",
+      "from_name": "teal",
+      "to_name": "cyan"
+    },
+    {
+      "from": "n_0009",
+      "to": "n_0027",
+      "from_id": "n_0009",
+      "to_id": "n_0027",
+      "from_name": "teal",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0009",
+      "to": "n_0010",
+      "from_id": "n_0009",
+      "to_id": "n_0010",
+      "from_name": "teal",
+      "to_name": "teal_retry1"
+    },
+    {
+      "from": "n_0010",
+      "to": "n_0011",
+      "from_id": "n_0010",
+      "to_id": "n_0011",
+      "from_name": "teal_retry1",
+      "to_name": "cyan"
+    },
+    {
+      "from": "n_0010",
+      "to": "n_0027",
+      "from_id": "n_0010",
+      "to_id": "n_0027",
+      "from_name": "teal_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0010",
+      "to": "n_0027",
+      "from_id": "n_0010",
+      "to_id": "n_0027",
+      "from_name": "teal_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0011",
+      "to": "n_0013",
+      "from_id": "n_0011",
+      "to_id": "n_0013",
+      "from_name": "cyan",
+      "to_name": "azure"
+    },
+    {
+      "from": "n_0011",
+      "to": "n_0027",
+      "from_id": "n_0011",
+      "to_id": "n_0027",
+      "from_name": "cyan",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0011",
+      "to": "n_0012",
+      "from_id": "n_0011",
+      "to_id": "n_0012",
+      "from_name": "cyan",
+      "to_name": "cyan_retry1"
+    },
+    {
+      "from": "n_0012",
+      "to": "n_0013",
+      "from_id": "n_0012",
+      "to_id": "n_0013",
+      "from_name": "cyan_retry1",
+      "to_name": "azure"
+    },
+    {
+      "from": "n_0012",
+      "to": "n_0027",
+      "from_id": "n_0012",
+      "to_id": "n_0027",
+      "from_name": "cyan_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0012",
+      "to": "n_0027",
+      "from_id": "n_0012",
+      "to_id": "n_0027",
+      "from_name": "cyan_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0013",
+      "to": "n_0015",
+      "from_id": "n_0013",
+      "to_id": "n_0015",
+      "from_name": "azure",
+      "to_name": "navy"
+    },
+    {
+      "from": "n_0013",
+      "to": "n_0027",
+      "from_id": "n_0013",
+      "to_id": "n_0027",
+      "from_name": "azure",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0013",
+      "to": "n_0014",
+      "from_id": "n_0013",
+      "to_id": "n_0014",
+      "from_name": "azure",
+      "to_name": "azure_retry1"
+    },
+    {
+      "from": "n_0014",
+      "to": "n_0015",
+      "from_id": "n_0014",
+      "to_id": "n_0015",
+      "from_name": "azure_retry1",
+      "to_name": "navy"
+    },
+    {
+      "from": "n_0014",
+      "to": "n_0027",
+      "from_id": "n_0014",
+      "to_id": "n_0027",
+      "from_name": "azure_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0014",
+      "to": "n_0027",
+      "from_id": "n_0014",
+      "to_id": "n_0027",
+      "from_name": "azure_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0015",
+      "to": "n_0017",
+      "from_id": "n_0015",
+      "to_id": "n_0017",
+      "from_name": "navy",
+      "to_name": "pink"
+    },
+    {
+      "from": "n_0015",
+      "to": "n_0027",
+      "from_id": "n_0015",
+      "to_id": "n_0027",
+      "from_name": "navy",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0015",
+      "to": "n_0016",
+      "from_id": "n_0015",
+      "to_id": "n_0016",
+      "from_name": "navy",
+      "to_name": "navy_retry1"
+    },
+    {
+      "from": "n_0016",
+      "to": "n_0017",
+      "from_id": "n_0016",
+      "to_id": "n_0017",
+      "from_name": "navy_retry1",
+      "to_name": "pink"
+    },
+    {
+      "from": "n_0016",
+      "to": "n_0027",
+      "from_id": "n_0016",
+      "to_id": "n_0027",
+      "from_name": "navy_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0016",
+      "to": "n_0027",
+      "from_id": "n_0016",
+      "to_id": "n_0027",
+      "from_name": "navy_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0017",
+      "to": "n_0019",
+      "from_id": "n_0017",
+      "to_id": "n_0019",
+      "from_name": "pink",
+      "to_name": "maroon"
+    },
+    {
+      "from": "n_0017",
+      "to": "n_0027",
+      "from_id": "n_0017",
+      "to_id": "n_0027",
+      "from_name": "pink",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0017",
+      "to": "n_0018",
+      "from_id": "n_0017",
+      "to_id": "n_0018",
+      "from_name": "pink",
+      "to_name": "pink_retry1"
+    },
+    {
+      "from": "n_0018",
+      "to": "n_0019",
+      "from_id": "n_0018",
+      "to_id": "n_0019",
+      "from_name": "pink_retry1",
+      "to_name": "maroon"
+    },
+    {
+      "from": "n_0018",
+      "to": "n_0027",
+      "from_id": "n_0018",
+      "to_id": "n_0027",
+      "from_name": "pink_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0018",
+      "to": "n_0027",
+      "from_id": "n_0018",
+      "to_id": "n_0027",
+      "from_name": "pink_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0019",
+      "to": "n_0021",
+      "from_id": "n_0019",
+      "to_id": "n_0021",
+      "from_name": "maroon",
+      "to_name": "mint"
+    },
+    {
+      "from": "n_0019",
+      "to": "n_0027",
+      "from_id": "n_0019",
+      "to_id": "n_0027",
+      "from_name": "maroon",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0019",
+      "to": "n_0020",
+      "from_id": "n_0019",
+      "to_id": "n_0020",
+      "from_name": "maroon",
+      "to_name": "maroon_retry1"
+    },
+    {
+      "from": "n_0020",
+      "to": "n_0021",
+      "from_id": "n_0020",
+      "to_id": "n_0021",
+      "from_name": "maroon_retry1",
+      "to_name": "mint"
+    },
+    {
+      "from": "n_0020",
+      "to": "n_0027",
+      "from_id": "n_0020",
+      "to_id": "n_0027",
+      "from_name": "maroon_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0020",
+      "to": "n_0027",
+      "from_id": "n_0020",
+      "to_id": "n_0027",
+      "from_name": "maroon_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0021",
+      "to": "n_0023",
+      "from_id": "n_0021",
+      "to_id": "n_0023",
+      "from_name": "mint",
+      "to_name": "red"
+    },
+    {
+      "from": "n_0021",
+      "to": "n_0027",
+      "from_id": "n_0021",
+      "to_id": "n_0027",
+      "from_name": "mint",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0021",
+      "to": "n_0022",
+      "from_id": "n_0021",
+      "to_id": "n_0022",
+      "from_name": "mint",
+      "to_name": "mint_retry1"
+    },
+    {
+      "from": "n_0022",
+      "to": "n_0023",
+      "from_id": "n_0022",
+      "to_id": "n_0023",
+      "from_name": "mint_retry1",
+      "to_name": "red"
+    },
+    {
+      "from": "n_0022",
+      "to": "n_0027",
+      "from_id": "n_0022",
+      "to_id": "n_0027",
+      "from_name": "mint_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0022",
+      "to": "n_0027",
+      "from_id": "n_0022",
+      "to_id": "n_0027",
+      "from_name": "mint_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0023",
+      "to": "n_0025",
+      "from_id": "n_0023",
+      "to_id": "n_0025",
+      "from_name": "red",
+      "to_name": "finish"
+    },
+    {
+      "from": "n_0023",
+      "to": "n_0027",
+      "from_id": "n_0023",
+      "to_id": "n_0027",
+      "from_name": "red",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0023",
+      "to": "n_0024",
+      "from_id": "n_0023",
+      "to_id": "n_0024",
+      "from_name": "red",
+      "to_name": "red_retry1"
+    },
+    {
+      "from": "n_0024",
+      "to": "n_0025",
+      "from_id": "n_0024",
+      "to_id": "n_0025",
+      "from_name": "red_retry1",
+      "to_name": "finish"
+    },
+    {
+      "from": "n_0024",
+      "to": "n_0027",
+      "from_id": "n_0024",
+      "to_id": "n_0027",
+      "from_name": "red_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0024",
+      "to": "n_0027",
+      "from_id": "n_0024",
+      "to_id": "n_0027",
+      "from_name": "red_retry1",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0025",
+      "to": "n_0026",
+      "from_id": "n_0025",
+      "to_id": "n_0026",
+      "from_name": "finish",
+      "to_name": "done"
+    },
+    {
+      "from": "n_0025",
+      "to": "n_0027",
+      "from_id": "n_0025",
+      "to_id": "n_0027",
+      "from_name": "finish",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0025",
+      "to": "n_0027",
+      "from_id": "n_0025",
+      "to_id": "n_0027",
+      "from_name": "finish",
+      "to_name": "abort"
+    },
+    {
+      "from": "n_0028",
+      "to": "n_0029",
+      "from_id": "n_0028",
+      "to_id": "n_0029",
+      "from_name": "anchor_sg.act",
+      "to_name": "anchor_sg.ready"
+    },
+    {
+      "from": "n_0030",
+      "to": "n_0031",
+      "from_id": "n_0030",
+      "to_id": "n_0031",
+      "from_name": "orange_sg.act",
+      "to_name": "orange_sg.placed"
+    },
+    {
+      "from": "n_0030",
+      "to": "n_0032",
+      "from_id": "n_0030",
+      "to_id": "n_0032",
+      "from_name": "orange_sg.act",
+      "to_name": "orange_sg.retry"
+    },
+    {
+      "from": "n_0033",
+      "to": "n_0034",
+      "from_id": "n_0033",
+      "to_id": "n_0034",
+      "from_name": "purple_sg.act",
+      "to_name": "purple_sg.placed"
+    },
+    {
+      "from": "n_0033",
+      "to": "n_0035",
+      "from_id": "n_0033",
+      "to_id": "n_0035",
+      "from_name": "purple_sg.act",
+      "to_name": "purple_sg.retry"
+    },
+    {
+      "from": "n_0036",
+      "to": "n_0037",
+      "from_id": "n_0036",
+      "to_id": "n_0037",
+      "from_name": "yellow_sg.act",
+      "to_name": "yellow_sg.placed"
+    },
+    {
+      "from": "n_0036",
+      "to": "n_0038",
+      "from_id": "n_0036",
+      "to_id": "n_0038",
+      "from_name": "yellow_sg.act",
+      "to_name": "yellow_sg.retry"
+    },
+    {
+      "from": "n_0039",
+      "to": "n_0040",
+      "from_id": "n_0039",
+      "to_id": "n_0040",
+      "from_name": "lime_sg.act",
+      "to_name": "lime_sg.placed"
+    },
+    {
+      "from": "n_0039",
+      "to": "n_0041",
+      "from_id": "n_0039",
+      "to_id": "n_0041",
+      "from_name": "lime_sg.act",
+      "to_name": "lime_sg.retry"
+    },
+    {
+      "from": "n_0042",
+      "to": "n_0043",
+      "from_id": "n_0042",
+      "to_id": "n_0043",
+      "from_name": "teal_sg.act",
+      "to_name": "teal_sg.placed"
+    },
+    {
+      "from": "n_0042",
+      "to": "n_0044",
+      "from_id": "n_0042",
+      "to_id": "n_0044",
+      "from_name": "teal_sg.act",
+      "to_name": "teal_sg.retry"
+    },
+    {
+      "from": "n_0045",
+      "to": "n_0046",
+      "from_id": "n_0045",
+      "to_id": "n_0046",
+      "from_name": "cyan_sg.act",
+      "to_name": "cyan_sg.placed"
+    },
+    {
+      "from": "n_0045",
+      "to": "n_0047",
+      "from_id": "n_0045",
+      "to_id": "n_0047",
+      "from_name": "cyan_sg.act",
+      "to_name": "cyan_sg.retry"
+    },
+    {
+      "from": "n_0048",
+      "to": "n_0049",
+      "from_id": "n_0048",
+      "to_id": "n_0049",
+      "from_name": "azure_sg.act",
+      "to_name": "azure_sg.placed"
+    },
+    {
+      "from": "n_0048",
+      "to": "n_0050",
+      "from_id": "n_0048",
+      "to_id": "n_0050",
+      "from_name": "azure_sg.act",
+      "to_name": "azure_sg.retry"
+    },
+    {
+      "from": "n_0051",
+      "to": "n_0052",
+      "from_id": "n_0051",
+      "to_id": "n_0052",
+      "from_name": "navy_sg.act",
+      "to_name": "navy_sg.placed"
+    },
+    {
+      "from": "n_0051",
+      "to": "n_0053",
+      "from_id": "n_0051",
+      "to_id": "n_0053",
+      "from_name": "navy_sg.act",
+      "to_name": "navy_sg.retry"
+    },
+    {
+      "from": "n_0054",
+      "to": "n_0055",
+      "from_id": "n_0054",
+      "to_id": "n_0055",
+      "from_name": "pink_sg.act",
+      "to_name": "pink_sg.placed"
+    },
+    {
+      "from": "n_0054",
+      "to": "n_0056",
+      "from_id": "n_0054",
+      "to_id": "n_0056",
+      "from_name": "pink_sg.act",
+      "to_name": "pink_sg.retry"
+    },
+    {
+      "from": "n_0057",
+      "to": "n_0058",
+      "from_id": "n_0057",
+      "to_id": "n_0058",
+      "from_name": "maroon_sg.act",
+      "to_name": "maroon_sg.placed"
+    },
+    {
+      "from": "n_0057",
+      "to": "n_0059",
+      "from_id": "n_0057",
+      "to_id": "n_0059",
+      "from_name": "maroon_sg.act",
+      "to_name": "maroon_sg.retry"
+    },
+    {
+      "from": "n_0060",
+      "to": "n_0061",
+      "from_id": "n_0060",
+      "to_id": "n_0061",
+      "from_name": "mint_sg.act",
+      "to_name": "mint_sg.placed"
+    },
+    {
+      "from": "n_0060",
+      "to": "n_0062",
+      "from_id": "n_0060",
+      "to_id": "n_0062",
+      "from_name": "mint_sg.act",
+      "to_name": "mint_sg.retry"
+    },
+    {
+      "from": "n_0063",
+      "to": "n_0064",
+      "from_id": "n_0063",
+      "to_id": "n_0064",
+      "from_name": "red_sg.act",
+      "to_name": "red_sg.placed"
+    },
+    {
+      "from": "n_0063",
+      "to": "n_0065",
+      "from_id": "n_0063",
+      "to_id": "n_0065",
+      "from_name": "red_sg.act",
+      "to_name": "red_sg.retry"
+    },
+    {
+      "from": "n_0066",
+      "to": "n_0067",
+      "from_id": "n_0066",
+      "to_id": "n_0067",
+      "from_name": "finish_sg.act",
+      "to_name": "finish_sg.complete"
+    },
+    {
+      "from": "n_0066",
+      "to": "n_0068",
+      "from_id": "n_0066",
+      "to_id": "n_0068",
+      "from_name": "finish_sg.act",
+      "to_name": "finish_sg.failed"
+    }
+  ],
+  "events": [
+    {
+      "seq": 0,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776265,
+      "node_id": "n_0000",
+      "node_name": "anchor",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 1,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776389,
+      "node_id": "n_0001",
+      "node_name": "orange",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 2,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776436,
+      "node_id": "n_0002",
+      "node_name": "orange_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 3,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776463,
+      "node_id": "n_0003",
+      "node_name": "purple",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 4,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.077649,
+      "node_id": "n_0004",
+      "node_name": "purple_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 5,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776517,
+      "node_id": "n_0005",
+      "node_name": "yellow",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 6,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776534,
+      "node_id": "n_0006",
+      "node_name": "yellow_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 7,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776553,
+      "node_id": "n_0007",
+      "node_name": "lime",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 8,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776582,
+      "node_id": "n_0008",
+      "node_name": "lime_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 9,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776606,
+      "node_id": "n_0009",
+      "node_name": "teal",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 10,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776634,
+      "node_id": "n_0010",
+      "node_name": "teal_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 11,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776656,
+      "node_id": "n_0011",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 12,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.077668,
+      "node_id": "n_0012",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 13,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.07767,
+      "node_id": "n_0013",
+      "node_name": "azure",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 14,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776725,
+      "node_id": "n_0014",
+      "node_name": "azure_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 15,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776744,
+      "node_id": "n_0015",
+      "node_name": "navy",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 16,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776768,
+      "node_id": "n_0016",
+      "node_name": "navy_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 17,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776792,
+      "node_id": "n_0017",
+      "node_name": "pink",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 18,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776806,
+      "node_id": "n_0018",
+      "node_name": "pink_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 19,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776825,
+      "node_id": "n_0019",
+      "node_name": "maroon",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 20,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776842,
+      "node_id": "n_0020",
+      "node_name": "maroon_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 21,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776868,
+      "node_id": "n_0021",
+      "node_name": "mint",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 22,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776892,
+      "node_id": "n_0022",
+      "node_name": "mint_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 23,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776913,
+      "node_id": "n_0023",
+      "node_name": "red",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 24,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776937,
+      "node_id": "n_0024",
+      "node_name": "red_retry1",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 25,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.077696,
+      "node_id": "n_0025",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "node_type": "subgraph"
+      }
+    },
+    {
+      "seq": 26,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0776985,
+      "node_id": "n_0026",
+      "node_name": "done",
+      "status": null,
+      "detail": {
+        "node_type": "end"
+      }
+    },
+    {
+      "seq": 27,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0777009,
+      "node_id": "n_0027",
+      "node_name": "abort",
+      "status": null,
+      "detail": {
+        "node_type": "end"
+      }
+    },
+    {
+      "seq": 28,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777109,
+      "node_id": "n_0000",
+      "node_name": "anchor",
+      "status": null,
+      "detail": {
+        "from_name": "anchor",
+        "to_name": "orange",
+        "to_id": "n_0001"
+      }
+    },
+    {
+      "seq": 29,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077714,
+      "node_id": "n_0000",
+      "node_name": "anchor",
+      "status": null,
+      "detail": {
+        "from_name": "anchor",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 30,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777159,
+      "node_id": "n_0001",
+      "node_name": "orange",
+      "status": null,
+      "detail": {
+        "from_name": "orange",
+        "to_name": "purple",
+        "to_id": "n_0003"
+      }
+    },
+    {
+      "seq": 31,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777183,
+      "node_id": "n_0001",
+      "node_name": "orange",
+      "status": null,
+      "detail": {
+        "from_name": "orange",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 32,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.07772,
+      "node_id": "n_0001",
+      "node_name": "orange",
+      "status": null,
+      "detail": {
+        "from_name": "orange",
+        "to_name": "orange_retry1",
+        "to_id": "n_0002"
+      }
+    },
+    {
+      "seq": 33,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077721,
+      "node_id": "n_0002",
+      "node_name": "orange_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "orange_retry1",
+        "to_name": "purple",
+        "to_id": "n_0003"
+      }
+    },
+    {
+      "seq": 34,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777223,
+      "node_id": "n_0002",
+      "node_name": "orange_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "orange_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 35,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777235,
+      "node_id": "n_0002",
+      "node_name": "orange_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "orange_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 36,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077725,
+      "node_id": "n_0003",
+      "node_name": "purple",
+      "status": null,
+      "detail": {
+        "from_name": "purple",
+        "to_name": "yellow",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 37,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777261,
+      "node_id": "n_0003",
+      "node_name": "purple",
+      "status": null,
+      "detail": {
+        "from_name": "purple",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 38,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777314,
+      "node_id": "n_0003",
+      "node_name": "purple",
+      "status": null,
+      "detail": {
+        "from_name": "purple",
+        "to_name": "purple_retry1",
+        "to_id": "n_0004"
+      }
+    },
+    {
+      "seq": 39,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077733,
+      "node_id": "n_0004",
+      "node_name": "purple_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "purple_retry1",
+        "to_name": "yellow",
+        "to_id": "n_0005"
+      }
+    },
+    {
+      "seq": 40,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777347,
+      "node_id": "n_0004",
+      "node_name": "purple_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "purple_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 41,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077736,
+      "node_id": "n_0004",
+      "node_name": "purple_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "purple_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 42,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777373,
+      "node_id": "n_0005",
+      "node_name": "yellow",
+      "status": null,
+      "detail": {
+        "from_name": "yellow",
+        "to_name": "lime",
+        "to_id": "n_0007"
+      }
+    },
+    {
+      "seq": 43,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777385,
+      "node_id": "n_0005",
+      "node_name": "yellow",
+      "status": null,
+      "detail": {
+        "from_name": "yellow",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 44,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777395,
+      "node_id": "n_0005",
+      "node_name": "yellow",
+      "status": null,
+      "detail": {
+        "from_name": "yellow",
+        "to_name": "yellow_retry1",
+        "to_id": "n_0006"
+      }
+    },
+    {
+      "seq": 45,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077741,
+      "node_id": "n_0006",
+      "node_name": "yellow_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "yellow_retry1",
+        "to_name": "lime",
+        "to_id": "n_0007"
+      }
+    },
+    {
+      "seq": 46,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777423,
+      "node_id": "n_0006",
+      "node_name": "yellow_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "yellow_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 47,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777442,
+      "node_id": "n_0006",
+      "node_name": "yellow_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "yellow_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 48,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777457,
+      "node_id": "n_0007",
+      "node_name": "lime",
+      "status": null,
+      "detail": {
+        "from_name": "lime",
+        "to_name": "teal",
+        "to_id": "n_0009"
+      }
+    },
+    {
+      "seq": 49,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777469,
+      "node_id": "n_0007",
+      "node_name": "lime",
+      "status": null,
+      "detail": {
+        "from_name": "lime",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 50,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077748,
+      "node_id": "n_0007",
+      "node_name": "lime",
+      "status": null,
+      "detail": {
+        "from_name": "lime",
+        "to_name": "lime_retry1",
+        "to_id": "n_0008"
+      }
+    },
+    {
+      "seq": 51,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777493,
+      "node_id": "n_0008",
+      "node_name": "lime_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "lime_retry1",
+        "to_name": "teal",
+        "to_id": "n_0009"
+      }
+    },
+    {
+      "seq": 52,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777504,
+      "node_id": "n_0008",
+      "node_name": "lime_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "lime_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 53,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077752,
+      "node_id": "n_0008",
+      "node_name": "lime_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "lime_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 54,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777533,
+      "node_id": "n_0009",
+      "node_name": "teal",
+      "status": null,
+      "detail": {
+        "from_name": "teal",
+        "to_name": "cyan",
+        "to_id": "n_0011"
+      }
+    },
+    {
+      "seq": 55,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077755,
+      "node_id": "n_0009",
+      "node_name": "teal",
+      "status": null,
+      "detail": {
+        "from_name": "teal",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 56,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777557,
+      "node_id": "n_0009",
+      "node_name": "teal",
+      "status": null,
+      "detail": {
+        "from_name": "teal",
+        "to_name": "teal_retry1",
+        "to_id": "n_0010"
+      }
+    },
+    {
+      "seq": 57,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777566,
+      "node_id": "n_0010",
+      "node_name": "teal_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "teal_retry1",
+        "to_name": "cyan",
+        "to_id": "n_0011"
+      }
+    },
+    {
+      "seq": 58,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777576,
+      "node_id": "n_0010",
+      "node_name": "teal_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "teal_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 59,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777588,
+      "node_id": "n_0010",
+      "node_name": "teal_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "teal_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 60,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.07776,
+      "node_id": "n_0011",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "from_name": "cyan",
+        "to_name": "azure",
+        "to_id": "n_0013"
+      }
+    },
+    {
+      "seq": 61,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777612,
+      "node_id": "n_0011",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "from_name": "cyan",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 62,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777624,
+      "node_id": "n_0011",
+      "node_name": "cyan",
+      "status": null,
+      "detail": {
+        "from_name": "cyan",
+        "to_name": "cyan_retry1",
+        "to_id": "n_0012"
+      }
+    },
+    {
+      "seq": 63,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777636,
+      "node_id": "n_0012",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_retry1",
+        "to_name": "azure",
+        "to_id": "n_0013"
+      }
+    },
+    {
+      "seq": 64,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777645,
+      "node_id": "n_0012",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 65,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777657,
+      "node_id": "n_0012",
+      "node_name": "cyan_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 66,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777667,
+      "node_id": "n_0013",
+      "node_name": "azure",
+      "status": null,
+      "detail": {
+        "from_name": "azure",
+        "to_name": "navy",
+        "to_id": "n_0015"
+      }
+    },
+    {
+      "seq": 67,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777676,
+      "node_id": "n_0013",
+      "node_name": "azure",
+      "status": null,
+      "detail": {
+        "from_name": "azure",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 68,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077769,
+      "node_id": "n_0013",
+      "node_name": "azure",
+      "status": null,
+      "detail": {
+        "from_name": "azure",
+        "to_name": "azure_retry1",
+        "to_id": "n_0014"
+      }
+    },
+    {
+      "seq": 69,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.07777,
+      "node_id": "n_0014",
+      "node_name": "azure_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "azure_retry1",
+        "to_name": "navy",
+        "to_id": "n_0015"
+      }
+    },
+    {
+      "seq": 70,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777714,
+      "node_id": "n_0014",
+      "node_name": "azure_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "azure_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 71,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777729,
+      "node_id": "n_0014",
+      "node_name": "azure_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "azure_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 72,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077774,
+      "node_id": "n_0015",
+      "node_name": "navy",
+      "status": null,
+      "detail": {
+        "from_name": "navy",
+        "to_name": "pink",
+        "to_id": "n_0017"
+      }
+    },
+    {
+      "seq": 73,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777755,
+      "node_id": "n_0015",
+      "node_name": "navy",
+      "status": null,
+      "detail": {
+        "from_name": "navy",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 74,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777764,
+      "node_id": "n_0015",
+      "node_name": "navy",
+      "status": null,
+      "detail": {
+        "from_name": "navy",
+        "to_name": "navy_retry1",
+        "to_id": "n_0016"
+      }
+    },
+    {
+      "seq": 75,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777776,
+      "node_id": "n_0016",
+      "node_name": "navy_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "navy_retry1",
+        "to_name": "pink",
+        "to_id": "n_0017"
+      }
+    },
+    {
+      "seq": 76,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777786,
+      "node_id": "n_0016",
+      "node_name": "navy_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "navy_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 77,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777805,
+      "node_id": "n_0016",
+      "node_name": "navy_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "navy_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 78,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777817,
+      "node_id": "n_0017",
+      "node_name": "pink",
+      "status": null,
+      "detail": {
+        "from_name": "pink",
+        "to_name": "maroon",
+        "to_id": "n_0019"
+      }
+    },
+    {
+      "seq": 79,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777829,
+      "node_id": "n_0017",
+      "node_name": "pink",
+      "status": null,
+      "detail": {
+        "from_name": "pink",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 80,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777838,
+      "node_id": "n_0017",
+      "node_name": "pink",
+      "status": null,
+      "detail": {
+        "from_name": "pink",
+        "to_name": "pink_retry1",
+        "to_id": "n_0018"
+      }
+    },
+    {
+      "seq": 81,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777853,
+      "node_id": "n_0018",
+      "node_name": "pink_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "pink_retry1",
+        "to_name": "maroon",
+        "to_id": "n_0019"
+      }
+    },
+    {
+      "seq": 82,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777864,
+      "node_id": "n_0018",
+      "node_name": "pink_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "pink_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 83,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777874,
+      "node_id": "n_0018",
+      "node_name": "pink_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "pink_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 84,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777886,
+      "node_id": "n_0019",
+      "node_name": "maroon",
+      "status": null,
+      "detail": {
+        "from_name": "maroon",
+        "to_name": "mint",
+        "to_id": "n_0021"
+      }
+    },
+    {
+      "seq": 85,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777898,
+      "node_id": "n_0019",
+      "node_name": "maroon",
+      "status": null,
+      "detail": {
+        "from_name": "maroon",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 86,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777907,
+      "node_id": "n_0019",
+      "node_name": "maroon",
+      "status": null,
+      "detail": {
+        "from_name": "maroon",
+        "to_name": "maroon_retry1",
+        "to_id": "n_0020"
+      }
+    },
+    {
+      "seq": 87,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777917,
+      "node_id": "n_0020",
+      "node_name": "maroon_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "maroon_retry1",
+        "to_name": "mint",
+        "to_id": "n_0021"
+      }
+    },
+    {
+      "seq": 88,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077793,
+      "node_id": "n_0020",
+      "node_name": "maroon_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "maroon_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 89,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777938,
+      "node_id": "n_0020",
+      "node_name": "maroon_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "maroon_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 90,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777953,
+      "node_id": "n_0021",
+      "node_name": "mint",
+      "status": null,
+      "detail": {
+        "from_name": "mint",
+        "to_name": "red",
+        "to_id": "n_0023"
+      }
+    },
+    {
+      "seq": 91,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777965,
+      "node_id": "n_0021",
+      "node_name": "mint",
+      "status": null,
+      "detail": {
+        "from_name": "mint",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 92,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0777974,
+      "node_id": "n_0021",
+      "node_name": "mint",
+      "status": null,
+      "detail": {
+        "from_name": "mint",
+        "to_name": "mint_retry1",
+        "to_id": "n_0022"
+      }
+    },
+    {
+      "seq": 93,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077799,
+      "node_id": "n_0022",
+      "node_name": "mint_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "mint_retry1",
+        "to_name": "red",
+        "to_id": "n_0023"
+      }
+    },
+    {
+      "seq": 94,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0778005,
+      "node_id": "n_0022",
+      "node_name": "mint_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "mint_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 95,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0778017,
+      "node_id": "n_0022",
+      "node_name": "mint_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "mint_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 96,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077803,
+      "node_id": "n_0023",
+      "node_name": "red",
+      "status": null,
+      "detail": {
+        "from_name": "red",
+        "to_name": "finish",
+        "to_id": "n_0025"
+      }
+    },
+    {
+      "seq": 97,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0778046,
+      "node_id": "n_0023",
+      "node_name": "red",
+      "status": null,
+      "detail": {
+        "from_name": "red",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 98,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077806,
+      "node_id": "n_0023",
+      "node_name": "red",
+      "status": null,
+      "detail": {
+        "from_name": "red",
+        "to_name": "red_retry1",
+        "to_id": "n_0024"
+      }
+    },
+    {
+      "seq": 99,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0778074,
+      "node_id": "n_0024",
+      "node_name": "red_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "red_retry1",
+        "to_name": "finish",
+        "to_id": "n_0025"
+      }
+    },
+    {
+      "seq": 100,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0778084,
+      "node_id": "n_0024",
+      "node_name": "red_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "red_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 101,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0778093,
+      "node_id": "n_0024",
+      "node_name": "red_retry1",
+      "status": null,
+      "detail": {
+        "from_name": "red_retry1",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 102,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0778108,
+      "node_id": "n_0025",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "from_name": "finish",
+        "to_name": "done",
+        "to_id": "n_0026"
+      }
+    },
+    {
+      "seq": 103,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0778115,
+      "node_id": "n_0025",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "from_name": "finish",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 104,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0778127,
+      "node_id": "n_0025",
+      "node_name": "finish",
+      "status": null,
+      "detail": {
+        "from_name": "finish",
+        "to_name": "abort",
+        "to_id": "n_0027"
+      }
+    },
+    {
+      "seq": 105,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.077818,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 106,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0778213,
+      "node_id": "n_0029",
+      "node_name": "anchor_sg.ready",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 107,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077825,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "anchor_sg.act",
+        "to_name": "anchor_sg.ready",
+        "to_id": "n_0029"
+      }
+    },
+    {
+      "seq": 108,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0778286,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 109,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0778317,
+      "node_id": "n_0031",
+      "node_name": "orange_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 110,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0778348,
+      "node_id": "n_0032",
+      "node_name": "orange_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 111,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0778377,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "orange_sg.act",
+        "to_name": "orange_sg.placed",
+        "to_id": "n_0031"
+      }
+    },
+    {
+      "seq": 112,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0778396,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "orange_sg.act",
+        "to_name": "orange_sg.retry",
+        "to_id": "n_0032"
+      }
+    },
+    {
+      "seq": 113,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0778432,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 114,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.077846,
+      "node_id": "n_0034",
+      "node_name": "purple_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 115,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0778477,
+      "node_id": "n_0035",
+      "node_name": "purple_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 116,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.07785,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "purple_sg.act",
+        "to_name": "purple_sg.placed",
+        "to_id": "n_0034"
+      }
+    },
+    {
+      "seq": 117,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077851,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "purple_sg.act",
+        "to_name": "purple_sg.retry",
+        "to_id": "n_0035"
+      }
+    },
+    {
+      "seq": 118,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0778542,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 119,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.077856,
+      "node_id": "n_0037",
+      "node_name": "yellow_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 120,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0778582,
+      "node_id": "n_0038",
+      "node_name": "yellow_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 121,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077861,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "yellow_sg.act",
+        "to_name": "yellow_sg.placed",
+        "to_id": "n_0037"
+      }
+    },
+    {
+      "seq": 122,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0778625,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "yellow_sg.act",
+        "to_name": "yellow_sg.retry",
+        "to_id": "n_0038"
+      }
+    },
+    {
+      "seq": 123,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.077937,
+      "node_id": "n_0039",
+      "node_name": "lime_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 124,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.07794,
+      "node_id": "n_0040",
+      "node_name": "lime_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 125,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779424,
+      "node_id": "n_0041",
+      "node_name": "lime_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 126,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0779443,
+      "node_id": "n_0039",
+      "node_name": "lime_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "lime_sg.act",
+        "to_name": "lime_sg.placed",
+        "to_id": "n_0040"
+      }
+    },
+    {
+      "seq": 127,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077946,
+      "node_id": "n_0039",
+      "node_name": "lime_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "lime_sg.act",
+        "to_name": "lime_sg.retry",
+        "to_id": "n_0041"
+      }
+    },
+    {
+      "seq": 128,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779493,
+      "node_id": "n_0042",
+      "node_name": "teal_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 129,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779517,
+      "node_id": "n_0043",
+      "node_name": "teal_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 130,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779538,
+      "node_id": "n_0044",
+      "node_name": "teal_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 131,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0779555,
+      "node_id": "n_0042",
+      "node_name": "teal_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "teal_sg.act",
+        "to_name": "teal_sg.placed",
+        "to_id": "n_0043"
+      }
+    },
+    {
+      "seq": 132,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0779567,
+      "node_id": "n_0042",
+      "node_name": "teal_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "teal_sg.act",
+        "to_name": "teal_sg.retry",
+        "to_id": "n_0044"
+      }
+    },
+    {
+      "seq": 133,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779588,
+      "node_id": "n_0045",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 134,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779614,
+      "node_id": "n_0046",
+      "node_name": "cyan_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 135,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779638,
+      "node_id": "n_0047",
+      "node_name": "cyan_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 136,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0779655,
+      "node_id": "n_0045",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_sg.act",
+        "to_name": "cyan_sg.placed",
+        "to_id": "n_0046"
+      }
+    },
+    {
+      "seq": 137,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0779672,
+      "node_id": "n_0045",
+      "node_name": "cyan_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "cyan_sg.act",
+        "to_name": "cyan_sg.retry",
+        "to_id": "n_0047"
+      }
+    },
+    {
+      "seq": 138,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.07797,
+      "node_id": "n_0048",
+      "node_name": "azure_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 139,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779748,
+      "node_id": "n_0049",
+      "node_name": "azure_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 140,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779765,
+      "node_id": "n_0050",
+      "node_name": "azure_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 141,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0779786,
+      "node_id": "n_0048",
+      "node_name": "azure_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "azure_sg.act",
+        "to_name": "azure_sg.placed",
+        "to_id": "n_0049"
+      }
+    },
+    {
+      "seq": 142,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.07798,
+      "node_id": "n_0048",
+      "node_name": "azure_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "azure_sg.act",
+        "to_name": "azure_sg.retry",
+        "to_id": "n_0050"
+      }
+    },
+    {
+      "seq": 143,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779824,
+      "node_id": "n_0051",
+      "node_name": "navy_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 144,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779848,
+      "node_id": "n_0052",
+      "node_name": "navy_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 145,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779865,
+      "node_id": "n_0053",
+      "node_name": "navy_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 146,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0779889,
+      "node_id": "n_0051",
+      "node_name": "navy_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "navy_sg.act",
+        "to_name": "navy_sg.placed",
+        "to_id": "n_0052"
+      }
+    },
+    {
+      "seq": 147,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0779898,
+      "node_id": "n_0051",
+      "node_name": "navy_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "navy_sg.act",
+        "to_name": "navy_sg.retry",
+        "to_id": "n_0053"
+      }
+    },
+    {
+      "seq": 148,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779927,
+      "node_id": "n_0054",
+      "node_name": "pink_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 149,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779953,
+      "node_id": "n_0055",
+      "node_name": "pink_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 150,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0779972,
+      "node_id": "n_0056",
+      "node_name": "pink_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 151,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.077999,
+      "node_id": "n_0054",
+      "node_name": "pink_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "pink_sg.act",
+        "to_name": "pink_sg.placed",
+        "to_id": "n_0055"
+      }
+    },
+    {
+      "seq": 152,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.078,
+      "node_id": "n_0054",
+      "node_name": "pink_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "pink_sg.act",
+        "to_name": "pink_sg.retry",
+        "to_id": "n_0056"
+      }
+    },
+    {
+      "seq": 153,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.078003,
+      "node_id": "n_0057",
+      "node_name": "maroon_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 154,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.078005,
+      "node_id": "n_0058",
+      "node_name": "maroon_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 155,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0780075,
+      "node_id": "n_0059",
+      "node_name": "maroon_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 156,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0780094,
+      "node_id": "n_0057",
+      "node_name": "maroon_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "maroon_sg.act",
+        "to_name": "maroon_sg.placed",
+        "to_id": "n_0058"
+      }
+    },
+    {
+      "seq": 157,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0780108,
+      "node_id": "n_0057",
+      "node_name": "maroon_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "maroon_sg.act",
+        "to_name": "maroon_sg.retry",
+        "to_id": "n_0059"
+      }
+    },
+    {
+      "seq": 158,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0780132,
+      "node_id": "n_0060",
+      "node_name": "mint_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 159,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0780156,
+      "node_id": "n_0061",
+      "node_name": "mint_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 160,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0780175,
+      "node_id": "n_0062",
+      "node_name": "mint_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 161,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0780196,
+      "node_id": "n_0060",
+      "node_name": "mint_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "mint_sg.act",
+        "to_name": "mint_sg.placed",
+        "to_id": "n_0061"
+      }
+    },
+    {
+      "seq": 162,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0780208,
+      "node_id": "n_0060",
+      "node_name": "mint_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "mint_sg.act",
+        "to_name": "mint_sg.retry",
+        "to_id": "n_0062"
+      }
+    },
+    {
+      "seq": 163,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0780237,
+      "node_id": "n_0063",
+      "node_name": "red_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 164,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0780258,
+      "node_id": "n_0064",
+      "node_name": "red_sg.placed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 165,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0780277,
+      "node_id": "n_0065",
+      "node_name": "red_sg.retry",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 166,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0780296,
+      "node_id": "n_0063",
+      "node_name": "red_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "red_sg.act",
+        "to_name": "red_sg.placed",
+        "to_id": "n_0064"
+      }
+    },
+    {
+      "seq": 167,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0780308,
+      "node_id": "n_0063",
+      "node_name": "red_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "red_sg.act",
+        "to_name": "red_sg.retry",
+        "to_id": "n_0065"
+      }
+    },
+    {
+      "seq": 168,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0780337,
+      "node_id": "n_0066",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "node_type": "script"
+      }
+    },
+    {
+      "seq": 169,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.0780356,
+      "node_id": "n_0067",
+      "node_name": "finish_sg.complete",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 170,
+      "event_type": "node_registered",
+      "timestamp": 1792728209.078038,
+      "node_id": "n_0068",
+      "node_name": "finish_sg.failed",
+      "status": null,
+      "detail": {
+        "node_type": "noop"
+      }
+    },
+    {
+      "seq": 171,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0780401,
+      "node_id": "n_0066",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "finish_sg.act",
+        "to_name": "finish_sg.complete",
+        "to_id": "n_0067"
+      }
+    },
+    {
+      "seq": 172,
+      "event_type": "edge_registered",
+      "timestamp": 1792728209.0780413,
+      "node_id": "n_0066",
+      "node_name": "finish_sg.act",
+      "status": null,
+      "detail": {
+        "from_name": "finish_sg.act",
+        "to_name": "finish_sg.failed",
+        "to_id": "n_0068"
+      }
+    },
+    {
+      "seq": 173,
+      "event_type": "node_started",
+      "timestamp": 1792728209.0825577,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": "running",
+      "detail": {}
+    },
+    {
+      "seq": 174,
+      "event_type": "inputs_recorded",
+      "timestamp": 1792728209.083585,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0,
+        "keys": []
+      }
+    },
+    {
+      "seq": 175,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728209.094005,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 0,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 176,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728215.2432644,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 1,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 177,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728215.244809,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 2,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 178,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728218.8127568,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 3,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 179,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728221.3639097,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 4,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 180,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728221.9217098,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 5,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 181,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728221.9343362,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 6,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 182,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728223.7698553,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 7,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 183,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728223.7814078,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 8,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 184,
+      "event_type": "output_recorded",
+      "timestamp": 1792728223.781675,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0
+      }
+    },
+    {
+      "seq": 185,
+      "event_type": "node_finished",
+      "timestamp": 1792728223.7816863,
+      "node_id": "n_0028",
+      "node_name": "anchor_sg.act",
+      "status": "ok",
+      "detail": {
+        "success": true,
+        "duration_ms": 14699.13
+      }
+    },
+    {
+      "seq": 186,
+      "event_type": "node_started",
+      "timestamp": 1792728223.790122,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": "running",
+      "detail": {}
+    },
+    {
+      "seq": 187,
+      "event_type": "inputs_recorded",
+      "timestamp": 1792728223.7904913,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0,
+        "keys": []
+      }
+    },
+    {
+      "seq": 188,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728229.2768042,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 0,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 189,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728229.2899797,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 1,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 190,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728229.304614,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 2,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 191,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728229.7901337,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 3,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 192,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728229.8021255,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 4,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 193,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728235.5124903,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 5,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 194,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728235.51555,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 6,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 195,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728237.3530319,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 7,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 196,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728238.9150577,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 8,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 197,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728239.477191,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 9,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 198,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728239.4902604,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 10,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 199,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728241.505299,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 11,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 200,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728241.5166209,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 12,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 201,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728246.927739,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 13,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 202,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728246.9310377,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 14,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 203,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728246.9432003,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 15,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 204,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728246.9587612,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 16,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 205,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728246.9719183,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 17,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 206,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728248.0874825,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 18,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 207,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728248.1027975,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 19,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 208,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728250.927516,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 20,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 209,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728250.9403362,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 21,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 210,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728252.9592736,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 22,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 211,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728253.5706577,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 23,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 212,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728253.584372,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 24,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 213,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728254.1164527,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 25,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 214,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728259.55869,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 26,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 215,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728259.5705554,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 27,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 216,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728259.5852616,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 28,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 217,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728260.794812,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 29,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 218,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728266.3405054,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 30,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 219,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728266.3526065,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 31,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 220,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728266.3666055,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 32,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 221,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728266.8928323,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 33,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 222,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728267.614278,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 34,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 223,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728267.6313484,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 35,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 224,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728268.2972279,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 36,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 225,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728269.0410528,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 37,
+        "tool": "robot.wait_steps"
+      }
+    },
+    {
+      "seq": 226,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728274.5421863,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 38,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 227,
+      "event_type": "output_recorded",
+      "timestamp": 1792728274.5428302,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0
+      }
+    },
+    {
+      "seq": 228,
+      "event_type": "node_finished",
+      "timestamp": 1792728274.542846,
+      "node_id": "n_0030",
+      "node_name": "orange_sg.act",
+      "status": "ok",
+      "detail": {
+        "success": true,
+        "duration_ms": 50752.72
+      }
+    },
+    {
+      "seq": 229,
+      "event_type": "node_started",
+      "timestamp": 1792728274.5483716,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": "running",
+      "detail": {}
+    },
+    {
+      "seq": 230,
+      "event_type": "inputs_recorded",
+      "timestamp": 1792728274.5492997,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0,
+        "keys": []
+      }
+    },
+    {
+      "seq": 231,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728280.068444,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 0,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 232,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728280.0823774,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 1,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 233,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728280.0972326,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 2,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 234,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728280.114284,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 3,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 235,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728280.7566183,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 4,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 236,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728286.3582232,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 5,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 237,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728286.3595288,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 6,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 238,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728286.3741367,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 7,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 239,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728287.0077426,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 8,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 240,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728287.7408879,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 9,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 241,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728287.7576463,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 10,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 242,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728290.136524,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 11,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 243,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728290.1510293,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 12,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 244,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728295.6763186,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 13,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 245,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728295.68193,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 14,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 246,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728295.6977184,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 15,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 247,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728295.7146885,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 16,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 248,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728295.7316744,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 17,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 249,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728296.5136569,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 18,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 250,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728296.5307176,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 19,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 251,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728299.4960775,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 20,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 252,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728299.5120156,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 21,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 253,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728300.3869972,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 22,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 254,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728301.1832302,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 23,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 255,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728301.2008638,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 24,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 256,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728301.9214718,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 25,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 257,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728307.4595609,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 26,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 258,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728307.4759052,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 27,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 259,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728307.4938307,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 28,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 260,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728308.8567111,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 29,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 261,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728314.4239922,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 30,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 262,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728314.4404893,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 31,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 263,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728314.457808,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 32,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 264,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728316.9972699,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 33,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 265,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728317.8740814,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 34,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 266,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728317.8929634,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 35,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 267,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728318.6954043,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 36,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 268,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728319.586068,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 37,
+        "tool": "robot.wait_steps"
+      }
+    },
+    {
+      "seq": 269,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728325.204214,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 38,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 270,
+      "event_type": "output_recorded",
+      "timestamp": 1792728325.2049656,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0
+      }
+    },
+    {
+      "seq": 271,
+      "event_type": "node_finished",
+      "timestamp": 1792728325.2049994,
+      "node_id": "n_0033",
+      "node_name": "purple_sg.act",
+      "status": "ok",
+      "detail": {
+        "success": true,
+        "duration_ms": 50656.61
+      }
+    },
+    {
+      "seq": 272,
+      "event_type": "node_started",
+      "timestamp": 1792728325.26241,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": "running",
+      "detail": {}
+    },
+    {
+      "seq": 273,
+      "event_type": "inputs_recorded",
+      "timestamp": 1792728325.263056,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "asset_count": 0,
+        "keys": []
+      }
+    },
+    {
+      "seq": 274,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728330.8732247,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 0,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 275,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728330.8924017,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 1,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 276,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728330.9103637,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 2,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 277,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728330.9343324,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 3,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 278,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728331.717088,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 4,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 279,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728337.2933109,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 5,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 280,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728337.295942,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 6,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 281,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728337.3161073,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 7,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 282,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728338.0960147,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 8,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 283,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728339.0034997,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 9,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 284,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728339.0231853,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 10,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 285,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728341.9305983,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 11,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 286,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728341.9480295,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 12,
+        "tool": "robot.get_ee_pose"
+      }
+    },
+    {
+      "seq": 287,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728347.5275197,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 13,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 288,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728347.5331357,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 14,
+        "tool": "robot.grasp_frame"
+      }
+    },
+    {
+      "seq": 289,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728347.5552318,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 15,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 290,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728347.575874,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 16,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 291,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728347.596168,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 17,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 292,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728348.5394235,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 18,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 293,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728348.5599508,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 19,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 294,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728352.9312086,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 20,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 295,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728352.9496353,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 21,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 296,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728354.308152,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 22,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 297,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728355.2654984,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 23,
+        "tool": "robot.set_grip"
+      }
+    },
+    {
+      "seq": 298,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728355.286363,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 24,
+        "tool": "puzzle.plan_pose"
+      }
+    },
+    {
+      "seq": 299,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728356.11761,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 25,
+        "tool": "robot.execute_trajectory"
+      }
+    },
+    {
+      "seq": 300,
+      "event_type": "subcall_recorded",
+      "timestamp": 1792728361.7561083,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": null,
+      "detail": {
+        "seq": 26,
+        "tool": "vision.observe"
+      }
+    },
+    {
+      "seq": 301,
+      "event_type": "node_finished",
+      "timestamp": 1792728361.7563076,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": "error",
+      "detail": {
+        "success": false,
+        "duration_ms": 36493.88
+      }
+    },
+    {
+      "seq": 302,
+      "event_type": "error_recorded",
+      "timestamp": 1792728361.756323,
+      "node_id": "n_0036",
+      "node_name": "yellow_sg.act",
+      "status": "error",
+      "detail": {
+        "error": "Node 'yellow_sg.act' failed: RuntimeError: RGB perception uncertain: {'yellow': 'inconsistent or occluded silhouettes'}"
+      }
+    }
+  ]
+}

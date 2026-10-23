@@ -28,12 +28,15 @@ def main():
         "pyramid_live_success.mp4", "pyramid_live_success_final.png",
         "pyramid_live_workcell_final.png", "pyramid_live_reference_strip.png",
         "pyramid_live_final_look.png", "pyramid_live_final_beside.png",
+        "vision_scattered_201.jpg", "vision_scattered_202.jpg", "vision_scattered_203.jpg",
+        "vision_cyan_seed101.mp4", "vision_cyan_seed101_final.png",
     ):
         shutil.copy2(ROOT / "results" / name, media / name)
     for name in (
         "flat_live_result.json", "pyramid_live_result.json", "pyramid_live_summary.json",
         "pyramid_v40_evaluation.json", "pyramid_live_final_metrics.json",
         "pyramid_live_check.json", "controlled_benchmark.json", "pyramid_search_ledger.json",
+        "vision_perception.json", "vision_execution.json",
     ):
         shutil.copy2(ROOT / "results" / name, data / name)
     workflow = read("graphs/pyramid_v40/workflow.json")
