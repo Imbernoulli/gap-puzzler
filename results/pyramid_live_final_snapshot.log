@@ -1,0 +1,6 @@
+png: /srv/home/bohanlyu/gap-puzzler/live/run/snap_038.png
+camera: workcell
+width: 960
+height: 540
+mean: 64.2
+beside: /srv/home/bohanlyu/gap-puzzler/live/run/snap_038_vs_ref.png

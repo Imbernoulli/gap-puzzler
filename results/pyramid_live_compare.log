@@ -1,0 +1,11 @@
+take: pyramid_v40_take
+score: 0.1516
+strip: /srv/home/bohanlyu/gap-puzzler/live/run/cmp_024_strip.png
+verdict: 1 of 1 did what the clip did
+report: 
+    board: moved in both; clip (+344, -58) px, take (-15, -3) px
+    pyramid_case_setup clip   0.0s = take   0.0s (step 0): board IoU 0.00
+    pyramid_partial clip  36.0s = take 110.9s (step 5543): board IoU 0.18
+    ending       clip 106.0s = take 326.9s (step 16344): board IoU 0.05
+    pyramid_complete clip 110.0s = take 339.9s (step 16993): board IoU 0.38
+logged: 57

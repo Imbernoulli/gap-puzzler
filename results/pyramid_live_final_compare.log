@@ -1,0 +1,5 @@
+Recorded final frame comparison; read-only, no simulation replay.
+Take pyramid_v40_take, frame 243, step 16993, sim time 339.86 s.
+The recorded segmentation is upsampled with nearest neighbor to the RGB dimensions.
+The earlier cmp_025 comparison used the post-check reset scene and is excluded.
+board: sim is 1.47x the photo's size (w 1.17x, h 1.00x), centre 24 px left, 21 px high (4.9% of the frame), IoU 0.38

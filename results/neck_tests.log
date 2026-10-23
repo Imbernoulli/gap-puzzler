@@ -1,0 +1,14 @@
+test_exact_cover_from_challenge (test_model.TestChallenge.test_exact_cover_from_challenge) ... ok
+test_unsatisfiable_observation (test_model.TestChallenge.test_unsatisfiable_observation) ... ok
+test_airborne_board_rejected (test_model.TestStrictGrader.test_airborne_board_rejected) ... ok
+test_airborne_piece_rejected (test_model.TestStrictGrader.test_airborne_piece_rejected) ... ok
+test_closed_hands_rejected (test_model.TestStrictGrader.test_closed_hands_rejected) ... ok
+test_complete_released_board (test_model.TestStrictGrader.test_complete_released_board) ... ok
+test_moving_board_reference (test_model.TestStrictGrader.test_moving_board_reference) ... ok
+test_nearby_hands_rejected (test_model.TestStrictGrader.test_nearby_hands_rejected) ... ok
+test_one_wrong_bead_footprint_rejected (test_model.TestStrictGrader.test_one_wrong_bead_footprint_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.202s
+
+OK

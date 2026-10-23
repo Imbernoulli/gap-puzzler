@@ -1,0 +1,34 @@
+{
+  "desktop": "1440x1000",
+  "mobile": "390x844",
+  "javascript_errors": [],
+  "http_errors": [],
+  "checked": [
+    "oracle-state disclosure",
+    "all 12 checkpoint buttons",
+    "actual cyan and navy retries",
+    "both assembly videos and metadata",
+    "accessible task-tab keyboard navigation",
+    "playback speed",
+    "clipboard command copy",
+    "all images loaded",
+    "responsive overflow",
+    "English evidence report"
+  ],
+  "scope": "English website and installation verification only; retained physical trajectories use oracle observations.",
+  "unit_tests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "workflow_validation": {
+    "flat_v10": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "pyramid_v40": {
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  "physics_experiments_added_for_publication": 0
+}

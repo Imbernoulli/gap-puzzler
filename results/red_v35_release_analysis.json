@@ -1,0 +1,10 @@
+{
+  "scope": "Preset diagnostic, not full assembly success",
+  "source": "runs/pyramid_v35_red_diagnostic/result.json",
+  "failure": "Red was seated before the narrow release; retreat lifted the still-trapped part.",
+  "full_task_success": false,
+  "recorded_min_bead_error_m": 0.00189,
+  "commanded_release_m": 0.035,
+  "measured_jaw_width_at_min_m": 0.0528,
+  "final_max_red_error_m": 0.03845265217046976
+}

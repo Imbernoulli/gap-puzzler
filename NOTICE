@@ -1,0 +1,21 @@
+IQ Puzzler Pro — oracle-state physical-control baseline
+
+Project code and documentation: Bohan Lyu and contributors.
+The root Apache-2.0 license applies to original project code and documentation.
+
+Pinned third-party source is included as Git submodules and retains its own
+licenses and notices: RoboSimStudio, Graph-as-Policy, and Open Robot Skills.
+GaP core and individual robot assets may carry different licenses; consult each
+submodule's LICENSE and NOTICE files. No third-party license is replaced here.
+
+The optional fleet helpers derive from Imbernoulli/gap-knot at
+cbac9cb771e916e0d85c22d8a9fba95f1972bda3.
+
+Reference imagery comes from https://www.youtube.com/watch?v=PSgC31TvdxA.
+Reference stills are included for source-attributed reconstruction comparisons;
+the full source clip is not redistributed. The root code license does not grant
+rights in this reference imagery or in the commercial puzzle's trademarks.
+
+The existing experiments use privileged simulator object poses. They are not a
+completed vision-only policy and do not establish generalization to arbitrary
+scattered layouts or flat-to-pyramid conversion.

@@ -1,0 +1,79 @@
+[pool puzzler-compare-170707] code bundle a3bb0bc9cfd7 (1.5 MB); 10 job(s) -> /srv/home/bohanlyu/gap-puzzler/runs/paired_final
+[pool puzzler-compare-170707] creating 4 x 8 vCPU / 16 GiB / 30 GiB from gap-knot-rss-abed33ba-c8m16d30
+[pool puzzler-compare-170707] up af0f3f43-d861-4de3-947c-13f41b171115 (8 vCPU / 16 GiB) in 2s
+[pool puzzler-compare-170707] up fc61eb58-00c5-48d7-8b65-3c8b8cf4e3a8 (8 vCPU / 16 GiB) in 1s
+[pool puzzler-compare-170707] up 0d356780-5813-4323-a20a-8ae1b01a6ddf (8 vCPU / 16 GiB) in 1s
+[pool puzzler-compare-170707] up 9c8bf6b6-75b9-4b8a-ab38-e02d92f37ed3 (8 vCPU / 16 GiB) in 1s
+[pool puzzler-compare-170707] fixed-train-s21: ok exit=0 run=275.1s attempts=1
+[pool puzzler-compare-170707] fixed-train-s20: ok exit=0 run=322.2s attempts=1
+[pool puzzler-compare-170707] adaptive-held_out-s101: ok exit=0 run=113.8s attempts=1
+[pool puzzler-compare-170707] adaptive-train-s20: ok exit=0 run=508.6s attempts=1
+[pool puzzler-compare-170707] adaptive-train-s21: ok exit=0 run=549.5s attempts=1
+[pool puzzler-compare-170707] adaptive-held_out-s100: ok exit=0 run=280.0s attempts=1
+[pool puzzler-compare-170707] fast-held_out-s101: ok exit=0 run=108.9s attempts=1
+[pool puzzler-compare-170707] fast-held_out-s100: ok exit=0 run=221.2s attempts=1
+[pool puzzler-compare-170707] fast-train-s20: ok exit=0 run=551.6s attempts=1
+[pool puzzler-compare-170707] fast-train-s21: ok exit=0 run=498.3s attempts=1
+[pool puzzler-compare-170707] deleting 1 sandbox(es)
+{
+  "protocol_bundle": "a3bb0bc9cfd7",
+  "training": {
+    "fixed": {
+      "trials": 2,
+      "successes": 0,
+      "success_rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.6576280471103807
+      ],
+      "mean_seated_pieces": 7,
+      "mean_success_sim_s": null,
+      "success_parts_per_hour": null
+    },
+    "adaptive": {
+      "trials": 2,
+      "successes": 2,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.34237195288961925,
+        1.0
+      ],
+      "mean_seated_pieces": 12,
+      "mean_success_sim_s": 270.25,
+      "success_parts_per_hour": 13.32099907493062
+    },
+    "fast": {
+      "trials": 2,
+      "successes": 2,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.34237195288961925,
+        1.0
+      ],
+      "mean_seated_pieces": 12,
+      "mean_success_sim_s": 249.60000000000002,
+      "success_parts_per_hour": 14.423076923076922
+    }
+  },
+  "selected": "fast",
+  "selected_graph": "graphs/benchmark_fast",
+  "held_out": {
+    "trials": 2,
+    "successes": 0,
+    "success_rate": 0.0,
+    "wilson_95": [
+      0.0,
+      0.6576280471103807
+    ],
+    "mean_seated_pieces": 4.5,
+    "mean_success_sim_s": null,
+    "success_parts_per_hour": null
+  },
+  "speed_time_reduction_fraction": 0.07641073080481031,
+  "strict_success": "Native RSS goal, completed GaP graph and independent released-trajectory audit all pass.",
+  "limitations": [
+    "Two training and two held-out seeds: wide confidence intervals.",
+    "Oracle perception; simulation only.",
+    "Small-sample rates do not establish broad robustness."
+  ]
+}

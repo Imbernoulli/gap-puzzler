@@ -1,0 +1,129 @@
+{
+  "success": false,
+  "rss_success": false,
+  "seed": 0,
+  "variant": {
+    "mode": "flat",
+    "seed": 0,
+    "board_dx": 0.0,
+    "board_dy": 0.0,
+    "board_yaw": 0.0,
+    "piece_jitter": 0.0,
+    "piece_yaw": 0.0,
+    "friction": 0.65,
+    "grasp_bias": 0.0
+  },
+  "graph": "graphs/flat_v8",
+  "steps": 1,
+  "sim_time_s": 0.02,
+  "completion_step": null,
+  "control_hz": 50.0,
+  "wall_s": 3.692353919148445,
+  "final": {
+    "success": false,
+    "bead_error_m": {
+      "yellow": 0.1958509065450995,
+      "purple": 0.19668972016543404,
+      "cyan": 0.28338811373790124,
+      "lime": 0.27801541856697737,
+      "mint": 0.22504569160655033,
+      "maroon": 0.20677002865762067,
+      "teal": 0.2716148746959161,
+      "orange": 0.2433472000727299,
+      "navy": 0.29298249797799264,
+      "pink": 0.20712938955707885,
+      "red": 0.3536050822910771,
+      "azure": 0.2337581264965407
+    },
+    "speed_mps": {
+      "yellow": 0.004291178909380147,
+      "purple": 0.004291999770741662,
+      "cyan": 0.004330870843617696,
+      "lime": 0.004292204684946526,
+      "mint": 0.004285223535542837,
+      "maroon": 0.004297999793848191,
+      "teal": 0.004303958617995807,
+      "orange": 0.004289396776722264,
+      "navy": 0.004300697895285973,
+      "pink": 0.004288312639120427,
+      "red": 0.004286946617438561,
+      "azure": 0.004286371702519898
+    },
+    "hands": [
+      {
+        "arm": "left",
+        "clearance": 0.3584866029696204,
+        "width": 0.023373056203126907
+      },
+      {
+        "arm": "right",
+        "clearance": 0.3583678607074874,
+        "width": 0.023373056203126907
+      }
+    ],
+    "board_pose": [
+      0.4650000035762787,
+      -1.3693950487447815e-12,
+      0.7529895305633545,
+      2.1619327161825908e-10,
+      2.9045756946288748e-06,
+      -2.484817364888092e-13,
+      1.0
+    ],
+    "finite": true,
+    "board_level": true,
+    "board_resting": true
+  },
+  "events": [],
+  "error": "",
+  "graph_trace": {
+    "graph_result": {
+      "still_running_at_episode_end": true,
+      "close_kind": "truncated"
+    },
+    "steps": 1
+  },
+  "workflow_sha256": "fd152e8a60f81bdcc3d51fc24d5e78022d218a41ccf139dfe30af4d6572b1983",
+  "checkpoint_results": [],
+  "source_sha256": {
+    "puzzler/__init__.py": "af1d4cae87e1938e53090f2bee3033e844b7e2acca5a3796acd97d7e3b117430",
+    "puzzler/assets.py": "a03c17a81af41b34f1c7526988b8f7641952e62fb23fe650306412115ed9b183",
+    "puzzler/controller.py": "2d0284d2e913147addbdfb78d9c04984e8ed9b57ff1a3077af7467aae05b3382",
+    "puzzler/episode.py": "10e5398db0a65c785fd7991a02aef4d32ef603facc2d6367d7b8d9d6df14932b",
+    "puzzler/model.py": "628877753beb8a640f8056465703af53198f68dd3669b710591f7d37d8a44314",
+    "puzzler/policy.py": "187a8e41cd7335ef9aa7bc2d5c9e98d4c8db46d5ecda891d71b6c5fbc50ef927",
+    "puzzler/pyramid.py": "2b3dde33d1f23b4a139ed717c0fddc3bc450fdc3a73e8a01b0e505592c3dece8",
+    "puzzler/task.py": "d620d188645d29917dde5978bb86d86ba676e66f27bdf32bd19358e2de2e9893",
+    "puzzler/tools.py": "0b5462591bbffa718f9e68575225981917995db2c4b460e5153e2fa9a153c9f4",
+    "graphs/flat_v8/checkpoints/anchor_sg.py": "905e88b1c5b63b3b4af2a3ce09e4172cdb2cd07d98d056f92519bc78e97d7a4a",
+    "graphs/flat_v8/checkpoints/azure_sg.py": "287e1e403c167048a2d126dfb8df8f68ed789ede98a27d22043668a2c194265a",
+    "graphs/flat_v8/checkpoints/cyan_sg.py": "dd47cea0eb0e029801f75a7c5d77e281ccd62935513adc8264b0e358e832c629",
+    "graphs/flat_v8/checkpoints/finish_sg.py": "0a095d428b96e242d984f35bbd86811f1773e7b9f8944019c0e07a8914cbc255",
+    "graphs/flat_v8/checkpoints/lime_sg.py": "dbc2bd592166e4be669a9bcc33f37440d16e73bf1c266db7f94921b396b2d899",
+    "graphs/flat_v8/checkpoints/maroon_sg.py": "5a0261c1b00ff20bb52bb198ca96fe5a064693edd58f59e85352db71aec2dfaf",
+    "graphs/flat_v8/checkpoints/mint_sg.py": "ac100c45e0dcb7319d4ea39f4f6c95b0f8c3ecb35178c3b3facbb5183a187eb2",
+    "graphs/flat_v8/checkpoints/navy_sg.py": "93b5e45f45c83bc394a3a0f55df68343ee5f91673d7bdf0ef1caa1c6fea0ed21",
+    "graphs/flat_v8/checkpoints/orange_sg.py": "8097129278a3263570849bf41054e8ca306cd65ee7955b61084fcc27825e7b16",
+    "graphs/flat_v8/checkpoints/pink_sg.py": "f6f3e0a1eafd9be0d180a97a030018851ed4e159bd6af968185a5559af4e6016",
+    "graphs/flat_v8/checkpoints/purple_sg.py": "66b4e4b4fc28cd7cbb8dbcfae821a442a262f001667fd8aba8f51556f61f0906",
+    "graphs/flat_v8/checkpoints/red_sg.py": "95b1fd7b45530a8144c84dd19a66c1ce3e05adbebcbad088940d0951a121671a",
+    "graphs/flat_v8/checkpoints/teal_sg.py": "97b35a094ad92c1a5d882f0512ade56654cde1078fb7fa39644a0038b24c7cf8",
+    "graphs/flat_v8/checkpoints/yellow_sg.py": "e4f79b8289ad9a0235e7c7d25cc5cebbcbbf30a2f5fdff662a27dd6c0d4c8ffd",
+    "graphs/flat_v8/scripts/anchor.py": "7b472fc4f307f53f4875760ee72f2e4939c96475f8c19ceba114e4f8524e841e",
+    "graphs/flat_v8/scripts/azure.py": "7e70d8c650115f121976f36bfb037078b592d2a787e1619d8d9b548f1b4caa02",
+    "graphs/flat_v8/scripts/cyan.py": "1209d1069b1aa0d3ef15670fbad34f095339b26436d184c59ea47ebd7c5e398a",
+    "graphs/flat_v8/scripts/finish.py": "1269700cebba100a9174c03798aa66ecf1848826948527b651b27107978a881f",
+    "graphs/flat_v8/scripts/lime.py": "ec46eb217d66166cbece3c6c9441eba5b5d1269c04e021ed0c89f0ec54e48949",
+    "graphs/flat_v8/scripts/maroon.py": "e5a8da585d13b1986be10d25f9f580d5a3a565a6e7e4329eb7f27d355aaa5554",
+    "graphs/flat_v8/scripts/mint.py": "4e0733ea2fb176af9e74ea3dac2655879571027606a570420136008d4fa03c5f",
+    "graphs/flat_v8/scripts/navy.py": "3394ea2029ccd43ad51ff68ac5fbd1743475fa2b91e36f847a2f5133fd2b451c",
+    "graphs/flat_v8/scripts/orange.py": "92024ecd5a0292fa2be86afc749416bb8e50d2ec2b530bae64e7d9eec9deb2d6",
+    "graphs/flat_v8/scripts/pink.py": "323339976972dc371e485d4a7e97532bbdd7552277b57125553cc7a324023f6d",
+    "graphs/flat_v8/scripts/purple.py": "7e04c863f3d5c64f6fcc9227ae63080380a3402116442aba1b337050ec7007b7",
+    "graphs/flat_v8/scripts/red.py": "3df9d4369483b0d643e01a28bf21cb2ddd5e3ad474d4d869f2f92d152be948a9",
+    "graphs/flat_v8/scripts/teal.py": "cf55a8a99aa892ca861d053b6c2e6822e21f78289d7b8bab1261a243fb4f729c",
+    "graphs/flat_v8/scripts/yellow.py": "80c06f3d876e9433a69b5917c4834271fbe0df5c03fda13c78f9252bd400cd1a",
+    "graphs/flat_v8/params.json": "3e69cfcd11db73110520e671c9dc60b646be5e7caac8322509b8629dff7feadf",
+    "assets/pyramid_upright_plan.json": "e18f1d978d37dd96440a5bd5a4395ed81cd1a87fba90abd0c1ce09ba2b814dea"
+  }
+}

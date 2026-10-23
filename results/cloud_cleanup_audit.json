@@ -1,0 +1,105 @@
+{
+  "all_recorded_pools_empty": true,
+  "pools": [
+    {
+      "file": "runs/flat_v9_training/cleanup.json",
+      "pool": "puzzler-165838",
+      "remaining": []
+    },
+    {
+      "file": "runs/daytona_flat_v8_train/cleanup.json",
+      "pool": "puzzler-164527",
+      "remaining": []
+    },
+    {
+      "file": "runs/daytona_flat_v5/cleanup.json",
+      "pool": "puzzler-163058",
+      "remaining": []
+    },
+    {
+      "file": "runs/daytona_flat_v6/cleanup.json",
+      "pool": "puzzler-164016",
+      "remaining": []
+    },
+    {
+      "file": "runs/pyramid_cartesian_trials/cleanup.json",
+      "pool": "puzzler-180919",
+      "remaining": []
+    },
+    {
+      "file": "runs/paired_final/cleanup.json",
+      "pool": "puzzler-compare-170707",
+      "remaining": []
+    },
+    {
+      "file": "runs/pyramid_v15_nominal/cleanup.json",
+      "pool": "puzzler-172921",
+      "remaining": []
+    },
+    {
+      "file": "runs/pyramid_v37_nominal/cleanup.json",
+      "pool": "puzzler-181744",
+      "remaining": []
+    },
+    {
+      "file": "runs/pyramid_v21_nominal/cleanup.json",
+      "pool": "puzzler-173910",
+      "remaining": []
+    },
+    {
+      "file": "runs/flat_v10_nominal/cleanup.json",
+      "pool": "puzzler-170454",
+      "remaining": []
+    },
+    {
+      "file": "runs/pyramid_precision_v4_nominal/cleanup.json",
+      "pool": "puzzler-180203",
+      "remaining": []
+    },
+    {
+      "file": "runs/pyramid_v37_repeat/cleanup.json",
+      "pool": "puzzler-182424",
+      "remaining": []
+    },
+    {
+      "file": "runs/pyramid_v10_nominal/cleanup.json",
+      "pool": "puzzler-170529",
+      "remaining": []
+    },
+    {
+      "file": "runs/pyramid_v32_nominal/cleanup.json",
+      "pool": "puzzler-181305",
+      "remaining": []
+    },
+    {
+      "file": "runs/fast_robust_final/cleanup.json",
+      "pool": "puzzler-frozen-171434",
+      "remaining": []
+    },
+    {
+      "file": "runs/pyramid_v40_nominal/cleanup.json",
+      "pool": "puzzler-182842",
+      "remaining": []
+    },
+    {
+      "file": "runs/flat_learning/held_out/cleanup.json",
+      "pool": "puzzler-171344",
+      "remaining": []
+    },
+    {
+      "file": "runs/flat_learning/train_01/cleanup.json",
+      "pool": "puzzler-165556",
+      "remaining": []
+    },
+    {
+      "file": "runs/flat_learning/train_00/cleanup.json",
+      "pool": "puzzler-164944",
+      "remaining": []
+    },
+    {
+      "file": "runs/flat_learning/train_02/cleanup.json",
+      "pool": "puzzler-170552",
+      "remaining": []
+    }
+  ]
+}

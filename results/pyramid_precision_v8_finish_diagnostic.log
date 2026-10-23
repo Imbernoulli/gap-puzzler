@@ -1,0 +1,25 @@
+Warp CUDA error 100: no CUDA-capable device is detected (in function init_cuda_driver, /builds/omniverse/warp/warp/native/cuda_util.cpp:333)
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, CUDA driver not available (NVRTC compilation available)
+   Devices:
+     "cpu"      : "x86_64"
+   Kernel cache:
+     /home/bohanlyu/.cache/warp/1.18.0
+Module newton._src.geometry.inertia f6b4bd8 load on device 'cpu' took 1.81 ms  (cached)
+Module warp._src.coloring 811e0ea load on device 'cpu' took 0.44 ms  (cached)
+Module validate_and_correct_inertia_kernel_1ff2ac62 6ad45b8 load on device 'cpu' took 0.27 ms  (cached)
+Module newton._src.geometry.bvh 4a1c07f load on device 'cpu' took 0.24 ms  (cached)
+Module newton._src.sim.articulation 2e73608 load on device 'cpu' took 0.26 ms  (cached)
+model has 107 joint coords (LM cholesky tile overflows shared memory); cartesian tracking runs the FD solver instead
+model has 107 joint coords (LM cholesky tile overflows shared memory); cartesian tracking runs the FD solver instead
+Module newton._src.solvers.mujoco.kernels 7f286e9 load on device 'cpu' took 0.64 ms  (cached)
+/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/mujoco_warp/_src/io.py:863: UserWarning: MULTICCD is enabled, but the scene contains CCD pairs without multicontact support: [('CAPSULE', 'MESH')]. At most 1 contact will be generated for these pairs.
+  warnings.warn(
+[rss] cpu (no CUDA device) · CUDA graphs off · renderer tiled (cpu is not a CUDA device)
+Module robosimstudio.core.readback 990015d load on device 'cpu' took 0.71 ms  (cached)
+Module robosimstudio.solvers.ik.arm_ik 7230c38 load on device 'cpu' took 0.55 ms  (cached)
+Module robosimstudio.solvers.motion.gripper 74f4922 load on device 'cpu' took 0.62 ms  (cached)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+subgraph 'red_sg' raised Node 'red_sg.act' failed: Full-pose planning refused {'joints': [2.431363821029663, 2.7761428356170654, 1.319272518157959, -1.5707999467849731, 0.43100985884666443, -1.3918489217758179], 'current': [1.293025016784668, 2.263734817504883, 2.014167070388794, -1.5697377920150757, 0.4378720819950104, -1.0077776908874512], 'position_error_m': 0.0545294365017271, 'rotation_error_rad': 0.2135652894726282, 'seed_kind': 'nearby_verified', 'seed_attempts': 5, 'joint_limit_margin_rad': 0.0}; routing to on_error='error'
+workflow execution failed: workflow terminated at end node 'abort' (failure); first node error -- red_sg.act: Node 'red_sg.act' failed: RuntimeError: Full-pose planning refused {'joints': [2.431363821029663, 2.7761428356170654, 1.319272518157959, -1.5707999467849731, 0.43100985884666443, -1.3918489217758179], 'current': [1.293025016784668, 2.263734817504883, 2.014167070388794, -1.5697377920150757, 0.4378720819950104, -1.0077776908874512], 'position_error_m': 0.0545294365017271, 'rotation_error_rad': 0.2135652894726282, 'seed_kind': 'nearby_verified', 'seed_attempts': 5, 'joint_limit_margin_rad': 0.0}
+{"success": false, "seed": 0, "steps": 2714, "sim_time_s": 54.28, "wall_s": 136.32849888084456, "error": ""}

@@ -1,0 +1,100 @@
+{
+  "selected": "fast_robust",
+  "training_seeds": [
+    20,
+    21
+  ],
+  "training": {
+    "fixed": {
+      "trials": 2,
+      "successes": 0,
+      "success_rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.6576280471103807
+      ],
+      "mean_seated_pieces": 7,
+      "mean_success_sim_s": null,
+      "completed_puzzles_per_sim_hour": null,
+      "mean_success_wall_s": null,
+      "completed_puzzles_per_serial_wall_hour": null
+    },
+    "adaptive": {
+      "trials": 2,
+      "successes": 2,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.34237195288961925,
+        1.0
+      ],
+      "mean_seated_pieces": 12,
+      "mean_success_sim_s": 270.25,
+      "completed_puzzles_per_sim_hour": 13.32099907493062,
+      "mean_success_wall_s": 525.1922164680436,
+      "completed_puzzles_per_serial_wall_hour": 6.854633193557714
+    },
+    "fast": {
+      "trials": 2,
+      "successes": 2,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.34237195288961925,
+        1.0
+      ],
+      "mean_seated_pieces": 12,
+      "mean_success_sim_s": 249.60000000000002,
+      "completed_puzzles_per_sim_hour": 14.423076923076922,
+      "mean_success_wall_s": 520.7013999866322,
+      "completed_puzzles_per_serial_wall_hour": 6.913751336355965
+    },
+    "fast_robust": {
+      "trials": 2,
+      "successes": 2,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.34237195288961925,
+        1.0
+      ],
+      "mean_seated_pieces": 12,
+      "mean_success_sim_s": 244.01,
+      "completed_puzzles_per_sim_hour": 14.75349370927421,
+      "mean_success_wall_s": 504.8598466194235,
+      "completed_puzzles_per_serial_wall_hour": 7.130691862515606
+    }
+  },
+  "selection_rule": "Success rate, seated pieces, then successful simulation time; no held-out metric in ranking.",
+  "created_unix": 1792715231.187192,
+  "note": "Additional candidate was proposed from TRAIN red grasp failure before its evaluation. Original selected fast test failures remain reported.",
+  "held_out": {
+    "trials": 2,
+    "successes": 1,
+    "success_rate": 0.5,
+    "wilson_95": [
+      0.09452865480086614,
+      0.9054713451991339
+    ],
+    "mean_seated_pieces": 7.5,
+    "mean_success_sim_s": 281.06,
+    "completed_puzzles_per_sim_hour": 12.808652956664057,
+    "mean_success_wall_s": 598.3029535226524,
+    "completed_puzzles_per_serial_wall_hour": 6.0170186003664785
+  },
+  "held_out_rows": [
+    {
+      "seed": 100,
+      "success": true,
+      "rss_success": true,
+      "graph_success": true,
+      "sim_time_s": 281.06,
+      "wall_s": 598.3029535226524
+    },
+    {
+      "seed": 101,
+      "success": false,
+      "rss_success": false,
+      "graph_success": false,
+      "sim_time_s": 94.06,
+      "wall_s": 109.04376634582877
+    }
+  ]
+}

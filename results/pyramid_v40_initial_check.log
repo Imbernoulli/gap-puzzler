@@ -1,0 +1,11 @@
+passed: True
+report: 
+    PASS  builds       the last rebuild landed
+    PASS  finite       every number in the state is finite
+    PASS  camera       workcell 960x540, fov 50 deg; clip 640x360
+    PASS  objects      all of board are in the scene
+    PASS  penetration  worst overlap 0.07 mm between table and cyan
+    PASS  rest         nothing moved more than 0.0 mm in 60 steps
+    PASS  finite_after still finite after 60 steps
+json: /srv/home/bohanlyu/gap-puzzler/live/run/check.json
+logged: 53

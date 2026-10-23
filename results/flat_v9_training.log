@@ -1,0 +1,7 @@
+[pool puzzler-165838] code bundle 4aff1e8ebff4 (1.4 MB); 2 job(s) -> runs/flat_v9_training
+[pool puzzler-165838] creating 2 x 8 vCPU / 16 GiB / 30 GiB from gap-knot-rss-abed33ba-c8m16d30
+[pool puzzler-165838] up e1d3b540-b2fe-4168-98e2-f0ae1c6f8db3 (8 vCPU / 16 GiB) in 1s
+[pool puzzler-165838] up 46880273-88b5-4c32-9b95-cb4d8d697ed8 (8 vCPU / 16 GiB) in 1s
+[pool puzzler-165838] iq-s21: ok exit=0 run=419.7s attempts=1
+[pool puzzler-165838] iq-s20: ok exit=0 run=520.5s attempts=1
+[pool puzzler-165838] deleting 1 sandbox(es)

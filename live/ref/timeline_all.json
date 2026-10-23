@@ -1,0 +1,75 @@
+{
+  "clip": "/srv/home/bohanlyu/gap-puzzler/video/source.mp4",
+  "fps": 25.0,
+  "width": 640,
+  "height": 360,
+  "duration": 216.62,
+  "frames": 5416,
+  "anchors": [
+    {
+      "t": 0.0,
+      "file": "t000.00.jpg",
+      "label": "intro"
+    },
+    {
+      "t": 8.0,
+      "file": "t008.00.jpg",
+      "label": "pyramid_disassembly"
+    },
+    {
+      "t": 11.5,
+      "file": "t011.50.jpg",
+      "label": "flat_first_piece"
+    },
+    {
+      "t": 20.0,
+      "file": "t020.00.jpg",
+      "label": "loose_parts"
+    },
+    {
+      "t": 24.0,
+      "file": "t024.00.jpg",
+      "label": "flat_partial"
+    },
+    {
+      "t": 32.0,
+      "file": "t032.00.jpg",
+      "label": "flat_assembly"
+    },
+    {
+      "t": 48.0,
+      "file": "t048.00.jpg",
+      "label": "three_left"
+    },
+    {
+      "t": 61.0,
+      "file": "t061.00.jpg",
+      "label": "flat_complete"
+    },
+    {
+      "t": 95.0,
+      "file": "t095.00.jpg",
+      "label": "pyramid_start"
+    },
+    {
+      "t": 104.0,
+      "file": "t104.00.jpg",
+      "label": "pyramid_case_setup"
+    },
+    {
+      "t": 140.0,
+      "file": "t140.00.jpg",
+      "label": "pyramid_partial"
+    },
+    {
+      "t": 210.0,
+      "file": "t210.00.jpg",
+      "label": "ending"
+    },
+    {
+      "t": 214.0,
+      "file": "t214.00.jpg",
+      "label": "pyramid_complete"
+    }
+  ]
+}

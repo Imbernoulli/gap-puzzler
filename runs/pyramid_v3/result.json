@@ -1,0 +1,88 @@
+{
+  "success": false,
+  "rss_success": false,
+  "seed": 0,
+  "variant": {
+    "mode": "pyramid",
+    "seed": 0,
+    "board_dx": 0.0,
+    "board_dy": 0.0,
+    "board_yaw": 0.0,
+    "piece_jitter": 0.0,
+    "piece_yaw": 0.0,
+    "friction": 0.65,
+    "grasp_bias": 0.0
+  },
+  "graph": "graphs/pyramid_v3",
+  "steps": 7119,
+  "sim_time_s": 142.38,
+  "completion_step": null,
+  "control_hz": 50.0,
+  "wall_s": 194.20694862515666,
+  "final": {
+    "success": false,
+    "bead_error_m": {
+      "yellow": 0.0003817081708365774,
+      "purple": 0.00016076205527574855,
+      "cyan": 0.3364390479032807,
+      "lime": 0.3564871329394785,
+      "mint": 0.33195885958959453,
+      "maroon": 0.32971976991612345,
+      "teal": 0.00048246261035820453,
+      "orange": 0.00019874518918584002,
+      "navy": 0.2684289017494224,
+      "pink": 0.29896976290271743,
+      "red": 0.381932506890594,
+      "azure": 0.0003476439717480597
+    },
+    "speed_mps": {
+      "yellow": 2.0461504885406858e-05,
+      "purple": 1.7467668568565856e-05,
+      "cyan": 1.2891258848041399e-05,
+      "lime": 1.4714938515724995e-05,
+      "mint": 1.2424939995992426e-05,
+      "maroon": 1.4631007616144388e-05,
+      "teal": 2.0566714464360842e-05,
+      "orange": 1.978230780919864e-05,
+      "navy": 1.315040390196918e-05,
+      "pink": 1.1034264389328544e-05,
+      "red": 1.1155297215782322e-05,
+      "azure": 2.7827242110945366e-05
+    },
+    "hands": [
+      {
+        "arm": "left",
+        "clearance": 0.09615715199854978,
+        "width": 0.03997671231627464
+      },
+      {
+        "arm": "right",
+        "clearance": 0.09665939666430323,
+        "width": 0.014580805785953999
+      }
+    ],
+    "board_pose": [
+      0.46666353940963745,
+      0.0002613315300550312,
+      0.7532873749732971,
+      0.0009511677781119943,
+      -6.803985161241144e-05,
+      0.0004556590283755213,
+      0.999999463558197
+    ],
+    "finite": true,
+    "board_level": true,
+    "board_resting": true
+  },
+  "events": [],
+  "error": "",
+  "graph_trace": {
+    "graph_result": {
+      "result": "ExecutionResult(success=False, exit_status='failure', outputs={'anchor_sg': {}, 'yellow_sg': {}, 'teal_sg': {}, 'purple_sg': {}, 'azure_sg': {}, 'orange_sg': {}, 'cyan_sg': {}}, trace_path=PosixPath('runs/pyramid_v3/trace/0000'), checkpoint_results=[], error=PipelineError(\"workflow terminated at end node 'abort' (failure); first node error -- cyan_sg.act: Node 'cyan_sg.act' failed: RuntimeError: No feasible source/target grasp for cyan: 0.04853418267643124\"), duration_s=187.53450793400407, latency=None)"
+    },
+    "steps": 7053,
+    "graph_error": "PipelineError: workflow terminated at end node 'abort' (failure); first node error -- cyan_sg.act: Node 'cyan_sg.act' failed: RuntimeError: No feasible source/target grasp for cyan: 0.04853418267643124",
+    "graph_traceback": "Traceback (most recent call last):\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/execute.py\", line 192, in execute\n    executor.execute()\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 347, in execute\n    self._run_top_level()\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 419, in _run_top_level\n    raise PipelineError(\ngap_core.errors.PipelineError: workflow terminated at end node 'abort' (failure); first node error -- cyan_sg.act: Node 'cyan_sg.act' failed: RuntimeError: No feasible source/target grasp for cyan: 0.04853418267643124\n"
+  },
+  "workflow_sha256": "4efed8146e16351430e9dfee815d1534e7d33f7dc528b9154e5e8add0b740b37"
+}

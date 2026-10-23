@@ -1,0 +1,815 @@
+{
+  "success": false,
+  "rss_success": false,
+  "graph_success": false,
+  "seed": 0,
+  "variant": {
+    "mode": "pyramid",
+    "embodiment": "yam_bimanual",
+    "pyramid_plan": "pyramid_robot6_plan.json",
+    "preset_pieces": [
+      "azure",
+      "orange",
+      "yellow",
+      "teal",
+      "purple",
+      "cyan",
+      "mint",
+      "lime",
+      "maroon",
+      "navy"
+    ],
+    "seed": 0,
+    "board_dx": 0.0,
+    "board_dy": 0.0,
+    "board_yaw": 0.0,
+    "piece_jitter": 0.0,
+    "piece_yaw": 0.0,
+    "friction": 0.65,
+    "grasp_bias": 0.0
+  },
+  "graph": "graphs/pyramid_v31_finish_diagnostic",
+  "steps": 2567,
+  "sim_time_s": 51.34,
+  "completion_step": null,
+  "control_hz": 50.0,
+  "wall_s": 146.75463204458356,
+  "final": {
+    "success": false,
+    "bead_error_m": {
+      "yellow": 0.0004429782853767659,
+      "purple": 0.0004970007200388081,
+      "cyan": 0.001480907138475062,
+      "lime": 0.001101393318177504,
+      "mint": 0.0011217127914530428,
+      "maroon": 0.002045476403802396,
+      "teal": 0.0006412658612093454,
+      "orange": 0.00047250119168420443,
+      "navy": 0.0020993469716408166,
+      "pink": 0.002745705521763772,
+      "red": 0.37793855192992004,
+      "azure": 0.0004077282027149974
+    },
+    "speed_mps": {
+      "yellow": 2.2279443364952727e-05,
+      "purple": 1.641194569948321e-05,
+      "cyan": 1.9151610202631493e-05,
+      "lime": 2.4878429635616795e-05,
+      "mint": 2.6016972636091892e-05,
+      "maroon": 2.688861674956817e-05,
+      "teal": 2.404717595860481e-05,
+      "orange": 1.9877147581494253e-05,
+      "navy": 2.5910580160219247e-05,
+      "pink": 2.673997017451722e-05,
+      "red": 1.1263877240745362e-05,
+      "azure": 1.4617286682774856e-05
+    },
+    "hands": [
+      {
+        "arm": "left",
+        "clearance": 0.09361317152925,
+        "width": 0.017868421971797943
+      },
+      {
+        "arm": "right",
+        "clearance": 0.05407744838880734,
+        "width": 8.996741235023364e-05
+      }
+    ],
+    "board_pose": [
+      0.4657308757305145,
+      -0.00035669151111505926,
+      0.752998411655426,
+      -3.357257446623407e-05,
+      -5.3525818657362834e-05,
+      -0.0012586377561092377,
+      0.9999992251396179
+    ],
+    "finite": true,
+    "board_level": true,
+    "board_resting": true
+  },
+  "events": [],
+  "error": "",
+  "graph_trace": {
+    "graph_result": {
+      "result": "ExecutionResult(success=False, exit_status='failure', outputs={'anchor_sg': {}, 'pink_sg': {}, 'red_sg': {}}, trace_path=PosixPath('out/pyramid_v31_finish_diagnostic/trace/0000'), checkpoint_results=[CheckpointResult(name='anchor_physical_state', subgraph='anchor_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 8.978519983355194e-05, 'purple': 0.00016880358161158613, 'cyan': 0.0013204827045320564, 'lime': 0.0009096651913125081, 'mint': 0.0009135196632054215, 'maroon': 0.0014069875341022962, 'teal': 0.00014424890943426667, 'orange': 0.00019511975862608307, 'navy': 0.0018746486864068752, 'pink': 0.3338874889977261, 'red': 0.3775843451299598, 'azure': 0.00011628031227822984}, 'speed_mps': {'yellow': 5.5539955410178385e-05, 'purple': 4.856419835518361e-05, 'cyan': 5.1178101787409925e-05, 'lime': 2.9237393005079446e-05, 'mint': 4.476160254118916e-05, 'maroon': 5.3828778574854734e-05, 'teal': 3.831664267447957e-05, 'orange': 5.7571075195207904e-05, 'navy': 4.533803191131792e-05, 'pink': 1.1034190720260927e-05, 'red': 1.1154676940397719e-05, 'azure': 4.967347801199506e-05}, 'hands': [{'arm': 'left', 'clearance': 0.09466423940844693, 'width': 0.01832645945250988}, {'arm': 'right', 'clearance': 0.36050581701546325, 'width': 0.09498347342014313}], 'board_pose': [0.46507513523101807, -3.314895729999989e-05, 0.7531685829162598, -0.0005832412862218916, -8.376799814868718e-05, -0.00014696863945573568, 0.9999998211860657], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=0.00010974705219268799), CheckpointResult(name='pink_physical_state', subgraph='pink_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.00028925135536829287, 'purple': 0.0004207020836551182, 'cyan': 0.0014372385453056784, 'lime': 0.0010740608648586224, 'mint': 0.0011006599567056543, 'maroon': 0.0019558087932945584, 'teal': 0.00046807988555911295, 'orange': 0.0004691405140329459, 'navy': 0.0020793907118183104, 'pink': 0.0026326310702179654, 'red': 0.3771669535580873, 'azure': 0.0003651315694088861}, 'speed_mps': {'yellow': 1.801958752988242e-05, 'purple': 1.91740679185478e-05, 'cyan': 2.2852316361958322e-05, 'lime': 2.4817216257031894e-05, 'mint': 3.706387305274456e-05, 'maroon': 3.0098372887620872e-05, 'teal': 2.8238421511228844e-05, 'orange': 2.44559534593193e-05, 'navy': 2.9879613998353167e-05, 'pink': 2.9714297430622663e-05, 'red': 1.115467694039218e-05, 'azure': 2.09083928716753e-05}, 'hands': [{'arm': 'left', 'clearance': 0.09349934862064901, 'width': 0.017779702320694923}, {'arm': 'right', 'clearance': 0.054602711127328125, 'width': 0.040804751217365265}], 'board_pose': [0.4654707908630371, -0.00022264083963818848, 0.7530796527862549, -0.00029650310170836747, -6.896652485011145e-05, -0.0007773519027978182, 0.9999996423721313], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=8.778274059295654e-05), CheckpointResult(name='red_physical_state', subgraph='red_sg', passed=False, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.000413186685026973, 'purple': 0.0004919602230280373, 'cyan': 0.0014770237390852015, 'lime': 0.001097876617096957, 'mint': 0.001126296531967366, 'maroon': 0.002035660063745656, 'teal': 0.0006136273563880771, 'orange': 0.0004726202430178056, 'navy': 0.0020903786964703284, 'pink': 0.0027354873983797385, 'red': 0.3779830109817437, 'azure': 0.0004003311124109642}, 'speed_mps': {'yellow': 2.0615199830038108e-05, 'purple': 1.2366082414434443e-05, 'cyan': 1.8670282796551766e-05, 'lime': 2.3829133763131998e-05, 'mint': 2.354309635471044e-05, 'maroon': 2.659912662341174e-05, 'teal': 2.5238906177042642e-05, 'orange': 2.2378877367483544e-05, 'navy': 2.6773020751814166e-05, 'pink': 2.588619394160339e-05, 'red': 1.126387724073223e-05, 'azure': 1.5408509860084523e-05}, 'hands': [{'arm': 'left', 'clearance': 0.09374837053377542, 'width': 0.017951328307390213}, {'arm': 'right', 'clearance': 0.05517336130526643, 'width': 0.00036282138898968697}], 'board_pose': [0.46568527817726135, -0.00033307712874375284, 0.7529986500740051, -3.4753320505842566e-05, -5.457161023514345e-05, -0.001183631015010178, 0.9999992847442627], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=8.621253073215485e-05)], error=PipelineError(\"workflow terminated at end node 'abort' (failure)\"), duration_s=120.29243274964392, latency=None)"
+    },
+    "steps": 2416,
+    "graph_error": "PipelineError: workflow terminated at end node 'abort' (failure)",
+    "graph_traceback": "Traceback (most recent call last):\n  File \"/opt/gk/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/execute.py\", line 192, in execute\n    executor.execute()\n  File \"/opt/gk/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 347, in execute\n    self._run_top_level()\n  File \"/opt/gk/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 419, in _run_top_level\n    raise PipelineError(\ngap_core.errors.PipelineError: workflow terminated at end node 'abort' (failure)\n"
+  },
+  "workflow_sha256": "0d79d07a871c5e79799563b1962bc7441d6b962fff025cff3580f243e5c615c2",
+  "checkpoint_results": [
+    {
+      "name": "anchor_physical_state",
+      "subgraph": "anchor_sg",
+      "passed": true,
+      "eval_error": null,
+      "diagnostics": {
+        "success": false,
+        "bead_error_m": {
+          "yellow": 8.978519983355194e-05,
+          "purple": 0.00016880358161158613,
+          "cyan": 0.0013204827045320564,
+          "lime": 0.0009096651913125081,
+          "mint": 0.0009135196632054215,
+          "maroon": 0.0014069875341022962,
+          "teal": 0.00014424890943426667,
+          "orange": 0.00019511975862608307,
+          "navy": 0.0018746486864068752,
+          "pink": 0.3338874889977261,
+          "red": 0.3775843451299598,
+          "azure": 0.00011628031227822984
+        },
+        "speed_mps": {
+          "yellow": 5.5539955410178385e-05,
+          "purple": 4.856419835518361e-05,
+          "cyan": 5.1178101787409925e-05,
+          "lime": 2.9237393005079446e-05,
+          "mint": 4.476160254118916e-05,
+          "maroon": 5.3828778574854734e-05,
+          "teal": 3.831664267447957e-05,
+          "orange": 5.7571075195207904e-05,
+          "navy": 4.533803191131792e-05,
+          "pink": 1.1034190720260927e-05,
+          "red": 1.1154676940397719e-05,
+          "azure": 4.967347801199506e-05
+        },
+        "hands": [
+          {
+            "arm": "left",
+            "clearance": 0.09466423940844693,
+            "width": 0.01832645945250988
+          },
+          {
+            "arm": "right",
+            "clearance": 0.36050581701546325,
+            "width": 0.09498347342014313
+          }
+        ],
+        "board_pose": [
+          0.46507513523101807,
+          -3.314895729999989e-05,
+          0.7531685829162598,
+          -0.0005832412862218916,
+          -8.376799814868718e-05,
+          -0.00014696863945573568,
+          0.9999998211860657
+        ],
+        "finite": true,
+        "board_level": true,
+        "board_resting": true
+      },
+      "eval_time_s": 0.00010974705219268799
+    },
+    {
+      "name": "pink_physical_state",
+      "subgraph": "pink_sg",
+      "passed": true,
+      "eval_error": null,
+      "diagnostics": {
+        "success": false,
+        "bead_error_m": {
+          "yellow": 0.00028925135536829287,
+          "purple": 0.0004207020836551182,
+          "cyan": 0.0014372385453056784,
+          "lime": 0.0010740608648586224,
+          "mint": 0.0011006599567056543,
+          "maroon": 0.0019558087932945584,
+          "teal": 0.00046807988555911295,
+          "orange": 0.0004691405140329459,
+          "navy": 0.0020793907118183104,
+          "pink": 0.0026326310702179654,
+          "red": 0.3771669535580873,
+          "azure": 0.0003651315694088861
+        },
+        "speed_mps": {
+          "yellow": 1.801958752988242e-05,
+          "purple": 1.91740679185478e-05,
+          "cyan": 2.2852316361958322e-05,
+          "lime": 2.4817216257031894e-05,
+          "mint": 3.706387305274456e-05,
+          "maroon": 3.0098372887620872e-05,
+          "teal": 2.8238421511228844e-05,
+          "orange": 2.44559534593193e-05,
+          "navy": 2.9879613998353167e-05,
+          "pink": 2.9714297430622663e-05,
+          "red": 1.115467694039218e-05,
+          "azure": 2.09083928716753e-05
+        },
+        "hands": [
+          {
+            "arm": "left",
+            "clearance": 0.09349934862064901,
+            "width": 0.017779702320694923
+          },
+          {
+            "arm": "right",
+            "clearance": 0.054602711127328125,
+            "width": 0.040804751217365265
+          }
+        ],
+        "board_pose": [
+          0.4654707908630371,
+          -0.00022264083963818848,
+          0.7530796527862549,
+          -0.00029650310170836747,
+          -6.896652485011145e-05,
+          -0.0007773519027978182,
+          0.9999996423721313
+        ],
+        "finite": true,
+        "board_level": true,
+        "board_resting": true
+      },
+      "eval_time_s": 8.778274059295654e-05
+    },
+    {
+      "name": "red_physical_state",
+      "subgraph": "red_sg",
+      "passed": false,
+      "eval_error": null,
+      "diagnostics": {
+        "success": false,
+        "bead_error_m": {
+          "yellow": 0.000413186685026973,
+          "purple": 0.0004919602230280373,
+          "cyan": 0.0014770237390852015,
+          "lime": 0.001097876617096957,
+          "mint": 0.001126296531967366,
+          "maroon": 0.002035660063745656,
+          "teal": 0.0006136273563880771,
+          "orange": 0.0004726202430178056,
+          "navy": 0.0020903786964703284,
+          "pink": 0.0027354873983797385,
+          "red": 0.3779830109817437,
+          "azure": 0.0004003311124109642
+        },
+        "speed_mps": {
+          "yellow": 2.0615199830038108e-05,
+          "purple": 1.2366082414434443e-05,
+          "cyan": 1.8670282796551766e-05,
+          "lime": 2.3829133763131998e-05,
+          "mint": 2.354309635471044e-05,
+          "maroon": 2.659912662341174e-05,
+          "teal": 2.5238906177042642e-05,
+          "orange": 2.2378877367483544e-05,
+          "navy": 2.6773020751814166e-05,
+          "pink": 2.588619394160339e-05,
+          "red": 1.126387724073223e-05,
+          "azure": 1.5408509860084523e-05
+        },
+        "hands": [
+          {
+            "arm": "left",
+            "clearance": 0.09374837053377542,
+            "width": 0.017951328307390213
+          },
+          {
+            "arm": "right",
+            "clearance": 0.05517336130526643,
+            "width": 0.00036282138898968697
+          }
+        ],
+        "board_pose": [
+          0.46568527817726135,
+          -0.00033307712874375284,
+          0.7529986500740051,
+          -3.4753320505842566e-05,
+          -5.457161023514345e-05,
+          -0.001183631015010178,
+          0.9999992847442627
+        ],
+        "finite": true,
+        "board_level": true,
+        "board_resting": true
+      },
+      "eval_time_s": 8.621253073215485e-05
+    }
+  ],
+  "source_sha256": {
+    "puzzler/__init__.py": "af1d4cae87e1938e53090f2bee3033e844b7e2acca5a3796acd97d7e3b117430",
+    "puzzler/assets.py": "5639b7fbadda1fe81daafe55b1e57dc92c09bf2872e41a7e7393c40898c426fc",
+    "puzzler/audit.py": "5028d07d73ede221e74e13bde830e3562310ee6ccba98e00a885198f7e8da38a",
+    "puzzler/controller.py": "11bc6236c98d9c8a16aaf8a2b9da8181ae2653b6f1a692778a755a9270a9e56f",
+    "puzzler/episode.py": "eb1e6824a48e3b08f4691c516f180518d86746bbd03b7d71ad60410743874de5",
+    "puzzler/hardware.py": "4c53059e408501d1f5847a7b2fac8ae55cfdbaa05c133d718c85f14a062a381b",
+    "puzzler/model.py": "628877753beb8a640f8056465703af53198f68dd3669b710591f7d37d8a44314",
+    "puzzler/policy.py": "187a8e41cd7335ef9aa7bc2d5c9e98d4c8db46d5ecda891d71b6c5fbc50ef927",
+    "puzzler/pyramid.py": "51d359a28f1aa99c370ce295979b116813074d7ee1ef9c06b0fd793e8aa819bb",
+    "puzzler/task.py": "931e01f88130cb15879d18499992918133b56c5fd364aa3c7da0459460fcfe75",
+    "puzzler/tools.py": "53f7ba5bddec3d89cf8e81d3be0745e767ce610ed2bed0bee1e09795a1c2b2eb",
+    "graphs/pyramid_v31_finish_diagnostic/checkpoints/anchor_sg.py": "905e88b1c5b63b3b4af2a3ce09e4172cdb2cd07d98d056f92519bc78e97d7a4a",
+    "graphs/pyramid_v31_finish_diagnostic/checkpoints/finish_sg.py": "0a095d428b96e242d984f35bbd86811f1773e7b9f8944019c0e07a8914cbc255",
+    "graphs/pyramid_v31_finish_diagnostic/checkpoints/pink_sg.py": "f6f3e0a1eafd9be0d180a97a030018851ed4e159bd6af968185a5559af4e6016",
+    "graphs/pyramid_v31_finish_diagnostic/checkpoints/red_sg.py": "95b1fd7b45530a8144c84dd19a66c1ce3e05adbebcbad088940d0951a121671a",
+    "graphs/pyramid_v31_finish_diagnostic/scripts/anchor.py": "9c68d40d9e05db9b2a72b483a1a64ddfb8819bb7634866cbf7d311f498ec0895",
+    "graphs/pyramid_v31_finish_diagnostic/scripts/finish.py": "667671f824b488f099490030d4f4830632f1d41682ae07c9d606f640e4758a42",
+    "graphs/pyramid_v31_finish_diagnostic/scripts/pink.py": "e086f364be7c675473c6ba6ec5272b8661cc63448652becae5ca14c72567ae12",
+    "graphs/pyramid_v31_finish_diagnostic/scripts/red.py": "3188949e5a6f5266df8609b3dd363ca5b315b9c9c401cd2f533ad57c5dd5db56",
+    "graphs/pyramid_v31_finish_diagnostic/params.json": "b5887b55fe897473bed3a7ef76c24a6f7e564e5e1cce70931acfd9a075f8ed11",
+    "assets/azure.obj": "5f3c80c1a1d4ccf8819bd2c13d8cd865c09c5790bdcf324c5bb40674a6162b30",
+    "assets/azure_000.obj": "8385332be8887e3f53fd70d8bbc179947ca6822bb913514b3404769140a6bd43",
+    "assets/azure_001.obj": "e3e8caf6ad9920b2c1178658aafc4992b3a313e2276618026cd7c7c2b3e1722d",
+    "assets/azure_002.obj": "cb8db1950c085a29d609b052edf3f656f7cba8effed38c92e19e8bfbb3ce75de",
+    "assets/azure_003.obj": "11ef1489cfce8d490282966e1583806687d0287c993c19fbd28fa438209ac0ee",
+    "assets/azure_004.obj": "bcdf5e8c050b2fbce8aff4fbc7c3a5d19ea423446d601e070f0f53a74eaa7372",
+    "assets/azure_005.obj": "e82affccb50c11a195171a6a382df79d4100fa08129c21c581442978cb843152",
+    "assets/azure_006.obj": "4660319f8429375eed85d506ff89c57970e5e99b757145c843762cdc77ac2532",
+    "assets/azure_007.obj": "77038ff429755143513c5fca0280251907808c29d0130062cb21fcfd507aac6a",
+    "assets/azure_008.obj": "46926cd24224864ab6c3bbf9ce54735717d617d9d253010fb87765f3971e8ebb",
+    "assets/board.obj": "ab81459a47fc8297a2907ea6b9d7d67e73a0264d3cb0aa22027f97cedd9f2553",
+    "assets/board_000.obj": "3dc8ccf6519d4d519ed74efb69e06a668e3f41d245e388b6a082da02fdacd02c",
+    "assets/board_001.obj": "41e2f9914d8392ffd2179826d1ddb7ce758af9e12a7dad133e29bfdb3d066b51",
+    "assets/board_002.obj": "789fb43037cd482026e240f4de50e0a3c452b9aa1c65f74dc2be45d14e0db9dc",
+    "assets/board_003.obj": "cfe316956cfd8a3a2428a5f371a7809b9f811faefade148f80a266ab304b1a5d",
+    "assets/board_004.obj": "fd49026c6438718c1261b0806dcd72026f82be380977ccc55604aa6e2c9315d5",
+    "assets/board_005.obj": "3baeafb9f546fc7393e3d9d99dbc489aad196bcf16fddf7543bafea0e4e124bf",
+    "assets/board_006.obj": "4238343fbfe7f96fe257106b31e4bfdb1cb5d281344d59ff866558cd30e9da6b",
+    "assets/board_007.obj": "0607094dea248242d8b3b37734af9bea1c326d0311e3daa5946e59287525b4de",
+    "assets/board_008.obj": "42061e1fcc6ea18f348e7bbc25c97ab9482b840e240eb801803594c5cadfbbe9",
+    "assets/board_009.obj": "e2885cf381c6fe6a8b98d127467e728bd97b481a89f7500389aa8b9e0c0f4eb0",
+    "assets/board_010.obj": "9dc697eb92488d04cbbf00b7551ad2baad64c4eea2129621e2f24b56a9bbab94",
+    "assets/board_011.obj": "12ccb4235318ac69599f1f750d90fd5e64a083b69bfcefc22747075362ea2893",
+    "assets/board_012.obj": "b504b2597ed103178fcac048c9bbd4ad6628c74a96109f09c571d8c5bd9cb50e",
+    "assets/board_013.obj": "ecd60783ae44d29bc64e0c063549da090da01ba1384227e410d6b9f0b8418776",
+    "assets/board_014.obj": "c5a2dd7d0178443b58fbac37d44b4e33bca852ccdb2a0448e84ba2de8a07f521",
+    "assets/board_015.obj": "04b422d404c8834941ab7f43419ae5925f9385baa41e687e91192f075906b89f",
+    "assets/board_016.obj": "c852cf0cf0f7f8471d8e1b19a9670115d039228cf949f3b06095eef034e3d718",
+    "assets/board_017.obj": "aa22c8a941d1e23d800d620bb768c924343c4e98513fbdb6e8fbd0cbe9906010",
+    "assets/board_018.obj": "c6aff9cbec85065a1a73e8c6b1619f9f47b8ee56aedd28ac9025da476d540497",
+    "assets/board_019.obj": "0a2fd7b6459fd28186fcf292bd327d1df064a058c0499d6f863e881d0c3e034a",
+    "assets/board_020.obj": "dac873fa5ff645ddb8b9b1cfd6f2cecca2f11c6b514c678f8750c5cfc1b10a16",
+    "assets/board_021.obj": "4b1ca977aa14276ab511a951de66a1638dc9f9bc740ccefcd9e1356c4279c1b2",
+    "assets/board_022.obj": "2c2fa533fed32895e84411027c970e8dc85fdc78727ab7eee785f6bb4bbed61b",
+    "assets/board_023.obj": "2a1fe4e04f0d3e64c5c339df3a71fbb4fb8d326c5a4a5d85b45b45a239d36060",
+    "assets/board_024.obj": "9ae6eb8748425da4b2130c226a2defb24796915b448d7c8fb1accec3e7ae31a2",
+    "assets/board_025.obj": "e48d832f51376e20d135e12196a54396bba07de056b2d9d21444c347eccedd6e",
+    "assets/board_026.obj": "958f23528784db9932dcc35626fc68a25ec33b2f9589c134049c3e21a1739efc",
+    "assets/board_027.obj": "edc76692418dc83b977fed0aec38c7b33e8fe31b20d165246d3181c2d025a30b",
+    "assets/board_028.obj": "c7fe075eb1c67d5c0957709e8355c8f28f491dd734c435f0f3e9103664b71ed5",
+    "assets/board_029.obj": "d1325a38e70b777d90292aea4e61a4b3ce92b69e097f3a570d1bf8e5978e444f",
+    "assets/board_030.obj": "1211b250be260ff423bb6cfbea80d25dc5fc85bb8f5b2eda629f45f7bae052e1",
+    "assets/board_031.obj": "3afb733b74bb3f32e0a4567c3e21abdccde36642e121caf2fdc9eadb110fc20a",
+    "assets/board_032.obj": "7a42a2e93066309f10ef4a0b7c0870161e2d2735fb12502c306b4947ce0b4da4",
+    "assets/board_033.obj": "80c76b7f69056d8b491deb23dc8b59d0486ed1e5681650d8c37395293859e78b",
+    "assets/board_034.obj": "1e5696b9b1c4672e1d44134fb09fa1d11aa5c73383dfe4445a2d56a092497f24",
+    "assets/board_035.obj": "be8350ff91dd2aebe78e1b391e67ca073a1bb4770cd9518dabf847e78e02d871",
+    "assets/board_036.obj": "f589aeff91ede177a6164223341285c3d754c03aa6926e40d030ecac7987a687",
+    "assets/board_037.obj": "354d37b3c21e86968cee7d121d680eeb8717ca85b502be21d9596c4a302a9ed6",
+    "assets/board_038.obj": "e57d9937cbe63ee46bb30791a234b0ccdcf0a62f1b2cbaa618fad9b1d0aaa828",
+    "assets/board_039.obj": "4403f64d09f2f1cd1f6b31f018cd13cdd85cef19c3341a491a0a2c1728f508c0",
+    "assets/board_040.obj": "77bc20da156da5d876df50aebbc903bc20c013d0002197d66211e662fb23c34a",
+    "assets/board_041.obj": "96074f1adaf16495a300d2fe848715e11cff182c4cdbcd9b85a86d821f6c1b29",
+    "assets/board_042.obj": "b41805e824e4dc6b1d327ef31ab4c0920851a2936041cbb4ac7b95fee5b433a2",
+    "assets/board_043.obj": "1bbff3e3f89dd313a813558955439ec2fe2b2dff1e3649e377bce0f7725c9328",
+    "assets/board_044.obj": "9149fa0e5db7b8cfd6576a4770a73b2de0913908eaecdca4061584759d7cf32e",
+    "assets/board_045.obj": "8b372de08682e468235c3785c6bfb4889125947017858b9c88daa4985bbaf4e8",
+    "assets/board_046.obj": "bea8e51e7f2c295e787ccaf7e674d414d14813e6c6bcecbc8d26377adeb4aabc",
+    "assets/board_047.obj": "6ec917cf0da95617b8752962371deb324739e37f698c66e7cdf78dfa2f38e2dc",
+    "assets/board_048.obj": "061e55f01a2eded9c54dd2ae1fe974ebeb5d45133c90de6507b8fdda0faaba17",
+    "assets/board_049.obj": "cfbe9a2565f8abde7c211fdd2795dccb3c6a6a2c9de7589ec081d99ee1b9149d",
+    "assets/board_050.obj": "b44c463f2b166bb8ac60a425a7ffa25984a747a33dc05a57e64883b67a54c25e",
+    "assets/board_051.obj": "bef80377f038292012dde18c50627aaf09172aec30e50658d91143786ba1abe6",
+    "assets/board_052.obj": "80b97db255b7fccd02b92cad049a724c759132ead570601f66f3cc30c23affbf",
+    "assets/board_053.obj": "f8b659e691831cdf06831b2b9dc0b7fcecf362fdb89d3c959a86fe94eb7ea420",
+    "assets/board_054.obj": "fc3b4d3604439ce1727930fee6de01dcdd5dfdf4c783b66f427becca8904a3e8",
+    "assets/board_055.obj": "5f43343ad72664e57fc61001fe6cd7e17b9de6e9023b74c889669a7c9e909c97",
+    "assets/board_056.obj": "0ccf639df688029df95b340d73714025c88ff4b03b33083675ae7019e3985b1d",
+    "assets/board_057.obj": "96ab663b325952a4f9872cb2f1b3bd20e779071aa09c7bedf13aa71b4b2e6a84",
+    "assets/board_058.obj": "c4561fa0c3c7a3e76700520fb03dcdb68d35982a9946a928ab9686a53a8e5b9b",
+    "assets/board_059.obj": "4eebeef67f305c9141b0572b62f58d3666392ee6650ea1730e627a2edf0eec8c",
+    "assets/board_060.obj": "6c010362f4737d7b337163870da5fb3cf403137b8fc7e9d0b69e2e85821d59fa",
+    "assets/board_061.obj": "19a79e91a1569c844dd2094ae04aaaeed51d5df0a99c5b9630845c61e219d616",
+    "assets/board_062.obj": "75801c4e0716eedb035dd5ec778fd94cbfba72a7376c66b2d2dccc95feea6e24",
+    "assets/board_063.obj": "925a1559c7b48c687b699d9502ef6b2156f45028f5bcf3b99e0a05a3d41ae3c4",
+    "assets/board_064.obj": "9afb5acbd4ce25adf3adce479af546f9614467ee9e58b356b7f4bc4f78fcfe66",
+    "assets/board_065.obj": "c87d770c30053a2d73086b9792ea43708037fd8c1f262f13f29184e006e93382",
+    "assets/board_066.obj": "899955501d9a29757ab67426ff3f3a9065e14eb13cbf28e563b5109ff90158ee",
+    "assets/board_067.obj": "3387f6c3cdaa57e8bce233cc9b5a692dce56f9749591ac14192544e29522769c",
+    "assets/board_068.obj": "38fd8258c4c6e337d1938d1ae64c2d7e4c7d4f64ef6f77459d0c389e921ddfc1",
+    "assets/board_069.obj": "e4f4109366bd93a764ab8d62dfdecf45ff5f277660cd59a95a8206c7103fd5f1",
+    "assets/board_070.obj": "8e141b75f1ddde4f8f52b5fb2918eba9a658264d6d9570aa02e9861cf0560b02",
+    "assets/board_071.obj": "b64de6bba2f81a69aa304d5c42f34dda8601186fee2bfcde9c62102514646847",
+    "assets/board_072.obj": "54b7ac707c777daed196a92d3a16b99c244286f9a1539b23a6338537d170d444",
+    "assets/board_073.obj": "e44b98d3964d6fc1f22bd445e859cf4c2ea8d00a152896f584d17edad67dff17",
+    "assets/board_074.obj": "3d674826e10938dd020610eed36d322c276aed22bdcec14acb9a084f168bebc2",
+    "assets/board_075.obj": "0849b2d4659b3b620e5af6aadd05f742b5387687e99e6dbfce648cd02fb78a45",
+    "assets/board_076.obj": "d4830f9b3b851e228e54a47371e739ce1fabf86cc9f910874021ce4ea2facfda",
+    "assets/board_077.obj": "0739ec9b05bc7eaff3b13b498ee023d9716e322dc7c4dcbdfad8fcfb284e5a68",
+    "assets/board_078.obj": "f16fe38b896be79bf4b89dc84e00c50de9745ec9844cd77d3cf0c30fa56deae5",
+    "assets/cyan.obj": "6fd6aa82a0f7a488a78d31a2b23ac28fafa4c432ef758ce40aff5ce854ce19d9",
+    "assets/cyan_000.obj": "e38ddf033d1edab7e93b589fed8a623641f07a3feaa690a6b83360c8dc23de88",
+    "assets/cyan_001.obj": "e6534aefbee61bbe825d4d9b31832355f764669c2fda067446f26e66a8d63a20",
+    "assets/cyan_002.obj": "c0a898f983885e4df1c1a7d74ca1593c43e2bcbc407e16dbb0d43ff21034afbe",
+    "assets/cyan_003.obj": "6901191efc29d679d5ff564d1cba176ab4005e41048cf2e9f931609b4893fd50",
+    "assets/cyan_004.obj": "c360cde6ce6c1eaac8174fdbc1b4548dfacb0e46014e419c92efa2eb206c9157",
+    "assets/lime.obj": "af569608e7b92f7bb4a18011cc656b73b214e78468e6eeb1839ca238df66b367",
+    "assets/lime_000.obj": "8b72cde6421279254a05feb73fe51c1a8da34e38cc94f4f905f21b5d6a36ee44",
+    "assets/lime_001.obj": "8e55cefcefce382a032758601fa57975c78fff565f1edfb76ab97707eb182eca",
+    "assets/lime_002.obj": "a362db330964097a6fdd87a7bf6ce0e01f72c68cdd4cce28e513008b585d5647",
+    "assets/lime_003.obj": "49954577fd752e6c6a44b714e502464c6d07b76dc39ccca8b521ca082cc9991d",
+    "assets/lime_004.obj": "4c87b894cdb3db7e36acd15094c45164683af8b03a8187ba13fe980eb11c8eb8",
+    "assets/lime_005.obj": "fcf6f42e8017d68dc0a8a97612d1a2b45010f7e96a1d2bf31d202b5e687aa05c",
+    "assets/lime_006.obj": "17406e65b792ea1a43587f6926b7c84bd33bb21292e0271be56fe6e8d832f2a0",
+    "assets/lime_007.obj": "ec5d848b6f1bf8ada4b92913a4d748fb4737c6a449230e1450c2fff30b136a16",
+    "assets/lime_008.obj": "a0cedb8cc46af62156114aae2f508ebea255d7fcfc2f6bd77818bbf0aa57b82c",
+    "assets/maroon.obj": "3b3c854780c5b24d657c68300a188878d6aab332f1c6f74dd1d41b3eb3fd4df3",
+    "assets/maroon_000.obj": "3b676021e5351db02cef8253f81907a7f444d4b964df7b3d3df012268e41bdd7",
+    "assets/maroon_001.obj": "b9fba626fdc5b021fc064746817ad1ae41c2868d26bd1695e32b1660812f3f10",
+    "assets/maroon_002.obj": "3e5afa1dc9884e3e555f8ca153b06a0d2b01928b0bb19c173f8242a06bd84ad4",
+    "assets/maroon_003.obj": "0361be28c88ff940389c7f23714297441c74c2ceb72ec821252e0c078d25baa0",
+    "assets/maroon_004.obj": "8ecc547aee12b803fbf7ff30d1a3512e69103acfa743a531c55be2025694f946",
+    "assets/maroon_005.obj": "374f407ae2f4dd733ea8173c44c226312ef6f04bcbd7d3f52846c379486c345c",
+    "assets/maroon_006.obj": "45f7bd4167597ef865bcbc0ef7811cb08b28be6b38f8a27d3f253193ed4b94ca",
+    "assets/mint.obj": "a29d21f835a8945ecb5cd3e4a6d2e26a6230ed2daba24d9ab8ba2c3cf43393df",
+    "assets/mint_000.obj": "2e491b72b025d3ad9cc2063c380c391bde6414da11c11309002fe11fc0948585",
+    "assets/mint_001.obj": "0c8a0456f4da53a66854b81b3ea53642eda95f308a6ebf9990021ecb965907eb",
+    "assets/mint_002.obj": "0e70afcc84be71e1c4096a5f17afcd53c7217be3e18dc73a33b113a4afab3c77",
+    "assets/mint_003.obj": "4db736ad696f0b309dc7b4e1038d773075f5defe8f1cee4d5235fee00f48ec76",
+    "assets/mint_004.obj": "3fe758b2d9cd5101140c92a09383f7793f427a02de5793b574e572dc23d14989",
+    "assets/mint_005.obj": "6598df32fbeab7dfcacc91365318506f48433a3fe5951d5979d0596583004af8",
+    "assets/mint_006.obj": "67cecfb157ca555cdd05c0c0f2f7bcb5a63141c2eb694317d251a22cfdfb3d59",
+    "assets/mint_007.obj": "bbdba4c136dfb4456300749efd291ade595d0a19d85552c42940f6740b48ab1a",
+    "assets/mint_008.obj": "4cb70a2071304d3405bd8e1afa17f07ce4f6436b2a4c00c1588009cd44964d5b",
+    "assets/mint_009.obj": "280e294d9a0e57448c3d15ffd727f1fbe2ada9cb767ff4a0ee06985e19b5058e",
+    "assets/navy.obj": "dd3223c2e5049d8b0c0162925d0742f5495b4fced3b95dc1cd7dcbb5a3f343a7",
+    "assets/navy_000.obj": "eb10410deb0e232c79085b4863e5676996d1409311344e073d181fc7355530b3",
+    "assets/navy_001.obj": "f50041ca7b25a2167f09a95ebdb4c2a39e2521c28aab171ba217db9eaec74d6e",
+    "assets/navy_002.obj": "ed71654e58222ac30610f79a5f37f0279e7aee00338405be2d945ac74edf685f",
+    "assets/navy_003.obj": "54caea72a2e6cd8aae35b22dd15ea0aa15863c0244ea6bad555428572e91862b",
+    "assets/navy_004.obj": "91be9312cc51df36024d779236ba1254da7454d2f223cf44e2730e352723751d",
+    "assets/navy_005.obj": "e99374008e89345ccf1f34307e542ef0da43e1049a7d32ac6050524a256df44e",
+    "assets/navy_006.obj": "f8a930c077868a111651f28200a4e10b7439f49a772db46b88059c433305f156",
+    "assets/orange.obj": "44ef6c98dfff6f2e3004b7538808f8857e770ee5f888a5dba6b46a556a2e16b8",
+    "assets/orange_000.obj": "639965b3e0c93a4adf84b1d18d731584d7c9d8d85afb2a0cd593ca5376177503",
+    "assets/orange_001.obj": "5fcbe3a31504030631d7e5ff7d23336812818074db602fafec0e86a83f7d8a4d",
+    "assets/orange_002.obj": "b17434c933c955048c5b9121dd1210b9b114fc5af5ddf7b711f547fc246d43c7",
+    "assets/orange_003.obj": "ad0cff2fb5fefbb4cd40ddefa07fcbc002c32e5985e84fc5de4d5774742fed66",
+    "assets/orange_004.obj": "f018af14763ef10e15ae822c1fa1121579ddd58339624f9d5f3827c0849f5adf",
+    "assets/orange_005.obj": "9c0be9cadfebd1fa7220e7b6bacc6ce66448170186aaa76f706e8cf339d7639a",
+    "assets/orange_006.obj": "d49bb6cbfb87422fc5305b6430b4b8a081ab7d2c10816a27a3aa26fb429fdb2c",
+    "assets/orange_007.obj": "fd7b336da37aaa95fd81c3a270467e092bcc18f9837b7b253fdad13071174331",
+    "assets/orange_008.obj": "f6d10d15f0f3d00cb3c97e0c1832b822b0ceff8ca754cceeaca14feaa7166f73",
+    "assets/pink.obj": "b4d604498c3fa4efb70ba3001cc700203aeb26619b5124eb21efdbbc292b1bb0",
+    "assets/pink_000.obj": "ad7941f4aeaf4df9c613e2140c58fb20067fa4076f5b9d1231f1c6a2f602530a",
+    "assets/pink_001.obj": "5f9b68b8b698ba0944cdcfe8001ac4f1092a5ea64c199d36b8f76146b8bf7989",
+    "assets/pink_002.obj": "5f3b5db429588bf9e49fc0c2169337a05edd414d0b042572b1aeeea981e93225",
+    "assets/pink_003.obj": "bd925228016543582dfd889236e241b47547aa9126c680aa007422c8c6fd9570",
+    "assets/pink_004.obj": "685b83a1be0ebfc1e1bf26292f8dfbd63a86c84be014727c404bb044c51a9a5a",
+    "assets/pink_005.obj": "0396c39d1159eabc65fe539065e5f26f8eed40e2a5a1f5bab5b79885b4518202",
+    "assets/pink_006.obj": "4ac4a16cd8f43b5b9b5ac1f4e2003431d6de3d6ff083b4edd3fb393ee1be5c1a",
+    "assets/pink_007.obj": "8ec1f8d32d929cd16b7ed2cfefa131b6f274983b087f7bd29719f92f313a9fce",
+    "assets/pink_008.obj": "f408ea898170821e8304e7eea7972f8eaa87d1670a0111b27ee79e0ce8d5a346",
+    "assets/purple.obj": "a0bd643327a475b078adc67c90f9644012537f153e6c2520e11e50dca2609c4e",
+    "assets/purple_000.obj": "ece36de439946153f9ac69dbafae23751386f80167babd4c7a97aa21cd96dc3d",
+    "assets/purple_001.obj": "d9ee8cdee5ce10f5030494b96c59cae92b56dd05973ff81a9ff09386868e77d3",
+    "assets/purple_002.obj": "86e019cf7d61a54ea4c14d9ad6b3e8d2efd03786b41c7382d4ecb8c8085acc50",
+    "assets/purple_003.obj": "96abf0f79ea26c8137897b4d511d0fd797a140a855010cde6a889cefcc8f1b57",
+    "assets/purple_004.obj": "53748dc090644ebe97e56cddb1b2e11cdca9a9eee961a81f05c5fd93c52a61db",
+    "assets/purple_005.obj": "24aa0725b6fd1532f6c7c71f2ffb7c8f39642df52ac00d93b3fb9d9de7d6154c",
+    "assets/purple_006.obj": "b6e3c609709bad6246a4225f12bc1c57b2fb1784800ea0bad414d3430c73fa21",
+    "assets/purple_007.obj": "ceb9555b06e313027c9683802914bb1e85423d297b13762b9b67fed745a7e695",
+    "assets/purple_008.obj": "11f1b5600828483732ea304f5cb9a79bed3c0aad17277b23418428f9f983c030",
+    "assets/red.obj": "cde2c3707101193ae31cf7e57f7b99f16c01d7afb8d4af78db61583bc1d8f4dc",
+    "assets/red_000.obj": "9704db0a71330cfe6c28ab3c0813a17ba4cdb7d818ebdda5064e4650759b6a8b",
+    "assets/red_001.obj": "a2ee5050ff6a3983f9ebe86636de21553fd267bf3eedddcb3feefd7bb0551ab7",
+    "assets/red_002.obj": "60c38d98d587bfe4bad65186cccbe8c2e48a315898ef5a3114fe4bcff0618d4d",
+    "assets/red_003.obj": "4fd60189ca0b5aa721179283a6a9174453ef9f4fc8da1bab20a667b206dab2c6",
+    "assets/red_004.obj": "62c3eb9cd29827c86fc83cfb5f3295bc8e29e0edbe7d78733c72d41d38a29772",
+    "assets/red_005.obj": "ad8d8d68a768fb852ba5b4fe333bcb12755dbf3d114a60be76ef3351292797c5",
+    "assets/red_006.obj": "9b694ccb373cc648a5286cb81a9b4be52065c7504fd894b9fbab8783edc28f8e",
+    "assets/red_007.obj": "97f8d45652afb6ebc0b1f6ed13c92cb0a0391b41826d8ed6b5eb23b8599b8a67",
+    "assets/red_008.obj": "141e902bda3088cf6d35a834880651206401a1417b3183d2b7930f8ba833e3d7",
+    "assets/teal.obj": "8e0c0bc3be3d3a15fa45ca2407916293e9e9f0b76af6e678aa7564b3e22bdcb8",
+    "assets/teal_000.obj": "e08682b191a7e72d863d9083a505161639618f4b6d19bce090a49adc8ad7a56b",
+    "assets/teal_001.obj": "b79d1639082b15c02429c144e2da34501fb7a8c706434aa65dff0995f92bada6",
+    "assets/teal_002.obj": "ab3cad5c54deb3a624cc91101a5f74c07880a1bf4cb73e5fc320dd129831c512",
+    "assets/teal_003.obj": "6a2d15b15fbdba0e841d81a361d73081f1fe065820c32b68ca03bcb77fafd70f",
+    "assets/teal_004.obj": "92295b4723d5d1c9f769c1833d789c23f51253efb18efd6330b6034d8dea11a8",
+    "assets/teal_005.obj": "45f6d5a21ee1834f006ce8674d87a764aa60d9787028f3182f238313c720c726",
+    "assets/teal_006.obj": "6ec5ee5047fff880ad0a5bc351c71ed8d5c7c778dabb115c11417d3b4c3e5fe9",
+    "assets/yellow.obj": "3c141b7f9dce080ed7eeeea2d38c8becbdf6c3c2d0a24a2e76a73634bd2651dd",
+    "assets/yellow_000.obj": "0fa9a29435485a66bad10335e565776ddcd934452fbd09398a9a8fdf18d70c72",
+    "assets/yellow_001.obj": "33410793f614350ab41aa548a27936ec8c2e32795ed241321c3e32b4b456cde3",
+    "assets/yellow_002.obj": "b139cb3b56dcf7a99fc439f5cc6f42160bcc5da2eb0239effebc11ee227af451",
+    "assets/yellow_003.obj": "c979f16e8183d3cffca028c9654d9dae32d1eced28df52f9ecc330f1674b31d7",
+    "assets/yellow_004.obj": "911354765ca719e153b554f31dc5af5919137c6e3bd46d8a226bb46b8face9ad",
+    "assets/yellow_005.obj": "94985f689ed673812096e30e15bffb030cd6bc391be30afcb6b2bb2c1b513a7b",
+    "assets/yellow_006.obj": "72367caf051572e01e7d11868fedb01729d131204a763fd4e686f52e1f559c71",
+    "assets/yellow_007.obj": "c1d1166a874b9cf2e0c53dafbeb5704eda9c324739073ddf5719adf834f9b4a7",
+    "assets/yellow_008.obj": "cb8478effab362115edc5b52c047641481b09be2290a176b9b65dbaa9d970980",
+    "assets/pyramid_robot6_plan.json": "07b918bf2e96fa003832c891402aaa32177c9757ef0335ddbb0e24be943357d5"
+  },
+  "target_beads_local": {
+    "azure": [
+      [
+        -0.05,
+        -0.05,
+        0.0155
+      ],
+      [
+        -0.05,
+        -0.025,
+        0.0155
+      ],
+      [
+        -0.05,
+        0.0,
+        0.0155
+      ],
+      [
+        -0.025,
+        -0.05,
+        0.0155
+      ],
+      [
+        0.0,
+        -0.05,
+        0.0155
+      ]
+    ],
+    "orange": [
+      [
+        0.0,
+        -0.025,
+        0.0155
+      ],
+      [
+        0.025,
+        -0.05,
+        0.0155
+      ],
+      [
+        0.025,
+        -0.025,
+        0.0155
+      ],
+      [
+        0.025,
+        0.0,
+        0.0155
+      ],
+      [
+        0.05,
+        -0.05,
+        0.0155
+      ]
+    ],
+    "yellow": [
+      [
+        0.025,
+        0.025,
+        0.0155
+      ],
+      [
+        0.05,
+        -0.025,
+        0.0155
+      ],
+      [
+        0.05,
+        0.0,
+        0.0155
+      ],
+      [
+        0.05,
+        0.025,
+        0.0155
+      ],
+      [
+        0.05,
+        0.05,
+        0.0155
+      ]
+    ],
+    "teal": [
+      [
+        -0.025,
+        0.05,
+        0.0155
+      ],
+      [
+        0.0,
+        0.025,
+        0.0155
+      ],
+      [
+        0.0,
+        0.05,
+        0.0155
+      ],
+      [
+        0.025,
+        0.05,
+        0.0155
+      ]
+    ],
+    "purple": [
+      [
+        -0.05,
+        0.025,
+        0.0155
+      ],
+      [
+        -0.05,
+        0.05,
+        0.0155
+      ],
+      [
+        -0.025,
+        0.0,
+        0.0155
+      ],
+      [
+        -0.025,
+        0.025,
+        0.0155
+      ],
+      [
+        0.0,
+        0.0,
+        0.0155
+      ]
+    ],
+    "cyan": [
+      [
+        -0.037500000000000006,
+        -0.0125,
+        0.03317766952966369
+      ],
+      [
+        -0.025,
+        -0.025,
+        0.0155
+      ],
+      [
+        -0.0125,
+        -0.037500000000000006,
+        0.03317766952966369
+      ]
+    ],
+    "red": [
+      [
+        -0.037500000000000006,
+        -0.037500000000000006,
+        0.03317766952966369
+      ],
+      [
+        -0.025,
+        -0.025,
+        0.050855339059327376
+      ],
+      [
+        -0.0125,
+        -0.0125,
+        0.06853300858899107
+      ],
+      [
+        0.0,
+        0.0,
+        0.08621067811865475
+      ],
+      [
+        0.0125,
+        0.0125,
+        0.06853300858899107
+      ]
+    ],
+    "mint": [
+      [
+        0.0125,
+        -0.037500000000000006,
+        0.03317766952966369
+      ],
+      [
+        0.0125,
+        -0.0125,
+        0.03317766952966369
+      ],
+      [
+        0.0125,
+        0.0125,
+        0.03317766952966369
+      ],
+      [
+        0.037500000000000006,
+        -0.037500000000000006,
+        0.03317766952966369
+      ],
+      [
+        0.037500000000000006,
+        -0.0125,
+        0.03317766952966369
+      ]
+    ],
+    "maroon": [
+      [
+        -0.037500000000000006,
+        0.0125,
+        0.03317766952966369
+      ],
+      [
+        -0.025,
+        0.0,
+        0.050855339059327376
+      ],
+      [
+        -0.0125,
+        -0.0125,
+        0.03317766952966369
+      ],
+      [
+        0.0,
+        -0.025,
+        0.050855339059327376
+      ]
+    ],
+    "lime": [
+      [
+        -0.0125,
+        0.0125,
+        0.03317766952966369
+      ],
+      [
+        -0.0125,
+        0.037500000000000006,
+        0.03317766952966369
+      ],
+      [
+        0.0125,
+        0.037500000000000006,
+        0.03317766952966369
+      ],
+      [
+        0.037500000000000006,
+        0.0125,
+        0.03317766952966369
+      ],
+      [
+        0.037500000000000006,
+        0.037500000000000006,
+        0.03317766952966369
+      ]
+    ],
+    "navy": [
+      [
+        0.0,
+        0.025,
+        0.050855339059327376
+      ],
+      [
+        0.025,
+        -0.025,
+        0.050855339059327376
+      ],
+      [
+        0.025,
+        0.0,
+        0.050855339059327376
+      ],
+      [
+        0.025,
+        0.025,
+        0.050855339059327376
+      ]
+    ],
+    "pink": [
+      [
+        -0.037500000000000006,
+        0.037500000000000006,
+        0.03317766952966369
+      ],
+      [
+        -0.025,
+        0.025,
+        0.050855339059327376
+      ],
+      [
+        -0.0125,
+        0.0125,
+        0.06853300858899107
+      ],
+      [
+        0.0,
+        0.0,
+        0.050855339059327376
+      ],
+      [
+        0.0125,
+        -0.0125,
+        0.06853300858899107
+      ]
+    ]
+  },
+  "independent_audit": {
+    "success": false,
+    "released_stable_duration_s": 0.0,
+    "final_max_bead_error_m": 0.37793911292177496,
+    "final_max_bead_speed_mps": 2.7656236656520096e-05,
+    "method": "Recorded rigid poses, Hungarian bead matching, finite-difference bead speeds and recorded hand clearance; no environment grader calls."
+  },
+  "diagnostic_success": false,
+  "diagnostic_preset": true
+}

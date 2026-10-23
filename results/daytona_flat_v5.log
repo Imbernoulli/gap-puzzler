@@ -1,0 +1,7 @@
+[pool puzzler-163058] code bundle 7ab454b6acee (0.8 MB); 2 job(s) -> runs/daytona_flat_v5
+[pool puzzler-163058] creating 2 x 8 vCPU / 16 GiB / 30 GiB from gap-knot-rss-abed33ba-c8m16d30
+[pool puzzler-163058] up f68de96b-875c-4454-8152-7ee5431b56bd (8 vCPU / 16 GiB) in 1s
+[pool puzzler-163058] up 32eeeb6a-6fbe-4797-889e-021cbbfb8d35 (8 vCPU / 16 GiB) in 5s
+[pool puzzler-163058] iq-s0: ok exit=0 run=88.0s attempts=1
+[pool puzzler-163058] iq-s1: ok exit=0 run=104.9s attempts=1
+[pool puzzler-163058] deleting 1 sandbox(es)

@@ -1,0 +1,38 @@
+{
+  "clip": "/srv/home/bohanlyu/gap-puzzler/video/source.mp4",
+  "fps": 25.0,
+  "width": 640,
+  "height": 360,
+  "duration": 110,
+  "frames": 5416,
+  "anchors": [
+    {
+      "t": 0.0,
+      "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t104.00.jpg",
+      "label": "pyramid_case_setup",
+      "source_t": 104.0
+    },
+    {
+      "t": 36.0,
+      "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t140.00.jpg",
+      "label": "pyramid_partial",
+      "source_t": 140.0
+    },
+    {
+      "t": 106.0,
+      "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t210.00.jpg",
+      "label": "ending",
+      "source_t": 210.0
+    },
+    {
+      "t": 110.0,
+      "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t214.00.jpg",
+      "label": "pyramid_complete",
+      "source_t": 214.0
+    }
+  ],
+  "source_interval_s": [
+    104,
+    214
+  ]
+}

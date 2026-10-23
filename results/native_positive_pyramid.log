@@ -1,0 +1,20 @@
+Warp CUDA error 100: no CUDA-capable device is detected (in function init_cuda_driver, /builds/omniverse/warp/warp/native/cuda_util.cpp:333)
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, CUDA driver not available (NVRTC compilation available)
+   Devices:
+     "cpu"      : "x86_64"
+   Kernel cache:
+     /home/bohanlyu/.cache/warp/1.18.0
+Module newton._src.geometry.inertia f6b4bd8 load on device 'cpu' took 1.67 ms  (cached)
+Module warp._src.coloring 811e0ea load on device 'cpu' took 0.31 ms  (cached)
+Module validate_and_correct_inertia_kernel_1ff2ac62 6ad45b8 load on device 'cpu' took 0.46 ms  (cached)
+Module newton._src.geometry.bvh 4a1c07f load on device 'cpu' took 0.26 ms  (cached)
+Module newton._src.sim.articulation 2e73608 load on device 'cpu' took 0.28 ms  (cached)
+model has 107 joint coords (LM cholesky tile overflows shared memory); cartesian tracking runs the FD solver instead
+model has 107 joint coords (LM cholesky tile overflows shared memory); cartesian tracking runs the FD solver instead
+Module newton._src.solvers.mujoco.kernels 7f286e9 load on device 'cpu' took 0.65 ms  (cached)
+/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/mujoco_warp/_src/io.py:863: UserWarning: MULTICCD is enabled, but the scene contains CCD pairs without multicontact support: [('CAPSULE', 'MESH')]. At most 1 contact will be generated for these pairs.
+  warnings.warn(
+[rss] cpu (no CUDA device) · CUDA graphs off · renderer tiled (cpu is not a CUDA device)
+Module robosimstudio.core.readback 990015d load on device 'cpu' took 0.77 ms  (cached)
+{'control': 'preconstructed goal-positive control, not robot assembly', 'step': 53, 'rss_success': True, 'grade': {'success': True, 'bead_error_m': {'yellow': 3.783127878897019e-05, 'purple': 5.234296811860969e-05, 'cyan': 0.0004111697548674343, 'lime': 0.0008352446808279638, 'mint': 0.000830541321666732, 'maroon': 0.0008490510157569266, 'teal': 4.4375396524761574e-05, 'orange': 4.822000782024352e-05, 'navy': 0.0017665377863500685, 'pink': 0.0018953734169858574, 'red': 0.0025688225116058264, 'azure': 2.4483664834023662e-05}, 'speed_mps': {'yellow': 3.760520754183928e-05, 'purple': 2.384270231972367e-05, 'cyan': 3.345538057311667e-05, 'lime': 4.366719268204667e-05, 'mint': 3.777317715465283e-05, 'maroon': 7.796230544514663e-05, 'teal': 3.1014654412749615e-05, 'orange': 3.937860600701982e-05, 'navy': 7.05004460557734e-05, 'pink': 5.4535720143104124e-05, 'red': 7.32549323828793e-05, 'azure': 2.2109535160311822e-05}, 'hands': [{'arm': 'left', 'clearance': 0.4477161537853508, 'width': 0.09500012546777725}, {'arm': 'right', 'clearance': 0.447601273502232, 'width': 0.09434649348258972}], 'board_pose': [0.4649999737739563, -1.1597500737536848e-08, 0.7529957890510559, -2.92973663107432e-08, -5.490820953468756e-08, 4.500611439084423e-08, 1.0], 'finite': True, 'board_level': True, 'board_resting': True}}

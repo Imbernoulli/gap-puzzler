@@ -1,0 +1,1002 @@
+{
+  "version": 3,
+  "meta": {
+    "name": "flat_v10_fast",
+    "observation_mode": "on_demand",
+    "description": "Physically stabilize board; perceive, solve, grasp, insert, verify; release and retreat."
+  },
+  "nodes": {
+    "anchor": {
+      "type": "subgraph",
+      "ref": "anchor_sg"
+    },
+    "pink": {
+      "type": "subgraph",
+      "ref": "pink_sg"
+    },
+    "pink_retry1": {
+      "type": "subgraph",
+      "ref": "pink_sg"
+    },
+    "maroon": {
+      "type": "subgraph",
+      "ref": "maroon_sg"
+    },
+    "maroon_retry1": {
+      "type": "subgraph",
+      "ref": "maroon_sg"
+    },
+    "navy": {
+      "type": "subgraph",
+      "ref": "navy_sg"
+    },
+    "navy_retry1": {
+      "type": "subgraph",
+      "ref": "navy_sg"
+    },
+    "red": {
+      "type": "subgraph",
+      "ref": "red_sg"
+    },
+    "red_retry1": {
+      "type": "subgraph",
+      "ref": "red_sg"
+    },
+    "azure": {
+      "type": "subgraph",
+      "ref": "azure_sg"
+    },
+    "azure_retry1": {
+      "type": "subgraph",
+      "ref": "azure_sg"
+    },
+    "mint": {
+      "type": "subgraph",
+      "ref": "mint_sg"
+    },
+    "mint_retry1": {
+      "type": "subgraph",
+      "ref": "mint_sg"
+    },
+    "yellow": {
+      "type": "subgraph",
+      "ref": "yellow_sg"
+    },
+    "yellow_retry1": {
+      "type": "subgraph",
+      "ref": "yellow_sg"
+    },
+    "purple": {
+      "type": "subgraph",
+      "ref": "purple_sg"
+    },
+    "purple_retry1": {
+      "type": "subgraph",
+      "ref": "purple_sg"
+    },
+    "cyan": {
+      "type": "subgraph",
+      "ref": "cyan_sg"
+    },
+    "cyan_retry1": {
+      "type": "subgraph",
+      "ref": "cyan_sg"
+    },
+    "lime": {
+      "type": "subgraph",
+      "ref": "lime_sg"
+    },
+    "lime_retry1": {
+      "type": "subgraph",
+      "ref": "lime_sg"
+    },
+    "teal": {
+      "type": "subgraph",
+      "ref": "teal_sg"
+    },
+    "teal_retry1": {
+      "type": "subgraph",
+      "ref": "teal_sg"
+    },
+    "orange": {
+      "type": "subgraph",
+      "ref": "orange_sg"
+    },
+    "orange_retry1": {
+      "type": "subgraph",
+      "ref": "orange_sg"
+    },
+    "finish": {
+      "type": "subgraph",
+      "ref": "finish_sg"
+    },
+    "done": {
+      "type": "end",
+      "status": "success"
+    },
+    "abort": {
+      "type": "end",
+      "status": "failure"
+    }
+  },
+  "edges": [
+    [
+      "START",
+      "anchor"
+    ]
+  ],
+  "conditional_edges": {
+    "anchor": {
+      "router_field": "exit",
+      "mapping": {
+        "ready": "pink",
+        "error": "abort"
+      }
+    },
+    "pink": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "maroon",
+        "error": "abort",
+        "retry": "pink_retry1"
+      }
+    },
+    "pink_retry1": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "maroon",
+        "retry": "abort",
+        "error": "abort"
+      }
+    },
+    "maroon": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "navy",
+        "error": "abort",
+        "retry": "maroon_retry1"
+      }
+    },
+    "maroon_retry1": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "navy",
+        "retry": "abort",
+        "error": "abort"
+      }
+    },
+    "navy": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "red",
+        "error": "abort",
+        "retry": "navy_retry1"
+      }
+    },
+    "navy_retry1": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "red",
+        "retry": "abort",
+        "error": "abort"
+      }
+    },
+    "red": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "azure",
+        "error": "abort",
+        "retry": "red_retry1"
+      }
+    },
+    "red_retry1": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "azure",
+        "retry": "abort",
+        "error": "abort"
+      }
+    },
+    "azure": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "mint",
+        "error": "abort",
+        "retry": "azure_retry1"
+      }
+    },
+    "azure_retry1": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "mint",
+        "retry": "abort",
+        "error": "abort"
+      }
+    },
+    "mint": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "yellow",
+        "error": "abort",
+        "retry": "mint_retry1"
+      }
+    },
+    "mint_retry1": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "yellow",
+        "retry": "abort",
+        "error": "abort"
+      }
+    },
+    "yellow": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "purple",
+        "error": "abort",
+        "retry": "yellow_retry1"
+      }
+    },
+    "yellow_retry1": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "purple",
+        "retry": "abort",
+        "error": "abort"
+      }
+    },
+    "purple": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "cyan",
+        "error": "abort",
+        "retry": "purple_retry1"
+      }
+    },
+    "purple_retry1": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "cyan",
+        "retry": "abort",
+        "error": "abort"
+      }
+    },
+    "cyan": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "lime",
+        "error": "abort",
+        "retry": "cyan_retry1"
+      }
+    },
+    "cyan_retry1": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "lime",
+        "retry": "abort",
+        "error": "abort"
+      }
+    },
+    "lime": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "teal",
+        "error": "abort",
+        "retry": "lime_retry1"
+      }
+    },
+    "lime_retry1": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "teal",
+        "retry": "abort",
+        "error": "abort"
+      }
+    },
+    "teal": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "orange",
+        "error": "abort",
+        "retry": "teal_retry1"
+      }
+    },
+    "teal_retry1": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "orange",
+        "retry": "abort",
+        "error": "abort"
+      }
+    },
+    "orange": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "finish",
+        "error": "abort",
+        "retry": "orange_retry1"
+      }
+    },
+    "orange_retry1": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "finish",
+        "retry": "abort",
+        "error": "abort"
+      }
+    },
+    "finish": {
+      "router_field": "exit",
+      "mapping": {
+        "complete": "done",
+        "error": "abort",
+        "failed": "abort"
+      }
+    }
+  },
+  "subgraphs": {
+    "anchor_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/anchor.py"
+        },
+        "ready": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "ready",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "ready": "ready"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "ready"
+        ]
+      },
+      "on_error": "error"
+    },
+    "pink_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/pink.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "maroon_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/maroon.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "navy_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/navy.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "red_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/red.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "azure_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/azure.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "mint_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/mint.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "yellow_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/yellow.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "purple_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/purple.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "cyan_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/cyan.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "lime_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/lime.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "teal_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/teal.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "orange_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/orange.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "finish_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/finish.py"
+        },
+        "complete": {
+          "type": "noop"
+        },
+        "failed": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "complete",
+          "END"
+        ],
+        [
+          "failed",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "complete": "complete",
+            "failed": "failed"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "complete",
+          "failed"
+        ]
+      },
+      "on_error": "error"
+    }
+  }
+}

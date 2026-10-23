@@ -1,0 +1,21 @@
+Warp CUDA error 100: no CUDA-capable device is detected (in function init_cuda_driver, /builds/omniverse/warp/warp/native/cuda_util.cpp:333)
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, CUDA driver not available (NVRTC compilation available)
+   Devices:
+     "cpu"      : "x86_64"
+   Kernel cache:
+     /home/bohanlyu/.cache/warp/1.18.0
+Module newton._src.geometry.inertia f6b4bd8 load on device 'cpu' took 1.90 ms  (cached)
+Module warp._src.coloring 811e0ea load on device 'cpu' took 0.57 ms  (cached)
+Module validate_and_correct_inertia_kernel_1ff2ac62 6ad45b8 load on device 'cpu' took 0.31 ms  (cached)
+Module newton._src.geometry.bvh 4a1c07f load on device 'cpu' took 0.23 ms  (cached)
+Module newton._src.sim.articulation 2e73608 load on device 'cpu' took 0.24 ms  (cached)
+model has 107 joint coords (LM cholesky tile overflows shared memory); cartesian tracking runs the FD solver instead
+model has 107 joint coords (LM cholesky tile overflows shared memory); cartesian tracking runs the FD solver instead
+Module newton._src.solvers.mujoco.kernels 7f286e9 load on device 'cpu' took 0.57 ms  (cached)
+/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/mujoco_warp/_src/io.py:863: UserWarning: MULTICCD is enabled, but the scene contains CCD pairs without multicontact support: [('CAPSULE', 'MESH')]. At most 1 contact will be generated for these pairs.
+  warnings.warn(
+[rss] cpu (no CUDA device) · CUDA graphs off · renderer tiled (cpu is not a CUDA device)
+Module robosimstudio.core.readback 990015d load on device 'cpu' took 0.55 ms  (cached)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+pink {'grasp': [0.4690001166196061, -0.3050000703475392, 0.768493848736169], 'index': 4, 'target_R': [[-0.5, -0.5, -0.7071067811865475], [0.5, 0.5, -0.7071067811865475], [0.7071067811865475, -0.7071067811865475, 0.0]], 'heading': 0.0, 'lean': -30, 'feasible': True}

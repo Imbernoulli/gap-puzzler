@@ -1,0 +1,92 @@
+{
+ "ref": "/srv/home/bohanlyu/gap-puzzler/live/ref/t061.00.jpg",
+ "camera": "phone",
+ "objects": {
+  "red": {
+   "photo": {
+    "bbox": [
+     225,
+     189,
+     408,
+     284
+    ],
+    "centre": [
+     330.6,
+     247.9
+    ],
+    "width": 183,
+    "height": 95,
+    "area": 0.03298,
+    "pixels": 7599
+   },
+   "sim": {
+    "bbox": [
+     255,
+     205,
+     431,
+     291
+    ],
+    "centre": [
+     356.0,
+     260.5
+    ],
+    "width": 176,
+    "height": 86,
+    "area": 0.02902,
+    "pixels": 6686
+   },
+   "iou": 0.2922,
+   "offset_px": [
+    25.4,
+    12.6
+   ],
+   "size_ratio": 0.938,
+   "width_ratio": 0.962,
+   "height_ratio": 0.905
+  },
+  "cyan": {
+   "photo": {
+    "bbox": [
+     410,
+     140,
+     537,
+     271
+    ],
+    "centre": [
+     487.2,
+     220.0
+    ],
+    "width": 127,
+    "height": 131,
+    "area": 0.03159,
+    "pixels": 7279
+   },
+   "sim": {
+    "bbox": [
+     165,
+     70,
+     252,
+     156
+    ],
+    "centre": [
+     215.3,
+     105.2
+    ],
+    "width": 87,
+    "height": 86,
+    "area": 0.01764,
+    "pixels": 4065
+   },
+   "iou": 0.0,
+   "offset_px": [
+    -271.9,
+    -114.8
+   ],
+   "size_ratio": 0.747,
+   "width_ratio": 0.685,
+   "height_ratio": 0.656
+  }
+ },
+ "score": 0.1461,
+ "stretch": 1.0
+}

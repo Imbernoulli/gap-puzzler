@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+  File "/srv/home/bohanlyu/gap-puzzler/puzzler/pyramid.py", line 81, in solve
+    if ans is None:raise ValueError('No pyramid packing')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: No pyramid packing

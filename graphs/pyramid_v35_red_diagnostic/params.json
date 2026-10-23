@@ -1,0 +1,105 @@
+{
+  "full_task": true,
+  "native_carry": true,
+  "grasp_auto": true,
+  "motion_scale": 1.0,
+  "close_width": 0.0,
+  "release_width": 0.04,
+  "release_height": 0.003,
+  "grasp_z": 0.006,
+  "retreat": 0.05,
+  "transport": 0.07,
+  "pieces": {
+    "red": {
+      "grasp_z": -0.002,
+      "grasp_leans": [
+        75
+      ],
+      "grasp_headings": [
+        135
+      ],
+      "min_target_approach_down": 0.2,
+      "neighbor_clearance": 0.016,
+      "max_grasp_obstacle_distance": 0.03,
+      "release_width": 0.035,
+      "open_width": 0.055,
+      "tool_retreat": false,
+      "retreat": 0.03,
+      "carry_feedback": true,
+      "grasp_indices": [
+        4
+      ],
+      "source_hover": 0.08,
+      "transport": 0.03,
+      "lift": 0.12,
+      "cartesian_carry": true,
+      "vertical_retreat": true,
+      "release_height": 0.003
+    },
+    "pink": {
+      "grasp_z": 0.006,
+      "grasp_leans": [
+        -30,
+        30,
+        -45,
+        45,
+        -60,
+        60,
+        0
+      ],
+      "grasp_headings": [
+        0,
+        90,
+        180,
+        270,
+        45,
+        135,
+        225,
+        315
+      ],
+      "neighbor_clearance": 0.016,
+      "max_grasp_obstacle_distance": 0.03,
+      "release_width": 0.04,
+      "open_width": 0.055,
+      "tool_retreat": false,
+      "retreat": 0.04,
+      "carry_feedback": true,
+      "grasp_indices": [
+        4
+      ],
+      "source_hover": 0.06,
+      "transport": 0.05,
+      "lift": 0.07,
+      "cartesian_carry": true,
+      "vertical_retreat": true
+    }
+  },
+  "grasp_leans": [
+    0,
+    -30,
+    30,
+    -45,
+    45,
+    -60,
+    60
+  ],
+  "shape_symmetry": true,
+  "pyramid_plan": "pyramid_robot6_plan.json",
+  "safe_anchor": true,
+  "finish_wait": 25,
+  "preserve_placed": true,
+  "reuse_seated": true,
+  "diagnostic_preset_pieces": [
+    "azure",
+    "orange",
+    "yellow",
+    "teal",
+    "purple",
+    "cyan",
+    "mint",
+    "lime",
+    "maroon",
+    "navy",
+    "pink"
+  ]
+}

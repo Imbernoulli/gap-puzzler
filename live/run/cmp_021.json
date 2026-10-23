@@ -1,0 +1,50 @@
+{
+ "ref": "/srv/home/bohanlyu/gap-puzzler/live/ref/t214.00.jpg",
+ "camera": "phone",
+ "objects": {
+  "board": {
+   "photo": {
+    "bbox": [
+     153,
+     0,
+     554,
+     360
+    ],
+    "centre": [
+     374.4,
+     185.3
+    ],
+    "width": 401,
+    "height": 360,
+    "area": 0.1636,
+    "pixels": 37693
+   },
+   "sim": {
+    "bbox": [
+     134,
+     0,
+     604,
+     360
+    ],
+    "centre": [
+     354.5,
+     165.5
+    ],
+    "width": 470,
+    "height": 360,
+    "area": 0.35283,
+    "pixels": 81291
+   },
+   "iou": 0.3721,
+   "offset_px": [
+    -19.9,
+    -19.8
+   ],
+   "size_ratio": 1.469,
+   "width_ratio": 1.172,
+   "height_ratio": 1.0
+  }
+ },
+ "score": 0.3721,
+ "stretch": 1.0
+}

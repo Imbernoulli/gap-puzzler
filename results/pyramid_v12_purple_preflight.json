@@ -1,0 +1,6 @@
+{
+  "purple": {
+    "feasible": false,
+    "error": "No feasible source/target grasp for purple: inf"
+  }
+}

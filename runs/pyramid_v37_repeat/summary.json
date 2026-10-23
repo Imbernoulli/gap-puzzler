@@ -1,0 +1,1137 @@
+[
+  {
+    "success": false,
+    "rss_success": false,
+    "graph_success": false,
+    "seed": 1,
+    "variant": {
+      "mode": "pyramid",
+      "embodiment": "yam_bimanual",
+      "pyramid_plan": "pyramid_robot6_plan.json",
+      "preset_pieces": [],
+      "seed": 1,
+      "board_dx": 0.0,
+      "board_dy": 0.0,
+      "board_yaw": 0.0,
+      "piece_jitter": 0.0,
+      "piece_yaw": 0.0,
+      "friction": 0.65,
+      "grasp_bias": 0.0
+    },
+    "graph": "graphs/pyramid_v37",
+    "steps": 9378,
+    "sim_time_s": 187.56,
+    "completion_step": null,
+    "control_hz": 50.0,
+    "wall_s": 259.64153025113046,
+    "final": {
+      "success": false,
+      "bead_error_m": {
+        "yellow": 0.0002631681012242915,
+        "purple": 0.0006046965100464225,
+        "cyan": 0.006583225432389552,
+        "lime": 0.27729756361176255,
+        "mint": 0.3427388556451305,
+        "maroon": 0.3257179407271818,
+        "teal": 0.0006313930346623666,
+        "orange": 0.0006018522776613125,
+        "navy": 0.3019453902512319,
+        "pink": 0.33403173900283223,
+        "red": 0.37627836491470196,
+        "azure": 0.0005523662847985981
+      },
+      "speed_mps": {
+        "yellow": 1.865299141479219e-05,
+        "purple": 2.450628149222627e-05,
+        "cyan": 5.2423012136340363e-05,
+        "lime": 1.4714414646776133e-05,
+        "mint": 1.242503640242891e-05,
+        "maroon": 1.4631007616139842e-05,
+        "teal": 1.7485291826367924e-05,
+        "orange": 1.808806644076493e-05,
+        "navy": 1.3150113773065292e-05,
+        "pink": 1.1034190720258347e-05,
+        "red": 1.1154676940391063e-05,
+        "azure": 1.685283974140829e-05
+      },
+      "hands": [
+        {
+          "arm": "left",
+          "clearance": 0.03560466085599677,
+          "width": 0.03980366885662079
+        },
+        {
+          "arm": "right",
+          "clearance": 0.09593420850066524,
+          "width": 0.014386635273694992
+        }
+      ],
+      "board_pose": [
+        0.46751508116722107,
+        0.0003990100813098252,
+        0.7532015442848206,
+        0.0006757499068044126,
+        -6.745621794834733e-05,
+        -0.0008971383795142174,
+        0.9999993443489075
+      ],
+      "finite": true,
+      "board_level": true,
+      "board_resting": true
+    },
+    "events": [],
+    "error": "",
+    "graph_trace": {
+      "graph_result": {
+        "result": "ExecutionResult(success=False, exit_status='failure', outputs={'anchor_sg': {}, 'azure_sg': {}, 'orange_sg': {}, 'yellow_sg': {}, 'teal_sg': {}, 'purple_sg': {}, 'cyan_sg': {}}, trace_path=PosixPath('out/seed1/trace/0000'), checkpoint_results=[CheckpointResult(name='anchor_physical_state', subgraph='anchor_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.28548848635919544, 'purple': 0.2901130035111991, 'cyan': 0.40807131255785944, 'lime': 0.27856481689519214, 'mint': 0.34346206267368445, 'maroon': 0.3261545505091751, 'teal': 0.3080987137440764, 'orange': 0.33226029940516305, 'navy': 0.30107743573212936, 'pink': 0.3339331009596382, 'red': 0.3777243475978414, 'azure': 0.3029436804850736}, 'speed_mps': {'yellow': 1.1730275218775563e-05, 'purple': 1.4727113011767907e-05, 'cyan': 1.2891245205613534e-05, 'lime': 1.4714414646772355e-05, 'mint': 1.2425036402425288e-05, 'maroon': 1.4631007616152722e-05, 'teal': 1.1353304216775433e-05, 'orange': 1.2163016435836868e-05, 'navy': 1.3150114682559216e-05, 'pink': 1.1034190720386617e-05, 'red': 1.1154676940391043e-05, 'azure': 1.3271655007126445e-05}, 'hands': [{'arm': 'left', 'clearance': 0.10591829672197589, 'width': 0.018387166783213615}, {'arm': 'right', 'clearance': 0.35831582325579037, 'width': 0.09498496353626251}], 'board_pose': [0.4650762379169464, -7.149219891289249e-05, 0.7534505724906921, -0.0010012988932430744, -0.0009967912919819355, -0.00029702254687435925, 0.9999989867210388], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=0.00017810985445976257), CheckpointResult(name='azure_physical_state', subgraph='azure_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.2610484599815781, 'purple': 0.2905757689725925, 'cyan': 0.4079745557058234, 'lime': 0.27873244985301515, 'mint': 0.3427292944694078, 'maroon': 0.3255580240839796, 'teal': 0.3079518445953758, 'orange': 0.3330175525570995, 'navy': 0.3007673308003715, 'pink': 0.3334621379129298, 'red': 0.3769740898591039, 'azure': 0.0005535020556562007}, 'speed_mps': {'yellow': 1.1730275218761388e-05, 'purple': 1.4727113011764748e-05, 'cyan': 1.2891245205567408e-05, 'lime': 1.4714414646765318e-05, 'mint': 1.242503640243971e-05, 'maroon': 1.4631007616146408e-05, 'teal': 1.135330421677556e-05, 'orange': 1.2163016435828303e-05, 'navy': 1.3150113773290086e-05, 'pink': 1.1034190720250336e-05, 'red': 1.1154676940402822e-05, 'azure': 0.0002220530040969891}, 'hands': [{'arm': 'left', 'clearance': 0.10601202520824526, 'width': 0.017725763842463493}, {'arm': 'right', 'clearance': 0.06607444470417773, 'width': 0.0392611101269722}], 'board_pose': [0.4657633304595947, -0.0005320862401276827, 0.7534493803977966, -0.0009935731068253517, -0.0009901579469442368, -0.001275639864616096, 0.9999982118606567], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=0.00012969691306352615), CheckpointResult(name='orange_physical_state', subgraph='orange_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.26087329899210093, 'purple': 0.2904530476076884, 'cyan': 0.4077065883781165, 'lime': 0.27859796096495126, 'mint': 0.34268435530663605, 'maroon': 0.3255016503902384, 'teal': 0.3077323091661387, 'orange': 0.0002733206048459789, 'navy': 0.30084599207141455, 'pink': 0.33341845654607205, 'red': 0.3767178116529578, 'azure': 0.0005365917064348296}, 'speed_mps': {'yellow': 1.173027521872623e-05, 'purple': 1.4727113011764817e-05, 'cyan': 1.2891269761932579e-05, 'lime': 1.4714414646780068e-05, 'mint': 1.2425036402427034e-05, 'maroon': 1.4631007616134407e-05, 'teal': 1.1353304216767503e-05, 'orange': 0.0007576656577977555, 'navy': 1.315011377307052e-05, 'pink': 1.1034190720258174e-05, 'red': 1.1154676940393416e-05, 'azure': 0.0006357324805626869}, 'hands': [{'arm': 'left', 'clearance': 0.06609188101048435, 'width': 0.03932715579867363}, {'arm': 'right', 'clearance': 0.09634665195561819, 'width': 0.014771989546716213}], 'board_pose': [0.4660334587097168, -0.0003465136687736958, 0.7534486651420593, 0.000992008252069354, -0.0009949265513569117, -0.0008955616503953934, 0.9999986290931702], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=0.00013519497588276863), CheckpointResult(name='yellow_physical_state', subgraph='yellow_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.0006467528431399466, 'purple': 0.2902246594236442, 'cyan': 0.4073145331496483, 'lime': 0.27824342801581126, 'mint': 0.3427439113486266, 'maroon': 0.3255784315189507, 'teal': 0.30737123320925536, 'orange': 0.00048148248714230646, 'navy': 0.3011504761726152, 'pink': 0.33358939778880164, 'red': 0.37660861652221816, 'azure': 0.0005231867457823171}, 'speed_mps': {'yellow': 0.0001067058539141189, 'purple': 1.4727113011764982e-05, 'cyan': 1.2891245205587228e-05, 'lime': 1.471441464678009e-05, 'mint': 1.2425036402432211e-05, 'maroon': 1.4631007616148098e-05, 'teal': 1.1353303307577875e-05, 'orange': 6.641600867258023e-05, 'navy': 1.3150113773068265e-05, 'pink': 1.1034190720270058e-05, 'red': 1.1154676940390807e-05, 'azure': 5.638416658994518e-05}, 'hands': [{'arm': 'left', 'clearance': 0.06703251964020107, 'width': 0.0391269326210022}, {'arm': 'right', 'clearance': 0.09621736766520322, 'width': 0.014310548081994057}], 'board_pose': [0.4663512110710144, -0.00011848728900076821, 0.7533366084098816, 0.0009943912737071514, -0.0003089682722929865, -0.0006281804526224732, 0.9999992847442627], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=0.00015456369146704674), CheckpointResult(name='teal_physical_state', subgraph='teal_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.0005331424953746671, 'purple': 0.29010428568106694, 'cyan': 0.4070357570203213, 'lime': 0.278018512518785, 'mint': 0.34274498175847373, 'maroon': 0.325602458073668, 'teal': 0.0003687966472264415, 'orange': 0.0004749953064284757, 'navy': 0.3013456958798281, 'pink': 0.33369130180241974, 'red': 0.37653889981857763, 'azure': 0.0005138911822051734}, 'speed_mps': {'yellow': 4.6488405449620376e-05, 'purple': 1.472711301176264e-05, 'cyan': 1.2891245205569447e-05, 'lime': 1.4714414646784229e-05, 'mint': 1.2425036402429293e-05, 'maroon': 1.463100761612117e-05, 'teal': 7.549769980547896e-05, 'orange': 2.0850923869527405e-05, 'navy': 1.3150113773059834e-05, 'pink': 1.1034190720259596e-05, 'red': 1.115467694037378e-05, 'azure': 4.769507290022032e-05}, 'hands': [{'arm': 'left', 'clearance': 0.07383123558855643, 'width': 0.04006800055503845}, {'arm': 'right', 'clearance': 0.09622692281807568, 'width': 0.014356262981891632}], 'board_pose': [0.4666442573070526, -1.8750747585727368e-06, 0.7533090710639954, 0.0008278415189124644, -0.0004639888065867126, -0.0005872344481758773, 0.9999994039535522], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=0.00013316189870238304), CheckpointResult(name='purple_physical_state', subgraph='purple_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.0002998466789412767, 'purple': 0.0011697797166125088, 'cyan': 0.4067797649016859, 'lime': 0.27780416856902446, 'mint': 0.34275444531993826, 'maroon': 0.3256205624728229, 'teal': 0.0007314318738790395, 'orange': 0.0006047802539997958, 'navy': 0.30153274426739757, 'pink': 0.3337822082062757, 'red': 0.3764654718674888, 'azure': 0.0007120764696017511}, 'speed_mps': {'yellow': 3.894282131357276e-05, 'purple': 4.4111631118739414e-05, 'cyan': 1.2891244296076023e-05, 'lime': 1.4714456483489992e-05, 'mint': 1.242503640243421e-05, 'maroon': 1.4631007616131083e-05, 'teal': 4.6762203263942574e-05, 'orange': 1.926653267815407e-05, 'navy': 1.3150113773062443e-05, 'pink': 1.1034191629945912e-05, 'red': 1.1154676940398414e-05, 'azure': 4.052120438005559e-05}, 'hands': [{'arm': 'left', 'clearance': 0.06615344251710047, 'width': 0.03923514485359192}, {'arm': 'right', 'clearance': 0.09632155704266679, 'width': 0.014310902915894985}], 'board_pose': [0.46690288186073303, 0.00011040137178497389, 0.7532548904418945, 0.000659045996144414, -0.0004553949402179569, -0.00040757760871201754, 0.9999995827674866], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=0.00013191113248467445), CheckpointResult(name='cyan_physical_state', subgraph='cyan_sg', passed=False, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.03405256248466718, 'purple': 0.0009048492514994278, 'cyan': 0.0428496980737649, 'lime': 0.27720774552965965, 'mint': 0.3427863504570978, 'maroon': 0.3257779973656555, 'teal': 0.0004782183865220532, 'orange': 0.000614370877501515, 'navy': 0.3019989913629935, 'pink': 0.33410180152911256, 'red': 0.37634211311635946, 'azure': 0.0005900230583302984}, 'speed_mps': {'yellow': 0.00036513528846084104, 'purple': 7.388175499784604e-05, 'cyan': 6.795680649210209e-05, 'lime': 1.4714456483527595e-05, 'mint': 1.2425036402427434e-05, 'maroon': 1.4631007616164407e-05, 'teal': 7.374758199070713e-05, 'orange': 6.886395545738744e-05, 'navy': 1.315011377307684e-05, 'pink': 1.103419072027196e-05, 'red': 1.1154676940716024e-05, 'azure': 7.526278603775288e-05}, 'hands': [{'arm': 'left', 'clearance': 0.03938701469388959, 'width': -0.002126771491020918}, {'arm': 'right', 'clearance': 0.09600845198648615, 'width': 0.014163050800561905}], 'board_pose': [0.4675077199935913, 0.00042690426926128566, 0.7529858946800232, 1.3692490483663278e-06, 2.3588846431721322e-07, -0.0010098315542563796, 0.999999463558197], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=0.00011398177593946457), CheckpointResult(name='cyan_physical_state', subgraph='cyan_sg', passed=False, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.0002626522916559707, 'purple': 0.0006710266039151547, 'cyan': 0.00669589118411689, 'lime': 0.2773348764371659, 'mint': 0.3427168358972956, 'maroon': 0.3256954116173464, 'teal': 0.0006306666735632239, 'orange': 0.0006019005315021227, 'navy': 0.30191894471389563, 'pink': 0.33400386005477034, 'red': 0.37625395687052804, 'azure': 0.0006056180094694423}, 'speed_mps': {'yellow': 4.555874805229243e-05, 'purple': 5.096014343052808e-05, 'cyan': 8.245730615889758e-05, 'lime': 1.471441464676876e-05, 'mint': 1.2425036402424517e-05, 'maroon': 1.4631007616145878e-05, 'teal': 4.7014114886874815e-05, 'orange': 4.601104491539874e-05, 'navy': 1.3150113773062451e-05, 'pink': 1.1034190720259093e-05, 'red': 1.1154676031081301e-05, 'azure': 4.6982078556561116e-05}, 'hands': [{'arm': 'left', 'clearance': 0.03557363460040523, 'width': 0.03920714557170868}, {'arm': 'right', 'clearance': 0.09601698646843607, 'width': 0.014448774978518486}], 'board_pose': [0.46751323342323303, 0.00038381305057555437, 0.753275454044342, 0.0009127763332799077, -6.809237675042823e-05, -0.0009010318317450583, 0.9999991655349731], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=0.00012645171955227852)], error=PipelineError(\"workflow terminated at end node 'abort' (failure)\"), duration_s=234.27454454777762, latency=None)"
+      },
+      "steps": 9227,
+      "graph_error": "PipelineError: workflow terminated at end node 'abort' (failure)",
+      "graph_traceback": "Traceback (most recent call last):\n  File \"/opt/gk/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/execute.py\", line 192, in execute\n    executor.execute()\n  File \"/opt/gk/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 347, in execute\n    self._run_top_level()\n  File \"/opt/gk/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 419, in _run_top_level\n    raise PipelineError(\ngap_core.errors.PipelineError: workflow terminated at end node 'abort' (failure)\n"
+    },
+    "workflow_sha256": "0e079945fe26084e3377e5f70e5bacf11ea5e134dbd546f27b2319683eb25ab0",
+    "checkpoint_results": [
+      {
+        "name": "anchor_physical_state",
+        "subgraph": "anchor_sg",
+        "passed": true,
+        "eval_error": null,
+        "diagnostics": {
+          "success": false,
+          "bead_error_m": {
+            "yellow": 0.28548848635919544,
+            "purple": 0.2901130035111991,
+            "cyan": 0.40807131255785944,
+            "lime": 0.27856481689519214,
+            "mint": 0.34346206267368445,
+            "maroon": 0.3261545505091751,
+            "teal": 0.3080987137440764,
+            "orange": 0.33226029940516305,
+            "navy": 0.30107743573212936,
+            "pink": 0.3339331009596382,
+            "red": 0.3777243475978414,
+            "azure": 0.3029436804850736
+          },
+          "speed_mps": {
+            "yellow": 1.1730275218775563e-05,
+            "purple": 1.4727113011767907e-05,
+            "cyan": 1.2891245205613534e-05,
+            "lime": 1.4714414646772355e-05,
+            "mint": 1.2425036402425288e-05,
+            "maroon": 1.4631007616152722e-05,
+            "teal": 1.1353304216775433e-05,
+            "orange": 1.2163016435836868e-05,
+            "navy": 1.3150114682559216e-05,
+            "pink": 1.1034190720386617e-05,
+            "red": 1.1154676940391043e-05,
+            "azure": 1.3271655007126445e-05
+          },
+          "hands": [
+            {
+              "arm": "left",
+              "clearance": 0.10591829672197589,
+              "width": 0.018387166783213615
+            },
+            {
+              "arm": "right",
+              "clearance": 0.35831582325579037,
+              "width": 0.09498496353626251
+            }
+          ],
+          "board_pose": [
+            0.4650762379169464,
+            -7.149219891289249e-05,
+            0.7534505724906921,
+            -0.0010012988932430744,
+            -0.0009967912919819355,
+            -0.00029702254687435925,
+            0.9999989867210388
+          ],
+          "finite": true,
+          "board_level": true,
+          "board_resting": true
+        },
+        "eval_time_s": 0.00017810985445976257
+      },
+      {
+        "name": "azure_physical_state",
+        "subgraph": "azure_sg",
+        "passed": true,
+        "eval_error": null,
+        "diagnostics": {
+          "success": false,
+          "bead_error_m": {
+            "yellow": 0.2610484599815781,
+            "purple": 0.2905757689725925,
+            "cyan": 0.4079745557058234,
+            "lime": 0.27873244985301515,
+            "mint": 0.3427292944694078,
+            "maroon": 0.3255580240839796,
+            "teal": 0.3079518445953758,
+            "orange": 0.3330175525570995,
+            "navy": 0.3007673308003715,
+            "pink": 0.3334621379129298,
+            "red": 0.3769740898591039,
+            "azure": 0.0005535020556562007
+          },
+          "speed_mps": {
+            "yellow": 1.1730275218761388e-05,
+            "purple": 1.4727113011764748e-05,
+            "cyan": 1.2891245205567408e-05,
+            "lime": 1.4714414646765318e-05,
+            "mint": 1.242503640243971e-05,
+            "maroon": 1.4631007616146408e-05,
+            "teal": 1.135330421677556e-05,
+            "orange": 1.2163016435828303e-05,
+            "navy": 1.3150113773290086e-05,
+            "pink": 1.1034190720250336e-05,
+            "red": 1.1154676940402822e-05,
+            "azure": 0.0002220530040969891
+          },
+          "hands": [
+            {
+              "arm": "left",
+              "clearance": 0.10601202520824526,
+              "width": 0.017725763842463493
+            },
+            {
+              "arm": "right",
+              "clearance": 0.06607444470417773,
+              "width": 0.0392611101269722
+            }
+          ],
+          "board_pose": [
+            0.4657633304595947,
+            -0.0005320862401276827,
+            0.7534493803977966,
+            -0.0009935731068253517,
+            -0.0009901579469442368,
+            -0.001275639864616096,
+            0.9999982118606567
+          ],
+          "finite": true,
+          "board_level": true,
+          "board_resting": true
+        },
+        "eval_time_s": 0.00012969691306352615
+      },
+      {
+        "name": "orange_physical_state",
+        "subgraph": "orange_sg",
+        "passed": true,
+        "eval_error": null,
+        "diagnostics": {
+          "success": false,
+          "bead_error_m": {
+            "yellow": 0.26087329899210093,
+            "purple": 0.2904530476076884,
+            "cyan": 0.4077065883781165,
+            "lime": 0.27859796096495126,
+            "mint": 0.34268435530663605,
+            "maroon": 0.3255016503902384,
+            "teal": 0.3077323091661387,
+            "orange": 0.0002733206048459789,
+            "navy": 0.30084599207141455,
+            "pink": 0.33341845654607205,
+            "red": 0.3767178116529578,
+            "azure": 0.0005365917064348296
+          },
+          "speed_mps": {
+            "yellow": 1.173027521872623e-05,
+            "purple": 1.4727113011764817e-05,
+            "cyan": 1.2891269761932579e-05,
+            "lime": 1.4714414646780068e-05,
+            "mint": 1.2425036402427034e-05,
+            "maroon": 1.4631007616134407e-05,
+            "teal": 1.1353304216767503e-05,
+            "orange": 0.0007576656577977555,
+            "navy": 1.315011377307052e-05,
+            "pink": 1.1034190720258174e-05,
+            "red": 1.1154676940393416e-05,
+            "azure": 0.0006357324805626869
+          },
+          "hands": [
+            {
+              "arm": "left",
+              "clearance": 0.06609188101048435,
+              "width": 0.03932715579867363
+            },
+            {
+              "arm": "right",
+              "clearance": 0.09634665195561819,
+              "width": 0.014771989546716213
+            }
+          ],
+          "board_pose": [
+            0.4660334587097168,
+            -0.0003465136687736958,
+            0.7534486651420593,
+            0.000992008252069354,
+            -0.0009949265513569117,
+            -0.0008955616503953934,
+            0.9999986290931702
+          ],
+          "finite": true,
+          "board_level": true,
+          "board_resting": true
+        },
+        "eval_time_s": 0.00013519497588276863
+      },
+      {
+        "name": "yellow_physical_state",
+        "subgraph": "yellow_sg",
+        "passed": true,
+        "eval_error": null,
+        "diagnostics": {
+          "success": false,
+          "bead_error_m": {
+            "yellow": 0.0006467528431399466,
+            "purple": 0.2902246594236442,
+            "cyan": 0.4073145331496483,
+            "lime": 0.27824342801581126,
+            "mint": 0.3427439113486266,
+            "maroon": 0.3255784315189507,
+            "teal": 0.30737123320925536,
+            "orange": 0.00048148248714230646,
+            "navy": 0.3011504761726152,
+            "pink": 0.33358939778880164,
+            "red": 0.37660861652221816,
+            "azure": 0.0005231867457823171
+          },
+          "speed_mps": {
+            "yellow": 0.0001067058539141189,
+            "purple": 1.4727113011764982e-05,
+            "cyan": 1.2891245205587228e-05,
+            "lime": 1.471441464678009e-05,
+            "mint": 1.2425036402432211e-05,
+            "maroon": 1.4631007616148098e-05,
+            "teal": 1.1353303307577875e-05,
+            "orange": 6.641600867258023e-05,
+            "navy": 1.3150113773068265e-05,
+            "pink": 1.1034190720270058e-05,
+            "red": 1.1154676940390807e-05,
+            "azure": 5.638416658994518e-05
+          },
+          "hands": [
+            {
+              "arm": "left",
+              "clearance": 0.06703251964020107,
+              "width": 0.0391269326210022
+            },
+            {
+              "arm": "right",
+              "clearance": 0.09621736766520322,
+              "width": 0.014310548081994057
+            }
+          ],
+          "board_pose": [
+            0.4663512110710144,
+            -0.00011848728900076821,
+            0.7533366084098816,
+            0.0009943912737071514,
+            -0.0003089682722929865,
+            -0.0006281804526224732,
+            0.9999992847442627
+          ],
+          "finite": true,
+          "board_level": true,
+          "board_resting": true
+        },
+        "eval_time_s": 0.00015456369146704674
+      },
+      {
+        "name": "teal_physical_state",
+        "subgraph": "teal_sg",
+        "passed": true,
+        "eval_error": null,
+        "diagnostics": {
+          "success": false,
+          "bead_error_m": {
+            "yellow": 0.0005331424953746671,
+            "purple": 0.29010428568106694,
+            "cyan": 0.4070357570203213,
+            "lime": 0.278018512518785,
+            "mint": 0.34274498175847373,
+            "maroon": 0.325602458073668,
+            "teal": 0.0003687966472264415,
+            "orange": 0.0004749953064284757,
+            "navy": 0.3013456958798281,
+            "pink": 0.33369130180241974,
+            "red": 0.37653889981857763,
+            "azure": 0.0005138911822051734
+          },
+          "speed_mps": {
+            "yellow": 4.6488405449620376e-05,
+            "purple": 1.472711301176264e-05,
+            "cyan": 1.2891245205569447e-05,
+            "lime": 1.4714414646784229e-05,
+            "mint": 1.2425036402429293e-05,
+            "maroon": 1.463100761612117e-05,
+            "teal": 7.549769980547896e-05,
+            "orange": 2.0850923869527405e-05,
+            "navy": 1.3150113773059834e-05,
+            "pink": 1.1034190720259596e-05,
+            "red": 1.115467694037378e-05,
+            "azure": 4.769507290022032e-05
+          },
+          "hands": [
+            {
+              "arm": "left",
+              "clearance": 0.07383123558855643,
+              "width": 0.04006800055503845
+            },
+            {
+              "arm": "right",
+              "clearance": 0.09622692281807568,
+              "width": 0.014356262981891632
+            }
+          ],
+          "board_pose": [
+            0.4666442573070526,
+            -1.8750747585727368e-06,
+            0.7533090710639954,
+            0.0008278415189124644,
+            -0.0004639888065867126,
+            -0.0005872344481758773,
+            0.9999994039535522
+          ],
+          "finite": true,
+          "board_level": true,
+          "board_resting": true
+        },
+        "eval_time_s": 0.00013316189870238304
+      },
+      {
+        "name": "purple_physical_state",
+        "subgraph": "purple_sg",
+        "passed": true,
+        "eval_error": null,
+        "diagnostics": {
+          "success": false,
+          "bead_error_m": {
+            "yellow": 0.0002998466789412767,
+            "purple": 0.0011697797166125088,
+            "cyan": 0.4067797649016859,
+            "lime": 0.27780416856902446,
+            "mint": 0.34275444531993826,
+            "maroon": 0.3256205624728229,
+            "teal": 0.0007314318738790395,
+            "orange": 0.0006047802539997958,
+            "navy": 0.30153274426739757,
+            "pink": 0.3337822082062757,
+            "red": 0.3764654718674888,
+            "azure": 0.0007120764696017511
+          },
+          "speed_mps": {
+            "yellow": 3.894282131357276e-05,
+            "purple": 4.4111631118739414e-05,
+            "cyan": 1.2891244296076023e-05,
+            "lime": 1.4714456483489992e-05,
+            "mint": 1.242503640243421e-05,
+            "maroon": 1.4631007616131083e-05,
+            "teal": 4.6762203263942574e-05,
+            "orange": 1.926653267815407e-05,
+            "navy": 1.3150113773062443e-05,
+            "pink": 1.1034191629945912e-05,
+            "red": 1.1154676940398414e-05,
+            "azure": 4.052120438005559e-05
+          },
+          "hands": [
+            {
+              "arm": "left",
+              "clearance": 0.06615344251710047,
+              "width": 0.03923514485359192
+            },
+            {
+              "arm": "right",
+              "clearance": 0.09632155704266679,
+              "width": 0.014310902915894985
+            }
+          ],
+          "board_pose": [
+            0.46690288186073303,
+            0.00011040137178497389,
+            0.7532548904418945,
+            0.000659045996144414,
+            -0.0004553949402179569,
+            -0.00040757760871201754,
+            0.9999995827674866
+          ],
+          "finite": true,
+          "board_level": true,
+          "board_resting": true
+        },
+        "eval_time_s": 0.00013191113248467445
+      },
+      {
+        "name": "cyan_physical_state",
+        "subgraph": "cyan_sg",
+        "passed": false,
+        "eval_error": null,
+        "diagnostics": {
+          "success": false,
+          "bead_error_m": {
+            "yellow": 0.03405256248466718,
+            "purple": 0.0009048492514994278,
+            "cyan": 0.0428496980737649,
+            "lime": 0.27720774552965965,
+            "mint": 0.3427863504570978,
+            "maroon": 0.3257779973656555,
+            "teal": 0.0004782183865220532,
+            "orange": 0.000614370877501515,
+            "navy": 0.3019989913629935,
+            "pink": 0.33410180152911256,
+            "red": 0.37634211311635946,
+            "azure": 0.0005900230583302984
+          },
+          "speed_mps": {
+            "yellow": 0.00036513528846084104,
+            "purple": 7.388175499784604e-05,
+            "cyan": 6.795680649210209e-05,
+            "lime": 1.4714456483527595e-05,
+            "mint": 1.2425036402427434e-05,
+            "maroon": 1.4631007616164407e-05,
+            "teal": 7.374758199070713e-05,
+            "orange": 6.886395545738744e-05,
+            "navy": 1.315011377307684e-05,
+            "pink": 1.103419072027196e-05,
+            "red": 1.1154676940716024e-05,
+            "azure": 7.526278603775288e-05
+          },
+          "hands": [
+            {
+              "arm": "left",
+              "clearance": 0.03938701469388959,
+              "width": -0.002126771491020918
+            },
+            {
+              "arm": "right",
+              "clearance": 0.09600845198648615,
+              "width": 0.014163050800561905
+            }
+          ],
+          "board_pose": [
+            0.4675077199935913,
+            0.00042690426926128566,
+            0.7529858946800232,
+            1.3692490483663278e-06,
+            2.3588846431721322e-07,
+            -0.0010098315542563796,
+            0.999999463558197
+          ],
+          "finite": true,
+          "board_level": true,
+          "board_resting": true
+        },
+        "eval_time_s": 0.00011398177593946457
+      },
+      {
+        "name": "cyan_physical_state",
+        "subgraph": "cyan_sg",
+        "passed": false,
+        "eval_error": null,
+        "diagnostics": {
+          "success": false,
+          "bead_error_m": {
+            "yellow": 0.0002626522916559707,
+            "purple": 0.0006710266039151547,
+            "cyan": 0.00669589118411689,
+            "lime": 0.2773348764371659,
+            "mint": 0.3427168358972956,
+            "maroon": 0.3256954116173464,
+            "teal": 0.0006306666735632239,
+            "orange": 0.0006019005315021227,
+            "navy": 0.30191894471389563,
+            "pink": 0.33400386005477034,
+            "red": 0.37625395687052804,
+            "azure": 0.0006056180094694423
+          },
+          "speed_mps": {
+            "yellow": 4.555874805229243e-05,
+            "purple": 5.096014343052808e-05,
+            "cyan": 8.245730615889758e-05,
+            "lime": 1.471441464676876e-05,
+            "mint": 1.2425036402424517e-05,
+            "maroon": 1.4631007616145878e-05,
+            "teal": 4.7014114886874815e-05,
+            "orange": 4.601104491539874e-05,
+            "navy": 1.3150113773062451e-05,
+            "pink": 1.1034190720259093e-05,
+            "red": 1.1154676031081301e-05,
+            "azure": 4.6982078556561116e-05
+          },
+          "hands": [
+            {
+              "arm": "left",
+              "clearance": 0.03557363460040523,
+              "width": 0.03920714557170868
+            },
+            {
+              "arm": "right",
+              "clearance": 0.09601698646843607,
+              "width": 0.014448774978518486
+            }
+          ],
+          "board_pose": [
+            0.46751323342323303,
+            0.00038381305057555437,
+            0.753275454044342,
+            0.0009127763332799077,
+            -6.809237675042823e-05,
+            -0.0009010318317450583,
+            0.9999991655349731
+          ],
+          "finite": true,
+          "board_level": true,
+          "board_resting": true
+        },
+        "eval_time_s": 0.00012645171955227852
+      }
+    ],
+    "source_sha256": {
+      "puzzler/__init__.py": "af1d4cae87e1938e53090f2bee3033e844b7e2acca5a3796acd97d7e3b117430",
+      "puzzler/assets.py": "5639b7fbadda1fe81daafe55b1e57dc92c09bf2872e41a7e7393c40898c426fc",
+      "puzzler/audit.py": "5028d07d73ede221e74e13bde830e3562310ee6ccba98e00a885198f7e8da38a",
+      "puzzler/controller.py": "2b2d5aecde3da1a64e1c3ad99f96694f81b02ee2a26f4d1b21ef17db90fe99f7",
+      "puzzler/episode.py": "eb1e6824a48e3b08f4691c516f180518d86746bbd03b7d71ad60410743874de5",
+      "puzzler/hardware.py": "4c53059e408501d1f5847a7b2fac8ae55cfdbaa05c133d718c85f14a062a381b",
+      "puzzler/model.py": "628877753beb8a640f8056465703af53198f68dd3669b710591f7d37d8a44314",
+      "puzzler/policy.py": "187a8e41cd7335ef9aa7bc2d5c9e98d4c8db46d5ecda891d71b6c5fbc50ef927",
+      "puzzler/pyramid.py": "51d359a28f1aa99c370ce295979b116813074d7ee1ef9c06b0fd793e8aa819bb",
+      "puzzler/task.py": "931e01f88130cb15879d18499992918133b56c5fd364aa3c7da0459460fcfe75",
+      "puzzler/tools.py": "53f7ba5bddec3d89cf8e81d3be0745e767ce610ed2bed0bee1e09795a1c2b2eb",
+      "graphs/pyramid_v37/checkpoints/anchor_sg.py": "905e88b1c5b63b3b4af2a3ce09e4172cdb2cd07d98d056f92519bc78e97d7a4a",
+      "graphs/pyramid_v37/checkpoints/azure_sg.py": "287e1e403c167048a2d126dfb8df8f68ed789ede98a27d22043668a2c194265a",
+      "graphs/pyramid_v37/checkpoints/cyan_sg.py": "dd47cea0eb0e029801f75a7c5d77e281ccd62935513adc8264b0e358e832c629",
+      "graphs/pyramid_v37/checkpoints/finish_sg.py": "0a095d428b96e242d984f35bbd86811f1773e7b9f8944019c0e07a8914cbc255",
+      "graphs/pyramid_v37/checkpoints/lime_sg.py": "dbc2bd592166e4be669a9bcc33f37440d16e73bf1c266db7f94921b396b2d899",
+      "graphs/pyramid_v37/checkpoints/maroon_sg.py": "5a0261c1b00ff20bb52bb198ca96fe5a064693edd58f59e85352db71aec2dfaf",
+      "graphs/pyramid_v37/checkpoints/mint_sg.py": "ac100c45e0dcb7319d4ea39f4f6c95b0f8c3ecb35178c3b3facbb5183a187eb2",
+      "graphs/pyramid_v37/checkpoints/navy_sg.py": "93b5e45f45c83bc394a3a0f55df68343ee5f91673d7bdf0ef1caa1c6fea0ed21",
+      "graphs/pyramid_v37/checkpoints/orange_sg.py": "8097129278a3263570849bf41054e8ca306cd65ee7955b61084fcc27825e7b16",
+      "graphs/pyramid_v37/checkpoints/pink_sg.py": "f6f3e0a1eafd9be0d180a97a030018851ed4e159bd6af968185a5559af4e6016",
+      "graphs/pyramid_v37/checkpoints/purple_sg.py": "66b4e4b4fc28cd7cbb8dbcfae821a442a262f001667fd8aba8f51556f61f0906",
+      "graphs/pyramid_v37/checkpoints/red_sg.py": "95b1fd7b45530a8144c84dd19a66c1ce3e05adbebcbad088940d0951a121671a",
+      "graphs/pyramid_v37/checkpoints/teal_sg.py": "97b35a094ad92c1a5d882f0512ade56654cde1078fb7fa39644a0038b24c7cf8",
+      "graphs/pyramid_v37/checkpoints/yellow_sg.py": "e4f79b8289ad9a0235e7c7d25cc5cebbcbbf30a2f5fdff662a27dd6c0d4c8ffd",
+      "graphs/pyramid_v37/scripts/anchor.py": "d55168f88919e08baa498e8d467ce9ba7742bb97a366085a87ae0e99dc9cdf5f",
+      "graphs/pyramid_v37/scripts/azure.py": "583695906ac0ad50610e321f26cb4ee6a29f2877196291dcd36a2ef07c9e2944",
+      "graphs/pyramid_v37/scripts/cyan.py": "49148593a82d42b4bc5a259c06ef04589dcad4621728f0901bd334286f67197f",
+      "graphs/pyramid_v37/scripts/finish.py": "8be33e54c4effe515da7adb4c21aa869705dcd1e1fcca94f8ee25e138a5b9f4c",
+      "graphs/pyramid_v37/scripts/lime.py": "27899bfeca9ff41dd8a85dd2d1ac45b7ed7abd9992cf5428b02cee7b91159fd8",
+      "graphs/pyramid_v37/scripts/maroon.py": "2214e4555ee7203b7bf2e60cf44b06af945e92bbb0c910fa307fb71d31f175c0",
+      "graphs/pyramid_v37/scripts/mint.py": "66e84748ab4b3b692d97cf8ea82e711bee262990785e80769cf6bee98e5659fa",
+      "graphs/pyramid_v37/scripts/navy.py": "a07e680a775ed6960cf9dd5c3d1166cfa58e62b7ed8a531a879001af99f1422f",
+      "graphs/pyramid_v37/scripts/orange.py": "10a1646faa334976f39419ea801168a2bf79c25f810c215bbf7086dd7f5c6b27",
+      "graphs/pyramid_v37/scripts/pink.py": "1cd34b7ac16184667e68af10a75f9fd6ded563c0c93adc2bc7e711752e8fa797",
+      "graphs/pyramid_v37/scripts/purple.py": "3d371f274fc3347384a14c4a327193b446cc29ee3daacb519d80ed56923e6233",
+      "graphs/pyramid_v37/scripts/red.py": "4b423d7f839484637605858740810acff437b3e00170a12d20f236b3da8b6ea7",
+      "graphs/pyramid_v37/scripts/teal.py": "8a077100d767496365cd83e25d51e1d225767c1b1fe12e9f8adc25c00962ce1b",
+      "graphs/pyramid_v37/scripts/yellow.py": "2cbbf6ad92c799d94a8199e30104a0f4e829f30277b1796e5921cadeb8c9419b",
+      "graphs/pyramid_v37/params.json": "612f6bda53101a5301777900a7af76f11ddb23524594f031d88ca79262c929f4",
+      "assets/azure.obj": "5f3c80c1a1d4ccf8819bd2c13d8cd865c09c5790bdcf324c5bb40674a6162b30",
+      "assets/azure_000.obj": "8385332be8887e3f53fd70d8bbc179947ca6822bb913514b3404769140a6bd43",
+      "assets/azure_001.obj": "e3e8caf6ad9920b2c1178658aafc4992b3a313e2276618026cd7c7c2b3e1722d",
+      "assets/azure_002.obj": "cb8db1950c085a29d609b052edf3f656f7cba8effed38c92e19e8bfbb3ce75de",
+      "assets/azure_003.obj": "11ef1489cfce8d490282966e1583806687d0287c993c19fbd28fa438209ac0ee",
+      "assets/azure_004.obj": "bcdf5e8c050b2fbce8aff4fbc7c3a5d19ea423446d601e070f0f53a74eaa7372",
+      "assets/azure_005.obj": "e82affccb50c11a195171a6a382df79d4100fa08129c21c581442978cb843152",
+      "assets/azure_006.obj": "4660319f8429375eed85d506ff89c57970e5e99b757145c843762cdc77ac2532",
+      "assets/azure_007.obj": "77038ff429755143513c5fca0280251907808c29d0130062cb21fcfd507aac6a",
+      "assets/azure_008.obj": "46926cd24224864ab6c3bbf9ce54735717d617d9d253010fb87765f3971e8ebb",
+      "assets/board.obj": "ab81459a47fc8297a2907ea6b9d7d67e73a0264d3cb0aa22027f97cedd9f2553",
+      "assets/board_000.obj": "3dc8ccf6519d4d519ed74efb69e06a668e3f41d245e388b6a082da02fdacd02c",
+      "assets/board_001.obj": "41e2f9914d8392ffd2179826d1ddb7ce758af9e12a7dad133e29bfdb3d066b51",
+      "assets/board_002.obj": "789fb43037cd482026e240f4de50e0a3c452b9aa1c65f74dc2be45d14e0db9dc",
+      "assets/board_003.obj": "cfe316956cfd8a3a2428a5f371a7809b9f811faefade148f80a266ab304b1a5d",
+      "assets/board_004.obj": "fd49026c6438718c1261b0806dcd72026f82be380977ccc55604aa6e2c9315d5",
+      "assets/board_005.obj": "3baeafb9f546fc7393e3d9d99dbc489aad196bcf16fddf7543bafea0e4e124bf",
+      "assets/board_006.obj": "4238343fbfe7f96fe257106b31e4bfdb1cb5d281344d59ff866558cd30e9da6b",
+      "assets/board_007.obj": "0607094dea248242d8b3b37734af9bea1c326d0311e3daa5946e59287525b4de",
+      "assets/board_008.obj": "42061e1fcc6ea18f348e7bbc25c97ab9482b840e240eb801803594c5cadfbbe9",
+      "assets/board_009.obj": "e2885cf381c6fe6a8b98d127467e728bd97b481a89f7500389aa8b9e0c0f4eb0",
+      "assets/board_010.obj": "9dc697eb92488d04cbbf00b7551ad2baad64c4eea2129621e2f24b56a9bbab94",
+      "assets/board_011.obj": "12ccb4235318ac69599f1f750d90fd5e64a083b69bfcefc22747075362ea2893",
+      "assets/board_012.obj": "b504b2597ed103178fcac048c9bbd4ad6628c74a96109f09c571d8c5bd9cb50e",
+      "assets/board_013.obj": "ecd60783ae44d29bc64e0c063549da090da01ba1384227e410d6b9f0b8418776",
+      "assets/board_014.obj": "c5a2dd7d0178443b58fbac37d44b4e33bca852ccdb2a0448e84ba2de8a07f521",
+      "assets/board_015.obj": "04b422d404c8834941ab7f43419ae5925f9385baa41e687e91192f075906b89f",
+      "assets/board_016.obj": "c852cf0cf0f7f8471d8e1b19a9670115d039228cf949f3b06095eef034e3d718",
+      "assets/board_017.obj": "aa22c8a941d1e23d800d620bb768c924343c4e98513fbdb6e8fbd0cbe9906010",
+      "assets/board_018.obj": "c6aff9cbec85065a1a73e8c6b1619f9f47b8ee56aedd28ac9025da476d540497",
+      "assets/board_019.obj": "0a2fd7b6459fd28186fcf292bd327d1df064a058c0499d6f863e881d0c3e034a",
+      "assets/board_020.obj": "dac873fa5ff645ddb8b9b1cfd6f2cecca2f11c6b514c678f8750c5cfc1b10a16",
+      "assets/board_021.obj": "4b1ca977aa14276ab511a951de66a1638dc9f9bc740ccefcd9e1356c4279c1b2",
+      "assets/board_022.obj": "2c2fa533fed32895e84411027c970e8dc85fdc78727ab7eee785f6bb4bbed61b",
+      "assets/board_023.obj": "2a1fe4e04f0d3e64c5c339df3a71fbb4fb8d326c5a4a5d85b45b45a239d36060",
+      "assets/board_024.obj": "9ae6eb8748425da4b2130c226a2defb24796915b448d7c8fb1accec3e7ae31a2",
+      "assets/board_025.obj": "e48d832f51376e20d135e12196a54396bba07de056b2d9d21444c347eccedd6e",
+      "assets/board_026.obj": "958f23528784db9932dcc35626fc68a25ec33b2f9589c134049c3e21a1739efc",
+      "assets/board_027.obj": "edc76692418dc83b977fed0aec38c7b33e8fe31b20d165246d3181c2d025a30b",
+      "assets/board_028.obj": "c7fe075eb1c67d5c0957709e8355c8f28f491dd734c435f0f3e9103664b71ed5",
+      "assets/board_029.obj": "d1325a38e70b777d90292aea4e61a4b3ce92b69e097f3a570d1bf8e5978e444f",
+      "assets/board_030.obj": "1211b250be260ff423bb6cfbea80d25dc5fc85bb8f5b2eda629f45f7bae052e1",
+      "assets/board_031.obj": "3afb733b74bb3f32e0a4567c3e21abdccde36642e121caf2fdc9eadb110fc20a",
+      "assets/board_032.obj": "7a42a2e93066309f10ef4a0b7c0870161e2d2735fb12502c306b4947ce0b4da4",
+      "assets/board_033.obj": "80c76b7f69056d8b491deb23dc8b59d0486ed1e5681650d8c37395293859e78b",
+      "assets/board_034.obj": "1e5696b9b1c4672e1d44134fb09fa1d11aa5c73383dfe4445a2d56a092497f24",
+      "assets/board_035.obj": "be8350ff91dd2aebe78e1b391e67ca073a1bb4770cd9518dabf847e78e02d871",
+      "assets/board_036.obj": "f589aeff91ede177a6164223341285c3d754c03aa6926e40d030ecac7987a687",
+      "assets/board_037.obj": "354d37b3c21e86968cee7d121d680eeb8717ca85b502be21d9596c4a302a9ed6",
+      "assets/board_038.obj": "e57d9937cbe63ee46bb30791a234b0ccdcf0a62f1b2cbaa618fad9b1d0aaa828",
+      "assets/board_039.obj": "4403f64d09f2f1cd1f6b31f018cd13cdd85cef19c3341a491a0a2c1728f508c0",
+      "assets/board_040.obj": "77bc20da156da5d876df50aebbc903bc20c013d0002197d66211e662fb23c34a",
+      "assets/board_041.obj": "96074f1adaf16495a300d2fe848715e11cff182c4cdbcd9b85a86d821f6c1b29",
+      "assets/board_042.obj": "b41805e824e4dc6b1d327ef31ab4c0920851a2936041cbb4ac7b95fee5b433a2",
+      "assets/board_043.obj": "1bbff3e3f89dd313a813558955439ec2fe2b2dff1e3649e377bce0f7725c9328",
+      "assets/board_044.obj": "9149fa0e5db7b8cfd6576a4770a73b2de0913908eaecdca4061584759d7cf32e",
+      "assets/board_045.obj": "8b372de08682e468235c3785c6bfb4889125947017858b9c88daa4985bbaf4e8",
+      "assets/board_046.obj": "bea8e51e7f2c295e787ccaf7e674d414d14813e6c6bcecbc8d26377adeb4aabc",
+      "assets/board_047.obj": "6ec917cf0da95617b8752962371deb324739e37f698c66e7cdf78dfa2f38e2dc",
+      "assets/board_048.obj": "061e55f01a2eded9c54dd2ae1fe974ebeb5d45133c90de6507b8fdda0faaba17",
+      "assets/board_049.obj": "cfbe9a2565f8abde7c211fdd2795dccb3c6a6a2c9de7589ec081d99ee1b9149d",
+      "assets/board_050.obj": "b44c463f2b166bb8ac60a425a7ffa25984a747a33dc05a57e64883b67a54c25e",
+      "assets/board_051.obj": "bef80377f038292012dde18c50627aaf09172aec30e50658d91143786ba1abe6",
+      "assets/board_052.obj": "80b97db255b7fccd02b92cad049a724c759132ead570601f66f3cc30c23affbf",
+      "assets/board_053.obj": "f8b659e691831cdf06831b2b9dc0b7fcecf362fdb89d3c959a86fe94eb7ea420",
+      "assets/board_054.obj": "fc3b4d3604439ce1727930fee6de01dcdd5dfdf4c783b66f427becca8904a3e8",
+      "assets/board_055.obj": "5f43343ad72664e57fc61001fe6cd7e17b9de6e9023b74c889669a7c9e909c97",
+      "assets/board_056.obj": "0ccf639df688029df95b340d73714025c88ff4b03b33083675ae7019e3985b1d",
+      "assets/board_057.obj": "96ab663b325952a4f9872cb2f1b3bd20e779071aa09c7bedf13aa71b4b2e6a84",
+      "assets/board_058.obj": "c4561fa0c3c7a3e76700520fb03dcdb68d35982a9946a928ab9686a53a8e5b9b",
+      "assets/board_059.obj": "4eebeef67f305c9141b0572b62f58d3666392ee6650ea1730e627a2edf0eec8c",
+      "assets/board_060.obj": "6c010362f4737d7b337163870da5fb3cf403137b8fc7e9d0b69e2e85821d59fa",
+      "assets/board_061.obj": "19a79e91a1569c844dd2094ae04aaaeed51d5df0a99c5b9630845c61e219d616",
+      "assets/board_062.obj": "75801c4e0716eedb035dd5ec778fd94cbfba72a7376c66b2d2dccc95feea6e24",
+      "assets/board_063.obj": "925a1559c7b48c687b699d9502ef6b2156f45028f5bcf3b99e0a05a3d41ae3c4",
+      "assets/board_064.obj": "9afb5acbd4ce25adf3adce479af546f9614467ee9e58b356b7f4bc4f78fcfe66",
+      "assets/board_065.obj": "c87d770c30053a2d73086b9792ea43708037fd8c1f262f13f29184e006e93382",
+      "assets/board_066.obj": "899955501d9a29757ab67426ff3f3a9065e14eb13cbf28e563b5109ff90158ee",
+      "assets/board_067.obj": "3387f6c3cdaa57e8bce233cc9b5a692dce56f9749591ac14192544e29522769c",
+      "assets/board_068.obj": "38fd8258c4c6e337d1938d1ae64c2d7e4c7d4f64ef6f77459d0c389e921ddfc1",
+      "assets/board_069.obj": "e4f4109366bd93a764ab8d62dfdecf45ff5f277660cd59a95a8206c7103fd5f1",
+      "assets/board_070.obj": "8e141b75f1ddde4f8f52b5fb2918eba9a658264d6d9570aa02e9861cf0560b02",
+      "assets/board_071.obj": "b64de6bba2f81a69aa304d5c42f34dda8601186fee2bfcde9c62102514646847",
+      "assets/board_072.obj": "54b7ac707c777daed196a92d3a16b99c244286f9a1539b23a6338537d170d444",
+      "assets/board_073.obj": "e44b98d3964d6fc1f22bd445e859cf4c2ea8d00a152896f584d17edad67dff17",
+      "assets/board_074.obj": "3d674826e10938dd020610eed36d322c276aed22bdcec14acb9a084f168bebc2",
+      "assets/board_075.obj": "0849b2d4659b3b620e5af6aadd05f742b5387687e99e6dbfce648cd02fb78a45",
+      "assets/board_076.obj": "d4830f9b3b851e228e54a47371e739ce1fabf86cc9f910874021ce4ea2facfda",
+      "assets/board_077.obj": "0739ec9b05bc7eaff3b13b498ee023d9716e322dc7c4dcbdfad8fcfb284e5a68",
+      "assets/board_078.obj": "f16fe38b896be79bf4b89dc84e00c50de9745ec9844cd77d3cf0c30fa56deae5",
+      "assets/cyan.obj": "6fd6aa82a0f7a488a78d31a2b23ac28fafa4c432ef758ce40aff5ce854ce19d9",
+      "assets/cyan_000.obj": "e38ddf033d1edab7e93b589fed8a623641f07a3feaa690a6b83360c8dc23de88",
+      "assets/cyan_001.obj": "e6534aefbee61bbe825d4d9b31832355f764669c2fda067446f26e66a8d63a20",
+      "assets/cyan_002.obj": "c0a898f983885e4df1c1a7d74ca1593c43e2bcbc407e16dbb0d43ff21034afbe",
+      "assets/cyan_003.obj": "6901191efc29d679d5ff564d1cba176ab4005e41048cf2e9f931609b4893fd50",
+      "assets/cyan_004.obj": "c360cde6ce6c1eaac8174fdbc1b4548dfacb0e46014e419c92efa2eb206c9157",
+      "assets/lime.obj": "af569608e7b92f7bb4a18011cc656b73b214e78468e6eeb1839ca238df66b367",
+      "assets/lime_000.obj": "8b72cde6421279254a05feb73fe51c1a8da34e38cc94f4f905f21b5d6a36ee44",
+      "assets/lime_001.obj": "8e55cefcefce382a032758601fa57975c78fff565f1edfb76ab97707eb182eca",
+      "assets/lime_002.obj": "a362db330964097a6fdd87a7bf6ce0e01f72c68cdd4cce28e513008b585d5647",
+      "assets/lime_003.obj": "49954577fd752e6c6a44b714e502464c6d07b76dc39ccca8b521ca082cc9991d",
+      "assets/lime_004.obj": "4c87b894cdb3db7e36acd15094c45164683af8b03a8187ba13fe980eb11c8eb8",
+      "assets/lime_005.obj": "fcf6f42e8017d68dc0a8a97612d1a2b45010f7e96a1d2bf31d202b5e687aa05c",
+      "assets/lime_006.obj": "17406e65b792ea1a43587f6926b7c84bd33bb21292e0271be56fe6e8d832f2a0",
+      "assets/lime_007.obj": "ec5d848b6f1bf8ada4b92913a4d748fb4737c6a449230e1450c2fff30b136a16",
+      "assets/lime_008.obj": "a0cedb8cc46af62156114aae2f508ebea255d7fcfc2f6bd77818bbf0aa57b82c",
+      "assets/maroon.obj": "3b3c854780c5b24d657c68300a188878d6aab332f1c6f74dd1d41b3eb3fd4df3",
+      "assets/maroon_000.obj": "3b676021e5351db02cef8253f81907a7f444d4b964df7b3d3df012268e41bdd7",
+      "assets/maroon_001.obj": "b9fba626fdc5b021fc064746817ad1ae41c2868d26bd1695e32b1660812f3f10",
+      "assets/maroon_002.obj": "3e5afa1dc9884e3e555f8ca153b06a0d2b01928b0bb19c173f8242a06bd84ad4",
+      "assets/maroon_003.obj": "0361be28c88ff940389c7f23714297441c74c2ceb72ec821252e0c078d25baa0",
+      "assets/maroon_004.obj": "8ecc547aee12b803fbf7ff30d1a3512e69103acfa743a531c55be2025694f946",
+      "assets/maroon_005.obj": "374f407ae2f4dd733ea8173c44c226312ef6f04bcbd7d3f52846c379486c345c",
+      "assets/maroon_006.obj": "45f7bd4167597ef865bcbc0ef7811cb08b28be6b38f8a27d3f253193ed4b94ca",
+      "assets/mint.obj": "a29d21f835a8945ecb5cd3e4a6d2e26a6230ed2daba24d9ab8ba2c3cf43393df",
+      "assets/mint_000.obj": "2e491b72b025d3ad9cc2063c380c391bde6414da11c11309002fe11fc0948585",
+      "assets/mint_001.obj": "0c8a0456f4da53a66854b81b3ea53642eda95f308a6ebf9990021ecb965907eb",
+      "assets/mint_002.obj": "0e70afcc84be71e1c4096a5f17afcd53c7217be3e18dc73a33b113a4afab3c77",
+      "assets/mint_003.obj": "4db736ad696f0b309dc7b4e1038d773075f5defe8f1cee4d5235fee00f48ec76",
+      "assets/mint_004.obj": "3fe758b2d9cd5101140c92a09383f7793f427a02de5793b574e572dc23d14989",
+      "assets/mint_005.obj": "6598df32fbeab7dfcacc91365318506f48433a3fe5951d5979d0596583004af8",
+      "assets/mint_006.obj": "67cecfb157ca555cdd05c0c0f2f7bcb5a63141c2eb694317d251a22cfdfb3d59",
+      "assets/mint_007.obj": "bbdba4c136dfb4456300749efd291ade595d0a19d85552c42940f6740b48ab1a",
+      "assets/mint_008.obj": "4cb70a2071304d3405bd8e1afa17f07ce4f6436b2a4c00c1588009cd44964d5b",
+      "assets/mint_009.obj": "280e294d9a0e57448c3d15ffd727f1fbe2ada9cb767ff4a0ee06985e19b5058e",
+      "assets/navy.obj": "dd3223c2e5049d8b0c0162925d0742f5495b4fced3b95dc1cd7dcbb5a3f343a7",
+      "assets/navy_000.obj": "eb10410deb0e232c79085b4863e5676996d1409311344e073d181fc7355530b3",
+      "assets/navy_001.obj": "f50041ca7b25a2167f09a95ebdb4c2a39e2521c28aab171ba217db9eaec74d6e",
+      "assets/navy_002.obj": "ed71654e58222ac30610f79a5f37f0279e7aee00338405be2d945ac74edf685f",
+      "assets/navy_003.obj": "54caea72a2e6cd8aae35b22dd15ea0aa15863c0244ea6bad555428572e91862b",
+      "assets/navy_004.obj": "91be9312cc51df36024d779236ba1254da7454d2f223cf44e2730e352723751d",
+      "assets/navy_005.obj": "e99374008e89345ccf1f34307e542ef0da43e1049a7d32ac6050524a256df44e",
+      "assets/navy_006.obj": "f8a930c077868a111651f28200a4e10b7439f49a772db46b88059c433305f156",
+      "assets/orange.obj": "44ef6c98dfff6f2e3004b7538808f8857e770ee5f888a5dba6b46a556a2e16b8",
+      "assets/orange_000.obj": "639965b3e0c93a4adf84b1d18d731584d7c9d8d85afb2a0cd593ca5376177503",
+      "assets/orange_001.obj": "5fcbe3a31504030631d7e5ff7d23336812818074db602fafec0e86a83f7d8a4d",
+      "assets/orange_002.obj": "b17434c933c955048c5b9121dd1210b9b114fc5af5ddf7b711f547fc246d43c7",
+      "assets/orange_003.obj": "ad0cff2fb5fefbb4cd40ddefa07fcbc002c32e5985e84fc5de4d5774742fed66",
+      "assets/orange_004.obj": "f018af14763ef10e15ae822c1fa1121579ddd58339624f9d5f3827c0849f5adf",
+      "assets/orange_005.obj": "9c0be9cadfebd1fa7220e7b6bacc6ce66448170186aaa76f706e8cf339d7639a",
+      "assets/orange_006.obj": "d49bb6cbfb87422fc5305b6430b4b8a081ab7d2c10816a27a3aa26fb429fdb2c",
+      "assets/orange_007.obj": "fd7b336da37aaa95fd81c3a270467e092bcc18f9837b7b253fdad13071174331",
+      "assets/orange_008.obj": "f6d10d15f0f3d00cb3c97e0c1832b822b0ceff8ca754cceeaca14feaa7166f73",
+      "assets/pink.obj": "b4d604498c3fa4efb70ba3001cc700203aeb26619b5124eb21efdbbc292b1bb0",
+      "assets/pink_000.obj": "ad7941f4aeaf4df9c613e2140c58fb20067fa4076f5b9d1231f1c6a2f602530a",
+      "assets/pink_001.obj": "5f9b68b8b698ba0944cdcfe8001ac4f1092a5ea64c199d36b8f76146b8bf7989",
+      "assets/pink_002.obj": "5f3b5db429588bf9e49fc0c2169337a05edd414d0b042572b1aeeea981e93225",
+      "assets/pink_003.obj": "bd925228016543582dfd889236e241b47547aa9126c680aa007422c8c6fd9570",
+      "assets/pink_004.obj": "685b83a1be0ebfc1e1bf26292f8dfbd63a86c84be014727c404bb044c51a9a5a",
+      "assets/pink_005.obj": "0396c39d1159eabc65fe539065e5f26f8eed40e2a5a1f5bab5b79885b4518202",
+      "assets/pink_006.obj": "4ac4a16cd8f43b5b9b5ac1f4e2003431d6de3d6ff083b4edd3fb393ee1be5c1a",
+      "assets/pink_007.obj": "8ec1f8d32d929cd16b7ed2cfefa131b6f274983b087f7bd29719f92f313a9fce",
+      "assets/pink_008.obj": "f408ea898170821e8304e7eea7972f8eaa87d1670a0111b27ee79e0ce8d5a346",
+      "assets/purple.obj": "a0bd643327a475b078adc67c90f9644012537f153e6c2520e11e50dca2609c4e",
+      "assets/purple_000.obj": "ece36de439946153f9ac69dbafae23751386f80167babd4c7a97aa21cd96dc3d",
+      "assets/purple_001.obj": "d9ee8cdee5ce10f5030494b96c59cae92b56dd05973ff81a9ff09386868e77d3",
+      "assets/purple_002.obj": "86e019cf7d61a54ea4c14d9ad6b3e8d2efd03786b41c7382d4ecb8c8085acc50",
+      "assets/purple_003.obj": "96abf0f79ea26c8137897b4d511d0fd797a140a855010cde6a889cefcc8f1b57",
+      "assets/purple_004.obj": "53748dc090644ebe97e56cddb1b2e11cdca9a9eee961a81f05c5fd93c52a61db",
+      "assets/purple_005.obj": "24aa0725b6fd1532f6c7c71f2ffb7c8f39642df52ac00d93b3fb9d9de7d6154c",
+      "assets/purple_006.obj": "b6e3c609709bad6246a4225f12bc1c57b2fb1784800ea0bad414d3430c73fa21",
+      "assets/purple_007.obj": "ceb9555b06e313027c9683802914bb1e85423d297b13762b9b67fed745a7e695",
+      "assets/purple_008.obj": "11f1b5600828483732ea304f5cb9a79bed3c0aad17277b23418428f9f983c030",
+      "assets/red.obj": "cde2c3707101193ae31cf7e57f7b99f16c01d7afb8d4af78db61583bc1d8f4dc",
+      "assets/red_000.obj": "9704db0a71330cfe6c28ab3c0813a17ba4cdb7d818ebdda5064e4650759b6a8b",
+      "assets/red_001.obj": "a2ee5050ff6a3983f9ebe86636de21553fd267bf3eedddcb3feefd7bb0551ab7",
+      "assets/red_002.obj": "60c38d98d587bfe4bad65186cccbe8c2e48a315898ef5a3114fe4bcff0618d4d",
+      "assets/red_003.obj": "4fd60189ca0b5aa721179283a6a9174453ef9f4fc8da1bab20a667b206dab2c6",
+      "assets/red_004.obj": "62c3eb9cd29827c86fc83cfb5f3295bc8e29e0edbe7d78733c72d41d38a29772",
+      "assets/red_005.obj": "ad8d8d68a768fb852ba5b4fe333bcb12755dbf3d114a60be76ef3351292797c5",
+      "assets/red_006.obj": "9b694ccb373cc648a5286cb81a9b4be52065c7504fd894b9fbab8783edc28f8e",
+      "assets/red_007.obj": "97f8d45652afb6ebc0b1f6ed13c92cb0a0391b41826d8ed6b5eb23b8599b8a67",
+      "assets/red_008.obj": "141e902bda3088cf6d35a834880651206401a1417b3183d2b7930f8ba833e3d7",
+      "assets/teal.obj": "8e0c0bc3be3d3a15fa45ca2407916293e9e9f0b76af6e678aa7564b3e22bdcb8",
+      "assets/teal_000.obj": "e08682b191a7e72d863d9083a505161639618f4b6d19bce090a49adc8ad7a56b",
+      "assets/teal_001.obj": "b79d1639082b15c02429c144e2da34501fb7a8c706434aa65dff0995f92bada6",
+      "assets/teal_002.obj": "ab3cad5c54deb3a624cc91101a5f74c07880a1bf4cb73e5fc320dd129831c512",
+      "assets/teal_003.obj": "6a2d15b15fbdba0e841d81a361d73081f1fe065820c32b68ca03bcb77fafd70f",
+      "assets/teal_004.obj": "92295b4723d5d1c9f769c1833d789c23f51253efb18efd6330b6034d8dea11a8",
+      "assets/teal_005.obj": "45f6d5a21ee1834f006ce8674d87a764aa60d9787028f3182f238313c720c726",
+      "assets/teal_006.obj": "6ec5ee5047fff880ad0a5bc351c71ed8d5c7c778dabb115c11417d3b4c3e5fe9",
+      "assets/yellow.obj": "3c141b7f9dce080ed7eeeea2d38c8becbdf6c3c2d0a24a2e76a73634bd2651dd",
+      "assets/yellow_000.obj": "0fa9a29435485a66bad10335e565776ddcd934452fbd09398a9a8fdf18d70c72",
+      "assets/yellow_001.obj": "33410793f614350ab41aa548a27936ec8c2e32795ed241321c3e32b4b456cde3",
+      "assets/yellow_002.obj": "b139cb3b56dcf7a99fc439f5cc6f42160bcc5da2eb0239effebc11ee227af451",
+      "assets/yellow_003.obj": "c979f16e8183d3cffca028c9654d9dae32d1eced28df52f9ecc330f1674b31d7",
+      "assets/yellow_004.obj": "911354765ca719e153b554f31dc5af5919137c6e3bd46d8a226bb46b8face9ad",
+      "assets/yellow_005.obj": "94985f689ed673812096e30e15bffb030cd6bc391be30afcb6b2bb2c1b513a7b",
+      "assets/yellow_006.obj": "72367caf051572e01e7d11868fedb01729d131204a763fd4e686f52e1f559c71",
+      "assets/yellow_007.obj": "c1d1166a874b9cf2e0c53dafbeb5704eda9c324739073ddf5719adf834f9b4a7",
+      "assets/yellow_008.obj": "cb8478effab362115edc5b52c047641481b09be2290a176b9b65dbaa9d970980",
+      "assets/pyramid_robot6_plan.json": "07b918bf2e96fa003832c891402aaa32177c9757ef0335ddbb0e24be943357d5"
+    },
+    "target_beads_local": {
+      "azure": [
+        [
+          -0.05,
+          -0.05,
+          0.0155
+        ],
+        [
+          -0.05,
+          -0.025,
+          0.0155
+        ],
+        [
+          -0.05,
+          0.0,
+          0.0155
+        ],
+        [
+          -0.025,
+          -0.05,
+          0.0155
+        ],
+        [
+          0.0,
+          -0.05,
+          0.0155
+        ]
+      ],
+      "orange": [
+        [
+          0.0,
+          -0.025,
+          0.0155
+        ],
+        [
+          0.025,
+          -0.05,
+          0.0155
+        ],
+        [
+          0.025,
+          -0.025,
+          0.0155
+        ],
+        [
+          0.025,
+          0.0,
+          0.0155
+        ],
+        [
+          0.05,
+          -0.05,
+          0.0155
+        ]
+      ],
+      "yellow": [
+        [
+          0.025,
+          0.025,
+          0.0155
+        ],
+        [
+          0.05,
+          -0.025,
+          0.0155
+        ],
+        [
+          0.05,
+          0.0,
+          0.0155
+        ],
+        [
+          0.05,
+          0.025,
+          0.0155
+        ],
+        [
+          0.05,
+          0.05,
+          0.0155
+        ]
+      ],
+      "teal": [
+        [
+          -0.025,
+          0.05,
+          0.0155
+        ],
+        [
+          0.0,
+          0.025,
+          0.0155
+        ],
+        [
+          0.0,
+          0.05,
+          0.0155
+        ],
+        [
+          0.025,
+          0.05,
+          0.0155
+        ]
+      ],
+      "purple": [
+        [
+          -0.05,
+          0.025,
+          0.0155
+        ],
+        [
+          -0.05,
+          0.05,
+          0.0155
+        ],
+        [
+          -0.025,
+          0.0,
+          0.0155
+        ],
+        [
+          -0.025,
+          0.025,
+          0.0155
+        ],
+        [
+          0.0,
+          0.0,
+          0.0155
+        ]
+      ],
+      "cyan": [
+        [
+          -0.037500000000000006,
+          -0.0125,
+          0.03317766952966369
+        ],
+        [
+          -0.025,
+          -0.025,
+          0.0155
+        ],
+        [
+          -0.0125,
+          -0.037500000000000006,
+          0.03317766952966369
+        ]
+      ],
+      "red": [
+        [
+          -0.037500000000000006,
+          -0.037500000000000006,
+          0.03317766952966369
+        ],
+        [
+          -0.025,
+          -0.025,
+          0.050855339059327376
+        ],
+        [
+          -0.0125,
+          -0.0125,
+          0.06853300858899107
+        ],
+        [
+          0.0,
+          0.0,
+          0.08621067811865475
+        ],
+        [
+          0.0125,
+          0.0125,
+          0.06853300858899107
+        ]
+      ],
+      "mint": [
+        [
+          0.0125,
+          -0.037500000000000006,
+          0.03317766952966369
+        ],
+        [
+          0.0125,
+          -0.0125,
+          0.03317766952966369
+        ],
+        [
+          0.0125,
+          0.0125,
+          0.03317766952966369
+        ],
+        [
+          0.037500000000000006,
+          -0.037500000000000006,
+          0.03317766952966369
+        ],
+        [
+          0.037500000000000006,
+          -0.0125,
+          0.03317766952966369
+        ]
+      ],
+      "maroon": [
+        [
+          -0.037500000000000006,
+          0.0125,
+          0.03317766952966369
+        ],
+        [
+          -0.025,
+          0.0,
+          0.050855339059327376
+        ],
+        [
+          -0.0125,
+          -0.0125,
+          0.03317766952966369
+        ],
+        [
+          0.0,
+          -0.025,
+          0.050855339059327376
+        ]
+      ],
+      "lime": [
+        [
+          -0.0125,
+          0.0125,
+          0.03317766952966369
+        ],
+        [
+          -0.0125,
+          0.037500000000000006,
+          0.03317766952966369
+        ],
+        [
+          0.0125,
+          0.037500000000000006,
+          0.03317766952966369
+        ],
+        [
+          0.037500000000000006,
+          0.0125,
+          0.03317766952966369
+        ],
+        [
+          0.037500000000000006,
+          0.037500000000000006,
+          0.03317766952966369
+        ]
+      ],
+      "navy": [
+        [
+          0.0,
+          0.025,
+          0.050855339059327376
+        ],
+        [
+          0.025,
+          -0.025,
+          0.050855339059327376
+        ],
+        [
+          0.025,
+          0.0,
+          0.050855339059327376
+        ],
+        [
+          0.025,
+          0.025,
+          0.050855339059327376
+        ]
+      ],
+      "pink": [
+        [
+          -0.037500000000000006,
+          0.037500000000000006,
+          0.03317766952966369
+        ],
+        [
+          -0.025,
+          0.025,
+          0.050855339059327376
+        ],
+        [
+          -0.0125,
+          0.0125,
+          0.06853300858899107
+        ],
+        [
+          0.0,
+          0.0,
+          0.050855339059327376
+        ],
+        [
+          0.0125,
+          -0.0125,
+          0.06853300858899107
+        ]
+      ]
+    },
+    "independent_audit": {
+      "success": false,
+      "released_stable_duration_s": 0.0,
+      "final_max_bead_error_m": 0.37627797833510906,
+      "final_max_bead_speed_mps": 6.674680695215733e-05,
+      "method": "Recorded rigid poses, Hungarian bead matching, finite-difference bead speeds and recorded hand clearance; no environment grader calls."
+    },
+    "diagnostic_success": false,
+    "diagnostic_preset": false,
+    "result_path": "runs/pyramid_v37_repeat/iq-s1/outputs/out/seed1/result.json"
+  }
+]

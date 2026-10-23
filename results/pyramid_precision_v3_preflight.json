@@ -1,0 +1,10 @@
+{
+  "pink": {
+    "feasible": false,
+    "error": "No feasible source/target grasp for pink: 0.015903233738383083"
+  },
+  "red": {
+    "feasible": false,
+    "error": "No feasible source/target grasp for red: 0.013218891077550319"
+  }
+}

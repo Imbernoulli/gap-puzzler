@@ -1,0 +1,5 @@
+{
+  "job": "pyramid_precision_v9",
+  "status": "cancelled_superseded",
+  "reason": "Stock fingers now pass both terminal-piece diagnostics; stop the slow custom-hardware trial and continue stock full assembly. Partial trial is not scored as a manipulation failure."
+}

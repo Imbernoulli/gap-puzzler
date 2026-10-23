@@ -1,0 +1,5 @@
+[pool puzzler-182424] code bundle 5de692528727 (1.7 MB); 1 job(s) -> runs/pyramid_v37_repeat
+[pool puzzler-182424] creating 1 x 8 vCPU / 16 GiB / 30 GiB from gap-knot-rss-abed33ba-c8m16d30
+[pool puzzler-182424] up ca3aefa2-02a6-4a86-9638-618ab163f7b5 (8 vCPU / 16 GiB) in 1s
+[pool puzzler-182424] iq-s1: ok exit=0 run=263.5s attempts=1
+[pool puzzler-182424] deleting 1 sandbox(es)

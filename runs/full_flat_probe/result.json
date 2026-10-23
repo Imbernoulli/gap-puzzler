@@ -1,0 +1,87 @@
+{
+  "success": false,
+  "seed": 0,
+  "variant": {
+    "mode": "flat",
+    "seed": 0,
+    "board_dx": 0.0,
+    "board_dy": 0.0,
+    "board_yaw": 0.0,
+    "piece_jitter": 0.0,
+    "piece_yaw": 0.0,
+    "friction": 0.65,
+    "grasp_bias": 0.0
+  },
+  "graph": "graphs/flat_v1",
+  "steps": 625,
+  "sim_time_s": 12.5,
+  "completion_step": null,
+  "control_hz": 50.0,
+  "wall_s": 17.085473091807216,
+  "final": {
+    "success": false,
+    "bead_error_m": {
+      "yellow": 0.19583844640480735,
+      "purple": 0.19674458286694432,
+      "cyan": 0.2833032275421987,
+      "lime": 0.2779869002977978,
+      "mint": 0.22498652665426422,
+      "maroon": 0.2067119499860672,
+      "teal": 0.2715410762895567,
+      "orange": 0.24342667402647075,
+      "navy": 0.2930208263115866,
+      "pink": 0.20711320360597302,
+      "red": 0.3534937981270373,
+      "azure": 0.23382496108146286
+    },
+    "speed_mps": {
+      "yellow": 1.1730059668510322e-05,
+      "purple": 1.4727353118365316e-05,
+      "cyan": 1.2891258847998085e-05,
+      "lime": 1.4714938515719518e-05,
+      "mint": 1.2424939995994066e-05,
+      "maroon": 1.4631007616147538e-05,
+      "teal": 1.1353690752036375e-05,
+      "orange": 1.2163056453598586e-05,
+      "navy": 1.31504039018679e-05,
+      "pink": 1.103426438932181e-05,
+      "red": 1.115529721577103e-05,
+      "azure": 1.3271383068190264e-05
+    },
+    "hands": [
+      {
+        "arm": "left",
+        "clearance": 0.11093271293973453,
+        "width": 0.05447015166282654
+      },
+      {
+        "arm": "right",
+        "clearance": 0.09766784486796977,
+        "width": 0.015692170709371567
+      }
+    ],
+    "board_pose": [
+      0.46517959237098694,
+      2.7866437449119985e-05,
+      0.7534102201461792,
+      0.0009971045656129718,
+      -0.0007441696361638606,
+      0.00012969279487151653,
+      0.9999992251396179
+    ],
+    "finite": true,
+    "board_level": true,
+    "board_resting": true
+  },
+  "events": [],
+  "error": "",
+  "graph_trace": {
+    "graph_result": {
+      "result": "ExecutionResult(success=False, exit_status='failure', outputs={'anchor_sg': {}, 'yellow_sg': {}}, trace_path=PosixPath('runs/full_flat_probe/trace/0000'), checkpoint_results=[], error=PipelineError(\"workflow terminated at end node 'abort' (failure); first node error -- yellow_sg.act: Node 'yellow_sg.act' failed: RuntimeError: servo: pose unreachable after 3 consecutive solve failures (remaining 177 mm / 2 deg)\"), duration_s=12.813271263847128, latency=None)"
+    },
+    "steps": 559,
+    "graph_error": "PipelineError: workflow terminated at end node 'abort' (failure); first node error -- yellow_sg.act: Node 'yellow_sg.act' failed: RuntimeError: servo: pose unreachable after 3 consecutive solve failures (remaining 177 mm / 2 deg)",
+    "graph_traceback": "Traceback (most recent call last):\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/execute.py\", line 192, in execute\n    executor.execute()\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 347, in execute\n    self._run_top_level()\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 419, in _run_top_level\n    raise PipelineError(\ngap_core.errors.PipelineError: workflow terminated at end node 'abort' (failure); first node error -- yellow_sg.act: Node 'yellow_sg.act' failed: RuntimeError: servo: pose unreachable after 3 consecutive solve failures (remaining 177 mm / 2 deg)\n"
+  },
+  "workflow_sha256": "803c123e860ae7d6a5fa6207b68d4e4c005191b949367a484b19cf0e327edf4e"
+}

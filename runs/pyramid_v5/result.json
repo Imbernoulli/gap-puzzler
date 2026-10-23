@@ -1,0 +1,503 @@
+{
+  "success": false,
+  "rss_success": false,
+  "seed": 0,
+  "variant": {
+    "mode": "pyramid",
+    "seed": 0,
+    "board_dx": 0.0,
+    "board_dy": 0.0,
+    "board_yaw": 0.0,
+    "piece_jitter": 0.0,
+    "piece_yaw": 0.0,
+    "friction": 0.65,
+    "grasp_bias": 0.0
+  },
+  "graph": "graphs/pyramid_v5",
+  "steps": 7200,
+  "sim_time_s": 144.0,
+  "completion_step": null,
+  "control_hz": 50.0,
+  "wall_s": 158.8306371041108,
+  "final": {
+    "success": false,
+    "bead_error_m": {
+      "yellow": 0.0006983782649357212,
+      "purple": 0.00023714535738630774,
+      "cyan": 0.3364404447904699,
+      "lime": 0.35649639742499944,
+      "mint": 0.3319359002996173,
+      "maroon": 0.32969992585961816,
+      "teal": 0.0005255383947287655,
+      "orange": 0.000666266115105345,
+      "navy": 0.26841383646352796,
+      "pink": 0.29895469503650646,
+      "red": 0.38190796029510016,
+      "azure": 0.0004459405652826197
+    },
+    "speed_mps": {
+      "yellow": 1.7980264674108314e-05,
+      "purple": 1.725574505198226e-05,
+      "cyan": 1.289125884800579e-05,
+      "lime": 1.4714938515717822e-05,
+      "mint": 1.2424939995994523e-05,
+      "maroon": 1.4631007616136027e-05,
+      "teal": 1.8393716045366685e-05,
+      "orange": 1.7016135513162233e-05,
+      "navy": 1.3150403901871846e-05,
+      "pink": 1.1034264389380463e-05,
+      "red": 1.1155297215795407e-05,
+      "azure": 1.8363998335738375e-05
+    },
+    "hands": [
+      {
+        "arm": "left",
+        "clearance": 0.09616308102523045,
+        "width": 0.0399765819311142
+      },
+      {
+        "arm": "right",
+        "clearance": 0.09664216298146296,
+        "width": 0.014580517075955868
+      }
+    ],
+    "board_pose": [
+      0.466682106256485,
+      0.00024287031556013972,
+      0.753283679485321,
+      0.0009394293301738799,
+      -6.786870653741062e-05,
+      0.0005780499195680022,
+      0.9999994039535522
+    ],
+    "finite": true,
+    "board_level": true,
+    "board_resting": true
+  },
+  "events": [],
+  "error": "",
+  "graph_trace": {
+    "graph_result": {
+      "result": "ExecutionResult(success=False, exit_status='failure', outputs={'anchor_sg': {}, 'yellow_sg': {}, 'teal_sg': {}, 'purple_sg': {}, 'azure_sg': {}, 'orange_sg': {}, 'cyan_sg': {}}, trace_path=PosixPath('runs/pyramid_v5/trace/0000'), checkpoint_results=[CheckpointResult(name='anchor_physical_state', subgraph='anchor_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.29865819224557577, 'purple': 0.3484160751649593, 'cyan': 0.3376775615574833, 'lime': 0.35728830077616247, 'mint': 0.33261189614979664, 'maroon': 0.3299361631653461, 'teal': 0.3923710483372066, 'orange': 0.2666869994053102, 'navy': 0.26818413935537, 'pink': 0.29902005248109853, 'red': 0.38299417741004965, 'azure': 0.36812684592252426}, 'speed_mps': {'yellow': 1.173005966851004e-05, 'purple': 1.4727353118365758e-05, 'cyan': 1.2891258848003501e-05, 'lime': 1.4714938515823074e-05, 'mint': 1.2424939995996542e-05, 'maroon': 1.4631007616123944e-05, 'teal': 1.1353690752008855e-05, 'orange': 1.2163056453606365e-05, 'navy': 1.3150403901887048e-05, 'pink': 1.1034264389329057e-05, 'red': 1.1155297215780822e-05, 'azure': 1.3271383068470845e-05}, 'hands': [{'arm': 'left', 'clearance': 0.10597542991185609, 'width': 0.018072791397571564}, {'arm': 'right', 'clearance': 0.3583160150117912, 'width': 0.09498466551303864}], 'board_pose': [0.4650737941265106, -7.06365899532102e-05, 0.7534496188163757, -0.0009997404413297772, -0.0009928828803822398, -0.0003012379165738821, 0.9999989867210388], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=9.984197095036507e-05), CheckpointResult(name='yellow_physical_state', subgraph='yellow_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.000613534375852829, 'purple': 0.3487644060427703, 'cyan': 0.3374774456037473, 'lime': 0.35718757773033644, 'mint': 0.33251619295463, 'maroon': 0.3298559211832296, 'teal': 0.39219113667669164, 'orange': 0.26669569883008815, 'navy': 0.26812762634033016, 'pink': 0.29889167720894655, 'red': 0.3827163294458361, 'azure': 0.3682838529002905}, 'speed_mps': {'yellow': 0.00027737807882800884, 'purple': 1.257892927242477e-05, 'cyan': 1.2891258848004848e-05, 'lime': 1.4714938515737329e-05, 'mint': 1.2424939996130416e-05, 'maroon': 1.4631007616143941e-05, 'teal': 1.1353690752031704e-05, 'orange': 1.2163056453595435e-05, 'navy': 1.3150403901892346e-05, 'pink': 1.103426438933333e-05, 'red': 1.1155297215779229e-05, 'azure': 1.3271383068222115e-05}, 'hands': [{'arm': 'left', 'clearance': 0.07404598836856705, 'width': 0.03904063254594803}, {'arm': 'right', 'clearance': 0.09643191461124188, 'width': 0.014478500001132488}], 'board_pose': [0.4652843177318573, 7.615177310071886e-05, 0.7534511685371399, 0.0009977708104997873, -0.0009975465945899487, 0.00019848554802592844, 0.9999989867210388], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=8.461205288767815e-05), CheckpointResult(name='teal_physical_state', subgraph='teal_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.0003462800063419955, 'purple': 0.34857634058692916, 'cyan': 0.33712319763243026, 'lime': 0.35689155206711054, 'mint': 0.33254162291203343, 'maroon': 0.3299878002266662, 'teal': 0.00010222186200530883, 'orange': 0.2666649333268861, 'navy': 0.26835068947782853, 'pink': 0.29908656929275096, 'red': 0.38268330374279214, 'azure': 0.3685933957851115}, 'speed_mps': {'yellow': 0.00022157240400645542, 'purple': 1.2578929272424603e-05, 'cyan': 1.2891258847994482e-05, 'lime': 1.471493851572459e-05, 'mint': 1.2424939996124356e-05, 'maroon': 1.4631007616143145e-05, 'teal': 0.0002548380262576284, 'orange': 1.2163056453596955e-05, 'navy': 1.315040390187828e-05, 'pink': 1.1034264389326108e-05, 'red': 1.1155297215795833e-05, 'azure': 1.3271383068204135e-05}, 'hands': [{'arm': 'left', 'clearance': 0.08130708733677047, 'width': 0.0392049103975296}, {'arm': 'right', 'clearance': 0.09626952185492632, 'width': 0.014338575303554535}], 'board_pose': [0.4655974507331848, 0.00026988840545527637, 0.7534502744674683, 0.000999415758997202, -0.0009935316629707813, 0.0010853394633159041, 0.9999983906745911], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=6.214110180735588e-05), CheckpointResult(name='purple_physical_state', subgraph='purple_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.000606011663948041, 'purple': 0.0008618699303387767, 'cyan': 0.33679403056046997, 'lime': 0.3565909150205842, 'mint': 0.33262143887261403, 'maroon': 0.33015841306352517, 'teal': 0.0007762064783646753, 'orange': 0.2665486998507052, 'navy': 0.26859568533254785, 'pink': 0.2992991275160898, 'red': 0.3827096214910759, 'azure': 0.36889961898859797}, 'speed_mps': {'yellow': 0.0001385960732355669, 'purple': 0.00015892343118418235, 'cyan': 1.2891258848004155e-05, 'lime': 1.4714938515717817e-05, 'mint': 1.2424939996031035e-05, 'maroon': 1.4631007616134632e-05, 'teal': 0.0001153921402248102, 'orange': 1.2163056453603221e-05, 'navy': 1.3150403901875051e-05, 'pink': 1.1034264389556177e-05, 'red': 1.1155297215789636e-05, 'azure': 1.3271383068204517e-05}, 'hands': [{'arm': 'left', 'clearance': 0.074115767816505, 'width': 0.039068691432476044}, {'arm': 'right', 'clearance': 0.09646075030686241, 'width': 0.014371650293469429}], 'board_pose': [0.4658326208591461, 0.0004968759603798389, 0.7534306645393372, 0.0009936925489455462, -0.00088869733735919, 0.0013741053408011794, 0.999998152256012], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=9.870203211903572e-05), CheckpointResult(name='azure_physical_state', subgraph='azure_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.0006179541357435089, 'purple': 0.0008959804171467058, 'cyan': 0.33661271591345954, 'lime': 0.3565551802317706, 'mint': 0.33209394723634617, 'maroon': 0.32984051465280845, 'teal': 0.0005676783084500908, 'orange': 0.26696177528814624, 'navy': 0.26849541114840275, 'pink': 0.2991085087289786, 'red': 0.38224623912869715, 'azure': 0.0006021938801229144}, 'speed_mps': {'yellow': 7.996322274325596e-05, 'purple': 2.055475611029049e-05, 'cyan': 1.2891258848019534e-05, 'lime': 1.4714938515711827e-05, 'mint': 1.2424939996082098e-05, 'maroon': 1.4631007616178681e-05, 'teal': 7.229541681670922e-05, 'orange': 1.216305645359717e-05, 'navy': 1.3150403901878727e-05, 'pink': 1.103426438932767e-05, 'red': 1.1155297215771469e-05, 'azure': 3.4442748397045704e-05}, 'hands': [{'arm': 'left', 'clearance': 0.11401517327098264, 'width': 0.017789416015148163}, {'arm': 'right', 'clearance': 0.07441125420810471, 'width': 0.03908441960811615}], 'board_pose': [0.4664296507835388, 0.00018034380627796054, 0.7532461881637573, -0.0006988768000155687, -0.0003185159876011312, 0.000389093067497015, 0.9999996423721313], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=8.673081174492836e-05), CheckpointResult(name='orange_physical_state', subgraph='orange_sg', passed=True, eval_error=None, diagnostics={'success': False, 'bead_error_m': {'yellow': 0.0006806211781902593, 'purple': 0.0002318019577645063, 'cyan': 0.3365304613243444, 'lime': 0.35656077093728483, 'mint': 0.3319602879358301, 'maroon': 0.32970465455310843, 'teal': 0.0005211681333286784, 'orange': 0.0006827512545309961, 'navy': 0.26838401235530784, 'pink': 0.2989528545438663, 'red': 0.3820078207113731, 'azure': 0.0004698925570219058}, 'speed_mps': {'yellow': 4.656021500265964e-05, 'purple': 2.0489128119062996e-05, 'cyan': 1.2891258847989913e-05, 'lime': 1.4714938515718388e-05, 'mint': 1.2424939995997398e-05, 'maroon': 1.4631007616147158e-05, 'teal': 1.9683590809733758e-05, 'orange': 2.54676892514993e-05, 'navy': 1.315040390188063e-05, 'pink': 1.1034264389328549e-05, 'red': 1.1155297215772766e-05, 'azure': 4.8342529838276754e-05}, 'hands': [{'arm': 'left', 'clearance': 0.07437743095090894, 'width': 0.03911319747567177}, {'arm': 'right', 'clearance': 0.09628012032854939, 'width': 0.014387446455657482}], 'board_pose': [0.46660593152046204, 0.00019034443539567292, 0.7532485723495483, 0.0005669739912264049, -0.0005953478976152837, 0.0005164537578821182, 0.9999995231628418], 'finite': True, 'board_level': True, 'board_resting': True}, eval_time_s=0.00012661213986575603)], error=PipelineError(\"workflow terminated at end node 'abort' (failure); first node error -- cyan_sg.act: Node 'cyan_sg.act' failed: RuntimeError: No feasible source/target grasp for cyan: 0.04379511303513448\"), duration_s=153.35089340410195, latency=None)"
+    },
+    "steps": 7134,
+    "graph_error": "PipelineError: workflow terminated at end node 'abort' (failure); first node error -- cyan_sg.act: Node 'cyan_sg.act' failed: RuntimeError: No feasible source/target grasp for cyan: 0.04379511303513448",
+    "graph_traceback": "Traceback (most recent call last):\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/execute.py\", line 192, in execute\n    executor.execute()\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 347, in execute\n    self._run_top_level()\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 419, in _run_top_level\n    raise PipelineError(\ngap_core.errors.PipelineError: workflow terminated at end node 'abort' (failure); first node error -- cyan_sg.act: Node 'cyan_sg.act' failed: RuntimeError: No feasible source/target grasp for cyan: 0.04379511303513448\n"
+  },
+  "workflow_sha256": "15f397573c8409da4348b46c3b6dee04801ee1e39247f721bc6ad5e4b9ea0cda",
+  "checkpoint_results": [
+    {
+      "name": "anchor_physical_state",
+      "subgraph": "anchor_sg",
+      "passed": true,
+      "eval_error": null,
+      "diagnostics": {
+        "success": false,
+        "bead_error_m": {
+          "yellow": 0.29865819224557577,
+          "purple": 0.3484160751649593,
+          "cyan": 0.3376775615574833,
+          "lime": 0.35728830077616247,
+          "mint": 0.33261189614979664,
+          "maroon": 0.3299361631653461,
+          "teal": 0.3923710483372066,
+          "orange": 0.2666869994053102,
+          "navy": 0.26818413935537,
+          "pink": 0.29902005248109853,
+          "red": 0.38299417741004965,
+          "azure": 0.36812684592252426
+        },
+        "speed_mps": {
+          "yellow": 1.173005966851004e-05,
+          "purple": 1.4727353118365758e-05,
+          "cyan": 1.2891258848003501e-05,
+          "lime": 1.4714938515823074e-05,
+          "mint": 1.2424939995996542e-05,
+          "maroon": 1.4631007616123944e-05,
+          "teal": 1.1353690752008855e-05,
+          "orange": 1.2163056453606365e-05,
+          "navy": 1.3150403901887048e-05,
+          "pink": 1.1034264389329057e-05,
+          "red": 1.1155297215780822e-05,
+          "azure": 1.3271383068470845e-05
+        },
+        "hands": [
+          {
+            "arm": "left",
+            "clearance": 0.10597542991185609,
+            "width": 0.018072791397571564
+          },
+          {
+            "arm": "right",
+            "clearance": 0.3583160150117912,
+            "width": 0.09498466551303864
+          }
+        ],
+        "board_pose": [
+          0.4650737941265106,
+          -7.06365899532102e-05,
+          0.7534496188163757,
+          -0.0009997404413297772,
+          -0.0009928828803822398,
+          -0.0003012379165738821,
+          0.9999989867210388
+        ],
+        "finite": true,
+        "board_level": true,
+        "board_resting": true
+      },
+      "eval_time_s": 9.984197095036507e-05
+    },
+    {
+      "name": "yellow_physical_state",
+      "subgraph": "yellow_sg",
+      "passed": true,
+      "eval_error": null,
+      "diagnostics": {
+        "success": false,
+        "bead_error_m": {
+          "yellow": 0.000613534375852829,
+          "purple": 0.3487644060427703,
+          "cyan": 0.3374774456037473,
+          "lime": 0.35718757773033644,
+          "mint": 0.33251619295463,
+          "maroon": 0.3298559211832296,
+          "teal": 0.39219113667669164,
+          "orange": 0.26669569883008815,
+          "navy": 0.26812762634033016,
+          "pink": 0.29889167720894655,
+          "red": 0.3827163294458361,
+          "azure": 0.3682838529002905
+        },
+        "speed_mps": {
+          "yellow": 0.00027737807882800884,
+          "purple": 1.257892927242477e-05,
+          "cyan": 1.2891258848004848e-05,
+          "lime": 1.4714938515737329e-05,
+          "mint": 1.2424939996130416e-05,
+          "maroon": 1.4631007616143941e-05,
+          "teal": 1.1353690752031704e-05,
+          "orange": 1.2163056453595435e-05,
+          "navy": 1.3150403901892346e-05,
+          "pink": 1.103426438933333e-05,
+          "red": 1.1155297215779229e-05,
+          "azure": 1.3271383068222115e-05
+        },
+        "hands": [
+          {
+            "arm": "left",
+            "clearance": 0.07404598836856705,
+            "width": 0.03904063254594803
+          },
+          {
+            "arm": "right",
+            "clearance": 0.09643191461124188,
+            "width": 0.014478500001132488
+          }
+        ],
+        "board_pose": [
+          0.4652843177318573,
+          7.615177310071886e-05,
+          0.7534511685371399,
+          0.0009977708104997873,
+          -0.0009975465945899487,
+          0.00019848554802592844,
+          0.9999989867210388
+        ],
+        "finite": true,
+        "board_level": true,
+        "board_resting": true
+      },
+      "eval_time_s": 8.461205288767815e-05
+    },
+    {
+      "name": "teal_physical_state",
+      "subgraph": "teal_sg",
+      "passed": true,
+      "eval_error": null,
+      "diagnostics": {
+        "success": false,
+        "bead_error_m": {
+          "yellow": 0.0003462800063419955,
+          "purple": 0.34857634058692916,
+          "cyan": 0.33712319763243026,
+          "lime": 0.35689155206711054,
+          "mint": 0.33254162291203343,
+          "maroon": 0.3299878002266662,
+          "teal": 0.00010222186200530883,
+          "orange": 0.2666649333268861,
+          "navy": 0.26835068947782853,
+          "pink": 0.29908656929275096,
+          "red": 0.38268330374279214,
+          "azure": 0.3685933957851115
+        },
+        "speed_mps": {
+          "yellow": 0.00022157240400645542,
+          "purple": 1.2578929272424603e-05,
+          "cyan": 1.2891258847994482e-05,
+          "lime": 1.471493851572459e-05,
+          "mint": 1.2424939996124356e-05,
+          "maroon": 1.4631007616143145e-05,
+          "teal": 0.0002548380262576284,
+          "orange": 1.2163056453596955e-05,
+          "navy": 1.315040390187828e-05,
+          "pink": 1.1034264389326108e-05,
+          "red": 1.1155297215795833e-05,
+          "azure": 1.3271383068204135e-05
+        },
+        "hands": [
+          {
+            "arm": "left",
+            "clearance": 0.08130708733677047,
+            "width": 0.0392049103975296
+          },
+          {
+            "arm": "right",
+            "clearance": 0.09626952185492632,
+            "width": 0.014338575303554535
+          }
+        ],
+        "board_pose": [
+          0.4655974507331848,
+          0.00026988840545527637,
+          0.7534502744674683,
+          0.000999415758997202,
+          -0.0009935316629707813,
+          0.0010853394633159041,
+          0.9999983906745911
+        ],
+        "finite": true,
+        "board_level": true,
+        "board_resting": true
+      },
+      "eval_time_s": 6.214110180735588e-05
+    },
+    {
+      "name": "purple_physical_state",
+      "subgraph": "purple_sg",
+      "passed": true,
+      "eval_error": null,
+      "diagnostics": {
+        "success": false,
+        "bead_error_m": {
+          "yellow": 0.000606011663948041,
+          "purple": 0.0008618699303387767,
+          "cyan": 0.33679403056046997,
+          "lime": 0.3565909150205842,
+          "mint": 0.33262143887261403,
+          "maroon": 0.33015841306352517,
+          "teal": 0.0007762064783646753,
+          "orange": 0.2665486998507052,
+          "navy": 0.26859568533254785,
+          "pink": 0.2992991275160898,
+          "red": 0.3827096214910759,
+          "azure": 0.36889961898859797
+        },
+        "speed_mps": {
+          "yellow": 0.0001385960732355669,
+          "purple": 0.00015892343118418235,
+          "cyan": 1.2891258848004155e-05,
+          "lime": 1.4714938515717817e-05,
+          "mint": 1.2424939996031035e-05,
+          "maroon": 1.4631007616134632e-05,
+          "teal": 0.0001153921402248102,
+          "orange": 1.2163056453603221e-05,
+          "navy": 1.3150403901875051e-05,
+          "pink": 1.1034264389556177e-05,
+          "red": 1.1155297215789636e-05,
+          "azure": 1.3271383068204517e-05
+        },
+        "hands": [
+          {
+            "arm": "left",
+            "clearance": 0.074115767816505,
+            "width": 0.039068691432476044
+          },
+          {
+            "arm": "right",
+            "clearance": 0.09646075030686241,
+            "width": 0.014371650293469429
+          }
+        ],
+        "board_pose": [
+          0.4658326208591461,
+          0.0004968759603798389,
+          0.7534306645393372,
+          0.0009936925489455462,
+          -0.00088869733735919,
+          0.0013741053408011794,
+          0.999998152256012
+        ],
+        "finite": true,
+        "board_level": true,
+        "board_resting": true
+      },
+      "eval_time_s": 9.870203211903572e-05
+    },
+    {
+      "name": "azure_physical_state",
+      "subgraph": "azure_sg",
+      "passed": true,
+      "eval_error": null,
+      "diagnostics": {
+        "success": false,
+        "bead_error_m": {
+          "yellow": 0.0006179541357435089,
+          "purple": 0.0008959804171467058,
+          "cyan": 0.33661271591345954,
+          "lime": 0.3565551802317706,
+          "mint": 0.33209394723634617,
+          "maroon": 0.32984051465280845,
+          "teal": 0.0005676783084500908,
+          "orange": 0.26696177528814624,
+          "navy": 0.26849541114840275,
+          "pink": 0.2991085087289786,
+          "red": 0.38224623912869715,
+          "azure": 0.0006021938801229144
+        },
+        "speed_mps": {
+          "yellow": 7.996322274325596e-05,
+          "purple": 2.055475611029049e-05,
+          "cyan": 1.2891258848019534e-05,
+          "lime": 1.4714938515711827e-05,
+          "mint": 1.2424939996082098e-05,
+          "maroon": 1.4631007616178681e-05,
+          "teal": 7.229541681670922e-05,
+          "orange": 1.216305645359717e-05,
+          "navy": 1.3150403901878727e-05,
+          "pink": 1.103426438932767e-05,
+          "red": 1.1155297215771469e-05,
+          "azure": 3.4442748397045704e-05
+        },
+        "hands": [
+          {
+            "arm": "left",
+            "clearance": 0.11401517327098264,
+            "width": 0.017789416015148163
+          },
+          {
+            "arm": "right",
+            "clearance": 0.07441125420810471,
+            "width": 0.03908441960811615
+          }
+        ],
+        "board_pose": [
+          0.4664296507835388,
+          0.00018034380627796054,
+          0.7532461881637573,
+          -0.0006988768000155687,
+          -0.0003185159876011312,
+          0.000389093067497015,
+          0.9999996423721313
+        ],
+        "finite": true,
+        "board_level": true,
+        "board_resting": true
+      },
+      "eval_time_s": 8.673081174492836e-05
+    },
+    {
+      "name": "orange_physical_state",
+      "subgraph": "orange_sg",
+      "passed": true,
+      "eval_error": null,
+      "diagnostics": {
+        "success": false,
+        "bead_error_m": {
+          "yellow": 0.0006806211781902593,
+          "purple": 0.0002318019577645063,
+          "cyan": 0.3365304613243444,
+          "lime": 0.35656077093728483,
+          "mint": 0.3319602879358301,
+          "maroon": 0.32970465455310843,
+          "teal": 0.0005211681333286784,
+          "orange": 0.0006827512545309961,
+          "navy": 0.26838401235530784,
+          "pink": 0.2989528545438663,
+          "red": 0.3820078207113731,
+          "azure": 0.0004698925570219058
+        },
+        "speed_mps": {
+          "yellow": 4.656021500265964e-05,
+          "purple": 2.0489128119062996e-05,
+          "cyan": 1.2891258847989913e-05,
+          "lime": 1.4714938515718388e-05,
+          "mint": 1.2424939995997398e-05,
+          "maroon": 1.4631007616147158e-05,
+          "teal": 1.9683590809733758e-05,
+          "orange": 2.54676892514993e-05,
+          "navy": 1.315040390188063e-05,
+          "pink": 1.1034264389328549e-05,
+          "red": 1.1155297215772766e-05,
+          "azure": 4.8342529838276754e-05
+        },
+        "hands": [
+          {
+            "arm": "left",
+            "clearance": 0.07437743095090894,
+            "width": 0.03911319747567177
+          },
+          {
+            "arm": "right",
+            "clearance": 0.09628012032854939,
+            "width": 0.014387446455657482
+          }
+        ],
+        "board_pose": [
+          0.46660593152046204,
+          0.00019034443539567292,
+          0.7532485723495483,
+          0.0005669739912264049,
+          -0.0005953478976152837,
+          0.0005164537578821182,
+          0.9999995231628418
+        ],
+        "finite": true,
+        "board_level": true,
+        "board_resting": true
+      },
+      "eval_time_s": 0.00012661213986575603
+    }
+  ],
+  "source_sha256": {
+    "puzzler/__init__.py": "af1d4cae87e1938e53090f2bee3033e844b7e2acca5a3796acd97d7e3b117430",
+    "puzzler/assets.py": "5639b7fbadda1fe81daafe55b1e57dc92c09bf2872e41a7e7393c40898c426fc",
+    "puzzler/controller.py": "b2a21097c657195c4b7d70259230d75098a071f73fb5d1d5f2d5ad3fdba829c6",
+    "puzzler/episode.py": "2675a4348a4071ae6c70068506a345951f68c54a67ac3ff3c4db00a56b767379",
+    "puzzler/model.py": "628877753beb8a640f8056465703af53198f68dd3669b710591f7d37d8a44314",
+    "puzzler/policy.py": "187a8e41cd7335ef9aa7bc2d5c9e98d4c8db46d5ecda891d71b6c5fbc50ef927",
+    "puzzler/pyramid.py": "2b3dde33d1f23b4a139ed717c0fddc3bc450fdc3a73e8a01b0e505592c3dece8",
+    "puzzler/task.py": "d620d188645d29917dde5978bb86d86ba676e66f27bdf32bd19358e2de2e9893",
+    "puzzler/tools.py": "0b5462591bbffa718f9e68575225981917995db2c4b460e5153e2fa9a153c9f4",
+    "graphs/pyramid_v5/checkpoints/anchor_sg.py": "905e88b1c5b63b3b4af2a3ce09e4172cdb2cd07d98d056f92519bc78e97d7a4a",
+    "graphs/pyramid_v5/checkpoints/azure_sg.py": "287e1e403c167048a2d126dfb8df8f68ed789ede98a27d22043668a2c194265a",
+    "graphs/pyramid_v5/checkpoints/cyan_sg.py": "dd47cea0eb0e029801f75a7c5d77e281ccd62935513adc8264b0e358e832c629",
+    "graphs/pyramid_v5/checkpoints/finish_sg.py": "0a095d428b96e242d984f35bbd86811f1773e7b9f8944019c0e07a8914cbc255",
+    "graphs/pyramid_v5/checkpoints/lime_sg.py": "dbc2bd592166e4be669a9bcc33f37440d16e73bf1c266db7f94921b396b2d899",
+    "graphs/pyramid_v5/checkpoints/maroon_sg.py": "5a0261c1b00ff20bb52bb198ca96fe5a064693edd58f59e85352db71aec2dfaf",
+    "graphs/pyramid_v5/checkpoints/mint_sg.py": "ac100c45e0dcb7319d4ea39f4f6c95b0f8c3ecb35178c3b3facbb5183a187eb2",
+    "graphs/pyramid_v5/checkpoints/navy_sg.py": "93b5e45f45c83bc394a3a0f55df68343ee5f91673d7bdf0ef1caa1c6fea0ed21",
+    "graphs/pyramid_v5/checkpoints/orange_sg.py": "8097129278a3263570849bf41054e8ca306cd65ee7955b61084fcc27825e7b16",
+    "graphs/pyramid_v5/checkpoints/pink_sg.py": "f6f3e0a1eafd9be0d180a97a030018851ed4e159bd6af968185a5559af4e6016",
+    "graphs/pyramid_v5/checkpoints/purple_sg.py": "66b4e4b4fc28cd7cbb8dbcfae821a442a262f001667fd8aba8f51556f61f0906",
+    "graphs/pyramid_v5/checkpoints/red_sg.py": "95b1fd7b45530a8144c84dd19a66c1ce3e05adbebcbad088940d0951a121671a",
+    "graphs/pyramid_v5/checkpoints/teal_sg.py": "97b35a094ad92c1a5d882f0512ade56654cde1078fb7fa39644a0038b24c7cf8",
+    "graphs/pyramid_v5/checkpoints/yellow_sg.py": "e4f79b8289ad9a0235e7c7d25cc5cebbcbbf30a2f5fdff662a27dd6c0d4c8ffd",
+    "graphs/pyramid_v5/scripts/anchor.py": "df9302a7c6ec48ecade9739f99d2da42e122bd19a261dae641d02668b347d06d",
+    "graphs/pyramid_v5/scripts/azure.py": "0d54e9d85acdb84b5862a380b575a7484fb31b420b268c144d45cf623bc989e8",
+    "graphs/pyramid_v5/scripts/cyan.py": "2d384630a76bca85873f75f8146220bafe46833cafecf0dc11b916923839d1b7",
+    "graphs/pyramid_v5/scripts/finish.py": "d40409d04161ee4c4bccf7dc2560a6df93d15eca46996708d09f5dc136550239",
+    "graphs/pyramid_v5/scripts/lime.py": "533ab7f17fe2cc93f3265156ebececa2cdfb86e545d5eff3f1956209b386fb12",
+    "graphs/pyramid_v5/scripts/maroon.py": "4d37f7672cf641d159021cf7bb65105a938c9ad2bda1a8137f31600da011f4da",
+    "graphs/pyramid_v5/scripts/mint.py": "93112c1680bb7eb5e2b3cb795b6e6e81c02e1f109ad98b503966c3c1800a35a3",
+    "graphs/pyramid_v5/scripts/navy.py": "ee523ea6b2c55ba9ad5f5dda826c0be371bf5209139963b67b5eeb2cc1068a3e",
+    "graphs/pyramid_v5/scripts/orange.py": "419f04257fc3b8ed3d8c7de5802c8fb4d03608513d70b1f3fb319d4ebfb6dc72",
+    "graphs/pyramid_v5/scripts/pink.py": "94eb4d98c84e4fb3d778e0c1a759d729ed7798da11166fd90d4f351bc6ff3435",
+    "graphs/pyramid_v5/scripts/purple.py": "a1b6c42b16337c266dd2d553923fd78181c61dc305206bbe72595b43c59b426e",
+    "graphs/pyramid_v5/scripts/red.py": "8d9b4661a5db42bc892ce8a78a28277f04891f3fa980107fdf04beef45d9ebf0",
+    "graphs/pyramid_v5/scripts/teal.py": "9aa257ff0b353c98ad85a59fa503ffd7120f809b9fd6cfa0828399e767b6dfc5",
+    "graphs/pyramid_v5/scripts/yellow.py": "410a40442c755d5667d773393d7b1fa76f8314d21e43f77bce5a610e955747b6",
+    "graphs/pyramid_v5/params.json": "51fd450f390908caf2b8d43c4eb76356978e284ed58e062407f9c250dbc49f28",
+    "assets/pyramid_upright_plan.json": "e18f1d978d37dd96440a5bd5a4395ed81cd1a87fba90abd0c1ce09ba2b814dea"
+  }
+}

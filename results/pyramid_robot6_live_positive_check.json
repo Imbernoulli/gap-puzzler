@@ -1,0 +1,44 @@
+{
+ "passed": true,
+ "checks": [
+  {
+   "name": "builds",
+   "ok": true,
+   "detail": "the last rebuild landed"
+  },
+  {
+   "name": "finite",
+   "ok": true,
+   "detail": "every number in the state is finite"
+  },
+  {
+   "name": "camera",
+   "ok": true,
+   "detail": "phone 640x360, fov 42 deg; clip 640x360"
+  },
+  {
+   "name": "objects",
+   "ok": true,
+   "detail": "all of board are in the scene"
+  },
+  {
+   "name": "penetration",
+   "ok": true,
+   "detail": "worst overlap 0.09 mm between board and cyan"
+  },
+  {
+   "name": "rest",
+   "ok": true,
+   "detail": "nothing moved more than 0.0 mm in 60 steps"
+  },
+  {
+   "name": "finite_after",
+   "ok": true,
+   "detail": "still finite after 60 steps"
+  }
+ ],
+ "report": "PASS  builds       the last rebuild landed\nPASS  finite       every number in the state is finite\nPASS  camera       phone 640x360, fov 42 deg; clip 640x360\nPASS  objects      all of board are in the scene\nPASS  penetration  worst overlap 0.09 mm between board and cyan\nPASS  rest         nothing moved more than 0.0 mm in 60 steps\nPASS  finite_after still finite after 60 steps",
+ "drift_mm": {
+  "board": 0.0
+ }
+}

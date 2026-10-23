@@ -1,0 +1,30 @@
+{
+ "ref": "/srv/home/bohanlyu/gap-puzzler/live/ref/t011.50.jpg",
+ "camera": "phone",
+ "objects": {
+  "red": {
+   "photo": {
+    "bbox": [
+     132,
+     173,
+     384,
+     360
+    ],
+    "centre": [
+     254.2,
+     279.9
+    ],
+    "width": 252,
+    "height": 187,
+    "area": 0.1209,
+    "pixels": 27855
+   },
+   "sim": null,
+   "iou": null,
+   "offset_px": null,
+   "size_ratio": null
+  }
+ },
+ "score": 0.0,
+ "stretch": 1.0
+}

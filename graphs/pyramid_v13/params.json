@@ -1,0 +1,56 @@
+{
+  "full_task": true,
+  "native_carry": true,
+  "grasp_auto": true,
+  "motion_scale": 1.0,
+  "close_width": 0.0,
+  "release_width": 0.04,
+  "release_height": 0.003,
+  "grasp_z": 0.006,
+  "retreat": 0.05,
+  "transport": 0.07,
+  "pieces": {
+    "purple": {
+      "grasp_indices": [
+        1,
+        3
+      ],
+      "grasp_headings": [
+        45.0,
+        135.0,
+        225.0,
+        315.0
+      ],
+      "neighbor_clearance": 0.016,
+      "grasp_z": 0.008,
+      "grasp_leans": [
+        60,
+        -60,
+        75,
+        -75,
+        90,
+        -90,
+        45,
+        -45
+      ],
+      "min_target_approach_down": 0.65,
+      "max_grasp_obstacle_distance": 0.03,
+      "open_width": 0.03,
+      "release_width": 0.03,
+      "tool_retreat": true
+    }
+  },
+  "grasp_leans": [
+    0,
+    -30,
+    30,
+    -45,
+    45,
+    -60,
+    60
+  ],
+  "shape_symmetry": true,
+  "pyramid_plan": "pyramid_robot2_plan.json",
+  "safe_anchor": true,
+  "finish_wait": 25
+}

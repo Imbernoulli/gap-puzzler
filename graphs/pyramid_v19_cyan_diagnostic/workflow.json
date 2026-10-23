@@ -1,0 +1,198 @@
+{
+  "version": 3,
+  "meta": {
+    "name": "pyramid_v19_cyan_diagnostic",
+    "observation_mode": "on_demand",
+    "description": "Physically stabilize board; perceive, solve, grasp, insert, verify; release and retreat."
+  },
+  "nodes": {
+    "anchor": {
+      "type": "subgraph",
+      "ref": "anchor_sg"
+    },
+    "cyan": {
+      "type": "subgraph",
+      "ref": "cyan_sg"
+    },
+    "finish": {
+      "type": "subgraph",
+      "ref": "finish_sg"
+    },
+    "done": {
+      "type": "end",
+      "status": "success"
+    },
+    "abort": {
+      "type": "end",
+      "status": "failure"
+    }
+  },
+  "edges": [
+    [
+      "START",
+      "anchor"
+    ]
+  ],
+  "conditional_edges": {
+    "anchor": {
+      "router_field": "exit",
+      "mapping": {
+        "ready": "cyan",
+        "error": "abort"
+      }
+    },
+    "cyan": {
+      "router_field": "exit",
+      "mapping": {
+        "placed": "finish",
+        "error": "abort",
+        "retry": "abort"
+      }
+    },
+    "finish": {
+      "router_field": "exit",
+      "mapping": {
+        "complete": "done",
+        "error": "abort",
+        "failed": "abort"
+      }
+    }
+  },
+  "subgraphs": {
+    "anchor_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/anchor.py"
+        },
+        "ready": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "ready",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "ready": "ready"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "ready"
+        ]
+      },
+      "on_error": "error"
+    },
+    "cyan_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/cyan.py"
+        },
+        "placed": {
+          "type": "noop"
+        },
+        "retry": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "placed",
+          "END"
+        ],
+        [
+          "retry",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "placed": "placed",
+            "retry": "retry"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "placed",
+          "retry"
+        ]
+      },
+      "on_error": "error"
+    },
+    "finish_sg": {
+      "skill": "generic",
+      "inputs": {},
+      "outputs": {},
+      "nodes": {
+        "act": {
+          "type": "script",
+          "script": "scripts/finish.py"
+        },
+        "complete": {
+          "type": "noop"
+        },
+        "failed": {
+          "type": "noop"
+        }
+      },
+      "edges": [
+        [
+          "START",
+          "act"
+        ],
+        [
+          "complete",
+          "END"
+        ],
+        [
+          "failed",
+          "END"
+        ]
+      ],
+      "conditional_edges": {
+        "act": {
+          "router_field": "route",
+          "mapping": {
+            "complete": "complete",
+            "failed": "failed"
+          }
+        }
+      },
+      "exit": {
+        "router_field": null,
+        "success_values": [
+          "complete",
+          "failed"
+        ]
+      },
+      "on_error": "error"
+    }
+  }
+}

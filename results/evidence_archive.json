@@ -1,0 +1,8 @@
+{
+  "scope": "Original oracle-state baseline workspace; not a vision-only policy.",
+  "release": "https://github.com/Imbernoulli/gap-puzzler/releases/tag/v1.0.0",
+  "asset": "gap-puzzler-evidence-v1.tar.gz",
+  "files": 83107,
+  "size_bytes": 479207277,
+  "sha256": "89ebadabe8b7f2a7699ae1b3c802bd246eb1188ec248115559e53fef0f0b60d1"
+}

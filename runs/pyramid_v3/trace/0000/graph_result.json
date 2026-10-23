@@ -1,0 +1,8 @@
+{
+  "graph_result": {
+    "result": "ExecutionResult(success=False, exit_status='failure', outputs={'anchor_sg': {}, 'yellow_sg': {}, 'teal_sg': {}, 'purple_sg': {}, 'azure_sg': {}, 'orange_sg': {}, 'cyan_sg': {}}, trace_path=PosixPath('runs/pyramid_v3/trace/0000'), checkpoint_results=[], error=PipelineError(\"workflow terminated at end node 'abort' (failure); first node error -- cyan_sg.act: Node 'cyan_sg.act' failed: RuntimeError: No feasible source/target grasp for cyan: 0.04853418267643124\"), duration_s=187.53450793400407, latency=None)"
+  },
+  "steps": 7053,
+  "graph_error": "PipelineError: workflow terminated at end node 'abort' (failure); first node error -- cyan_sg.act: Node 'cyan_sg.act' failed: RuntimeError: No feasible source/target grasp for cyan: 0.04853418267643124",
+  "graph_traceback": "Traceback (most recent call last):\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/execute.py\", line 192, in execute\n    executor.execute()\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 347, in execute\n    self._run_top_level()\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 419, in _run_top_level\n    raise PipelineError(\ngap_core.errors.PipelineError: workflow terminated at end node 'abort' (failure); first node error -- cyan_sg.act: Node 'cyan_sg.act' failed: RuntimeError: No feasible source/target grasp for cyan: 0.04853418267643124\n"
+}

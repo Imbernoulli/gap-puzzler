@@ -1,0 +1,1349 @@
+{
+  "schema_version": 1,
+  "environment": {
+    "python_version": "3.12.13",
+    "gap_version": "0.1.0.dev0",
+    "gpu": {
+      "status": "ok",
+      "detail": "NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB"
+    },
+    "llm_providers": {
+      "openrouter": {
+        "status": "missing",
+        "detail": "OPENROUTER_API_KEY not set",
+        "fix_hint": "export OPENROUTER_API_KEY=..."
+      },
+      "vertex": {
+        "status": "missing",
+        "detail": "no Application Default Credentials",
+        "fix_hint": "gcloud auth application-default login"
+      }
+    },
+    "vlm_provider": {
+      "openrouter": {
+        "status": "missing",
+        "detail": "default (no GAP_VLM_PROVIDER or GAP_LLM_PROVIDER set) \u2014 no OpenRouter API key",
+        "fix_hint": "export OPENROUTER_API_KEY=... (or GAP_VLM_API_KEY), or route the vlm bundle elsewhere (export GAP_VLM_PROVIDER=vertex or set GAP_LLM_PROVIDER \u2014 VLM inherits when unset)"
+      }
+    }
+  },
+  "registries": [
+    {
+      "name": "open-robot-skills",
+      "path": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills",
+      "source": "auto",
+      "dist_name": "open-robot-skills",
+      "origin": "auto-discovered side-by-side checkout"
+    }
+  ],
+  "bundles": [
+    {
+      "name": "curobo",
+      "kind": "tool",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/tools/curobo",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {
+        "gpu": {
+          "status": "ok",
+          "detail": "NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB"
+        }
+      },
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "curve",
+      "kind": "tool",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/tools/curve",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "gemini-er",
+      "kind": "tool",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/tools/gemini-er",
+      "status": "not-ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {
+        "env_any:GOOGLE_API_KEY|GEMINI_API_KEY": {
+          "status": "missing",
+          "detail": "none of GOOGLE_API_KEY, GEMINI_API_KEY set",
+          "fix_hint": "export GOOGLE_API_KEY=...  (any one of these works; see the bundle's SKILL.md)"
+        }
+      },
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "geometry",
+      "kind": "tool",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/tools/geometry",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "grounding-dino",
+      "kind": "tool",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/tools/grounding-dino",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {
+        "gpu": {
+          "status": "ok",
+          "detail": "NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB"
+        }
+      },
+      "weights": {
+        "status": "unknown",
+        "detail": "bundle has no weights_cached() hook",
+        "fix_hint": "run `gap skills check --download` to (pre)fetch"
+      }
+    },
+    {
+      "name": "molmo",
+      "kind": "tool",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/tools/molmo",
+      "status": "not-ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {
+        "env:GAP_MOLMO_BASE_URL": {
+          "status": "missing",
+          "detail": "GAP_MOLMO_BASE_URL not set",
+          "fix_hint": "export GAP_MOLMO_BASE_URL=...  (see the bundle's SKILL.md)"
+        }
+      },
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "sam3",
+      "kind": "tool",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/tools/sam3",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {
+        "gpu": {
+          "status": "ok",
+          "detail": "NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB"
+        }
+      },
+      "weights": {
+        "status": "unknown",
+        "detail": "bundle has no weights_cached() hook",
+        "fix_hint": "run `gap skills check --download` to (pre)fetch"
+      }
+    },
+    {
+      "name": "vlm",
+      "kind": "tool",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/tools/vlm",
+      "status": "not-ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {
+        "env_any:OPENROUTER_API_KEY|GAP_VLM_API_KEY|GAP_VLM_BASE_URL|GAP_VLM_PROJECT_ID|GOOGLE_CLOUD_PROJECT|GAP_LLM_PROVIDER": {
+          "status": "missing",
+          "detail": "none of OPENROUTER_API_KEY, GAP_VLM_API_KEY, GAP_VLM_BASE_URL, GAP_VLM_PROJECT_ID, GOOGLE_CLOUD_PROJECT, GAP_LLM_PROVIDER set",
+          "fix_hint": "export OPENROUTER_API_KEY=...  (any one of these works; see the bundle's SKILL.md)"
+        }
+      },
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "anchoring-a-free-end",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/anchoring-a-free-end",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "computing-feature-mating-poses",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/computing-feature-mating-poses",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "executing-feature-mating",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/executing-feature-mating",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "executing-held-object-motion",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/executing-held-object-motion",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "grasping-concave-contour",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/grasping-concave-contour",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "grasping-direct-ik",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/grasping-direct-ik",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "grasping-linear-feature",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/grasping-linear-feature",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "grasping-short-axis",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/grasping-short-axis",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "grasping-with-planner",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/grasping-with-planner",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "perceiving-deformable-linear-objects",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/perceiving-deformable-linear-objects",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "perceiving-functional-features",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/perceiving-functional-features",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "perceiving-next-item",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/perceiving-next-item",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "perceiving-object-parts",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/perceiving-object-parts",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "perceiving-objects",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/perceiving-objects",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "perceiving-objects-oneshot",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/perceiving-objects-oneshot",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "perceiving-relational-correspondences",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/perceiving-relational-correspondences",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "perceiving-routing-fixtures",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/perceiving-routing-fixtures",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "perceiving-sorting-pairs",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/perceiving-sorting-pairs",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "placing-held-feature",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/placing-held-feature",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "planning-held-object-motion",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/planning-held-object-motion",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "plugging-a-cable-end",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/plugging-a-cable-end",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "proposing-short-axis-grasps",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/proposing-short-axis-grasps",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "proposing-side-grasps",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/proposing-side-grasps",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "reconstructing-collision-worlds",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/reconstructing-collision-worlds",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "registering-held-objects",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/registering-held-objects",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "seating-a-cable-crossing",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/seating-a-cable-crossing",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "selecting-reachable-grasp",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/selecting-reachable-grasp",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "tipping-over-a-surface-edge",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/tipping-over-a-surface-edge",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "tracking-objects",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/tracking-objects",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "transporting-objects",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/transporting-objects",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "verifying-a-cable-route",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/verifying-a-cable-route",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "verifying-grasps",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/verifying-grasps",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "verifying-placement",
+      "kind": "skill",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/skills/verifying-placement",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {},
+      "weights": {
+        "status": "ok",
+        "detail": "no weights declared"
+      }
+    },
+    {
+      "name": "molmoact-libero",
+      "kind": "policy",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/policies/molmoact-libero",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {
+        "gpu": {
+          "status": "ok",
+          "detail": "NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB"
+        }
+      },
+      "weights": {
+        "status": "unknown",
+        "detail": "bundle has no weights_cached() hook",
+        "fix_hint": "run `gap skills check --download` to (pre)fetch"
+      }
+    },
+    {
+      "name": "pi05-libero",
+      "kind": "policy",
+      "registry": "open-robot-skills",
+      "bundle_dir": "/srv/home/bohanlyu/gap-knot/third_party/open-robot-skills/policies/pi05-libero",
+      "status": "ready",
+      "deps": {
+        "status": "ok"
+      },
+      "requirements": {
+        "gpu": {
+          "status": "ok",
+          "detail": "NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB; NVIDIA H100 80GB HBM3, 81559 MiB"
+        }
+      },
+      "weights": {
+        "status": "unknown",
+        "detail": "bundle has no weights_cached() hook",
+        "fix_hint": "run `gap skills check --download` to (pre)fetch"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "name": "anchoring-a-free-end",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "cable.plan_support": "connector",
+        "robot.execute_trajectory": "connector",
+        "robot.set_grip": "connector",
+        "robot.wait_steps": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "cable.plan_support",
+        "robot.set_grip",
+        "robot.wait_steps"
+      ]
+    },
+    {
+      "name": "computing-feature-mating-poses",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "robot.get_ee_pose": "connector",
+        "geometry.compute_feature_mate": "geometry"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "executing-feature-mating",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "robot.get_ee_pose": "connector",
+        "robot.execute_trajectory": "connector",
+        "robot.go_to_pose_cartesian": "connector",
+        "robot.move_cartesian_until_contact": "connector",
+        "robot.open_gripper": "connector",
+        "robot.wait_steps": "connector",
+        "motion.plan_to_pose": "connector",
+        "motion.plan_linear": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "robot.move_cartesian_until_contact",
+        "robot.wait_steps",
+        "motion.plan_to_pose",
+        "motion.plan_linear"
+      ]
+    },
+    {
+      "name": "executing-held-object-motion",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "motion.plan_to_pose": "connector",
+        "motion.plan_linear": "connector",
+        "robot.execute_trajectory": "connector",
+        "robot.go_to_pose_cartesian": "connector",
+        "robot.get_ee_pose": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "motion.plan_to_pose",
+        "motion.plan_linear"
+      ]
+    },
+    {
+      "name": "grasping-concave-contour",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "geometry.fit_linear_feature": "geometry",
+        "robot.describe_gripper": "connector",
+        "robot.go_home": "connector",
+        "robot.go_to_pose": "connector",
+        "robot.get_observation": "connector",
+        "robot.open_gripper": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "robot.describe_gripper"
+      ]
+    },
+    {
+      "name": "grasping-direct-ik",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "geometry.top_down_grasp_candidates": "geometry",
+        "robot.go_to_pose": "connector",
+        "robot.go_to_pose_cartesian": "connector",
+        "robot.get_ee_pose": "connector",
+        "robot.open_gripper": "connector",
+        "robot.close_gripper": "connector",
+        "robot.describe_workspace": "connector",
+        "robot.describe_gripper": "connector",
+        "robot.grasp_frame": "connector",
+        "curobo.plan_to_pose": "curobo"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "robot.describe_workspace",
+        "robot.describe_gripper",
+        "robot.grasp_frame"
+      ]
+    },
+    {
+      "name": "grasping-linear-feature",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "geometry.fit_linear_feature": "geometry",
+        "robot.go_to_pose": "connector",
+        "robot.get_observation": "connector",
+        "robot.open_gripper": "connector",
+        "robot.close_gripper": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "grasping-short-axis",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "geometry.build_world_config": "geometry",
+        "robot.get_observation": "connector",
+        "curobo.plan_to_grasp_poses": "curobo",
+        "curobo.plan_grasp_motion": "curobo",
+        "curobo.plan_directed_linear": "curobo",
+        "robot.execute_trajectory": "connector",
+        "robot.move_to_joints": "connector",
+        "robot.get_ee_pose": "connector",
+        "robot.go_to_pose": "connector",
+        "robot.go_to_pose_cartesian": "connector",
+        "robot.open_gripper": "connector",
+        "robot.close_gripper": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "grasping-with-planner",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "geometry.top_down_grasp_candidates": "geometry",
+        "geometry.build_world_config": "geometry",
+        "geometry.mask_to_world_points": "geometry",
+        "sam3.segment_point": "sam3",
+        "robot.get_observation": "connector",
+        "robot.get_ee_pose": "connector",
+        "robot.go_to_pose_cartesian": "connector",
+        "curobo.plan_directed_linear": "curobo",
+        "curobo.plan_to_grasp_poses": "curobo",
+        "robot.execute_trajectory": "connector",
+        "robot.open_gripper": "connector",
+        "robot.close_gripper": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "perceiving-deformable-linear-objects",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "robot.get_observation": "connector",
+        "sam3.segment_text": "sam3",
+        "curve.fit_centerline": "curve",
+        "curve.track_centerline": "curve"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "perceiving-functional-features",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "sam3.segment_text": "sam3",
+        "sam3.segment_box": "sam3",
+        "grounding-dino.detect": "grounding-dino",
+        "geometry.mask_to_world_points": "geometry",
+        "geometry.filter_and_compute_obb": "geometry",
+        "geometry.fit_planar_feature": "geometry",
+        "geometry.fit_linear_feature": "geometry"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "perceiving-next-item",
+      "registry": "open-robot-skills",
+      "status": "blocked",
+      "tools": {
+        "robot.get_observation": "connector",
+        "grounding-dino.detect": "grounding-dino",
+        "vlm.query": "vlm",
+        "vlm.query_yes_no": "vlm",
+        "sam3.segment_box": "sam3",
+        "sam3.segment_text": "sam3",
+        "geometry.mask_to_world_points": "geometry",
+        "geometry.exclude_robot_points": "geometry",
+        "geometry.filter_and_compute_obb": "geometry"
+      },
+      "blocked_by": [
+        "vlm"
+      ],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "perceiving-object-parts",
+      "registry": "open-robot-skills",
+      "status": "blocked",
+      "tools": {
+        "robot.get_observation": "connector",
+        "grounding-dino.detect": "grounding-dino",
+        "vlm.query": "vlm",
+        "sam3.segment_text": "sam3",
+        "sam3.segment_box": "sam3",
+        "geometry.mask_to_world_points": "geometry",
+        "geometry.filter_noise": "geometry",
+        "geometry.compute_obb": "geometry"
+      },
+      "blocked_by": [
+        "vlm"
+      ],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "perceiving-objects",
+      "registry": "open-robot-skills",
+      "status": "blocked",
+      "tools": {
+        "robot.get_observation": "connector",
+        "grounding-dino.detect": "grounding-dino",
+        "vlm.query": "vlm",
+        "vlm.query_yes_no": "vlm",
+        "sam3.segment_box": "sam3",
+        "sam3.segment_text": "sam3",
+        "geometry.mask_to_world_points": "geometry",
+        "geometry.exclude_robot_points": "geometry",
+        "geometry.filter_and_compute_obb": "geometry"
+      },
+      "blocked_by": [
+        "vlm"
+      ],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "perceiving-objects-oneshot",
+      "registry": "open-robot-skills",
+      "status": "blocked",
+      "tools": {
+        "robot.get_observation": "connector",
+        "grounding-dino.detect": "grounding-dino",
+        "vlm.query": "vlm",
+        "sam3.segment_box": "sam3",
+        "geometry.mask_to_world_points": "geometry",
+        "geometry.filter_and_compute_obb": "geometry"
+      },
+      "blocked_by": [
+        "vlm"
+      ],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "perceiving-relational-correspondences",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "sam3.segment_text": "sam3",
+        "geometry.mask_to_world_points": "geometry"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "perceiving-routing-fixtures",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "robot.get_observation": "connector",
+        "sam3.segment_text": "sam3",
+        "curve.fit_centerline": "curve"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "perceiving-sorting-pairs",
+      "registry": "open-robot-skills",
+      "status": "blocked",
+      "tools": {
+        "robot.get_observation": "connector",
+        "grounding-dino.detect": "grounding-dino",
+        "sam3.segment_box": "sam3",
+        "geometry.mask_to_world_points": "geometry",
+        "geometry.filter_and_compute_obb": "geometry",
+        "vlm.query": "vlm"
+      },
+      "blocked_by": [
+        "vlm"
+      ],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "placing-held-feature",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "sim.get_object_pose": "connector",
+        "robot.get_ee_pose": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "sim.get_object_pose"
+      ]
+    },
+    {
+      "name": "planning-held-object-motion",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "robot.get_ee_pose": "connector",
+        "motion.plan_joint": "connector",
+        "sam3.segment_text": "sam3",
+        "geometry.mask_to_world_points": "geometry"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "motion.plan_joint"
+      ]
+    },
+    {
+      "name": "plugging-a-cable-end",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "robot.get_observation": "connector",
+        "robot.get_ee_pose": "connector",
+        "robot.grasp_frame": "connector",
+        "robot.go_to_pose": "connector",
+        "sam3.segment_text": "sam3",
+        "cable.plan_support": "connector",
+        "robot.set_grip": "connector",
+        "robot.wait_steps": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "robot.grasp_frame",
+        "cable.plan_support",
+        "robot.set_grip",
+        "robot.wait_steps"
+      ]
+    },
+    {
+      "name": "proposing-short-axis-grasps",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "sim.get_object_obb": "connector",
+        "robot.describe_gripper": "connector",
+        "robot.grasp_frame": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "sim.get_object_obb",
+        "robot.describe_gripper",
+        "robot.grasp_frame"
+      ]
+    },
+    {
+      "name": "proposing-side-grasps",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "sim.get_object_obb": "connector",
+        "robot.describe_gripper": "connector",
+        "robot.grasp_frame": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "sim.get_object_obb",
+        "robot.describe_gripper",
+        "robot.grasp_frame"
+      ]
+    },
+    {
+      "name": "reconstructing-collision-worlds",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "sam3.segment_text": "sam3",
+        "motion.get_robot_collision_spheres": "connector",
+        "geometry.build_world_config": "geometry"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "motion.get_robot_collision_spheres"
+      ]
+    },
+    {
+      "name": "registering-held-objects",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "robot.get_ee_pose": "connector",
+        "sam3.segment_text": "sam3",
+        "geometry.mask_to_world_points": "geometry",
+        "geometry.fit_planar_feature": "geometry",
+        "curobo.cloud_to_attachment": "curobo",
+        "geometry.cloud_to_attachment": "geometry"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "seating-a-cable-crossing",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "robot.execute_trajectory": "connector",
+        "robot.get_observation": "connector",
+        "robot.wait_steps": "connector",
+        "sam3.segment_text": "sam3",
+        "curve.fit_centerline": "curve"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "robot.wait_steps"
+      ]
+    },
+    {
+      "name": "selecting-reachable-grasp",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "robot.solve_ik": "connector",
+        "robot.describe_arm": "connector",
+        "motion.plan_joint": "connector",
+        "sim.clearance": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "robot.describe_arm",
+        "motion.plan_joint",
+        "sim.clearance"
+      ]
+    },
+    {
+      "name": "tipping-over-a-surface-edge",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "sim.get_object_pose": "connector",
+        "sim.query": "connector",
+        "robot.describe_arm": "connector",
+        "robot.describe_gripper": "connector",
+        "robot.get_ee_pose": "connector",
+        "robot.get_gripper": "connector",
+        "robot.grasp_frame": "connector",
+        "robot.set_grip": "connector",
+        "robot.stream_dual": "connector",
+        "robot.wait_steps": "connector",
+        "motion.plan_linear": "connector",
+        "motion.plan_joint": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "sim.get_object_pose",
+        "sim.query",
+        "robot.describe_arm",
+        "robot.describe_gripper",
+        "robot.grasp_frame",
+        "robot.set_grip",
+        "robot.stream_dual",
+        "robot.wait_steps",
+        "motion.plan_linear",
+        "motion.plan_joint"
+      ]
+    },
+    {
+      "name": "tracking-objects",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "sam3.tracker_init": "sam3",
+        "sam3.tracker_update": "sam3",
+        "sam3.tracker_close": "sam3"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "transporting-objects",
+      "registry": "open-robot-skills",
+      "status": "blocked",
+      "tools": {
+        "robot.go_to_pose": "connector",
+        "robot.go_to_pose_cartesian": "connector",
+        "robot.go_home": "connector",
+        "robot.open_gripper": "connector",
+        "robot.get_ee_pose": "connector",
+        "robot.get_observation": "connector",
+        "robot.execute_trajectory": "connector",
+        "robot.describe_arm": "connector",
+        "robot.describe_gripper": "connector",
+        "robot.describe_workspace": "connector",
+        "robot.grasp_frame": "connector",
+        "robot.wait_steps": "connector",
+        "curobo.plan_to_pose": "curobo",
+        "geometry.compute_drop_position": "geometry",
+        "geometry.mask_to_world_points": "geometry",
+        "geometry.filter_and_compute_obb": "geometry",
+        "geometry.build_world_config": "geometry",
+        "curobo.plan_with_grasped_object": "curobo",
+        "curobo.plan_directed_linear": "curobo",
+        "grounding-dino.detect": "grounding-dino",
+        "vlm.query": "vlm",
+        "sam3.segment_box": "sam3",
+        "sam3.segment_text": "sam3"
+      },
+      "blocked_by": [
+        "vlm"
+      ],
+      "unknown_tools": [],
+      "connector_required": [
+        "robot.describe_arm",
+        "robot.describe_gripper",
+        "robot.describe_workspace",
+        "robot.grasp_frame",
+        "robot.wait_steps"
+      ]
+    },
+    {
+      "name": "verifying-a-cable-route",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "robot.get_observation": "connector",
+        "robot.get_ee_pose": "connector",
+        "sam3.segment_text": "sam3",
+        "curve.fit_centerline": "curve",
+        "curve.track_centerline": "curve"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": []
+    },
+    {
+      "name": "verifying-grasps",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "robot.get_ee_pose": "connector",
+        "robot.go_to_pose_cartesian": "connector",
+        "robot.get_observation": "connector",
+        "robot.describe_workspace": "connector",
+        "sam3.segment_text": "sam3",
+        "geometry.mask_to_world_points": "geometry",
+        "robot.get_gripper": "connector",
+        "robot.describe_gripper": "connector"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": [
+        "robot.describe_workspace",
+        "robot.describe_gripper"
+      ]
+    },
+    {
+      "name": "verifying-placement",
+      "registry": "open-robot-skills",
+      "status": "ready",
+      "tools": {
+        "sam3.segment_text": "sam3",
+        "geometry.mask_to_world_points": "geometry"
+      },
+      "blocked_by": [],
+      "unknown_tools": [],
+      "connector_required": []
+    }
+  ]
+}

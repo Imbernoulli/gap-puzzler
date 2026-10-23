@@ -1,0 +1,26 @@
+Warp CUDA error 100: no CUDA-capable device is detected (in function init_cuda_driver, /builds/omniverse/warp/warp/native/cuda_util.cpp:333)
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, CUDA driver not available (NVRTC compilation available)
+   Devices:
+     "cpu"      : "x86_64"
+   Kernel cache:
+     /home/bohanlyu/.cache/warp/1.18.0
+Module newton._src.geometry.inertia f6b4bd8 load on device 'cpu' took 2.03 ms  (cached)
+Module warp._src.coloring 811e0ea load on device 'cpu' took 0.60 ms  (cached)
+Module validate_and_correct_inertia_kernel_1ff2ac62 6ad45b8 load on device 'cpu' took 0.32 ms  (cached)
+Module newton._src.geometry.bvh 4a1c07f load on device 'cpu' took 0.23 ms  (cached)
+Module newton._src.sim.articulation 2e73608 load on device 'cpu' took 0.26 ms  (cached)
+model has 107 joint coords (LM cholesky tile overflows shared memory); cartesian tracking runs the FD solver instead
+model has 107 joint coords (LM cholesky tile overflows shared memory); cartesian tracking runs the FD solver instead
+Module newton._src.solvers.mujoco.kernels 7f286e9 load on device 'cpu' took 0.54 ms  (cached)
+/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/mujoco_warp/_src/io.py:863: UserWarning: MULTICCD is enabled, but the scene contains CCD pairs without multicontact support: [('CAPSULE', 'MESH')]. At most 1 contact will be generated for these pairs.
+  warnings.warn(
+[rss] cpu (no CUDA device) · CUDA graphs off · renderer tiled (cpu is not a CUDA device)
+Module robosimstudio.core.readback 990015d load on device 'cpu' took 0.51 ms  (cached)
+0 best 0.020373681852531952 0.8455702323185826 q [-0.5555504176038505, 1.9882201712166208, 1.6092984237948789, -1.570799268686099, 0.6058736695426639, -2.0943999290466304] seconds 0.028044315986335278
+6 best 0.02036674125982946 0.8455869594786692 q [-0.5553929900230439, 1.9882052614422867, 1.6090447910428107, -1.5707982055964302, 0.6063845751203584, -2.0943999290466304] seconds 0.20238808006979525
+7 best 0.02036600177421404 0.8455888959953457 q [-0.5552802214610085, 1.9882951862041214, 1.6090512113462332, -1.5707994911275278, 0.6067084753088323, -2.0943999290466304] seconds 0.22710198001004755
+10 best 0.02035765083569409 0.845609050407286 q [-0.5556138008772926, 1.988096554509053, 1.6092524638828403, -1.5707931812866693, 0.6058288730524718, -2.094399929046391] seconds 0.30772074894048274
+11 best 0.01870077103672343 0.6945339640209118 q [-1.1809455879188635, 1.6832801685084198, 1.411167330238206, -1.1804689370893484, -0.10400822103442216, 2.0943999290465993] seconds 0.3284987739752978
+26 best 0.018687987180446647 0.6945682023566606 q [-1.180880517480683, 1.6836801902591207, 1.4117571374661047, -1.1811380554382607, -0.10394531659563723, 2.0943999290466304] seconds 0.6823175069876015
+DONE 0.053416397298279676 0.7711026309989393

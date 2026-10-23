@@ -1,0 +1,268 @@
+{
+ "take": "flat_v10_take_final",
+ "anchors": [
+  {
+   "t": 0.0,
+   "label": "flat_first_piece",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t011.50.jpg",
+   "frame": 0,
+   "sim_t": 0.0,
+   "sim_step": 0,
+   "objects": {
+    "red": {
+     "photo": {
+      "bbox": [
+       132,
+       173,
+       384,
+       360
+      ],
+      "centre": [
+       254.2,
+       279.9
+      ],
+      "width": 252,
+      "height": 187,
+      "area": 0.1209,
+      "pixels": 27855
+     },
+     "sim": null,
+     "iou": null,
+     "offset_px": null,
+     "size_ratio": null
+    }
+   }
+  },
+  {
+   "t": 8.5,
+   "label": "loose_parts",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t020.00.jpg",
+   "frame": 30,
+   "sim_t": 42.04,
+   "sim_step": 2102,
+   "objects": {
+    "red": {
+     "photo": {
+      "bbox": [
+       386,
+       112,
+       640,
+       360
+      ],
+      "centre": [
+       541.9,
+       236.7
+      ],
+      "width": 254,
+      "height": 248,
+      "area": 0.18995,
+      "pixels": 43765
+     },
+     "sim": null,
+     "iou": null,
+     "offset_px": null,
+     "size_ratio": null
+    }
+   }
+  },
+  {
+   "t": 12.5,
+   "label": "flat_partial",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t024.00.jpg",
+   "frame": 44,
+   "sim_t": 61.68,
+   "sim_step": 3084,
+   "objects": {
+    "red": {
+     "photo": {
+      "bbox": [
+       270,
+       0,
+       640,
+       360
+      ],
+      "centre": [
+       445.6,
+       188.5
+      ],
+      "width": 370,
+      "height": 360,
+      "area": 0.33299,
+      "pixels": 76722
+     },
+     "sim": null,
+     "iou": null,
+     "offset_px": null,
+     "size_ratio": null
+    }
+   }
+  },
+  {
+   "t": 20.5,
+   "label": "flat_assembly",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t032.00.jpg",
+   "frame": 73,
+   "sim_t": 102.3,
+   "sim_step": 5115,
+   "objects": {
+    "red": {
+     "photo": {
+      "bbox": [
+       569,
+       226,
+       640,
+       360
+      ],
+      "centre": [
+       610.8,
+       294.4
+      ],
+      "width": 71,
+      "height": 134,
+      "area": 0.02952,
+      "pixels": 6802
+     },
+     "sim": {
+      "bbox": [
+       238,
+       180,
+       418,
+       282
+      ],
+      "centre": [
+       340.4,
+       241.8
+      ],
+      "width": 180,
+      "height": 102,
+      "area": 0.0346,
+      "pixels": 7972
+     },
+     "iou": 0.0,
+     "offset_px": [
+      -270.4,
+      -52.6
+     ],
+     "size_ratio": 1.083,
+     "width_ratio": 2.535,
+     "height_ratio": 0.761
+    }
+   }
+  },
+  {
+   "t": 36.5,
+   "label": "three_left",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t048.00.jpg",
+   "frame": 129,
+   "sim_t": 180.9,
+   "sim_step": 9045,
+   "objects": {
+    "red": {
+     "photo": {
+      "bbox": [
+       415,
+       112,
+       640,
+       360
+      ],
+      "centre": [
+       556.3,
+       243.3
+      ],
+      "width": 225,
+      "height": 248,
+      "area": 0.13018,
+      "pixels": 29993
+     },
+     "sim": {
+      "bbox": [
+       238,
+       178,
+       418,
+       280
+      ],
+      "centre": [
+       339.7,
+       241.2
+      ],
+      "width": 180,
+      "height": 102,
+      "area": 0.03458,
+      "pixels": 7968
+     },
+     "iou": 0.0,
+     "offset_px": [
+      -216.6,
+      -2.1
+     ],
+     "size_ratio": 0.515,
+     "width_ratio": 0.8,
+     "height_ratio": 0.411
+    }
+   }
+  },
+  {
+   "t": 49.5,
+   "label": "flat_complete",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t061.00.jpg",
+   "frame": 176,
+   "sim_t": 246.1,
+   "sim_step": 12305,
+   "objects": {
+    "red": {
+     "photo": {
+      "bbox": [
+       225,
+       189,
+       408,
+       284
+      ],
+      "centre": [
+       330.6,
+       247.9
+      ],
+      "width": 183,
+      "height": 95,
+      "area": 0.03298,
+      "pixels": 7599
+     },
+     "sim": {
+      "bbox": [
+       238,
+       178,
+       418,
+       280
+      ],
+      "centre": [
+       339.9,
+       241.1
+      ],
+      "width": 180,
+      "height": 102,
+      "area": 0.03462,
+      "pixels": 7976
+     },
+     "iou": 0.6529,
+     "offset_px": [
+      9.3,
+      -6.8
+     ],
+     "size_ratio": 1.025,
+     "width_ratio": 0.984,
+     "height_ratio": 1.074
+    }
+   }
+  }
+ ],
+ "motion": {
+  "red": {
+   "photo": {
+    "dx": 76.4,
+    "dy": -32.0,
+    "moved": true
+   },
+   "sim": null
+  }
+ },
+ "score": 0.1088
+}

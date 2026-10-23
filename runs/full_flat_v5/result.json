@@ -1,0 +1,87 @@
+{
+  "success": false,
+  "seed": 0,
+  "variant": {
+    "mode": "flat",
+    "seed": 0,
+    "board_dx": 0.0,
+    "board_dy": 0.0,
+    "board_yaw": 0.0,
+    "piece_jitter": 0.0,
+    "piece_yaw": 0.0,
+    "friction": 0.65,
+    "grasp_bias": 0.0
+  },
+  "graph": "graphs/flat_v5",
+  "steps": 3524,
+  "sim_time_s": 70.48,
+  "completion_step": null,
+  "control_hz": 50.0,
+  "wall_s": 67.81843399303034,
+  "final": {
+    "success": false,
+    "bead_error_m": {
+      "yellow": 0.0006623330537066395,
+      "purple": 0.0006272128750301048,
+      "cyan": 0.0001930064940765327,
+      "lime": 0.28519519547934974,
+      "mint": 0.225160966709002,
+      "maroon": 0.20692921152036145,
+      "teal": 0.27093213881849726,
+      "orange": 0.24323510645132504,
+      "navy": 0.29360185295032665,
+      "pink": 0.2074908658396273,
+      "red": 0.3534018412288348,
+      "azure": 0.23448343822321105
+    },
+    "speed_mps": {
+      "yellow": 1.567289766009936e-05,
+      "purple": 1.533520257264433e-05,
+      "cyan": 1.6434491092530745e-05,
+      "lime": 0.00010385750420472058,
+      "mint": 1.242493999599085e-05,
+      "maroon": 1.4631007616136027e-05,
+      "teal": 1.1353690752023978e-05,
+      "orange": 1.2163056453604314e-05,
+      "navy": 1.3150403901887216e-05,
+      "pink": 1.1034264389329953e-05,
+      "red": 1.1155297215783947e-05,
+      "azure": 1.3271383068189632e-05
+    },
+    "hands": [
+      {
+        "arm": "left",
+        "clearance": 0.010624900131764299,
+        "width": 0.024020789191126823
+      },
+      {
+        "arm": "right",
+        "clearance": 0.09892980993260117,
+        "width": 0.015086552128195763
+      }
+    ],
+    "board_pose": [
+      0.4657299518585205,
+      0.0004893461591564119,
+      0.7532161474227905,
+      0.0007193005876615644,
+      -6.58278149785474e-05,
+      0.0006559841567650437,
+      0.9999995231628418
+    ],
+    "finite": true,
+    "board_level": true,
+    "board_resting": true
+  },
+  "events": [],
+  "error": "",
+  "graph_trace": {
+    "graph_result": {
+      "result": "ExecutionResult(success=False, exit_status='failure', outputs={'anchor_sg': {}, 'yellow_sg': {}, 'purple_sg': {}, 'cyan_sg': {}, 'lime_sg': {}}, trace_path=PosixPath('runs/full_flat_v5/trace/0000'), checkpoint_results=[], error=PipelineError(\"workflow terminated at end node 'abort' (failure); first node error -- lime_sg.act: Node 'lime_sg.act' failed: RuntimeError: Full-pose planning refused {'joints': [-0.8712335824966431, 2.3651278018951416, 2.294376850128174, -1.5707999467849731, 0.14955401420593262, 0.6927870512008667], 'current': [-0.250421941280365, 1.8365792036056519, 1.4470466375350952, -1.1773645877838135, 0.0008623984758742154, 1.3204131126403809], 'position_error_m': 0.01373511324974988, 'rotation_error_rad': 0.07800567560841094}\"), duration_s=62.972152459900826, latency=None)"
+    },
+    "steps": 3458,
+    "graph_error": "PipelineError: workflow terminated at end node 'abort' (failure); first node error -- lime_sg.act: Node 'lime_sg.act' failed: RuntimeError: Full-pose planning refused {'joints': [-0.8712335824966431, 2.3651278018951416, 2.294376850128174, -1.5707999467849731, 0.14955401420593262, 0.6927870512008667], 'current': [-0.250421941280365, 1.8365792036056519, 1.4470466375350952, -1.1773645877838135, 0.0008623984758742154, 1.3204131126403809], 'position_error_m': 0.01373511324974988, 'rotation_error_rad': 0.07800567560841094}",
+    "graph_traceback": "Traceback (most recent call last):\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/execute.py\", line 192, in execute\n    executor.execute()\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 347, in execute\n    self._run_top_level()\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 419, in _run_top_level\n    raise PipelineError(\ngap_core.errors.PipelineError: workflow terminated at end node 'abort' (failure); first node error -- lime_sg.act: Node 'lime_sg.act' failed: RuntimeError: Full-pose planning refused {'joints': [-0.8712335824966431, 2.3651278018951416, 2.294376850128174, -1.5707999467849731, 0.14955401420593262, 0.6927870512008667], 'current': [-0.250421941280365, 1.8365792036056519, 1.4470466375350952, -1.1773645877838135, 0.0008623984758742154, 1.3204131126403809], 'position_error_m': 0.01373511324974988, 'rotation_error_rad': 0.07800567560841094}\n"
+  },
+  "workflow_sha256": "0b8c7c3666a80dc8431f00e412526cce572afd06a12fbf3666ae985b87511a36"
+}

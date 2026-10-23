@@ -1,0 +1,85 @@
+{
+  "success": false,
+  "seed": 11,
+  "variant": {
+    "seed": 11,
+    "board_dx": -0.005942876755692807,
+    "board_dy": -1.155420095816026e-05,
+    "board_yaw": 0.014209770067270047,
+    "piece_jitter": 0.008,
+    "piece_yaw": 0.28,
+    "friction": 0.46147560334877785,
+    "grasp_bias": -0.0014082956616901763
+  },
+  "graph": "graphs/g0",
+  "steps": 1057,
+  "sim_time_s": 21.14,
+  "completion_step": null,
+  "control_hz": 50.0,
+  "wall_s": 50.51339557906613,
+  "final": {
+    "success": false,
+    "bead_error_m": {
+      "yellow": 8.083407058367217e-05,
+      "purple": 9.481569547740203e-05,
+      "cyan": 0.00011057692414670153,
+      "lime": 1.1842858590427606e-05,
+      "mint": 3.807292645319039e-05,
+      "maroon": 6.162855053126184e-05,
+      "teal": 8.991933274993709e-05,
+      "orange": 9.702635821325432e-05,
+      "navy": 0.26266811494526204,
+      "pink": 3.6320266226517304e-05,
+      "red": 0.320113821260079,
+      "azure": 0.2086893362855162
+    },
+    "speed_mps": {
+      "yellow": 1.1305825562821744e-05,
+      "purple": 1.0522058948532333e-05,
+      "cyan": 1.2438111662553326e-05,
+      "lime": 8.462138350305719e-06,
+      "mint": 7.1336389375859095e-06,
+      "maroon": 5.491298397909053e-06,
+      "teal": 1.1794086039451445e-05,
+      "orange": 9.881133874934548e-06,
+      "navy": 1.2779922144556977e-05,
+      "pink": 6.979109518136969e-06,
+      "red": 1.2361780136416224e-05,
+      "azure": 1.2927255738761507e-05
+    },
+    "hands": [
+      {
+        "arm": "left",
+        "clearance": 0.06523674036649459,
+        "width": 0.035655174404382706
+      },
+      {
+        "arm": "right",
+        "clearance": 0.13799654556525123,
+        "width": 0.05480077117681503
+      }
+    ],
+    "board_pose": [
+      0.459057480096817,
+      -0.0001087282580556348,
+      0.7529979348182678,
+      -9.314238013757858e-06,
+      -1.857471579569392e-05,
+      0.0073668439872562885,
+      0.9999728798866272
+    ],
+    "finite": true,
+    "board_level": true
+  },
+  "events": [],
+  "error": "",
+  "graph_trace": {
+    "graph_result": {
+      "result": "ExecutionResult(success=False, exit_status='failure', outputs={'anchor_sg': {}, 'navy_sg': {}}, trace_path=PosixPath('runs/train_g0/seed0011/trace/0000'), checkpoint_results=[], error=PipelineError(\"workflow terminated at end node 'abort' (failure)\"), duration_s=43.59064572700299, latency=None)"
+    },
+    "steps": 991,
+    "graph_error": "PipelineError: workflow terminated at end node 'abort' (failure)",
+    "graph_traceback": "Traceback (most recent call last):\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/execute.py\", line 192, in execute\n    executor.execute()\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 347, in execute\n    self._run_top_level()\n  File \"/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/gap/runtime/executor.py\", line 419, in _run_top_level\n    raise PipelineError(\ngap_core.errors.PipelineError: workflow terminated at end node 'abort' (failure)\n"
+  },
+  "workflow_sha256": "4834bf1ec485ec02451ff02cb6a0ce6c19dac6cf19b2072e56c25615f507a2f0"
+}

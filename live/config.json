@@ -1,0 +1,9 @@
+{
+  "mode": "pyramid",
+  "pyramid_plan": "pyramid_robot6_plan.json",
+  "completed": false,
+  "execute": true,
+  "graph": "graphs/pyramid_v40",
+  "trace": "pyramid_v40_take",
+  "embodiment": "yam_bimanual"
+}

@@ -1,0 +1,46 @@
+{
+  "graph": "graphs/pyramid_v37",
+  "scope": "Two nominal repeats; no randomization or broad robustness claim.",
+  "successes": 1,
+  "episodes": 2,
+  "task_source_hashes_identical": true,
+  "runs": [
+    {
+      "path": "runs/pyramid_v37_nominal/iq-s0/outputs/out/seed0/result.json",
+      "success": true,
+      "sim_time_s": 355.04,
+      "final_seated_count": 12,
+      "final_checkpoints": {
+        "anchor_physical_state": true,
+        "azure_physical_state": true,
+        "orange_physical_state": true,
+        "yellow_physical_state": true,
+        "teal_physical_state": true,
+        "purple_physical_state": true,
+        "cyan_physical_state": true,
+        "mint_physical_state": true,
+        "lime_physical_state": true,
+        "maroon_physical_state": true,
+        "navy_physical_state": true,
+        "pink_physical_state": true,
+        "red_physical_state": true,
+        "finish_physical_state": true
+      }
+    },
+    {
+      "path": "runs/pyramid_v37_repeat/iq-s1/outputs/out/seed1/result.json",
+      "success": false,
+      "sim_time_s": 187.56,
+      "final_seated_count": 5,
+      "final_checkpoints": {
+        "anchor_physical_state": true,
+        "azure_physical_state": true,
+        "orange_physical_state": true,
+        "yellow_physical_state": true,
+        "teal_physical_state": true,
+        "purple_physical_state": true,
+        "cyan_physical_state": false
+      }
+    }
+  ]
+}

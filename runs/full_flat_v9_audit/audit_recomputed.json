@@ -1,0 +1,34 @@
+{
+  "episode": "runs/full_flat_v9_audit",
+  "original": {
+    "success": true,
+    "released_stable_duration_s": 3.3999999999999773,
+    "final_max_bead_error_m": 0.0006525741565024663,
+    "final_max_bead_speed_mps": 5.397869099969421e-05,
+    "method": "Recorded rigid poses, Hungarian bead matching, finite-difference bead speeds and recorded hand clearance; no environment grader calls."
+  },
+  "negative_controls": {
+    "one_piece_displaced_8mm": {
+      "success": false,
+      "released_stable_duration_s": 0.0,
+      "final_max_bead_error_m": 0.007743369719462727,
+      "final_max_bead_speed_mps": 5.397869099969421e-05,
+      "method": "Recorded rigid poses, Hungarian bead matching, finite-difference bead speeds and recorded hand clearance; no environment grader calls."
+    },
+    "grippers_closed": {
+      "success": false,
+      "released_stable_duration_s": 0.0,
+      "final_max_bead_error_m": 0.0006525741565024663,
+      "final_max_bead_speed_mps": 5.397869099969421e-05,
+      "method": "Recorded rigid poses, Hungarian bead matching, finite-difference bead speeds and recorded hand clearance; no environment grader calls."
+    },
+    "board_and_pieces_airborne_50mm": {
+      "success": false,
+      "released_stable_duration_s": 0.0,
+      "final_max_bead_error_m": 0.0006525741565024663,
+      "final_max_bead_speed_mps": 5.397869099969421e-05,
+      "method": "Recorded rigid poses, Hungarian bead matching, finite-difference bead speeds and recorded hand clearance; no environment grader calls."
+    }
+  },
+  "all_negative_controls_rejected": true
+}

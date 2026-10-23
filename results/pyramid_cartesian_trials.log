@@ -1,0 +1,9 @@
+[pool puzzler-180919] code bundle daff5fcf583b (1.7 MB); 3 job(s) -> runs/pyramid_cartesian_trials
+[pool puzzler-180919] creating 3 x 8 vCPU / 16 GiB / 30 GiB from gap-knot-rss-abed33ba-c8m16d30
+[pool puzzler-180919] up e04248a0-cffa-4b57-b889-7be624b49e2e (8 vCPU / 16 GiB) in 4s
+[pool puzzler-180919] up 4a34287d-25d0-4bc3-936a-25005ffee603 (8 vCPU / 16 GiB) in 2s
+[pool puzzler-180919] up 7161c106-6479-4e53-9ab6-35ddd504bdfa (8 vCPU / 16 GiB) in 1s
+[pool puzzler-180919] pyramid_v31_finish_diagnostic: ok exit=0 run=149.0s attempts=1
+[pool puzzler-180919] pyramid_precision_v10: ok exit=0 run=189.5s attempts=1
+[pool puzzler-180919] pyramid_precision_v9: FAILED exit=143 run=758.4s attempts=1
+[pool puzzler-180919] deleting 1 sandbox(es)

@@ -1,0 +1,156 @@
+[
+  {
+    "step": 1045,
+    "relative_error_mm": 0.2,
+    "predicted_min_z": 0.811,
+    "support_distance_mm": 233.9,
+    "actual_z": 0.8112
+  },
+  {
+    "step": 1050,
+    "relative_error_mm": 0.2,
+    "predicted_min_z": 0.8095,
+    "support_distance_mm": 232.7,
+    "actual_z": 0.8098
+  },
+  {
+    "step": 1055,
+    "relative_error_mm": 0.3,
+    "predicted_min_z": 0.8062,
+    "support_distance_mm": 225.9,
+    "actual_z": 0.8077
+  },
+  {
+    "step": 1060,
+    "relative_error_mm": 0.3,
+    "predicted_min_z": 0.804,
+    "support_distance_mm": 216.4,
+    "actual_z": 0.8069
+  },
+  {
+    "step": 1065,
+    "relative_error_mm": 0.3,
+    "predicted_min_z": 0.8019,
+    "support_distance_mm": 206.1,
+    "actual_z": 0.8068
+  },
+  {
+    "step": 1070,
+    "relative_error_mm": 0.3,
+    "predicted_min_z": 0.8004,
+    "support_distance_mm": 195.9,
+    "actual_z": 0.807
+  },
+  {
+    "step": 1075,
+    "relative_error_mm": 0.4,
+    "predicted_min_z": 0.7987,
+    "support_distance_mm": 187.6,
+    "actual_z": 0.807
+  },
+  {
+    "step": 1080,
+    "relative_error_mm": 0.4,
+    "predicted_min_z": 0.797,
+    "support_distance_mm": 179.6,
+    "actual_z": 0.8068
+  },
+  {
+    "step": 1085,
+    "relative_error_mm": 0.4,
+    "predicted_min_z": 0.7953,
+    "support_distance_mm": 171.8,
+    "actual_z": 0.8066
+  },
+  {
+    "step": 1090,
+    "relative_error_mm": 0.4,
+    "predicted_min_z": 0.7938,
+    "support_distance_mm": 164.0,
+    "actual_z": 0.8065
+  },
+  {
+    "step": 1095,
+    "relative_error_mm": 0.4,
+    "predicted_min_z": 0.7923,
+    "support_distance_mm": 156.5,
+    "actual_z": 0.8065
+  },
+  {
+    "step": 1100,
+    "relative_error_mm": 0.4,
+    "predicted_min_z": 0.7909,
+    "support_distance_mm": 149.1,
+    "actual_z": 0.8066
+  },
+  {
+    "step": 1105,
+    "relative_error_mm": 0.4,
+    "predicted_min_z": 0.7896,
+    "support_distance_mm": 142.0,
+    "actual_z": 0.8067
+  },
+  {
+    "step": 1110,
+    "relative_error_mm": 0.5,
+    "predicted_min_z": 0.7884,
+    "support_distance_mm": 134.9,
+    "actual_z": 0.8068
+  },
+  {
+    "step": 1115,
+    "relative_error_mm": 0.5,
+    "predicted_min_z": 0.7872,
+    "support_distance_mm": 128.2,
+    "actual_z": 0.807
+  },
+  {
+    "step": 1120,
+    "relative_error_mm": 0.8,
+    "predicted_min_z": 0.7871,
+    "support_distance_mm": 122.9,
+    "actual_z": 0.808
+  },
+  {
+    "step": 1125,
+    "relative_error_mm": 2.0,
+    "predicted_min_z": 0.7893,
+    "support_distance_mm": 119.0,
+    "actual_z": 0.8108
+  },
+  {
+    "step": 1130,
+    "relative_error_mm": 3.8,
+    "predicted_min_z": 0.7915,
+    "support_distance_mm": 114.8,
+    "actual_z": 0.8131
+  },
+  {
+    "step": 1135,
+    "relative_error_mm": 5.4,
+    "predicted_min_z": 0.7933,
+    "support_distance_mm": 110.5,
+    "actual_z": 0.8155
+  },
+  {
+    "step": 1140,
+    "relative_error_mm": 7.5,
+    "predicted_min_z": 0.7946,
+    "support_distance_mm": 105.8,
+    "actual_z": 0.8181
+  },
+  {
+    "step": 1145,
+    "relative_error_mm": 9.9,
+    "predicted_min_z": 0.7962,
+    "support_distance_mm": 101.5,
+    "actual_z": 0.8208
+  },
+  {
+    "step": 1150,
+    "relative_error_mm": 13.2,
+    "predicted_min_z": 0.7972,
+    "support_distance_mm": 96.0,
+    "actual_z": 0.8234
+  }
+]

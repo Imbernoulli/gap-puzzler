@@ -1,0 +1,228 @@
+{
+ "take": "pyramid_v37_take",
+ "anchors": [
+  {
+   "t": 0.0,
+   "label": "pyramid_case_setup",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t104.00.jpg",
+   "frame": 0,
+   "sim_t": 0.0,
+   "sim_step": 0,
+   "objects": {
+    "board": {
+     "photo": {
+      "bbox": [
+       0,
+       159,
+       125,
+       285
+      ],
+      "centre": [
+       30.0,
+       243.3
+      ],
+      "width": 125,
+      "height": 126,
+      "area": 0.01193,
+      "pixels": 2749
+     },
+     "sim": {
+      "bbox": [
+       134,
+       0,
+       604,
+       360
+      ],
+      "centre": [
+       365.4,
+       167.8
+      ],
+      "width": 470,
+      "height": 360,
+      "area": 0.46642,
+      "pixels": 107464
+     },
+     "iou": 0.0,
+     "offset_px": [
+      335.4,
+      -75.5
+     ],
+     "size_ratio": 6.252,
+     "width_ratio": 3.76,
+     "height_ratio": 2.857
+    }
+   }
+  },
+  {
+   "t": 36.0,
+   "label": "pyramid_partial",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t140.00.jpg",
+   "frame": 40,
+   "sim_t": 56.1,
+   "sim_step": 2805,
+   "objects": {
+    "board": {
+     "photo": {
+      "bbox": [
+       112,
+       161,
+       492,
+       317
+      ],
+      "centre": [
+       332.4,
+       253.1
+      ],
+      "width": 380,
+      "height": 156,
+      "area": 0.10649,
+      "pixels": 24535
+     },
+     "sim": {
+      "bbox": [
+       132,
+       0,
+       604,
+       360
+      ],
+      "centre": [
+       358.9,
+       184.2
+      ],
+      "width": 472,
+      "height": 360,
+      "area": 0.38573,
+      "pixels": 88872
+     },
+     "iou": 0.1896,
+     "offset_px": [
+      26.5,
+      -68.9
+     ],
+     "size_ratio": 1.903,
+     "width_ratio": 1.242,
+     "height_ratio": 2.308
+    }
+   }
+  },
+  {
+   "t": 106.0,
+   "label": "ending",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t210.00.jpg",
+   "frame": 118,
+   "sim_t": 165.48,
+   "sim_step": 8274,
+   "objects": {
+    "board": {
+     "photo": {
+      "bbox": [
+       98,
+       67,
+       448,
+       234
+      ],
+      "centre": [
+       290.2,
+       123.4
+      ],
+      "width": 350,
+      "height": 167,
+      "area": 0.05361,
+      "pixels": 12352
+     },
+     "sim": {
+      "bbox": [
+       130,
+       0,
+       424,
+       360
+      ],
+      "centre": [
+       277.1,
+       183.9
+      ],
+      "width": 294,
+      "height": 360,
+      "area": 0.21738,
+      "pixels": 50084
+     },
+     "iou": 0.0482,
+     "offset_px": [
+      -13.1,
+      60.5
+     ],
+     "size_ratio": 2.014,
+     "width_ratio": 0.84,
+     "height_ratio": 2.156
+    }
+   }
+  },
+  {
+   "t": 110.0,
+   "label": "pyramid_complete",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t214.00.jpg",
+   "frame": 123,
+   "sim_t": 172.32,
+   "sim_step": 8616,
+   "objects": {
+    "board": {
+     "photo": {
+      "bbox": [
+       153,
+       0,
+       554,
+       360
+      ],
+      "centre": [
+       374.4,
+       185.3
+      ],
+      "width": 401,
+      "height": 360,
+      "area": 0.1636,
+      "pixels": 37693
+     },
+     "sim": {
+      "bbox": [
+       130,
+       0,
+       544,
+       360
+      ],
+      "centre": [
+       309.6,
+       161.6
+      ],
+      "width": 414,
+      "height": 360,
+      "area": 0.26542,
+      "pixels": 61152
+     },
+     "iou": 0.2979,
+     "offset_px": [
+      -64.8,
+      -23.7
+     ],
+     "size_ratio": 1.274,
+     "width_ratio": 1.032,
+     "height_ratio": 1.0
+    }
+   }
+  }
+ ],
+ "motion": {
+  "board": {
+   "photo": {
+    "dx": 344.4,
+    "dy": -58.0,
+    "moved": true
+   },
+   "sim": {
+    "dx": -55.8,
+    "dy": -6.2,
+    "moved": true
+   }
+  }
+ },
+ "score": 0.1339
+}

@@ -1,0 +1,7 @@
+camera: phone
+ref: /srv/home/bohanlyu/gap-puzzler/live/ref/t214.00.jpg
+score: 0.3142
+report: board: sim is 1.69x the photo's size (w 1.17x, h 1.00x), centre 10 px left, 18 px high (3.2% of the frame), IoU 0.31
+beside: /srv/home/bohanlyu/gap-puzzler/live/run/cmp_025_beside.png
+look: /srv/home/bohanlyu/gap-puzzler/live/run/cmp_025_look.png
+logged: 58

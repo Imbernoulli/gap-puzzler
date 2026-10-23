@@ -1,0 +1,41 @@
+{
+  "selected": "fast",
+  "training": {
+    "fixed": {
+      "trials": 2,
+      "successes": 0,
+      "success_rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.6576280471103807
+      ],
+      "mean_seated_pieces": 7,
+      "mean_success_sim_s": null,
+      "success_parts_per_hour": null
+    },
+    "adaptive": {
+      "trials": 2,
+      "successes": 2,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.34237195288961925,
+        1.0
+      ],
+      "mean_seated_pieces": 12,
+      "mean_success_sim_s": 270.25,
+      "success_parts_per_hour": 13.32099907493062
+    },
+    "fast": {
+      "trials": 2,
+      "successes": 2,
+      "success_rate": 1.0,
+      "wilson_95": [
+        0.34237195288961925,
+        1.0
+      ],
+      "mean_seated_pieces": 12,
+      "mean_success_sim_s": 249.60000000000002,
+      "success_parts_per_hour": 14.423076923076922
+    }
+  }
+}

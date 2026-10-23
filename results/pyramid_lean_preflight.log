@@ -1,0 +1,32 @@
+Warp CUDA error 100: no CUDA-capable device is detected (in function init_cuda_driver, /builds/omniverse/warp/warp/native/cuda_util.cpp:333)
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, CUDA driver not available (NVRTC compilation available)
+   Devices:
+     "cpu"      : "x86_64"
+   Kernel cache:
+     /home/bohanlyu/.cache/warp/1.18.0
+Module newton._src.geometry.inertia f6b4bd8 load on device 'cpu' took 1.74 ms  (cached)
+Module warp._src.coloring 811e0ea load on device 'cpu' took 0.52 ms  (cached)
+Module validate_and_correct_inertia_kernel_1ff2ac62 6ad45b8 load on device 'cpu' took 0.27 ms  (cached)
+Module newton._src.geometry.bvh 4a1c07f load on device 'cpu' took 0.22 ms  (cached)
+Module newton._src.sim.articulation 2e73608 load on device 'cpu' took 0.24 ms  (cached)
+model has 107 joint coords (LM cholesky tile overflows shared memory); cartesian tracking runs the FD solver instead
+model has 107 joint coords (LM cholesky tile overflows shared memory); cartesian tracking runs the FD solver instead
+Module newton._src.solvers.mujoco.kernels 7f286e9 load on device 'cpu' took 0.54 ms  (cached)
+/srv/home/bohanlyu/gap-puzzler/third_party/robosimstudio/.venv/lib/python3.12/site-packages/mujoco_warp/_src/io.py:863: UserWarning: MULTICCD is enabled, but the scene contains CCD pairs without multicontact support: [('CAPSULE', 'MESH')]. At most 1 contact will be generated for these pairs.
+  warnings.warn(
+[rss] cpu (no CUDA device) · CUDA graphs off · renderer tiled (cpu is not a CUDA device)
+Module robosimstudio.core.readback 990015d load on device 'cpu' took 0.45 ms  (cached)
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+orange {'grasp': [0.3724999665571037, 0.2499999510439412, 0.7654937202077357], 'index': 0, 'target_R': [[-1.0, 0.0, 0.0], [0.0, -1.0, 0.0], [0.0, 0.0, 1.0]], 'heading': 90.0, 'feasible': True}
+purple {'grasp': [0.4644998300198491, 0.2900001895243031, 0.765493819688025], 'index': 0, 'target_R': [[0.0, 1.0, -0.0], [-1.0, 0.0, 0.0], [0.0, 0.0, 1.0]], 'heading': 90.0, 'feasible': True}
+yellow {'grasp': [0.5039997649193252, 0.30999998092651865, 0.7654937825967134], 'index': 0, 'target_R': [[0.0, -1.0, 0.0], [1.0, 0.0, -0.0], [0.0, 0.0, 1.0]], 'heading': 270.0, 'feasible': True}
+lime {'grasp': [0.5810002779943245, 0.2700000107191961, 0.7654934835099885], 'index': 1, 'target_R': [[0.0, 1.0, -0.0], [-1.0, 0.0, 0.0], [0.0, 0.0, 1.0]], 'heading': 0.0, 'feasible': True}
+teal {'grasp': [0.6267497777917077, 0.29500001072743137, 0.7654920916474195], 'index': 1, 'target_R': [[0.0, -1.0, 0.0], [1.0, 0.0, -0.0], [0.0, 0.0, 1.0]], 'heading': 0.0, 'feasible': True}
+cyan {'grasp': [0.7033338030648412, 0.2866662899409662, 0.7654900277221958], 'index': 0, 'target_R': [[-0.5, -0.5, 0.7071067811865475], [0.5, 0.5, 0.7071067811865475], [-0.7071067811865475, 0.7071067811865475, 0.0]], 'heading': 0.0, 'feasible': True}
+azure {'grasp': [0.31250017523860996, -0.28500018954388073, 0.7654939125961293], 'index': 2, 'target_R': [[-1.0, 0.0, 0.0], [0.0, -1.0, 0.0], [0.0, 0.0, 1.0]], 'heading': 0.0, 'feasible': True}
+navy {'grasp': [0.4157495737049624, -0.23875018954399063, 0.7654925077392516], 'index': 0, 'target_R': [[0.0, -1.0, 0.0], [1.0, 0.0, -0.0], [0.0, 0.0, 1.0]], 'heading': 90.0, 'feasible': True}
+pink {'grasp': [0.4690001166196061, -0.3050000703475392, 0.765493848736169], 'index': 4, 'target_R': [[0.5, 0.5, -0.7071067811865475], [0.5, 0.5, 0.7071067811865475], [0.7071067811865475, -0.7071067811865475, 0.0]], 'heading': 0.0, 'feasible': True}
+maroon {'feasible': False, 'error': 'No feasible source/target grasp for maroon: 0.08468729285359991'}
+mint {'grasp': [0.6180000400088748, -0.2999998915343827, 0.7654938069502744], 'index': 2, 'target_R': [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]], 'heading': 180.0, 'feasible': True}
+red {'grasp': [0.6649996590640648, -0.2750001001363532, 0.7654935852668864], 'index': 3, 'target_R': [[-0.5, 0.5, -0.7071067811865475], [0.5, -0.5, -0.7071067811865475], [-0.7071067811865475, -0.7071067811865475, 0.0]], 'heading': 0.0, 'feasible': True}

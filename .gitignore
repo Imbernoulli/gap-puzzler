@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+node_modules/
+.DS_Store
+dist/
+site/media/
+site/data/
+site/report.html
+fleet/state/
+live/run/serve.log
+live/run/*.pid
+video/*.mp4
+video/*.part
+# Full traces are distributed in the versioned evidence release.
+runs/**/frames.json
+runs/**/outputs.tar.gz
+runs/**/request.json
+runs/**/request.meta.json
+runs/**/response.json

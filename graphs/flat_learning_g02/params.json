@@ -1,0 +1,18 @@
+{
+  "full_task": true,
+  "native_carry": true,
+  "terminal_grasp": true,
+  "close_width": 0.0,
+  "release_height": 0.028,
+  "grasp_z": 0.003,
+  "retreat": 0.075,
+  "grasp_auto": true,
+  "obstacle_grasp": true,
+  "pieces": {
+    "pink": {
+      "shape_symmetry": true,
+      "transport": 0.08
+    }
+  },
+  "motion_scale": 1.2
+}

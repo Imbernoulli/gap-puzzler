@@ -1,0 +1,41 @@
+Warp CUDA error 100: no CUDA-capable device is detected (in function init_cuda_driver, /builds/omniverse/warp/warp/native/cuda_util.cpp:333)
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, CUDA driver not available (NVRTC compilation available)
+   Devices:
+     "cpu"      : "x86_64"
+   Kernel cache:
+     /home/bohanlyu/.cache/warp/1.18.0
+Module newton._src.geometry.inertia f6b4bd8 load on device 'cpu' took 1.94 ms  (cached)
+Module warp._src.coloring 811e0ea load on device 'cpu' took 0.53 ms  (cached)
+Module validate_and_correct_inertia_kernel_1ff2ac62 6ad45b8 load on device 'cpu' took 0.32 ms  (cached)
+Module newton._src.geometry.bvh 4a1c07f load on device 'cpu' took 0.22 ms  (cached)
+Traceback (most recent call last):
+  File "/srv/home/bohanlyu/gap-puzzler/tools/preflight.py", line 36, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/srv/home/bohanlyu/gap-puzzler/tools/preflight.py", line 21, in main
+    env=build(Variant(mode=a.mode,pyramid_plan=p.get('pyramid_plan','pyramid_upright_plan.json'),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/home/bohanlyu/gap-puzzler/puzzler/task.py", line 111, in build
+    env=bench.Env(bench.task(task));CURRENT.clear();CURRENT.update(env=env,variant=v)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/home/bohanlyu/gap-knot/third_party/robosimstudio/robosimstudio_bench/envs/env.py", line 168, in __init__
+    scene: CompiledScene = compile_scene(
+                           ^^^^^^^^^^^^^^
+  File "/srv/home/bohanlyu/gap-knot/third_party/robosimstudio/robosimstudio/scene/compiler.py", line 358, in compile_scene
+    scene = _compile(
+            ^^^^^^^^^
+  File "/srv/home/bohanlyu/gap-knot/third_party/robosimstudio/robosimstudio/scene/compiler.py", line 1072, in _compile
+    step.fn(model)
+  File "/srv/home/bohanlyu/gap-knot/third_party/robosimstudio/robosimstudio/robots/entity.py", line 1254, in bind
+    index.finger_bodies = tuple(tuple(label_index(body_labels, n) for n in side) for side in sides)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/home/bohanlyu/gap-knot/third_party/robosimstudio/robosimstudio/robots/entity.py", line 1254, in <genexpr>
+    index.finger_bodies = tuple(tuple(label_index(body_labels, n) for n in side) for side in sides)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/home/bohanlyu/gap-knot/third_party/robosimstudio/robosimstudio/robots/entity.py", line 1254, in <genexpr>
+    index.finger_bodies = tuple(tuple(label_index(body_labels, n) for n in side) for side in sides)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/home/bohanlyu/gap-knot/third_party/robosimstudio/robosimstudio/scene/entity.py", line 678, in label_index
+    raise KeyError(f"{name!r} matched {len(hits)} labels, expected exactly 1")
+KeyError: "'left_left_precision_extension' matched 0 labels, expected exactly 1"

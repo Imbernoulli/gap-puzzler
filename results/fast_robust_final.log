@@ -1,0 +1,12 @@
+[pool puzzler-frozen-171434] code bundle 02797de1e50c (1.5 MB); 4 job(s) -> /srv/home/bohanlyu/gap-puzzler/runs/fast_robust_final
+[pool puzzler-frozen-171434] creating 4 x 8 vCPU / 16 GiB / 30 GiB from gap-knot-rss-abed33ba-c8m16d30
+[pool puzzler-frozen-171434] up ddd45b8e-ff75-4414-946d-0449169d1254 (8 vCPU / 16 GiB) in 2s
+[pool puzzler-frozen-171434] up 651a9354-d473-4b0a-981c-270c793d4da5 (8 vCPU / 16 GiB) in 1s
+[pool puzzler-frozen-171434] up 1ce21da4-c686-4c60-a0a3-e73acec3615d (8 vCPU / 16 GiB) in 1s
+[pool puzzler-frozen-171434] up 057d3d40-f22c-41f7-be70-7dfdd24e2f12 (8 vCPU / 16 GiB) in 1s
+[pool puzzler-frozen-171434] seed101: ok exit=0 run=111.9s attempts=1
+[pool puzzler-frozen-171434] seed20: ok exit=0 run=465.9s attempts=1
+[pool puzzler-frozen-171434] seed21: ok exit=0 run=551.7s attempts=1
+[pool puzzler-frozen-171434] seed100: ok exit=0 run=602.8s attempts=1
+[pool puzzler-frozen-171434] deleting 1 sandbox(es)
+Saved 4 complete episode records under common protocol 02797de1e50c.

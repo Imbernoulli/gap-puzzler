@@ -1,0 +1,122 @@
+OK: 0 errors, 0 warning(s)
+{"round": 1, "graph": "/srv/home/bohanlyu/gap-puzzler/graphs/flat_learning_g01", "metrics": {"trials": 2, "successes": 2, "success_rate": 1.0, "wilson_95": [0.34237195288961925, 1.0], "mean_seated_pieces": 12, "mean_success_sim_s": 269.73, "success_parts_per_hour": 13.34668001334668}, "changes": ["Enumerate collision-clear terminal grasps and validate source, carry and release poses.", "pink: search shape-preserving wrist alternatives and lower carry height.", "pink: search shape-preserving wrist alternatives and lower carry height."], "failures": [], "accepted": true}
+OK: 0 errors, 0 warning(s)
+{"round": 2, "graph": "/srv/home/bohanlyu/gap-puzzler/graphs/flat_learning_g02", "metrics": {"trials": 2, "successes": 1, "success_rate": 0.5, "wilson_95": [0.09452865480086614, 0.9054713451991339], "mean_seated_pieces": 11.5, "mean_success_sim_s": 248.56, "success_parts_per_hour": 14.48342452526553}, "changes": ["Increase joint trajectory speed after every training episode passed."], "failures": [{"piece": "red", "kind": "grasp_miss"}], "accepted": false}
+{
+  "mode": "flat",
+  "training_seeds": [
+    20,
+    21
+  ],
+  "test_seeds": [
+    100,
+    101
+  ],
+  "selected_graph": "/srv/home/bohanlyu/gap-puzzler/graphs/flat_learning_g01",
+  "training_metrics": {
+    "trials": 2,
+    "successes": 2,
+    "success_rate": 1.0,
+    "wilson_95": [
+      0.34237195288961925,
+      1.0
+    ],
+    "mean_seated_pieces": 12,
+    "mean_success_sim_s": 269.73,
+    "success_parts_per_hour": 13.34668001334668
+  },
+  "test_metrics": {
+    "trials": 2,
+    "successes": 0,
+    "success_rate": 0.0,
+    "wilson_95": [
+      0.0,
+      0.6576280471103807
+    ],
+    "mean_seated_pieces": 4.5,
+    "mean_success_sim_s": null,
+    "success_parts_per_hour": null
+  },
+  "ledger": [
+    {
+      "round": 0,
+      "graph": "/srv/home/bohanlyu/gap-puzzler/graphs/flat_v6",
+      "metrics": {
+        "trials": 2,
+        "successes": 0,
+        "success_rate": 0.0,
+        "wilson_95": [
+          0.0,
+          0.6576280471103807
+        ],
+        "mean_seated_pieces": 7,
+        "mean_success_sim_s": null,
+        "success_parts_per_hour": null
+      },
+      "failures": [
+        {
+          "piece": "pink",
+          "kind": "unreachable_pose"
+        },
+        {
+          "piece": "pink",
+          "kind": "unreachable_pose"
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "round": 1,
+      "graph": "/srv/home/bohanlyu/gap-puzzler/graphs/flat_learning_g01",
+      "metrics": {
+        "trials": 2,
+        "successes": 2,
+        "success_rate": 1.0,
+        "wilson_95": [
+          0.34237195288961925,
+          1.0
+        ],
+        "mean_seated_pieces": 12,
+        "mean_success_sim_s": 269.73,
+        "success_parts_per_hour": 13.34668001334668
+      },
+      "changes": [
+        "Enumerate collision-clear terminal grasps and validate source, carry and release poses.",
+        "pink: search shape-preserving wrist alternatives and lower carry height.",
+        "pink: search shape-preserving wrist alternatives and lower carry height."
+      ],
+      "failures": [],
+      "accepted": true
+    },
+    {
+      "round": 2,
+      "graph": "/srv/home/bohanlyu/gap-puzzler/graphs/flat_learning_g02",
+      "metrics": {
+        "trials": 2,
+        "successes": 1,
+        "success_rate": 0.5,
+        "wilson_95": [
+          0.09452865480086614,
+          0.9054713451991339
+        ],
+        "mean_seated_pieces": 11.5,
+        "mean_success_sim_s": 248.56,
+        "success_parts_per_hour": 14.48342452526553
+      },
+      "changes": [
+        "Increase joint trajectory speed after every training episode passed."
+      ],
+      "failures": [
+        {
+          "piece": "red",
+          "kind": "grasp_miss"
+        }
+      ],
+      "accepted": false
+    }
+  ],
+  "limitations": [
+    "Oracle pose perception in simulation.",
+    "Finite small-sample evaluation; not real-hardware evidence."
+  ]
+}

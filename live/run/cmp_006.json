@@ -1,0 +1,176 @@
+{
+ "take": "pyramid_static",
+ "anchors": [
+  {
+   "t": 8.0,
+   "label": "flat_start",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t008.00.jpg",
+   "frame": 1,
+   "sim_t": 0.08,
+   "sim_step": 4,
+   "objects": {
+    "red": {
+     "photo": {
+      "bbox": [
+       390,
+       182,
+       640,
+       360
+      ],
+      "centre": [
+       524.4,
+       286.4
+      ],
+      "width": 250,
+      "height": 178,
+      "area": 0.1292,
+      "pixels": 29767
+     },
+     "sim": {
+      "bbox": [
+       302,
+       66,
+       396,
+       264
+      ],
+      "centre": [
+       362.1,
+       177.4
+      ],
+      "width": 94,
+      "height": 198,
+      "area": 0.02394,
+      "pixels": 5516
+     },
+     "iou": 0.0013,
+     "offset_px": [
+      -162.3,
+      -109.0
+     ],
+     "size_ratio": 0.43,
+     "width_ratio": 0.376,
+     "height_ratio": 1.112
+    }
+   }
+  },
+  {
+   "t": 48.0,
+   "label": "three_left",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t048.00.jpg",
+   "frame": 6,
+   "sim_t": 0.48,
+   "sim_step": 24,
+   "objects": {
+    "red": {
+     "photo": {
+      "bbox": [
+       415,
+       112,
+       640,
+       360
+      ],
+      "centre": [
+       556.3,
+       243.3
+      ],
+      "width": 225,
+      "height": 248,
+      "area": 0.13018,
+      "pixels": 29993
+     },
+     "sim": {
+      "bbox": [
+       302,
+       66,
+       396,
+       264
+      ],
+      "centre": [
+       362.1,
+       177.5
+      ],
+      "width": 94,
+      "height": 198,
+      "area": 0.02394,
+      "pixels": 5516
+     },
+     "iou": 0.0,
+     "offset_px": [
+      -194.2,
+      -65.8
+     ],
+     "size_ratio": 0.429,
+     "width_ratio": 0.418,
+     "height_ratio": 0.798
+    }
+   }
+  },
+  {
+   "t": 61.0,
+   "label": "complete",
+   "file": "/srv/home/bohanlyu/gap-puzzler/live/ref/t061.00.jpg",
+   "frame": 7,
+   "sim_t": 0.56,
+   "sim_step": 28,
+   "objects": {
+    "red": {
+     "photo": {
+      "bbox": [
+       225,
+       189,
+       408,
+       284
+      ],
+      "centre": [
+       330.6,
+       247.9
+      ],
+      "width": 183,
+      "height": 95,
+      "area": 0.03298,
+      "pixels": 7599
+     },
+     "sim": {
+      "bbox": [
+       302,
+       66,
+       396,
+       264
+      ],
+      "centre": [
+       362.1,
+       177.4
+      ],
+      "width": 94,
+      "height": 198,
+      "area": 0.02394,
+      "pixels": 5516
+     },
+     "iou": 0.209,
+     "offset_px": [
+      31.5,
+      -70.5
+     ],
+     "size_ratio": 0.852,
+     "width_ratio": 0.514,
+     "height_ratio": 2.084
+    }
+   }
+  }
+ ],
+ "motion": {
+  "red": {
+   "photo": {
+    "dx": -193.8,
+    "dy": -38.5,
+    "moved": true
+   },
+   "sim": {
+    "dx": 0.0,
+    "dy": 0.0,
+    "moved": false
+   }
+  }
+ },
+ "score": 0.0701
+}

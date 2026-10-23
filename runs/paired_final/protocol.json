@@ -1,0 +1,28 @@
+{
+  "bundle": "a3bb0bc9cfd7",
+  "sources": {
+    "puzzler/__init__.py": "af1d4cae87e1938e53090f2bee3033e844b7e2acca5a3796acd97d7e3b117430",
+    "puzzler/assets.py": "5639b7fbadda1fe81daafe55b1e57dc92c09bf2872e41a7e7393c40898c426fc",
+    "puzzler/audit.py": "5028d07d73ede221e74e13bde830e3562310ee6ccba98e00a885198f7e8da38a",
+    "puzzler/controller.py": "4b789320bd0cb73fc68fda4fa5d51e10aabed6304b3b91391e4e442f47abf181",
+    "puzzler/episode.py": "4baccb918862343eba47912046c63c7b8f488dc8cd3e9695a7fb1cd90318eb28",
+    "puzzler/model.py": "628877753beb8a640f8056465703af53198f68dd3669b710591f7d37d8a44314",
+    "puzzler/policy.py": "187a8e41cd7335ef9aa7bc2d5c9e98d4c8db46d5ecda891d71b6c5fbc50ef927",
+    "puzzler/pyramid.py": "8cc3a1b33c5a0ed398f007e462d301e6b32a8d28da2ce1289a5d75d15c534a93",
+    "puzzler/task.py": "28e5be5ab33d6cc6b6814c890aef79623d54d86220a6efb60a26d287410950fd",
+    "puzzler/tools.py": "41165c83ccb75d5b60384f919d14806678ced583b362156611d7f68c73c77b60"
+  },
+  "train": [
+    20,
+    21
+  ],
+  "test": [
+    100,
+    101
+  ],
+  "graphs": {
+    "fixed": "graphs/benchmark_fixed",
+    "adaptive": "graphs/benchmark_adaptive",
+    "fast": "graphs/benchmark_fast"
+  }
+}
