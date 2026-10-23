@@ -10,7 +10,7 @@ object poses. They are an **oracle-state control baseline**, not evidence of
 visual perception, arbitrary-layout generalization, or task completion under
 vision-only observations.
 
-[Project website](https://imbernoulli.github.io/gap-puzzler/) ·
+[Project website](https://bohanlyu.com/gap-puzzler/) ·
 [Evidence report](results/REPORT.md) ·
 [Complete experimental archive](https://github.com/Imbernoulli/gap-puzzler/releases/tag/v1.0.0) ·
 [Source demonstration](https://www.youtube.com/watch?v=PSgC31TvdxA)
