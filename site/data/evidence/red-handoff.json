@@ -1,6 +1,6 @@
 {
   "schema": "puzzler.website_evidence_summary.v1",
-  "title": "Red: contact diagnosis, repair, and current continuous twelve-piece physical assembly",
+  "title": "Red: historical contact diagnosis, repair, and current accepted V6 execution",
   "diagnosis": {
     "input": "Current RGB pose, synchronous robot q16, and public CAD/forward kinematics",
     "bead_depth_before_close_mm": 15.446,
@@ -9,8 +9,8 @@
     "finding": "A front-edge pinch can appear loaded but fail to retain the piece."
   },
   "refinement": "Two handoffs, with fresh actual RGB/q16 bindings and checks before donor withdrawal.",
-  "scope": "Current V13 continuous all-twelve run, all pieces initially loose and no given prefix, using the public Lime +70 mm Y layout variant. Eight Red transfer windows, transport, release, and the complete final physical assembly pass independently. Graph acceptance remains false: Red final handoff and finish were not completed after historical visual-receipt admission refused. The previous six-piece rehearsal remains separately recorded as prior evidence.",
-  "visual_status": "Current run retains Navy, Pink and Red as visually unverified. Earlier Purple, Cyan, Mint and Lime receipts were later marked unknown_or_conflicted; these historical/current visual records are separate from independently verified physical placement.",
+  "scope": "Earlier diagnostic runs and V13 development images explain the contact repair. V13 passed all eight Red transfer windows and physical placement but ended at 82/84 checkpoints. The separate current V6 full-twelve execution passed all 84 checkpoints and terminal RGB confirmation, under four custom fixed cameras.",
+  "visual_status": "Current V6 terminal RGB observations at 704.36 and 705.38 s both pass independent complete-packing interpretation. Visible material sites plus known rigid geometry determine the hidden sites; those hidden sites are inferred, not individually measured.",
   "source_artifacts": [
     "runs/red_final_contact_mechanics_v1/REVIEW.json",
     "runs/gap_delivery_independent_audit_v1/suffix7_12_c_v2_terminal_independent_review.json",
@@ -23,7 +23,11 @@
     "runs/gap_delivery_independent_audit_v1/v13_terminal_red_twohop_independent_review.json",
     "runs/gap_delivery_independent_audit_v1/v13_terminal_full_native_independent_review.json",
     "runs/gap_delivery_independent_audit_v1/v13_terminal_site_summary.json",
-    "results/site_policy_media/visuals.json"
+    "results/site_policy_media/visuals.json",
+    "runs/gap_delivery_packaging_v6/OUTCOME.json",
+    "runs/gap_delivery_independent_audit_v1/packaged_v6_terminal_independent_review.json",
+    "runs/gap_delivery_independent_audit_v1/packaged_v6_full_native_independent_review.json",
+    "runs/gap_delivery_independent_audit_v1/packaged_v6_red_motor_time_freshness_independent_review.json"
   ],
   "rounds": [
     {
@@ -78,54 +82,42 @@
     "final_goal_speed_no_load_bothhome_stable_tail_s": 18.77999999998292
   },
   "current_continuous_execution": {
-    "run_id": "pyramid_full12_bimanual_layout_c_v13",
+    "run_id": "pyramid_packaged_full12_gpu3_v6",
+    "qualified_source": "delivery/pyramid_gap_v6_qualified",
     "all_twelve_initially_loose": true,
     "initialized_prefix": [],
+    "seed": 0,
     "layout_variant": "C_Lime_world_y_plus070",
     "physical_placed_pieces": 12,
     "full12_physical": true,
-    "passed_checkpoints": 82,
+    "passed_checkpoints": 84,
     "expected_checkpoints": 84,
-    "graph_success": false,
-    "full12_accepted": false,
-    "final2s_maximum_bead_error_mm": 2.5276745479153924,
+    "graph_success": true,
+    "rss_success": true,
+    "full12_accepted": true,
+    "final2s_maximum_bead_error_mm": 2.5498264685145524,
     "final2s_robot_loaded_states": 0,
-    "both_home_stable_s": 9.379999999991469,
-    "release_stable_s": 35.89999999996735,
-    "evaluation_basis": "Independent audit of saved native poses, velocities, contacts and public goals; no render inference.",
-    "terminal_explanation": "All twelve physical placements and the original final physical predicate pass. The graph stops in the final Red visual verification because earlier visual receipts were marked unknown_or_conflicted. Red final handoff and finish were not completed; 82/84 checkpoints passed, so graph acceptance remains false.",
-    "missing_checkpoints": [
-      "red_handoff",
-      "finish"
-    ],
-    "current_visual_receipt_invalidations": [
-      "purple",
-      "cyan",
-      "mint",
-      "lime"
-    ],
-    "visually_unverified_pieces": [
-      "navy",
-      "pink",
-      "red"
-    ],
-    "all_eight_red_handoff_windows_passed": true,
-    "red_transport_and_release_success": true,
-    "receiver_bindings": [
-      {
-        "arm": 0,
-        "RGB_timestamp_s": 532.48,
-        "RGB_maximum_bead_error_mm": 0.4338504761758035,
-        "selected_bead": 1,
-        "actual_front_face_reserve_mm": 2.5226974557250332
-      },
-      {
-        "arm": 1,
-        "RGB_timestamp_s": 582.54,
-        "RGB_maximum_bead_error_mm": 0.27514662354074154,
-        "selected_bead": 4,
-        "actual_front_face_reserve_mm": 4.058381843257917
-      }
+    "both_home_stable_s": 16.35999999998512,
+    "release_stable_s": 43.699999999960255,
+    "RGB_observation_count": 123,
+    "terminal_RGB_pair": {
+      "accepted": true,
+      "first_timestamp": 704.36,
+      "second_timestamp": 705.38,
+      "interval_s": 1.0199999999999818,
+      "maximum_shared_lattice_drift_m": 1.273964796942132e-05
+    },
+    "terminal_explanation": "All 84 original checkpoints passed, including Red final handoff and finish. Two actual terminal RGB observations at 704.36 and 705.38 s independently support the same complete rigid-CAD packing.",
+    "terminal_RGB_scope": "41 currently labeled material sites constrain a unique complete 55-site packing; 14 occluded sites are inferred using known rigid geometry, not individually measured.",
+    "evaluation_basis": "Independent audit of saved native states and original checkpoint contracts, plus independently recomputed actual terminal RGB witnesses. Simulator diagnostics are not policy inputs.",
+    "camera_scope": "four custom fixed virtual RGB cameras; no wrist or official three-camera qualification",
+    "display_camera_scope": "Separate posthoc presentation observer; never a policy sensor.",
+    "scope": "One fresh full-twelve simulation, seed 0, layout C, four custom fixed RGB cameras. Earlier V13 images and repair clips remain historical development evidence.",
+    "source_artifacts": [
+      "runs/gap_delivery_packaging_v6/OUTCOME.json",
+      "runs/gap_delivery_independent_audit_v1/packaged_v6_terminal_independent_review.json",
+      "runs/gap_delivery_independent_audit_v1/packaged_v6_full_native_independent_review.json",
+      "runs/gap_delivery_independent_audit_v1/packaged_v6_red_motor_time_freshness_independent_review.json"
     ]
   },
   "narrative": {
@@ -133,8 +125,8 @@
     "problem": "A jaw could look loaded while holding the edge of a bead, allowing the piece to roll.",
     "diagnosis": "",
     "change": "",
-    "result": "In the continuous twelve-piece run, Red passed both handoffs and its final release. Independent audit confirmed the completed physical assembly.",
-    "scope": "Continuous twelve-piece physical assembly.",
+    "result": "The V13 development run passed both Red handoffs and its physical release. The separate current V6 run passes all 84 checkpoints and terminal RGB confirmation.",
+    "scope": "Historical V13 physical assembly; current V6 acceptance is documented separately.",
     "attempts": [
       {
         "label": "Diagnose",
@@ -212,7 +204,7 @@
           800,
           500
         ],
-        "meaning": "Current run: second receiver binding with public geometry reserve"
+        "meaning": "Historical V13: second receiver binding with public geometry reserve"
       },
       {
         "src": "media/refine_red_verify.jpg",
@@ -233,5 +225,57 @@
       }
     ],
     "scope": "Older failed contact diagnostic, improved current handoff contact, and current final recorded state; different source runs are explicit."
-  }
+  },
+  "historical_v13_execution": {
+    "run_id": "pyramid_full12_bimanual_layout_c_v13",
+    "all_twelve_initially_loose": true,
+    "initialized_prefix": [],
+    "layout_variant": "C_Lime_world_y_plus070",
+    "physical_placed_pieces": 12,
+    "full12_physical": true,
+    "passed_checkpoints": 82,
+    "expected_checkpoints": 84,
+    "graph_success": false,
+    "full12_accepted": false,
+    "final2s_maximum_bead_error_mm": 2.5276745479153924,
+    "final2s_robot_loaded_states": 0,
+    "both_home_stable_s": 9.379999999991469,
+    "release_stable_s": 35.89999999996735,
+    "evaluation_basis": "Independent audit of saved native poses, velocities, contacts and public goals; no render inference.",
+    "terminal_explanation": "All twelve physical placements and the original final physical predicate pass. The graph stops in the final Red visual verification because earlier visual receipts were marked unknown_or_conflicted. Red final handoff and finish were not completed; 82/84 checkpoints passed, so graph acceptance remains false.",
+    "missing_checkpoints": [
+      "red_handoff",
+      "finish"
+    ],
+    "current_visual_receipt_invalidations": [
+      "purple",
+      "cyan",
+      "mint",
+      "lime"
+    ],
+    "visually_unverified_pieces": [
+      "navy",
+      "pink",
+      "red"
+    ],
+    "all_eight_red_handoff_windows_passed": true,
+    "red_transport_and_release_success": true,
+    "receiver_bindings": [
+      {
+        "arm": 0,
+        "RGB_timestamp_s": 532.48,
+        "RGB_maximum_bead_error_mm": 0.4338504761758035,
+        "selected_bead": 1,
+        "actual_front_face_reserve_mm": 2.5226974557250332
+      },
+      {
+        "arm": 1,
+        "RGB_timestamp_s": 582.54,
+        "RGB_maximum_bead_error_mm": 0.27514662354074154,
+        "selected_bead": 4,
+        "actual_front_face_reserve_mm": 4.058381843257917
+      }
+    ]
+  },
+  "historical_v13_visual_status": "Current run retains Navy, Pink and Red as visually unverified. Earlier Purple, Cyan, Mint and Lime receipts were later marked unknown_or_conflicted; these historical/current visual records are separate from independently verified physical placement."
 }

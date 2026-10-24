@@ -50,7 +50,7 @@
       "RGB_packet_index": 47
     }
   },
-  "scope": "Actual Cyan visibility repair, release and next-piece handoff within the current continuous all-twelve run. All twelve physical placements and the final physical predicate pass independent review; graph acceptance remains false at 82/84 checkpoints because terminal visual-record admission refuses.",
+  "scope": "Historical V10/V13 development comparison: a wider opening repaired Cyan visibility, followed by successful release and next-piece handoff in V13. V13 ended at 82/84 checkpoints; the separate current V6 execution is accepted at 84/84 with terminal RGB confirmation. The pictured V13 measurements are not relabeled as V6.",
   "source_artifacts": [
     "runs/cyan_bimanual_regrasp_v1/perception_v10/pixel_support_comparison.json",
     "runs/cyan_bimanual_regrasp_v1/perception_v10/opening_public_stl_ray_prediction.json",
@@ -60,7 +60,11 @@
     "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/independent_verification/checkpoint_results.jsonl",
     "runs/gap_delivery_independent_audit_v1/v13_terminal_site_summary.json",
     "runs/gap_delivery_independent_audit_v1/v13_terminal_full_native_independent_review.json",
-    "results/site_policy_media/visuals.json"
+    "results/site_policy_media/visuals.json",
+    "runs/gap_delivery_packaging_v6/OUTCOME.json",
+    "runs/gap_delivery_independent_audit_v1/packaged_v6_terminal_independent_review.json",
+    "runs/gap_delivery_independent_audit_v1/packaged_v6_full_native_independent_review.json",
+    "runs/gap_delivery_independent_audit_v1/packaged_v6_red_motor_time_freshness_independent_review.json"
   ],
   "rounds": [
     {
@@ -86,36 +90,42 @@
     }
   ],
   "current_continuous_execution": {
-    "run_id": "pyramid_full12_bimanual_layout_c_v13",
+    "run_id": "pyramid_packaged_full12_gpu3_v6",
+    "qualified_source": "delivery/pyramid_gap_v6_qualified",
     "all_twelve_initially_loose": true,
     "initialized_prefix": [],
+    "seed": 0,
     "layout_variant": "C_Lime_world_y_plus070",
     "physical_placed_pieces": 12,
     "full12_physical": true,
-    "passed_checkpoints": 82,
+    "passed_checkpoints": 84,
     "expected_checkpoints": 84,
-    "graph_success": false,
-    "full12_accepted": false,
-    "final2s_maximum_bead_error_mm": 2.5276745479153924,
+    "graph_success": true,
+    "rss_success": true,
+    "full12_accepted": true,
+    "final2s_maximum_bead_error_mm": 2.5498264685145524,
     "final2s_robot_loaded_states": 0,
-    "both_home_stable_s": 9.379999999991469,
-    "release_stable_s": 35.89999999996735,
-    "evaluation_basis": "Independent audit of saved native poses, velocities, contacts and public goals; no render inference.",
-    "terminal_explanation": "All twelve physical placements and the original final physical predicate pass. The graph stops in the final Red visual verification because earlier visual receipts were marked unknown_or_conflicted. Red final handoff and finish were not completed; 82/84 checkpoints passed, so graph acceptance remains false.",
-    "missing_checkpoints": [
-      "red_handoff",
-      "finish"
-    ],
-    "current_visual_receipt_invalidations": [
-      "purple",
-      "cyan",
-      "mint",
-      "lime"
-    ],
-    "visually_unverified_pieces": [
-      "navy",
-      "pink",
-      "red"
+    "both_home_stable_s": 16.35999999998512,
+    "release_stable_s": 43.699999999960255,
+    "RGB_observation_count": 123,
+    "terminal_RGB_pair": {
+      "accepted": true,
+      "first_timestamp": 704.36,
+      "second_timestamp": 705.38,
+      "interval_s": 1.0199999999999818,
+      "maximum_shared_lattice_drift_m": 1.273964796942132e-05
+    },
+    "terminal_explanation": "All 84 original checkpoints passed, including Red final handoff and finish. Two actual terminal RGB observations at 704.36 and 705.38 s independently support the same complete rigid-CAD packing.",
+    "terminal_RGB_scope": "41 currently labeled material sites constrain a unique complete 55-site packing; 14 occluded sites are inferred using known rigid geometry, not individually measured.",
+    "evaluation_basis": "Independent audit of saved native states and original checkpoint contracts, plus independently recomputed actual terminal RGB witnesses. Simulator diagnostics are not policy inputs.",
+    "camera_scope": "four custom fixed virtual RGB cameras; no wrist or official three-camera qualification",
+    "display_camera_scope": "Separate posthoc presentation observer; never a policy sensor.",
+    "scope": "One fresh full-twelve simulation, seed 0, layout C, four custom fixed RGB cameras. Earlier V13 images and repair clips remain historical development evidence.",
+    "source_artifacts": [
+      "runs/gap_delivery_packaging_v6/OUTCOME.json",
+      "runs/gap_delivery_independent_audit_v1/packaged_v6_terminal_independent_review.json",
+      "runs/gap_delivery_independent_audit_v1/packaged_v6_full_native_independent_review.json",
+      "runs/gap_delivery_independent_audit_v1/packaged_v6_red_motor_time_freshness_independent_review.json"
     ]
   },
   "narrative": {
@@ -123,8 +133,8 @@
     "problem": "The piece was released, but a finger still covered the bead needed by the next visual check.",
     "diagnosis": "",
     "change": "",
-    "result": "The wider opening exposed Cyan, earned two accepted observations, and enabled the continuous run to place all twelve pieces.",
-    "scope": "Continuous twelve-piece physical assembly.",
+    "result": "The V13 development run earned two accepted Cyan observations after opening wider. The separate current V6 run completes all twelve pieces and all 84 checkpoints.",
+    "scope": "Historical V13 physical assembly; current V6 acceptance is documented separately.",
     "attempts": [
       {
         "label": "Release",
@@ -224,5 +234,38 @@
       }
     ],
     "scope": "Two actual development runs; larger opening repairs observation occlusion. These are not three frames of a continuous same-run replay."
+  },
+  "historical_v13_execution": {
+    "run_id": "pyramid_full12_bimanual_layout_c_v13",
+    "all_twelve_initially_loose": true,
+    "initialized_prefix": [],
+    "layout_variant": "C_Lime_world_y_plus070",
+    "physical_placed_pieces": 12,
+    "full12_physical": true,
+    "passed_checkpoints": 82,
+    "expected_checkpoints": 84,
+    "graph_success": false,
+    "full12_accepted": false,
+    "final2s_maximum_bead_error_mm": 2.5276745479153924,
+    "final2s_robot_loaded_states": 0,
+    "both_home_stable_s": 9.379999999991469,
+    "release_stable_s": 35.89999999996735,
+    "evaluation_basis": "Independent audit of saved native poses, velocities, contacts and public goals; no render inference.",
+    "terminal_explanation": "All twelve physical placements and the original final physical predicate pass. The graph stops in the final Red visual verification because earlier visual receipts were marked unknown_or_conflicted. Red final handoff and finish were not completed; 82/84 checkpoints passed, so graph acceptance remains false.",
+    "missing_checkpoints": [
+      "red_handoff",
+      "finish"
+    ],
+    "current_visual_receipt_invalidations": [
+      "purple",
+      "cyan",
+      "mint",
+      "lime"
+    ],
+    "visually_unverified_pieces": [
+      "navy",
+      "pink",
+      "red"
+    ]
   }
 }

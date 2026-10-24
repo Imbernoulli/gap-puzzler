@@ -769,7 +769,7 @@
     ]
   },
   "geometry_method": "Public five-bead CAD and exact public MJCF distal finger collision primitives transformed by each dated RGB/q16-owned H; shared piece frame and view. The wrist/arm is omitted. This diagram is an illustration, not a fresh IK/contact certificate.",
-  "scope": "Original single-arm rejection and V13 regrasp are different dated scenes/routes. This establishes a blocked recorded proposal and a successful actual pair of handoffs; it does not prove single-arm theoretical impossibility or controlled causal attribution. V13 final Red release physically passes later in the same run; full graph terminal admission remains false.",
+  "scope": "Historical development evidence: original single-arm rejection and V13 regrasp are different dated scenes/routes. The clip establishes a blocked proposal and successful actual pair of handoffs, without proving single-arm theoretical impossibility or controlled causal attribution. V13 physical release passed while its graph ended at 82/84; the separate current V6 run is accepted at 84/84.",
   "source_artifacts": [
     "runs/pink_red_adjacent_gpu_v10/failed_ingress_evidence.json",
     "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/tools.jsonl",
@@ -778,9 +778,52 @@
     "results/site_bimanual/red_handoff_v13_evidence.json",
     "puzzler/gripper_geometry.py",
     "results/site_bimanual/bimanual_evidence_summary.json",
-    "results/site_bimanual/bimanual_showcase_schema.json"
+    "results/site_bimanual/bimanual_showcase_schema.json",
+    "runs/gap_delivery_packaging_v6/OUTCOME.json",
+    "runs/gap_delivery_independent_audit_v1/packaged_v6_terminal_independent_review.json",
+    "runs/gap_delivery_independent_audit_v1/packaged_v6_full_native_independent_review.json",
+    "runs/gap_delivery_independent_audit_v1/packaged_v6_red_motor_time_freshness_independent_review.json"
   ],
   "policy_edits": false,
   "new_simulation": false,
-  "privileged_state_used_for_figure_or_control": false
+  "privileged_state_used_for_figure_or_control": false,
+  "current_continuous_execution": {
+    "run_id": "pyramid_packaged_full12_gpu3_v6",
+    "qualified_source": "delivery/pyramid_gap_v6_qualified",
+    "all_twelve_initially_loose": true,
+    "initialized_prefix": [],
+    "seed": 0,
+    "layout_variant": "C_Lime_world_y_plus070",
+    "physical_placed_pieces": 12,
+    "full12_physical": true,
+    "passed_checkpoints": 84,
+    "expected_checkpoints": 84,
+    "graph_success": true,
+    "rss_success": true,
+    "full12_accepted": true,
+    "final2s_maximum_bead_error_mm": 2.5498264685145524,
+    "final2s_robot_loaded_states": 0,
+    "both_home_stable_s": 16.35999999998512,
+    "release_stable_s": 43.699999999960255,
+    "RGB_observation_count": 123,
+    "terminal_RGB_pair": {
+      "accepted": true,
+      "first_timestamp": 704.36,
+      "second_timestamp": 705.38,
+      "interval_s": 1.0199999999999818,
+      "maximum_shared_lattice_drift_m": 1.273964796942132e-05
+    },
+    "terminal_explanation": "All 84 original checkpoints passed, including Red final handoff and finish. Two actual terminal RGB observations at 704.36 and 705.38 s independently support the same complete rigid-CAD packing.",
+    "terminal_RGB_scope": "41 currently labeled material sites constrain a unique complete 55-site packing; 14 occluded sites are inferred using known rigid geometry, not individually measured.",
+    "evaluation_basis": "Independent audit of saved native states and original checkpoint contracts, plus independently recomputed actual terminal RGB witnesses. Simulator diagnostics are not policy inputs.",
+    "camera_scope": "four custom fixed virtual RGB cameras; no wrist or official three-camera qualification",
+    "display_camera_scope": "Separate posthoc presentation observer; never a policy sensor.",
+    "scope": "One fresh full-twelve simulation, seed 0, layout C, four custom fixed RGB cameras. Earlier V13 images and repair clips remain historical development evidence.",
+    "source_artifacts": [
+      "runs/gap_delivery_packaging_v6/OUTCOME.json",
+      "runs/gap_delivery_independent_audit_v1/packaged_v6_terminal_independent_review.json",
+      "runs/gap_delivery_independent_audit_v1/packaged_v6_full_native_independent_review.json",
+      "runs/gap_delivery_independent_audit_v1/packaged_v6_red_motor_time_freshness_independent_review.json"
+    ]
+  }
 }
