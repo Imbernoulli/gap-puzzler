@@ -1,0 +1,130 @@
+{
+  "schema": "puzzler.website_evidence_summary.v1",
+  "title": "Red: contact diagnosis, repair, and current continuous twelve-piece physical assembly",
+  "diagnosis": {
+    "input": "Current RGB pose, synchronous robot q16, and public CAD/forward kinematics",
+    "bead_depth_before_close_mm": 15.446,
+    "bead_depth_first_partial_close_mm": 17.933,
+    "blade_front_depth_mm": 16.5,
+    "finding": "A front-edge pinch can appear loaded but fail to retain the piece."
+  },
+  "refinement": "Two handoffs, with fresh actual RGB/q16 bindings and checks before donor withdrawal.",
+  "scope": "Current V13 continuous all-twelve run, all pieces initially loose and no given prefix, using the public Lime +70 mm Y layout variant. Eight Red transfer windows, transport, release, and the complete final physical assembly pass independently. Graph acceptance remains false: Red final handoff and finish were not completed after historical visual-receipt admission refused. The previous six-piece rehearsal remains separately recorded as prior evidence.",
+  "visual_status": "Current run retains Navy, Pink and Red as visually unverified. Earlier Purple, Cyan, Mint and Lime receipts were later marked unknown_or_conflicted; these historical/current visual records are separate from independently verified physical placement.",
+  "source_artifacts": [
+    "runs/red_final_contact_mechanics_v1/REVIEW.json",
+    "runs/gap_delivery_independent_audit_v1/suffix7_12_c_v2_terminal_independent_review.json",
+    "runs/red_bimanual_experiment_index_v3.json",
+    "runs/red_final_contact_mechanics_v1/authentic_RGB_public_CUDA_FK.json",
+    "runs/red_bimanual_regrasp_v10/ready.json",
+    "runs/gap_delivery_independent_audit_v1/red_v10_incremental_independent_review.json",
+    "runs/gap_delivery_independent_audit_v1/suffix7_12_c_v2_red_twohop_independent_review.json",
+    "runs/gap_delivery_independent_audit_v1/suffix7_12_c_v2_full_native_independent_review.json",
+    "runs/gap_delivery_independent_audit_v1/v13_terminal_red_twohop_independent_review.json",
+    "runs/gap_delivery_independent_audit_v1/v13_terminal_full_native_independent_review.json",
+    "runs/gap_delivery_independent_audit_v1/v13_terminal_site_summary.json"
+  ],
+  "rounds": [
+    {
+      "label": "Diagnose",
+      "attempt": "Earlier handoffs passed, but the held piece rolled during the follow-up motion.",
+      "diagnosis": "RGB and robot kinematics placed the bead beyond the front of the blade.",
+      "change": "Check the actual finite contact face throughout closing.",
+      "outcome": "Saved observations explained why a loaded jaw alone was insufficient."
+    },
+    {
+      "label": "Repair",
+      "attempt": "Keep the donor holding while the receiver is corrected.",
+      "diagnosis": "Closing can move the far bead away from its preclose position.",
+      "change": "Reopen locally, reobserve, recenter, and reclose under the same geometry checks.",
+      "outcome": "The bounded recovery and contact checks passed independent API review."
+    },
+    {
+      "label": "Rejoin",
+      "attempt": "Run both handoffs with fresh receiver bindings in the complete sequence.",
+      "diagnosis": "",
+      "change": "",
+      "outcome": "All eight Red transfer windows and its release passed. The final physical assembly and arms-home state passed independent audit."
+    }
+  ],
+  "diagnostic_run_identity": {
+    "runs": [
+      "red_bimanual_goal_runner_gpu_v7",
+      "red_bimanual_warm_tail_gpu_v3"
+    ],
+    "initialization": "Given prefix eleven; these are earlier diagnosis runs, not the final six-piece replay.",
+    "RGB_q16_sample_timestamp_s": 117.18,
+    "warm3_maximum_full_CAD_attachment_drift_mm": 21.762154
+  },
+  "local_repair_review": {
+    "version": "V10 frozen contact/recovery changes, inherited by later delivery",
+    "description": "Independent actual-API review of bounded preclose/recovery, with original source, terminal and full-geometry contracts retained. This review itself did not run new physics."
+  },
+  "prior_conditional_execution": {
+    "new_piece_order": [
+      "mint",
+      "lime",
+      "maroon",
+      "navy",
+      "pink",
+      "red"
+    ],
+    "physical_checkpoints_passed": 44,
+    "physical_checkpoints_total": 44,
+    "red_handoff_windows_passed": 8,
+    "original_final_physical_gate_passed": true,
+    "final_maximum_bead_error_mm": 2.446653296212,
+    "final_goal_speed_no_load_bothhome_stable_tail_s": 18.77999999998292
+  },
+  "current_continuous_execution": {
+    "run_id": "pyramid_full12_bimanual_layout_c_v13",
+    "all_twelve_initially_loose": true,
+    "initialized_prefix": [],
+    "layout_variant": "C_Lime_world_y_plus070",
+    "physical_placed_pieces": 12,
+    "full12_physical": true,
+    "passed_checkpoints": 82,
+    "expected_checkpoints": 84,
+    "graph_success": false,
+    "full12_accepted": false,
+    "final2s_maximum_bead_error_mm": 2.5276745479153924,
+    "final2s_robot_loaded_states": 0,
+    "both_home_stable_s": 9.379999999991469,
+    "release_stable_s": 35.89999999996735,
+    "evaluation_basis": "Independent audit of saved native poses, velocities, contacts and public goals; no render inference.",
+    "terminal_explanation": "All twelve physical placements and the original final physical predicate pass. The graph stops in the final Red visual verification because earlier visual receipts were marked unknown_or_conflicted. Red final handoff and finish were not completed; 82/84 checkpoints passed, so graph acceptance remains false.",
+    "missing_checkpoints": [
+      "red_handoff",
+      "finish"
+    ],
+    "current_visual_receipt_invalidations": [
+      "purple",
+      "cyan",
+      "mint",
+      "lime"
+    ],
+    "visually_unverified_pieces": [
+      "navy",
+      "pink",
+      "red"
+    ],
+    "all_eight_red_handoff_windows_passed": true,
+    "red_transport_and_release_success": true,
+    "receiver_bindings": [
+      {
+        "arm": 0,
+        "RGB_timestamp_s": 532.48,
+        "RGB_maximum_bead_error_mm": 0.4338504761758035,
+        "selected_bead": 1,
+        "actual_front_face_reserve_mm": 2.5226974557250332
+      },
+      {
+        "arm": 1,
+        "RGB_timestamp_s": 582.54,
+        "RGB_maximum_bead_error_mm": 0.27514662354074154,
+        "selected_bead": 4,
+        "actual_front_face_reserve_mm": 4.058381843257917
+      }
+    ]
+  }
+}

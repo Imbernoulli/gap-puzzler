@@ -1,0 +1,81 @@
+{
+  "schema": "puzzler.website_evidence_summary.v1",
+  "title": "Board: top-only → fixed pair → any two supported views",
+  "rounds": [
+    {
+      "label": "One view",
+      "attempt": "The top-camera outline fit lost the rim.",
+      "diagnosis": "Hands and pieces interrupted the visible boundary.",
+      "change": "Fit the known board outline independently in front and rear images.",
+      "outcome": "Recorded-packet checks recovered a top-view failure."
+    },
+    {
+      "label": "Fixed pair",
+      "attempt": "The rear view became blocked during the transfer.",
+      "diagnosis": "A fixed camera pair could still lose a required boundary.",
+      "change": "Use any two independently supported current views, with the original acceptance checks.",
+      "outcome": "Four previously rejected recorded packets were recovered."
+    },
+    {
+      "label": "Online use",
+      "attempt": "Bind the multi-view result to the current observation.",
+      "diagnosis": "",
+      "change": "",
+      "outcome": "The joined V13 execution recovered the rim from front + side views with close cross-view agreement."
+    }
+  ],
+  "front_rear_repair": {
+    "recorded_packets_validated": 4,
+    "specific_top_failure_recovered_timestamp_s": 78.52,
+    "note": "One of the four recorded packets already passed the original top fit; do not count all four as recovered top failures."
+  },
+  "any_two_repair": {
+    "previously_rejected_V3_V4_packets_recovered": 4,
+    "independent_checks_passed": 33,
+    "candidate_checks_passed": 45,
+    "original_cross_view_acceptance_mm": 1.5,
+    "observation_type": "Two independently supported views from the same current RGB packet; no historical pose is stamped as current."
+  },
+  "actual_online_V13": {
+    "RGB_packet_indices": [
+      31,
+      32,
+      33,
+      34
+    ],
+    "time_interval_s": [
+      178.86,
+      182.18
+    ],
+    "accepted_pair": [
+      "front",
+      "side"
+    ],
+    "cross_view_corner_disagreement_mm_range": [
+      0.52,
+      0.53
+    ],
+    "original_top_fit_accepted": false,
+    "board_present_in_actual_pose_packet": true
+  },
+  "media": {
+    "src": "media/self_refine_board_views.jpg",
+    "run": "pyramid_full12_bimanual_layout_c_v13",
+    "RGB_packet_index": 31,
+    "timestamp_s": 178.86,
+    "views": [
+      "top",
+      "front",
+      "side"
+    ]
+  },
+  "scope": "Board-pose perception module refined on recorded failures and then actually used by the joined policy observer. Cross-view disagreement is an image-estimator consistency measure, not a physical placement error or full-task generalization result.",
+  "source_artifacts": [
+    "runs/gap_delivery_independent_audit_v1/board_reacquire_independent_review.json",
+    "runs/gap_delivery_independent_audit_v1/board_caller_independent_review.json",
+    "runs/cyan_v3_board_rgb_recovery_v1/reviewed_api_replay.json",
+    "runs/gap_delivery_independent_audit_v1/board_any2_independent_review.json",
+    "runs/cyan_board_any2_rgb_v1/manifest.json",
+    "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/observations.json"
+  ]
+}

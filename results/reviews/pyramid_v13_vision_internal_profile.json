@@ -1,0 +1,67 @@
+{
+  "scope": "One CPU perception profile of an actual saved V13 packet; no Env/render/GPU simulation or source/snapshot changes.",
+  "native_run": {
+    "wall_s": 2276.5976391520817,
+    "vision_observe_calls": 121,
+    "vision_observe_wall_s": 1355.1568843335845,
+    "vision_observe_mean_wall_s": 11.199643672178384,
+    "capture_render_vs_fit_split_recorded": false
+  },
+  "profiled_packet": {
+    "index": 60,
+    "timestamp": 327.14,
+    "native_tool_call_id": 1381,
+    "original_tool_wall_s": 10.235969393048435,
+    "profiled_CPU_estimator_wall_s": 12.283096130006015,
+    "actual_RGB_hashes_verified": true,
+    "actual_previous_tracks_and_hint_reconstructed": true,
+    "accepted_names_match_saved": true
+  },
+  "CPU_major_nonoverlapping_sections": [
+    {
+      "section": "full-palette RGB detection",
+      "calls": 16,
+      "s": 4.888423418,
+      "pct": 39.79839202611536
+    },
+    {
+      "section": "bead-and-neck CAD fitting",
+      "calls": 29,
+      "s": 4.829244967,
+      "pct": 39.316599228927615
+    },
+    {
+      "section": "remaining estimator work",
+      "s": 2.5652987629999986,
+      "pct": 20.885008744957027
+    }
+  ],
+  "overlapping_drilldown_do_not_add": [
+    {
+      "section": "least_squares numerical optimization",
+      "calls": 63,
+      "s": 3.328259044,
+      "pct": 27.096539491615683
+    },
+    {
+      "section": "alias consistency search including nested fitting/evidence",
+      "calls": 1,
+      "s": 2.351672864,
+      "pct": 19.145804394526255
+    },
+    {
+      "section": "per-bead image support",
+      "calls": 106,
+      "s": 0.9588147850000001,
+      "pct": 7.806051855769403
+    }
+  ],
+  "limits": [
+    "The native vision.observe timer includes rendering/capture, perception, hashes/assessment, archive compression/JSON writes and service overhead; it is not a render timer.",
+    "Profile excludes capture/render, q16 readback, hashes/assessment, archive writes, imports/calibration and service overhead.",
+    "One fresh CPU process with profiling overhead, cold caches and different load; cannot subtract12.283s from original10.236s or infer native render time/all121-call proportions."
+  ],
+  "conclusion": "GPU rendering speedup does not remove the CPU palette classification and repeated numerical CAD-fit costs. This packet spent79.1% of perception time in those two sections.",
+  "details": "results/reviews/pyramid_v13_vision_profile/profile_details.json",
+  "profile": "results/reviews/pyramid_v13_vision_profile/saved_packet60_cpu.prof"
+}

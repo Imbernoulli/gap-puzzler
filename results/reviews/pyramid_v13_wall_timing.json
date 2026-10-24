@@ -1,0 +1,107 @@
+{
+  "schema": "puzzler.run_timing.v1",
+  "run": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10",
+  "total_wall_s": 2276.5976391520817,
+  "sim_time_s": 654.54,
+  "tools": {
+    "vision.observe": {
+      "count": 121,
+      "total_wall_s": 1355.1568843335845,
+      "max_wall_s": 20.460843530017883
+    },
+    "robot.grasp_frame": {
+      "count": 50,
+      "total_wall_s": 0.024572467664256692,
+      "max_wall_s": 0.0014198680873960257
+    },
+    "puzzle.plan_pose": {
+      "count": 131,
+      "total_wall_s": 9.472873219754547,
+      "max_wall_s": 3.8766654301434755
+    },
+    "robot.get_ee_pose": {
+      "count": 716,
+      "total_wall_s": 13.37011411273852,
+      "max_wall_s": 0.08440948696807027
+    },
+    "robot.set_grip": {
+      "count": 91,
+      "total_wall_s": 87.62869507097639,
+      "max_wall_s": 1.420859050936997
+    },
+    "robot.execute_trajectory": {
+      "count": 366,
+      "total_wall_s": 307.86293485644273,
+      "max_wall_s": 9.822532196063548
+    },
+    "robot.wait_steps": {
+      "count": 386,
+      "total_wall_s": 80.04274179995991,
+      "max_wall_s": 3.8816374130547047
+    },
+    "puzzle.plan_path": {
+      "count": 61,
+      "total_wall_s": 1.8098638912197202,
+      "max_wall_s": 0.09355991194024682
+    },
+    "puzzle.capture_conditional_attachment": {
+      "count": 12,
+      "total_wall_s": 0.2243330196943134,
+      "max_wall_s": 0.025489971973001957
+    },
+    "puzzle.propagate_conditional_attachment": {
+      "count": 26,
+      "total_wall_s": 0.3436818385962397,
+      "max_wall_s": 0.02293232921510935
+    },
+    "robot.execution_journal_cursor": {
+      "count": 140,
+      "total_wall_s": 0.005268449196591973,
+      "max_wall_s": 0.00016616308130323887
+    },
+    "robot.go_home": {
+      "count": 20,
+      "total_wall_s": 35.69648640602827,
+      "max_wall_s": 2.58725400804542
+    },
+    "puzzle.propagate_pyramid_held_belief": {
+      "count": 226,
+      "total_wall_s": 3.9133370716590434,
+      "max_wall_s": 0.05715780705213547
+    },
+    "puzzle.plan_pose_sequence": {
+      "count": 41,
+      "total_wall_s": 2.1839377931319177,
+      "max_wall_s": 0.15559482504613698
+    },
+    "puzzle.plan_joint_path": {
+      "count": 12,
+      "total_wall_s": 0.6631732180248946,
+      "max_wall_s": 0.06866069906391203
+    },
+    "robot.read_proprioception": {
+      "count": 554,
+      "total_wall_s": 10.879303435329348,
+      "max_wall_s": 0.0740551520138979
+    }
+  },
+  "nested_rss_motion_spans": {
+    "robot.set_grip": [
+      91,
+      87.62652397155762
+    ],
+    "robot.execute_trajectory": [
+      366,
+      307.85539293289185
+    ],
+    "robot.wait_steps": [
+      386,
+      80.03547310829163
+    ],
+    "robot.go_home": [
+      20,
+      35.69613075256348
+    ]
+  },
+  "caveat": "Tool wall times include service roundtrip. Nested RSS motion spans overlap the outer tool times and must not be added. Fine-grained geometry/render timing was not recorded."
+}

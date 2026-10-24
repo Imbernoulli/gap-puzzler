@@ -1,0 +1,51 @@
+{
+  "schema": "puzzler.website_evidence_summary.v1",
+  "title": "Azure: three selected physical variations with one frozen module",
+  "passed": 3,
+  "total": 3,
+  "policy_input": "Actual RGB, robot proprioception and public CAD; no ground-truth object poses or recorded actions.",
+  "cases": [
+    {
+      "variation": "Nominal",
+      "final_bead_error_mm": 0.7451795322531527,
+      "released_stable_tail_s": 9.96
+    },
+    {
+      "variation": "Source +3 mm X and +3 degrees yaw",
+      "final_bead_error_mm": 0.5547668470242142,
+      "released_stable_tail_s": 10.06
+    },
+    {
+      "variation": "Board +2 mm X and +0.5 degrees yaw",
+      "final_bead_error_mm": 0.44903790203823046,
+      "released_stable_tail_s": 9.88
+    }
+  ],
+  "observed_action_dependence": {
+    "source_RGB_translation_delta_mm": [
+      2.9800684848551584,
+      0.02322263973262799,
+      -0.02962565581376747
+    ],
+    "source_grasp_delta_mm": [
+      2.423585935402872,
+      0.8140634725573026,
+      -0.09363870627321358
+    ],
+    "board_RGB_translation_delta_mm": [
+      2.086994583884283,
+      -0.0016944478817434853,
+      0
+    ],
+    "board_transport_TCP_delta_mm": [
+      2.512364745536455,
+      -0.21511796869352895,
+      2.3982518193577107e-06
+    ],
+    "board_only_source_grasp_unchanged": true
+  },
+  "scope": "Three selected development rehearsals of the earlier Azure module. All twelve pieces start loose; only Azure executes. No full-assembly, current-Cyan/Red or statistical held-out robustness claim.",
+  "source_artifacts": [
+    "results/reviews/modular_azure_variational_independent_summary_v1.json"
+  ]
+}

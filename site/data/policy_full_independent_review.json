@@ -1,0 +1,4173 @@
+{
+  "schema": "independent_V13_terminal_physical_and_graph_verdict.v1",
+  "status": "PHYSICAL_ALL12_PASS_GRAPH82_OF84_REFUSED",
+  "checks": {
+    "every_state_contact_row_unique_complete": true,
+    "all_saved_raw_RGB_hashes_native_q16_time_exact": true,
+    "all362_sources_launch_result_workspace_snapshot_clean": true,
+    "complete_log_capacity_pass": true,
+    "original82_executed_CP_all_pass_no_missing_CP_credit": true,
+    "all12_actual_physical_release_CP_original_order": true,
+    "all12_original_stage_end_physical_gates": true,
+    "all12_final_original_physics_bothhome_stable2s": true,
+    "fresh_all12_initially_loose_no_given": true,
+    "Cyan_four_original_saved_contact_windows": true,
+    "Red_eight_original_saved_contact_windows": true,
+    "raw_RSS_true_current_final_true_graph_false_top_success_false": true,
+    "graph_lineage_incomplete11_handoffs_not_promoted": true,
+    "historical9_visual_receipts_genuine_not_recreated": true,
+    "actual_terminal_scope_failure_reproduced_from4_invalidated_receipts": true,
+    "identical_suffix_contract_succeeds_without_invalidated_early_receipts": true,
+    "source_boundary_evaluator_not_policy_input": true,
+    "site_flags_truthful_physical_vs_graph_separate": true
+  },
+  "checks_total": 18,
+  "passed": 18,
+  "failed": [],
+  "accepted": false,
+  "physicalAccepted": true,
+  "full12Physical": true,
+  "full12Accepted": false,
+  "physicalAccepted_definition": "Original all12 physical end predicate and each actual physical release/stage end pass on a fresh all-loose run; source and capacity clean. This field does not grant missing handoff/finish CP or full graph lineage.",
+  "native_Env_or_GPU_created": false,
+  "policy_input": false,
+  "native_GT_only_for_independent_evaluation": true,
+  "source_integrity": {
+    "schema": "independent_V13_terminal_source_capacity_closure.v1",
+    "source_integrity_verified": true,
+    "source_count": 362,
+    "source_authentication": [
+      {
+        "path": "RUNTIME.lock",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/azure.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/azure_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/azure_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/azure_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/azure_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/azure_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/azure_005.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/azure_006.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/azure_007.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/azure_008.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_005.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_006.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_007.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_008.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_009.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_010.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_011.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_012.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_013.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_014.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_015.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_016.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_017.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_018.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_019.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_020.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_021.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_022.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_023.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_024.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_025.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_026.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_027.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_028.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_029.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_030.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_031.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_032.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_033.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_034.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_035.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_036.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_037.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_038.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_039.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_040.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_041.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_042.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_043.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_044.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_045.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_046.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_047.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_048.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_049.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_050.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_051.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_052.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_053.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_054.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_055.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_056.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_057.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_058.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_059.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_060.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_061.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_062.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_063.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_064.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_065.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_066.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_067.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_068.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_069.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_070.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_071.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_072.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_073.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_074.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_075.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_076.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_077.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/board_078.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/cyan.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/cyan_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/cyan_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/cyan_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/cyan_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/cyan_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/lime.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/lime_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/lime_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/lime_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/lime_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/lime_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/lime_005.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/lime_006.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/lime_007.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/lime_008.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/manifest.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/maroon.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/maroon_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/maroon_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/maroon_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/maroon_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/maroon_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/maroon_005.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/maroon_006.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/mint.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/mint_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/mint_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/mint_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/mint_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/mint_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/mint_005.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/mint_006.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/mint_007.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/mint_008.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/mint_009.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/navy.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/navy_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/navy_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/navy_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/navy_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/navy_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/navy_005.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/navy_006.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/orange.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/orange_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/orange_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/orange_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/orange_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/orange_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/orange_005.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/orange_006.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/orange_007.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/orange_008.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pink.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pink_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pink_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pink_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pink_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pink_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pink_005.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pink_006.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pink_007.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pink_008.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/purple.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/purple_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/purple_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/purple_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/purple_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/purple_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/purple_005.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/purple_006.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/purple_007.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/purple_008.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pyramid_plan.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pyramid_robot2_plan.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pyramid_robot6_plan.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pyramid_robot_plan.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pyramid_upright_plan.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/pyramid_vertical_plan.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/red.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/red_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/red_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/red_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/red_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/red_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/red_005.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/red_006.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/red_007.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/red_008.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/table_patch.png",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/teal.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/teal_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/teal_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/teal_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/teal_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/teal_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/teal_005.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/teal_006.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yam_precision20v1.xml",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yam_precision40.xml",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yam_precision40v2.xml",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yellow.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yellow_000.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yellow_001.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yellow_002.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yellow_003.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yellow_004.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yellow_005.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yellow_006.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yellow_007.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "assets/yellow_008.obj",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/cyan_approach_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/cyan_donor_release_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/cyan_receiver_bind_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/cyan_receiver_close_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/cyan_receiver_transport_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/finish_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/grasp_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/handoff_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/perceive_plan_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/receipt_settle_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/red_goal_release_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/red_goal_transport_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/red_goal_verify_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/red_handoff_prepare_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/red_receiver_bind_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/red_receiver_close_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/red_return_bind_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/red_return_close_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/red_return_prepare_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/red_return_release_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/red_sender_release_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/release_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/checkpoints/transport_sg.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/params.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/cyan_approach.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/cyan_donor_release.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/cyan_receiver_bind.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/cyan_receiver_close.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/cyan_receiver_transport.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/finish.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/grasp.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/handoff.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/perceive_plan.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/receipt_settle.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/red_goal_release.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/red_goal_transport.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/red_goal_verify.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/red_handoff_prepare.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/red_receiver_bind.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/red_receiver_close.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/red_return_bind.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/red_return_close.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/red_return_prepare.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/red_return_release.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/red_sender_release.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/release.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/schema.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/scripts/transport.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "graphs/pyramid_original_order_layout_c_v10/workflow.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/__init__.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/assets.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/audit.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/azure_rgb_attribution.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/board_vision.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/conditional_attachment.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/conditional_scene.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_bimanual_adapter.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_bimanual_common_adapter.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_bimanual_common_fast_adapter.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_bimanual_feedback_adapter.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_bimanual_near_stream_adapter.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_dated_scene.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_finite_height.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_geometry.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_inverse_tip.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_modular_adapter.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_observation_geometry.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_original_transport.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_receiver_delivery.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_receiver_feedback_delivery.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_receiver_motion.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_receiver_motion_feedback.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_receiver_release_feedback_delivery.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_release_escape.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_released_rgb_recovery.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_tip_adapter.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_transfer_candidates.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_vertical_source_v2.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_vertical_transfer_adapter.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/cyan_vertical_transfer_v2_adapter.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/episode.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/finite_release_scene.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/gripper_geometry.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/hardware.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/held_proprioception.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/model.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_controller.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_cyan_anchor.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_cyan_release.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_cyan_release_geometry.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_maroon_adapter.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_maroon_anchor.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_maroon_geometry.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_maroon_resume.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_maroon_scene.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_motion.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_red_contact.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_red_placement.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_release.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/modular_verification.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/pool_policy.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/prefix_compatibility.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/prefix_track_reassociation.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/progressive_release_feedback.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/public_bimanual_geometry.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/public_bimanual_material_geometry.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/public_bimanual_robot.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/public_board_clearance.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/pyramid.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/pyramid_held_belief.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/red_arm0_carry.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/red_bimanual_goal.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/red_bimanual_handoff.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/red_computed_carry.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/red_contact_region.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/red_handoff_candidates.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/red_rgb_recovery.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/red_source_geometry.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/release_admission.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/released_piece_repair.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/reloc_modular_release.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/rgb_ray_cad_evidence.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/robot_pose_sequence.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/robot_proprioception.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/rss_contact_capacity.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/scene_reference.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/shape_vision.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/task.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/unified_contract.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/vision.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/vision_controller.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/vision_observer.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/vision_planning.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/vision_policy.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/vision_stages.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "puzzler/visual_memory.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "third_party/robosimstudio/assets/embodiments/yam/yam_bimanual_arms.xml",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "tools/audit_staged_episode.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "tools/audit_visual_measurements.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "tools/build_unified_graph.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "tools/launch_unified.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "tools/unified_native.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "verification/independent.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "verification/unified_checkpoints.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "profiles/cyan_vertical_bimanual_v1.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "profiles/maroon_achieved_grasp.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "profiles/pyramid.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "profiles/red_public_source_v7_four_fields.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "registry_modular/skills/modular-rgb-puzzler/SKILL.md",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "runs/full12_original_order_layout_c_v10/manifest.json",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "runs/full12_original_order_layout_c_v10/native_jobs.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "tools/layout_c_native.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "verification/azure_v4_canonical_replay.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "verification/azure_v4_suffix_replay.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "verification/bimanual_independent.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "verification/cyan_transfer.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "verification/cyan_v6_exact_package_probe.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "verification/red_bimanual_goal_independent.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      },
+      {
+        "path": "verification/red_v19_changed_boundary.py",
+        "launch_hash_exact": true,
+        "workspace_exact": true,
+        "executed_snapshot_exact": true
+      }
+    ],
+    "capacity": {
+      "capacity_log_check_passed": true,
+      "complete_log_paths": [
+        {
+          "path": "/srv/home/bohanlyu/gap-puzzler-web/runs/pyramid_full12_bimanual_layout_c_v13/native.log",
+          "bytes": 17496,
+          "forbidden_diagnostics": []
+        }
+      ],
+      "online_policy_input": false,
+      "scope": "External complete-log read only. A clean result does not prove physical success or complete log capture; any matching capacity diagnostic invalidates qualification."
+    },
+    "retained_native_warning_lines": [
+      {
+        "line": 33,
+        "text": "/srv/home/bohanlyu/gap-puzzler-web/runs/pyramid_full12_bimanual_layout_c_v13/workspace/third_party/robosimstudio/.venv/lib/python3.12/site-packages/mujoco_warp/_src/io.py:863: UserWarning: MULTICCD is enabled, but the scene contains CCD pairs without multicontact support: [('CAPSULE', 'MESH')]. At most 1 contact will be generated for these pairs."
+      },
+      {
+        "line": 82,
+        "text": "linesearch iterations limit reached - please increase ls_iterations beyond 20"
+      },
+      {
+        "line": 90,
+        "text": "linesearch iterations limit reached - please increase ls_iterations beyond 20"
+      },
+      {
+        "line": 92,
+        "text": "linesearch iterations limit reached - please increase ls_iterations beyond 20"
+      }
+    ],
+    "actual_LS_warning_count": 3,
+    "actual_MULTICCD_warning_count": 1,
+    "physicalAccepted": true,
+    "accepted": false,
+    "policy_input": false,
+    "native_Env_or_GPU_created": false
+  },
+  "capture": {
+    "states": 32728,
+    "first_step": 0,
+    "terminal_step": 32727,
+    "terminal_time_s": 654.5399999996947,
+    "contact_rows": 32728,
+    "contacts_sha256": "396be3d7e399e4c9677e500deb976d6c36699266419025a4d345505a8541a4c6"
+  },
+  "checkpoint_counts": {
+    "azure": 6,
+    "orange": 6,
+    "yellow": 6,
+    "teal": 6,
+    "purple": 6,
+    "cyan": 10,
+    "mint": 6,
+    "lime": 6,
+    "maroon": 6,
+    "navy": 6,
+    "pink": 6,
+    "red": 12
+  },
+  "physical_CP_order": [
+    {
+      "piece": "azure",
+      "phase": "perceive_plan",
+      "native_step": 22,
+      "passed": true
+    },
+    {
+      "piece": "azure",
+      "phase": "grasp",
+      "native_step": 405,
+      "passed": true
+    },
+    {
+      "piece": "azure",
+      "phase": "transport",
+      "native_step": 657,
+      "passed": true
+    },
+    {
+      "piece": "azure",
+      "phase": "release",
+      "native_step": 1275,
+      "passed": true
+    },
+    {
+      "piece": "azure",
+      "phase": "release",
+      "native_step": 1281,
+      "passed": true
+    },
+    {
+      "piece": "azure",
+      "phase": "handoff",
+      "native_step": 1287,
+      "passed": true
+    },
+    {
+      "piece": "orange",
+      "phase": "perceive_plan",
+      "native_step": 1303,
+      "passed": true
+    },
+    {
+      "piece": "orange",
+      "phase": "grasp",
+      "native_step": 1699,
+      "passed": true
+    },
+    {
+      "piece": "orange",
+      "phase": "transport",
+      "native_step": 1941,
+      "passed": true
+    },
+    {
+      "piece": "orange",
+      "phase": "release",
+      "native_step": 2594,
+      "passed": true
+    },
+    {
+      "piece": "orange",
+      "phase": "release",
+      "native_step": 2601,
+      "passed": true
+    },
+    {
+      "piece": "orange",
+      "phase": "handoff",
+      "native_step": 2621,
+      "passed": true
+    },
+    {
+      "piece": "yellow",
+      "phase": "perceive_plan",
+      "native_step": 2638,
+      "passed": true
+    },
+    {
+      "piece": "yellow",
+      "phase": "grasp",
+      "native_step": 3068,
+      "passed": true
+    },
+    {
+      "piece": "yellow",
+      "phase": "transport",
+      "native_step": 3543,
+      "passed": true
+    },
+    {
+      "piece": "yellow",
+      "phase": "release",
+      "native_step": 4163,
+      "passed": true
+    },
+    {
+      "piece": "yellow",
+      "phase": "release",
+      "native_step": 4173,
+      "passed": true
+    },
+    {
+      "piece": "yellow",
+      "phase": "handoff",
+      "native_step": 4180,
+      "passed": true
+    },
+    {
+      "piece": "teal",
+      "phase": "perceive_plan",
+      "native_step": 4198,
+      "passed": true
+    },
+    {
+      "piece": "teal",
+      "phase": "grasp",
+      "native_step": 4531,
+      "passed": true
+    },
+    {
+      "piece": "teal",
+      "phase": "transport",
+      "native_step": 4697,
+      "passed": true
+    },
+    {
+      "piece": "teal",
+      "phase": "release",
+      "native_step": 5325,
+      "passed": true
+    },
+    {
+      "piece": "teal",
+      "phase": "release",
+      "native_step": 5336,
+      "passed": true
+    },
+    {
+      "piece": "teal",
+      "phase": "handoff",
+      "native_step": 5345,
+      "passed": true
+    },
+    {
+      "piece": "purple",
+      "phase": "perceive_plan",
+      "native_step": 5377,
+      "passed": true
+    },
+    {
+      "piece": "purple",
+      "phase": "grasp",
+      "native_step": 5775,
+      "passed": true
+    },
+    {
+      "piece": "purple",
+      "phase": "transport",
+      "native_step": 6079,
+      "passed": true
+    },
+    {
+      "piece": "purple",
+      "phase": "release",
+      "native_step": 6693,
+      "passed": true
+    },
+    {
+      "piece": "purple",
+      "phase": "release",
+      "native_step": 6702,
+      "passed": true
+    },
+    {
+      "piece": "purple",
+      "phase": "handoff",
+      "native_step": 6711,
+      "passed": true
+    },
+    {
+      "piece": "cyan",
+      "phase": "perceive_plan",
+      "native_step": 6743,
+      "passed": true
+    },
+    {
+      "piece": "cyan",
+      "phase": "grasp",
+      "native_step": 7603,
+      "passed": true
+    },
+    {
+      "piece": "cyan",
+      "phase": "handoff_approach",
+      "native_step": 8966,
+      "passed": true
+    },
+    {
+      "piece": "cyan",
+      "phase": "handoff_dualhold",
+      "native_step": 9352,
+      "passed": true
+    },
+    {
+      "piece": "cyan",
+      "phase": "handoff_receiveronly",
+      "native_step": 9728,
+      "passed": true
+    },
+    {
+      "piece": "cyan",
+      "phase": "handoff_receiver_hold",
+      "native_step": 9780,
+      "passed": true
+    },
+    {
+      "piece": "cyan",
+      "phase": "transport",
+      "native_step": 11943,
+      "passed": true
+    },
+    {
+      "piece": "cyan",
+      "phase": "release",
+      "native_step": 13170,
+      "passed": true
+    },
+    {
+      "piece": "cyan",
+      "phase": "release",
+      "native_step": 13238,
+      "passed": true
+    },
+    {
+      "piece": "cyan",
+      "phase": "handoff",
+      "native_step": 13287,
+      "passed": true
+    },
+    {
+      "piece": "mint",
+      "phase": "perceive_plan",
+      "native_step": 13325,
+      "passed": true
+    },
+    {
+      "piece": "mint",
+      "phase": "grasp",
+      "native_step": 13759,
+      "passed": true
+    },
+    {
+      "piece": "mint",
+      "phase": "transport",
+      "native_step": 14254,
+      "passed": true
+    },
+    {
+      "piece": "mint",
+      "phase": "release",
+      "native_step": 14892,
+      "passed": true
+    },
+    {
+      "piece": "mint",
+      "phase": "release",
+      "native_step": 14927,
+      "passed": true
+    },
+    {
+      "piece": "mint",
+      "phase": "handoff",
+      "native_step": 14959,
+      "passed": true
+    },
+    {
+      "piece": "lime",
+      "phase": "perceive_plan",
+      "native_step": 15006,
+      "passed": true
+    },
+    {
+      "piece": "lime",
+      "phase": "grasp",
+      "native_step": 15439,
+      "passed": true
+    },
+    {
+      "piece": "lime",
+      "phase": "transport",
+      "native_step": 15810,
+      "passed": true
+    },
+    {
+      "piece": "lime",
+      "phase": "release",
+      "native_step": 16436,
+      "passed": true
+    },
+    {
+      "piece": "lime",
+      "phase": "release",
+      "native_step": 16471,
+      "passed": true
+    },
+    {
+      "piece": "lime",
+      "phase": "handoff",
+      "native_step": 16504,
+      "passed": true
+    },
+    {
+      "piece": "maroon",
+      "phase": "perceive_plan",
+      "native_step": 17024,
+      "passed": true
+    },
+    {
+      "piece": "maroon",
+      "phase": "grasp",
+      "native_step": 17480,
+      "passed": true
+    },
+    {
+      "piece": "maroon",
+      "phase": "transport",
+      "native_step": 17760,
+      "passed": true
+    },
+    {
+      "piece": "maroon",
+      "phase": "release",
+      "native_step": 19565,
+      "passed": true
+    },
+    {
+      "piece": "maroon",
+      "phase": "release",
+      "native_step": 19613,
+      "passed": true
+    },
+    {
+      "piece": "maroon",
+      "phase": "handoff",
+      "native_step": 19648,
+      "passed": true
+    },
+    {
+      "piece": "navy",
+      "phase": "perceive_plan",
+      "native_step": 19692,
+      "passed": true
+    },
+    {
+      "piece": "navy",
+      "phase": "grasp",
+      "native_step": 20174,
+      "passed": true
+    },
+    {
+      "piece": "navy",
+      "phase": "transport",
+      "native_step": 20556,
+      "passed": true
+    },
+    {
+      "piece": "navy",
+      "phase": "release",
+      "native_step": 21238,
+      "passed": true
+    },
+    {
+      "piece": "navy",
+      "phase": "conditional_release",
+      "native_step": 21274,
+      "passed": true
+    },
+    {
+      "piece": "navy",
+      "phase": "handoff",
+      "native_step": 21304,
+      "passed": true
+    },
+    {
+      "piece": "pink",
+      "phase": "perceive_plan",
+      "native_step": 21343,
+      "passed": true
+    },
+    {
+      "piece": "pink",
+      "phase": "grasp",
+      "native_step": 21771,
+      "passed": true
+    },
+    {
+      "piece": "pink",
+      "phase": "transport",
+      "native_step": 22211,
+      "passed": true
+    },
+    {
+      "piece": "pink",
+      "phase": "release",
+      "native_step": 23011,
+      "passed": true
+    },
+    {
+      "piece": "pink",
+      "phase": "conditional_release",
+      "native_step": 23052,
+      "passed": true
+    },
+    {
+      "piece": "pink",
+      "phase": "handoff",
+      "native_step": 23085,
+      "passed": true
+    },
+    {
+      "piece": "red",
+      "phase": "perceive_plan",
+      "native_step": 23134,
+      "passed": true
+    },
+    {
+      "piece": "red",
+      "phase": "grasp",
+      "native_step": 23577,
+      "passed": true
+    },
+    {
+      "piece": "red",
+      "phase": "handoff_prepared",
+      "native_step": 25863,
+      "passed": true
+    },
+    {
+      "piece": "red",
+      "phase": "handoff_dualhold",
+      "native_step": 26208,
+      "passed": true
+    },
+    {
+      "piece": "red",
+      "phase": "handoff_receiver_only",
+      "native_step": 26596,
+      "passed": true
+    },
+    {
+      "piece": "red",
+      "phase": "handoff_receiver_bound",
+      "native_step": 26675,
+      "passed": true
+    },
+    {
+      "piece": "red",
+      "phase": "return_handoff_prepared",
+      "native_step": 28171,
+      "passed": true
+    },
+    {
+      "piece": "red",
+      "phase": "return_handoff_dualhold",
+      "native_step": 28548,
+      "passed": true
+    },
+    {
+      "piece": "red",
+      "phase": "return_handoff_receiver_only",
+      "native_step": 29091,
+      "passed": true
+    },
+    {
+      "piece": "red",
+      "phase": "return_handoff_receiver_bound",
+      "native_step": 29184,
+      "passed": true
+    },
+    {
+      "piece": "red",
+      "phase": "transport",
+      "native_step": 30557,
+      "passed": true
+    },
+    {
+      "piece": "red",
+      "phase": "release",
+      "native_step": 32502,
+      "passed": true
+    }
+  ],
+  "expected_CP": 84,
+  "passed_executed_CP": 82,
+  "missing_CP": [
+    "red handoff",
+    "original finish"
+  ],
+  "actual_release_CP_order": [
+    "azure",
+    "orange",
+    "yellow",
+    "teal",
+    "purple",
+    "cyan",
+    "mint",
+    "lime",
+    "maroon",
+    "navy",
+    "pink",
+    "red"
+  ],
+  "actual_execution_tokens": [
+    "azure",
+    "orange",
+    "yellow",
+    "teal",
+    "purple",
+    "cyan",
+    "mint",
+    "lime",
+    "maroon",
+    "navy",
+    "pink",
+    "red"
+  ],
+  "actual_completed_handoff_order": [
+    "azure",
+    "orange",
+    "yellow",
+    "teal",
+    "purple",
+    "cyan",
+    "mint",
+    "lime",
+    "maroon",
+    "navy",
+    "pink"
+  ],
+  "all12_independent_executed_lineage": false,
+  "independent_original_final_physics": {
+    "released_stable_tail_s": 35.89999999996735,
+    "both_home_goal_speed_no_load_stable_tail_s": 9.379999999991469,
+    "final2s": {
+      "maximum_bead_error_m": 0.0025276745479153925,
+      "maximum_bead_speed_mps": 2.448078804867017e-05,
+      "robot_piece_contact_states": 0,
+      "board_resting_level": true,
+      "minimum_hand_cad_clearance_m": {
+        "left": 0.3727236807323111,
+        "right": 0.3621872375956973
+      },
+      "final_hand_widths_m": {
+        "left": 0.05500201880931854,
+        "right": 0.09000091254711151
+      },
+      "maximum_home_distance_m": {
+        "left": 9.161301216724527e-06,
+        "right": 9.858845929530976e-06
+      }
+    }
+  },
+  "original_stage_end_physics": {
+    "azure": {
+      "included_goal_pieces": [
+        "azure"
+      ],
+      "independently_handed_off": true,
+      "last_checkpoint_phase": "handoff",
+      "last_checkpoint_reported_pass": true,
+      "last_checkpoint_native_step": 1287,
+      "target_error_at_last_checkpoint_m": 0.000501293094778656,
+      "stable_withdrawn_tail_at_last_checkpoint_s": 8.839999999999812,
+      "physical_gate_at_last_checkpoint": true,
+      "stable_withdrawn_tail_at_episode_end_s": 31.779999999971096,
+      "final_target_error_m": 0.0005276972431182104
+    },
+    "orange": {
+      "included_goal_pieces": [
+        "azure",
+        "orange"
+      ],
+      "independently_handed_off": true,
+      "last_checkpoint_phase": "handoff",
+      "last_checkpoint_reported_pass": true,
+      "last_checkpoint_native_step": 2621,
+      "target_error_at_last_checkpoint_m": 0.0004746750677816479,
+      "stable_withdrawn_tail_at_last_checkpoint_s": 9.620000000001504,
+      "physical_gate_at_last_checkpoint": true,
+      "stable_withdrawn_tail_at_episode_end_s": 31.779999999971096,
+      "final_target_error_m": 0.0004705133085979132
+    },
+    "yellow": {
+      "included_goal_pieces": [
+        "azure",
+        "orange",
+        "yellow"
+      ],
+      "independently_handed_off": true,
+      "last_checkpoint_phase": "handoff",
+      "last_checkpoint_reported_pass": true,
+      "last_checkpoint_native_step": 4180,
+      "target_error_at_last_checkpoint_m": 0.0005968145768645231,
+      "stable_withdrawn_tail_at_last_checkpoint_s": 8.959999999998217,
+      "physical_gate_at_last_checkpoint": true,
+      "stable_withdrawn_tail_at_episode_end_s": 31.779999999971096,
+      "final_target_error_m": 0.00040170923824990736
+    },
+    "teal": {
+      "included_goal_pieces": [
+        "azure",
+        "orange",
+        "yellow",
+        "teal"
+      ],
+      "independently_handed_off": true,
+      "last_checkpoint_phase": "handoff",
+      "last_checkpoint_reported_pass": true,
+      "last_checkpoint_native_step": 5345,
+      "target_error_at_last_checkpoint_m": 0.0005526722109777165,
+      "stable_withdrawn_tail_at_last_checkpoint_s": 9.879999999998034,
+      "physical_gate_at_last_checkpoint": true,
+      "stable_withdrawn_tail_at_episode_end_s": 31.779999999971096,
+      "final_target_error_m": 0.0006851127427894332
+    },
+    "purple": {
+      "included_goal_pieces": [
+        "azure",
+        "orange",
+        "yellow",
+        "teal",
+        "purple"
+      ],
+      "independently_handed_off": true,
+      "last_checkpoint_phase": "handoff",
+      "last_checkpoint_reported_pass": true,
+      "last_checkpoint_native_step": 6711,
+      "target_error_at_last_checkpoint_m": 0.00042359238244220977,
+      "stable_withdrawn_tail_at_last_checkpoint_s": 7.120000000003003,
+      "physical_gate_at_last_checkpoint": true,
+      "stable_withdrawn_tail_at_episode_end_s": 31.779999999971096,
+      "final_target_error_m": 0.0005653791423378483
+    },
+    "cyan": {
+      "included_goal_pieces": [
+        "azure",
+        "orange",
+        "yellow",
+        "teal",
+        "purple",
+        "cyan"
+      ],
+      "independently_handed_off": true,
+      "last_checkpoint_phase": "handoff",
+      "last_checkpoint_reported_pass": true,
+      "last_checkpoint_native_step": 13287,
+      "target_error_at_last_checkpoint_m": 0.0007793467897758273,
+      "stable_withdrawn_tail_at_last_checkpoint_s": 17.039999999994848,
+      "physical_gate_at_last_checkpoint": true,
+      "stable_withdrawn_tail_at_episode_end_s": 31.779999999971096,
+      "final_target_error_m": 0.0013623281553713587
+    },
+    "mint": {
+      "included_goal_pieces": [
+        "azure",
+        "orange",
+        "yellow",
+        "teal",
+        "purple",
+        "cyan",
+        "mint"
+      ],
+      "independently_handed_off": true,
+      "last_checkpoint_phase": "handoff",
+      "last_checkpoint_reported_pass": true,
+      "last_checkpoint_native_step": 14959,
+      "target_error_at_last_checkpoint_m": 0.0013390681716133586,
+      "stable_withdrawn_tail_at_last_checkpoint_s": 8.61999999999216,
+      "physical_gate_at_last_checkpoint": true,
+      "stable_withdrawn_tail_at_episode_end_s": 31.779999999971096,
+      "final_target_error_m": 0.0012172802181770312
+    },
+    "lime": {
+      "included_goal_pieces": [
+        "azure",
+        "orange",
+        "yellow",
+        "teal",
+        "purple",
+        "cyan",
+        "mint",
+        "lime"
+      ],
+      "independently_handed_off": true,
+      "last_checkpoint_phase": "handoff",
+      "last_checkpoint_reported_pass": true,
+      "last_checkpoint_native_step": 16504,
+      "target_error_at_last_checkpoint_m": 0.001026310657530907,
+      "stable_withdrawn_tail_at_last_checkpoint_s": 8.559999999992215,
+      "physical_gate_at_last_checkpoint": true,
+      "stable_withdrawn_tail_at_episode_end_s": 31.779999999971096,
+      "final_target_error_m": 0.0010905525423064869
+    },
+    "maroon": {
+      "included_goal_pieces": [
+        "azure",
+        "orange",
+        "yellow",
+        "teal",
+        "purple",
+        "cyan",
+        "mint",
+        "lime",
+        "maroon"
+      ],
+      "independently_handed_off": true,
+      "last_checkpoint_phase": "handoff",
+      "last_checkpoint_reported_pass": true,
+      "last_checkpoint_native_step": 19648,
+      "target_error_at_last_checkpoint_m": 0.0018840221640065871,
+      "stable_withdrawn_tail_at_last_checkpoint_s": 8.099999999992633,
+      "physical_gate_at_last_checkpoint": true,
+      "stable_withdrawn_tail_at_episode_end_s": 31.779999999971096,
+      "final_target_error_m": 0.0018751011595316005
+    },
+    "navy": {
+      "included_goal_pieces": [
+        "azure",
+        "orange",
+        "yellow",
+        "teal",
+        "purple",
+        "cyan",
+        "mint",
+        "lime",
+        "maroon",
+        "navy"
+      ],
+      "independently_handed_off": true,
+      "last_checkpoint_phase": "handoff",
+      "last_checkpoint_reported_pass": true,
+      "last_checkpoint_native_step": 21304,
+      "target_error_at_last_checkpoint_m": 0.0020212728504785467,
+      "stable_withdrawn_tail_at_last_checkpoint_s": 9.119999999991705,
+      "physical_gate_at_last_checkpoint": true,
+      "stable_withdrawn_tail_at_episode_end_s": 31.779999999971096,
+      "final_target_error_m": 0.0020280119515996573
+    },
+    "pink": {
+      "included_goal_pieces": [
+        "azure",
+        "orange",
+        "yellow",
+        "teal",
+        "purple",
+        "cyan",
+        "mint",
+        "lime",
+        "maroon",
+        "navy",
+        "pink"
+      ],
+      "independently_handed_off": true,
+      "last_checkpoint_phase": "handoff",
+      "last_checkpoint_reported_pass": true,
+      "last_checkpoint_native_step": 23085,
+      "target_error_at_last_checkpoint_m": 0.002516625218658351,
+      "stable_withdrawn_tail_at_last_checkpoint_s": 8.919999999991887,
+      "physical_gate_at_last_checkpoint": true,
+      "stable_withdrawn_tail_at_episode_end_s": 31.779999999971096,
+      "final_target_error_m": 0.00248224999131174
+    },
+    "red": {
+      "included_goal_pieces": [
+        "azure",
+        "orange",
+        "yellow",
+        "teal",
+        "purple",
+        "cyan",
+        "mint",
+        "lime",
+        "maroon",
+        "navy",
+        "pink",
+        "red"
+      ],
+      "independently_handed_off": false,
+      "last_checkpoint_phase": "release",
+      "last_checkpoint_reported_pass": true,
+      "last_checkpoint_native_step": 32502,
+      "target_error_at_last_checkpoint_m": 0.0025292548962233164,
+      "stable_withdrawn_tail_at_last_checkpoint_s": 27.27999999997519,
+      "physical_gate_at_last_checkpoint": true,
+      "stable_withdrawn_tail_at_episode_end_s": 31.779999999971096,
+      "final_target_error_m": 0.002526521846964693
+    }
+  },
+  "Cyan_handoff_report": "/srv/home/bohanlyu/gap-puzzler-web/runs/gap_delivery_independent_audit_v1/v13_terminal_cyan_handoff_independent_review.json",
+  "Red_handoff_report": "/srv/home/bohanlyu/gap-puzzler-web/runs/gap_delivery_independent_audit_v1/v13_terminal_red_twohop_independent_review.json",
+  "all_saved_RGB_authentication": [
+    {
+      "index": 0,
+      "timestamp": 0.18,
+      "native_step": 9,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 1,
+      "timestamp": 8.0,
+      "native_step": 400,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 2,
+      "timestamp": 13.2,
+      "native_step": 660,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 3,
+      "timestamp": 24.36,
+      "native_step": 1218,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 4,
+      "timestamp": 25.38,
+      "native_step": 1269,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 5,
+      "timestamp": 25.76,
+      "native_step": 1288,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 6,
+      "timestamp": 33.76,
+      "native_step": 1688,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 7,
+      "timestamp": 39.02,
+      "native_step": 1951,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 8,
+      "timestamp": 50.48,
+      "native_step": 2524,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 9,
+      "timestamp": 51.76,
+      "native_step": 2588,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 10,
+      "timestamp": 52.5,
+      "native_step": 2625,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 11,
+      "timestamp": 61.24,
+      "native_step": 3062,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 12,
+      "timestamp": 70.94,
+      "native_step": 3547,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 13,
+      "timestamp": 82.1,
+      "native_step": 4105,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 14,
+      "timestamp": 83.12,
+      "native_step": 4156,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 15,
+      "timestamp": 83.64,
+      "native_step": 4182,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 16,
+      "timestamp": 90.5,
+      "native_step": 4525,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 17,
+      "timestamp": 94.02,
+      "native_step": 4701,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 18,
+      "timestamp": 105.28,
+      "native_step": 5264,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 19,
+      "timestamp": 106.3,
+      "native_step": 5315,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 20,
+      "timestamp": 106.96,
+      "native_step": 5348,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 21,
+      "timestamp": 115.36,
+      "native_step": 5768,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 22,
+      "timestamp": 121.66,
+      "native_step": 6083,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 23,
+      "timestamp": 132.64,
+      "native_step": 6632,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 24,
+      "timestamp": 133.66,
+      "native_step": 6683,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 25,
+      "timestamp": 134.28,
+      "native_step": 6714,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 26,
+      "timestamp": 148.24,
+      "native_step": 7412,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 27,
+      "timestamp": 150.5,
+      "native_step": 7525,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 28,
+      "timestamp": 151.9,
+      "native_step": 7595,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 29,
+      "timestamp": 161.08,
+      "native_step": 8054,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 30,
+      "timestamp": 175.72,
+      "native_step": 8786,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 31,
+      "timestamp": 178.86,
+      "native_step": 8943,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 32,
+      "timestamp": 179.6,
+      "native_step": 8980,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 33,
+      "timestamp": 180.44,
+      "native_step": 9022,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 34,
+      "timestamp": 182.18,
+      "native_step": 9109,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 35,
+      "timestamp": 183.52,
+      "native_step": 9176,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 36,
+      "timestamp": 185.08,
+      "native_step": 9254,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 37,
+      "timestamp": 186.54,
+      "native_step": 9327,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 38,
+      "timestamp": 194.18,
+      "native_step": 9709,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 39,
+      "timestamp": 194.88,
+      "native_step": 9744,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 40,
+      "timestamp": 195.9,
+      "native_step": 9795,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 41,
+      "timestamp": 201.66,
+      "native_step": 10083,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 42,
+      "timestamp": 215.46,
+      "native_step": 10773,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 43,
+      "timestamp": 228.56,
+      "native_step": 11428,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 44,
+      "timestamp": 238.14,
+      "native_step": 11907,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 45,
+      "timestamp": 239.3,
+      "native_step": 11965,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 46,
+      "timestamp": 244.16,
+      "native_step": 12208,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 47,
+      "timestamp": 246.3,
+      "native_step": 12315,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 48,
+      "timestamp": 247.52,
+      "native_step": 12376,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 49,
+      "timestamp": 249.56,
+      "native_step": 12478,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 50,
+      "timestamp": 261.38,
+      "native_step": 13069,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 51,
+      "timestamp": 262.6,
+      "native_step": 13130,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 52,
+      "timestamp": 265.98,
+      "native_step": 13299,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 53,
+      "timestamp": 274.74,
+      "native_step": 13737,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 54,
+      "timestamp": 285.44,
+      "native_step": 14272,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 55,
+      "timestamp": 296.34,
+      "native_step": 14817,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 56,
+      "timestamp": 297.36,
+      "native_step": 14868,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 57,
+      "timestamp": 299.44,
+      "native_step": 14972,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 58,
+      "timestamp": 308.42,
+      "native_step": 15421,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 59,
+      "timestamp": 316.54,
+      "native_step": 15827,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 60,
+      "timestamp": 327.14,
+      "native_step": 16357,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 61,
+      "timestamp": 328.16,
+      "native_step": 16408,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 62,
+      "timestamp": 330.32,
+      "native_step": 16516,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 63,
+      "timestamp": 339.76,
+      "native_step": 16988,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 64,
+      "timestamp": 349.2,
+      "native_step": 17460,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 65,
+      "timestamp": 355.52,
+      "native_step": 17776,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 66,
+      "timestamp": 389.6,
+      "native_step": 19480,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 67,
+      "timestamp": 389.64,
+      "native_step": 19482,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 68,
+      "timestamp": 390.86,
+      "native_step": 19543,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 69,
+      "timestamp": 393.2,
+      "native_step": 19660,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 70,
+      "timestamp": 403.1,
+      "native_step": 20155,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 71,
+      "timestamp": 411.56,
+      "native_step": 20578,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 72,
+      "timestamp": 422.6,
+      "native_step": 21130,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 73,
+      "timestamp": 423.62,
+      "native_step": 21181,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 74,
+      "timestamp": 426.34,
+      "native_step": 21317,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 75,
+      "timestamp": 435.0,
+      "native_step": 21750,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 76,
+      "timestamp": 444.56,
+      "native_step": 22228,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 77,
+      "timestamp": 458.8,
+      "native_step": 22940,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 78,
+      "timestamp": 459.82,
+      "native_step": 22991,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 79,
+      "timestamp": 461.94,
+      "native_step": 23097,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 80,
+      "timestamp": 468.02,
+      "native_step": 23401,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 81,
+      "timestamp": 468.14,
+      "native_step": 23407,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 82,
+      "timestamp": 470.78,
+      "native_step": 23539,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 83,
+      "timestamp": 470.8,
+      "native_step": 23540,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 84,
+      "timestamp": 471.9,
+      "native_step": 23595,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 85,
+      "timestamp": 480.32,
+      "native_step": 24016,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 86,
+      "timestamp": 501.18,
+      "native_step": 25059,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 87,
+      "timestamp": 514.76,
+      "native_step": 25738,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 88,
+      "timestamp": 516.22,
+      "native_step": 25811,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 89,
+      "timestamp": 520.04,
+      "native_step": 26002,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 90,
+      "timestamp": 520.96,
+      "native_step": 26048,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 91,
+      "timestamp": 521.82,
+      "native_step": 26091,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 92,
+      "timestamp": 522.9,
+      "native_step": 26145,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 93,
+      "timestamp": 526.08,
+      "native_step": 26304,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 94,
+      "timestamp": 532.48,
+      "native_step": 26624,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 95,
+      "timestamp": 534.1,
+      "native_step": 26705,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 96,
+      "timestamp": 542.22,
+      "native_step": 27111,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 97,
+      "timestamp": 548.0,
+      "native_step": 27400,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 98,
+      "timestamp": 561.32,
+      "native_step": 28066,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 99,
+      "timestamp": 562.32,
+      "native_step": 28116,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 100,
+      "timestamp": 566.76,
+      "native_step": 28338,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 101,
+      "timestamp": 567.74,
+      "native_step": 28387,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 102,
+      "timestamp": 568.6,
+      "native_step": 28430,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 103,
+      "timestamp": 569.62,
+      "native_step": 28481,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 104,
+      "timestamp": 569.9,
+      "native_step": 28495,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 105,
+      "timestamp": 574.6,
+      "native_step": 28730,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 106,
+      "timestamp": 575.94,
+      "native_step": 28797,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 107,
+      "timestamp": 582.54,
+      "native_step": 29127,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 108,
+      "timestamp": 584.7,
+      "native_step": 29235,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 109,
+      "timestamp": 604.66,
+      "native_step": 30233,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 110,
+      "timestamp": 608.22,
+      "native_step": 30411,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 111,
+      "timestamp": 609.32,
+      "native_step": 30466,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 112,
+      "timestamp": 610.12,
+      "native_step": 30506,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 113,
+      "timestamp": 610.18,
+      "native_step": 30509,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 114,
+      "timestamp": 611.96,
+      "native_step": 30598,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 115,
+      "timestamp": 612.02,
+      "native_step": 30601,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 116,
+      "timestamp": 617.12,
+      "native_step": 30856,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 117,
+      "timestamp": 617.18,
+      "native_step": 30859,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 118,
+      "timestamp": 647.98,
+      "native_step": 32399,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 119,
+      "timestamp": 649.0,
+      "native_step": 32450,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    },
+    {
+      "index": 120,
+      "timestamp": 651.3,
+      "native_step": 32565,
+      "raw_RGB_hashes_exact": true,
+      "synchronous_native_q16_exact": true,
+      "synchronous_native_time_exact": true
+    }
+  ],
+  "historical_visual_receipt_authentication": [
+    {
+      "piece": "azure",
+      "historical_receipt_recomputes_exact": true,
+      "actual_RGB_pair_exact": true,
+      "active_memory_status": "remembered_static_conditional",
+      "invalidation_reason": "",
+      "active_require_receipt_result": "PASS"
+    },
+    {
+      "piece": "orange",
+      "historical_receipt_recomputes_exact": true,
+      "actual_RGB_pair_exact": true,
+      "active_memory_status": "remembered_static_conditional",
+      "invalidation_reason": "",
+      "active_require_receipt_result": "PASS"
+    },
+    {
+      "piece": "yellow",
+      "historical_receipt_recomputes_exact": true,
+      "actual_RGB_pair_exact": true,
+      "active_memory_status": "remembered_static_conditional",
+      "invalidation_reason": "",
+      "active_require_receipt_result": "PASS"
+    },
+    {
+      "piece": "teal",
+      "historical_receipt_recomputes_exact": true,
+      "actual_RGB_pair_exact": true,
+      "active_memory_status": "remembered_static_conditional",
+      "invalidation_reason": "",
+      "active_require_receipt_result": "PASS"
+    },
+    {
+      "piece": "purple",
+      "historical_receipt_recomputes_exact": true,
+      "actual_RGB_pair_exact": true,
+      "active_memory_status": "unknown_or_conflicted",
+      "invalidation_reason": "current RGB contradicts the accepted placement",
+      "active_require_receipt_result": "StageRefusal: Receipt is absent from memory or has been invalidated"
+    },
+    {
+      "piece": "cyan",
+      "historical_receipt_recomputes_exact": true,
+      "actual_RGB_pair_exact": true,
+      "active_memory_status": "unknown_or_conflicted",
+      "invalidation_reason": "current RGB board contradicts the release reference",
+      "active_require_receipt_result": "StageRefusal: Receipt is absent from memory or has been invalidated"
+    },
+    {
+      "piece": "mint",
+      "historical_receipt_recomputes_exact": true,
+      "actual_RGB_pair_exact": true,
+      "active_memory_status": "unknown_or_conflicted",
+      "invalidation_reason": "current RGB board contradicts the release reference",
+      "active_require_receipt_result": "StageRefusal: Receipt is absent from memory or has been invalidated"
+    },
+    {
+      "piece": "lime",
+      "historical_receipt_recomputes_exact": true,
+      "actual_RGB_pair_exact": true,
+      "active_memory_status": "unknown_or_conflicted",
+      "invalidation_reason": "current RGB board contradicts the release reference",
+      "active_require_receipt_result": "StageRefusal: Receipt is absent from memory or has been invalidated"
+    },
+    {
+      "piece": "maroon",
+      "historical_receipt_recomputes_exact": true,
+      "actual_RGB_pair_exact": true,
+      "active_memory_status": "measured_now",
+      "invalidation_reason": "",
+      "active_require_receipt_result": "PASS"
+    }
+  ],
+  "honest_visual_status": {
+    "historical_receipt_pieces": [
+      "azure",
+      "orange",
+      "yellow",
+      "teal",
+      "purple",
+      "cyan",
+      "mint",
+      "lime",
+      "maroon"
+    ],
+    "invalidated_active_receipts": [
+      "purple",
+      "cyan",
+      "mint",
+      "lime"
+    ],
+    "execution_only_UNKNOWNS": [
+      "navy",
+      "pink",
+      "red"
+    ],
+    "Red_hypothesis_not_committed_due_refusal": true
+  },
+  "terminal": {
+    "node": "red_red_goal_verify",
+    "status": "refused",
+    "reason": "Final visual UNKNOWN requires the canonical explicitly enabled terminal execution scope",
+    "raw_graph_error": "workflow terminated at end node 'abort' (failure); first node error -- red_goal_verify_sg.act: Node 'red_goal_verify_sg.act' failed: StageRefusal: Final visual UNKNOWN requires the canonical explicitly enabled terminal execution scope",
+    "actual_cause": "terminal_visual_unknown_allowed catches require_receipt refusal for Purple/Cyan/Mint/Lime whose genuine historical receipts were marked unknown_or_conflicted by later RGB; enabled flags/order/layout are correct.",
+    "suffix_comparison": "Exact same helper bytes pass suffixCV2: early6 are given/unearned there, only Mint/Lime/Maroon have active receipts and all3 remain trusted."
+  },
+  "repair_contract": {
+    "required": "Preserve invalidated receipts unchanged as history and honestly demote their active status under the explicitly enabled conditional execution scope, with original4mm hypothesis and UNKNOWN retained. Use only genuine RGB, robot proprioception and own command journal; explicit current>=4mm counterevidence still refuses. Do not import independent physical PASS, GT errors, contacts, CP outcomes or evaluator success into policy state.",
+    "unchanged_requirements": [
+      "fresh all12/no given",
+      "true tokens and authentic release-pair/journal provenance",
+      "original source/control guards",
+      "all original physical CP and ordered handoff lineage",
+      "original finish physics"
+    ],
+    "forbidden": [
+      "restoring invalidated receipt status",
+      "inventing a new visual receipt",
+      "conditional flag alone bypassing finish",
+      "retroactively granting missing CP",
+      "evaluator results used by policy scripts"
+    ]
+  },
+  "preflight_correction": "The earlier source-only preflight correctly identified no unconditional12-receipt-count veto, but did not cover later invalidation of an originally earned receipt. Actual V13 demonstrates that separate active-trust veto. The earlier no-functional-patch-needed conclusion is superseded.",
+  "layout_variant": "C_Lime_world_y_plus070",
+  "canonical_original_staging": false,
+  "graphplayer_site_summary": "/srv/home/bohanlyu/gap-puzzler-web/runs/gap_delivery_independent_audit_v1/v13_terminal_site_summary.json",
+  "evidence_limit": "Native50Hz states/recorded contacts; no500Hz contact-absence claim. Independent physical validation does not repair runtime lineage or change the failed graph result."
+}

@@ -1,0 +1,1173 @@
+{
+  "scope": "Development exploration, not a controlled benchmark. Preset diagnostics can never count as full-task success. Static targets and IK are excluded.",
+  "runs": [
+    {
+      "result": "runs/pyramid_v1/result.json",
+      "graph": "graphs/pyramid_v1",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 2,
+      "new_seated_count": 2,
+      "sim_time_s": 70.42,
+      "failures": [
+        {
+          "node": "purple_sg.act",
+          "iteration": "000",
+          "failure": "grasp_miss",
+          "piece": "purple",
+          "rise": -5.960464477539063e-08
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v2/result.json",
+      "graph": "graphs/pyramid_v2",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 2,
+      "new_seated_count": 2,
+      "sim_time_s": 49.9,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v3/result.json",
+      "graph": "graphs/pyramid_v3",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 5,
+      "new_seated_count": 5,
+      "sim_time_s": 142.38,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v5/result.json",
+      "graph": "graphs/pyramid_v5",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 5,
+      "new_seated_count": 5,
+      "sim_time_s": 144.0,
+      "failures": []
+    },
+    {
+      "result": "runs/full_pyramid_v8/result.json",
+      "graph": "graphs/pyramid_v8",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 4,
+      "new_seated_count": 4,
+      "sim_time_s": 180.64,
+      "failures": []
+    },
+    {
+      "result": "runs/full_pyramid_v9/result.json",
+      "graph": "graphs/pyramid_v9",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 8,
+      "new_seated_count": 8,
+      "sim_time_s": 262.16,
+      "failures": [
+        {
+          "node": "purple_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "purple",
+          "error_m": 0.0570079221543576,
+          "rise": 0.08451908826828003,
+          "grasp_index": 0,
+          "grasp_heading": 90.0,
+          "grasp_lean": 30
+        },
+        {
+          "node": "purple_sg.act",
+          "iteration": "001",
+          "failure": "grasp_miss",
+          "piece": "purple",
+          "rise": -0.026180744171142578
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v10_nominal/iq-s0/outputs/out/seed0/result.json",
+      "graph": "graphs/pyramid_v10",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 8,
+      "new_seated_count": 8,
+      "sim_time_s": 264.24,
+      "failures": [
+        {
+          "node": "purple_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "purple",
+          "error_m": 0.059787089714336036,
+          "rise": 0.08451908826828003,
+          "grasp_index": 0,
+          "grasp_heading": 90.0,
+          "grasp_lean": 30
+        },
+        {
+          "node": "purple_sg.act",
+          "iteration": "001",
+          "failure": "grasp_miss",
+          "piece": "purple",
+          "rise": -0.03602021932601929
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v11_diagnostic/result.json",
+      "graph": "graphs/pyramid_v11_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 8,
+      "final_seated_count": 7,
+      "new_seated_count": 0,
+      "sim_time_s": 43.78,
+      "failures": [
+        {
+          "node": "purple_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "purple",
+          "error_m": 0.043574939056476546,
+          "rise": 0.0827716588973999,
+          "grasp_index": 1,
+          "grasp_heading": 135.0,
+          "grasp_lean": 60
+        }
+      ]
+    },
+    {
+      "result": "runs/full_pyramid_v11/result.json",
+      "graph": "graphs/pyramid_v11",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 6,
+      "new_seated_count": 6,
+      "sim_time_s": 271.82,
+      "failures": [
+        {
+          "node": "purple_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "purple",
+          "error_m": 0.18325129752352085,
+          "rise": 0.07873547077178955,
+          "grasp_index": 3,
+          "grasp_heading": 135.0,
+          "grasp_lean": -30
+        },
+        {
+          "node": "purple_sg.act",
+          "iteration": "001",
+          "failure": "grasp_miss",
+          "piece": "purple",
+          "rise": -0.0857400894165039
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v13_diagnostic/result.json",
+      "graph": "graphs/pyramid_v13_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 8,
+      "final_seated_count": 8,
+      "new_seated_count": 0,
+      "sim_time_s": 30.64,
+      "failures": [
+        {
+          "node": "purple_sg.act",
+          "iteration": "000",
+          "failure": "grasp_miss",
+          "piece": "purple",
+          "rise": 5.960464477539063e-08
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v14_diagnostic/result.json",
+      "graph": "graphs/pyramid_v14_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 8,
+      "final_seated_count": 8,
+      "new_seated_count": 0,
+      "sim_time_s": 29.44,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v16_diagnostic/result.json",
+      "graph": "graphs/pyramid_v16_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 8,
+      "final_seated_count": 8,
+      "new_seated_count": 0,
+      "sim_time_s": 29.74,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v15_cyan_diagnostic/result.json",
+      "graph": "graphs/pyramid_v15_cyan_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 5,
+      "final_seated_count": 2,
+      "new_seated_count": 0,
+      "sim_time_s": 52.0,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v17_diagnostic/result.json",
+      "graph": "graphs/pyramid_v17_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 8,
+      "final_seated_count": 8,
+      "new_seated_count": 0,
+      "sim_time_s": 31.7,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v18_cyan_diagnostic/result.json",
+      "graph": "graphs/pyramid_v18_cyan_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 5,
+      "final_seated_count": 5,
+      "new_seated_count": 0,
+      "sim_time_s": 30.14,
+      "failures": [
+        {
+          "node": "cyan_sg.act",
+          "iteration": "000",
+          "failure": "grasp_miss",
+          "piece": "cyan",
+          "rise": 0.0
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v19_cyan_diagnostic/result.json",
+      "graph": "graphs/pyramid_v19_cyan_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 5,
+      "final_seated_count": 5,
+      "new_seated_count": 0,
+      "sim_time_s": 20.74,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v15_nominal/iq-s0/outputs/out/seed0/result.json",
+      "graph": "graphs/pyramid_v15",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 10,
+      "new_seated_count": 10,
+      "sim_time_s": 286.9,
+      "failures": [
+        {
+          "node": "navy_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "navy",
+          "error_m": 0.004035796234494253,
+          "rise": 0.08461588621139526,
+          "grasp_index": 0,
+          "grasp_heading": 270.0,
+          "grasp_lean": 0,
+          "handoff": null
+        },
+        {
+          "node": "navy_sg.act",
+          "iteration": "001",
+          "failure": "grasp_miss",
+          "piece": "navy",
+          "rise": -0.0011858940124511719
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v20_handoff_diagnostic/result.json",
+      "graph": "graphs/pyramid_v20_handoff_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 8,
+      "final_seated_count": 8,
+      "new_seated_count": 0,
+      "sim_time_s": 36.56,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v21_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_v21_finish_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 10,
+      "new_seated_count": 0,
+      "sim_time_s": 35.74,
+      "failures": [
+        {
+          "node": "pink_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "pink",
+          "error_m": 0.14447513345417706,
+          "rise": 0.07711821794509888,
+          "grasp_index": 4,
+          "grasp_heading": 0.0,
+          "grasp_lean": -30,
+          "handoff": null,
+          "disturbed_pieces": {}
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v22_handoff_diagnostic/result.json",
+      "graph": "graphs/pyramid_v22_handoff_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 8,
+      "final_seated_count": 8,
+      "new_seated_count": 0,
+      "sim_time_s": 38.06,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v23_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_v23_finish_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 6,
+      "new_seated_count": 0,
+      "sim_time_s": 34.94,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v24_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_v24_finish_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 9,
+      "new_seated_count": 0,
+      "sim_time_s": 38.66,
+      "failures": [
+        {
+          "node": "pink_sg.act",
+          "iteration": "000",
+          "failure": "disturbed_assembly",
+          "piece": "pink",
+          "error_m": 0.10456641724930348,
+          "rise": 0.0772210955619812,
+          "grasp_index": 5,
+          "grasp_heading": 0.0,
+          "grasp_lean": -30,
+          "handoff": null,
+          "disturbed_pieces": {
+            "navy": 0.025852993984916754
+          }
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v25_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_v25_finish_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 8,
+      "new_seated_count": 0,
+      "sim_time_s": 37.8,
+      "failures": [
+        {
+          "node": "pink_sg.act",
+          "iteration": "000",
+          "failure": "disturbed_assembly",
+          "piece": "pink",
+          "error_m": 0.2911574178041292,
+          "rise": 0.06914138793945312,
+          "grasp_index": 2,
+          "grasp_heading": 135.0,
+          "grasp_lean": -30,
+          "handoff": null,
+          "disturbed_pieces": {
+            "lime": 0.1066732863352571,
+            "navy": 0.1180549831840119
+          }
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v21_nominal/iq-s0/outputs/out/seed0/result.json",
+      "graph": "graphs/pyramid_v21",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 10,
+      "new_seated_count": 10,
+      "sim_time_s": 287.8,
+      "failures": [
+        {
+          "node": "cyan_sg.act",
+          "iteration": "000",
+          "failure": "disturbed_assembly",
+          "piece": "cyan",
+          "error_m": 0.0013719016076748232,
+          "rise": 0.08660578727722168,
+          "grasp_index": 0,
+          "grasp_heading": 0.0,
+          "grasp_lean": 30,
+          "handoff": null,
+          "disturbed_pieces": {
+            "yellow": 0.03412350200853151
+          }
+        },
+        {
+          "node": "navy_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "navy",
+          "error_m": 0.004861939058597464,
+          "rise": 0.08461582660675049,
+          "grasp_index": 0,
+          "grasp_heading": 270.0,
+          "grasp_lean": 0,
+          "handoff": null,
+          "disturbed_pieces": {}
+        },
+        {
+          "node": "navy_sg.act",
+          "iteration": "001",
+          "failure": "grasp_miss",
+          "piece": "navy",
+          "rise": -0.0017304420471191406
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v26_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_v26_finish_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 10,
+      "new_seated_count": 0,
+      "sim_time_s": 34.36,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v27_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_v27_finish_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 10,
+      "new_seated_count": 0,
+      "sim_time_s": 44.48,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v28_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_v28_finish_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 10,
+      "new_seated_count": 0,
+      "sim_time_s": 52.48,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v29_red_diagnostic/result.json",
+      "graph": "graphs/pyramid_v29_red_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 11,
+      "final_seated_count": 11,
+      "new_seated_count": 0,
+      "sim_time_s": 33.2,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v30_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_v30_finish_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 6,
+      "new_seated_count": 0,
+      "sim_time_s": 53.56,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_precision_v2_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_precision_v2_finish_diagnostic",
+      "embodiment": "yam_bimanual_precision40v2",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 10,
+      "new_seated_count": 0,
+      "sim_time_s": 18.64,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_precision_v4_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_precision_v4_finish_diagnostic",
+      "embodiment": "yam_bimanual_precision20v1",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 10,
+      "new_seated_count": 0,
+      "sim_time_s": 28.46,
+      "failures": [
+        {
+          "node": "pink_sg.act",
+          "iteration": "000",
+          "failure": "grasp_miss",
+          "piece": "pink",
+          "rise": 0.0
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_precision_v5_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_precision_v5_finish_diagnostic",
+      "embodiment": "yam_bimanual_precision20v1",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 10,
+      "new_seated_count": 0,
+      "sim_time_s": 29.34,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_precision_v6_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_precision_v6_finish_diagnostic",
+      "embodiment": "yam_bimanual_precision40v2",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 10,
+      "new_seated_count": 0,
+      "sim_time_s": 31.6,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_precision_v4_nominal/iq-s0/outputs/out/seed0/result.json",
+      "graph": "graphs/pyramid_precision_v4",
+      "embodiment": "yam_bimanual_precision20v1",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 5,
+      "new_seated_count": 5,
+      "sim_time_s": 160.56,
+      "failures": [
+        {
+          "node": "cyan_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "cyan",
+          "error_m": 0.044024380953746466,
+          "rise": 0.08648824691772461,
+          "grasp_index": 0,
+          "grasp_heading": 0.0,
+          "grasp_lean": 30,
+          "handoff": null,
+          "disturbed_pieces": {}
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_precision_v7_handoff_diagnostic/result.json",
+      "graph": "graphs/pyramid_precision_v7_handoff_diagnostic",
+      "embodiment": "yam_bimanual_precision20v1",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 10,
+      "new_seated_count": 0,
+      "sim_time_s": 18.52,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_precision_v8_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_precision_v8_finish_diagnostic",
+      "embodiment": "yam_bimanual_precision20v1",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 11,
+      "new_seated_count": 1,
+      "sim_time_s": 54.28,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_precision_v11_red_diagnostic/result.json",
+      "graph": "graphs/pyramid_precision_v11_red_diagnostic",
+      "embodiment": "yam_bimanual_precision20v1",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 11,
+      "final_seated_count": 11,
+      "new_seated_count": 0,
+      "sim_time_s": 27.34,
+      "failures": [
+        {
+          "node": "red_sg.act",
+          "iteration": "000",
+          "failure": "grasp_miss",
+          "piece": "red",
+          "rise": 0.0
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_cartesian_trials/pyramid_v31_finish_diagnostic/outputs/out/pyramid_v31_finish_diagnostic/result.json",
+      "graph": "graphs/pyramid_v31_finish_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 10,
+      "final_seated_count": 11,
+      "new_seated_count": 1,
+      "sim_time_s": 51.34,
+      "failures": [
+        {
+          "node": "red_sg.act",
+          "iteration": "000",
+          "failure": "grasp_miss",
+          "piece": "red",
+          "rise": 0.0
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_precision_v12_red_diagnostic/result.json",
+      "graph": "graphs/pyramid_precision_v12_red_diagnostic",
+      "embodiment": "yam_bimanual_precision20v1",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 11,
+      "final_seated_count": 11,
+      "new_seated_count": 0,
+      "sim_time_s": 28.58,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_cartesian_trials/pyramid_precision_v10/outputs/out/pyramid_precision_v10/result.json",
+      "graph": "graphs/pyramid_precision_v10",
+      "embodiment": "yam_bimanual_precision20v1",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 5,
+      "new_seated_count": 5,
+      "sim_time_s": 145.22,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_precision_v14_red_diagnostic/result.json",
+      "graph": "graphs/pyramid_precision_v14_red_diagnostic",
+      "embodiment": "yam_bimanual_precision20v1",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 11,
+      "final_seated_count": 11,
+      "new_seated_count": 0,
+      "sim_time_s": 34.76,
+      "failures": [
+        {
+          "node": "red_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "red",
+          "error_m": 0.038647117438124184,
+          "rise": 0.12018561363220215,
+          "grasp_index": 0,
+          "grasp_heading": 90,
+          "grasp_lean": 45,
+          "handoff": null,
+          "disturbed_pieces": {}
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_precision_v13_red_diagnostic/result.json",
+      "graph": "graphs/pyramid_precision_v13_red_diagnostic",
+      "embodiment": "yam_bimanual_precision20v1",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 11,
+      "final_seated_count": 11,
+      "new_seated_count": 0,
+      "sim_time_s": 35.28,
+      "failures": [
+        {
+          "node": "red_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "red",
+          "error_m": 0.03486243371241243,
+          "rise": 0.11891084909439087,
+          "grasp_index": 0,
+          "grasp_heading": 90,
+          "grasp_lean": 60,
+          "handoff": null,
+          "disturbed_pieces": {}
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v33_red_diagnostic/result.json",
+      "graph": "graphs/pyramid_v33_red_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 11,
+      "final_seated_count": 11,
+      "new_seated_count": 0,
+      "sim_time_s": 35.12,
+      "failures": [
+        {
+          "node": "red_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "red",
+          "error_m": 0.03874959376315346,
+          "rise": 0.11449801921844482,
+          "grasp_index": 0,
+          "grasp_heading": 90,
+          "grasp_lean": 60,
+          "handoff": null,
+          "disturbed_pieces": {}
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v34_red_diagnostic/result.json",
+      "graph": "graphs/pyramid_v34_red_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 11,
+      "final_seated_count": 11,
+      "new_seated_count": 0,
+      "sim_time_s": 18.66,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v32_nominal/iq-s0/outputs/out/seed0/result.json",
+      "graph": "graphs/pyramid_v32",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 3,
+      "new_seated_count": 3,
+      "sim_time_s": 102.44,
+      "failures": [
+        {
+          "node": "yellow_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "yellow",
+          "error_m": 0.006084496524794192,
+          "rise": 0.08471214771270752,
+          "grasp_index": 0,
+          "grasp_heading": 90.0,
+          "grasp_lean": 0,
+          "handoff": null,
+          "disturbed_pieces": {}
+        },
+        {
+          "node": "yellow_sg.act",
+          "iteration": "001",
+          "failure": "grasp_miss",
+          "piece": "yellow",
+          "rise": -0.0035392045974731445
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_precision_v15_red_diagnostic/result.json",
+      "graph": "graphs/pyramid_precision_v15_red_diagnostic",
+      "embodiment": "yam_bimanual_precision20v1",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 11,
+      "final_seated_count": 11,
+      "new_seated_count": 0,
+      "sim_time_s": 26.96,
+      "failures": [
+        {
+          "node": "red_sg.act",
+          "iteration": "000",
+          "failure": "grasp_miss",
+          "piece": "red",
+          "rise": 5.960464477539063e-08
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_precision_v16_red_diagnostic/result.json",
+      "graph": "graphs/pyramid_precision_v16_red_diagnostic",
+      "embodiment": "yam_bimanual_precision20v1",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 11,
+      "final_seated_count": 11,
+      "new_seated_count": 0,
+      "sim_time_s": 30.8,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v35_red_diagnostic/result.json",
+      "graph": "graphs/pyramid_v35_red_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 11,
+      "final_seated_count": 11,
+      "new_seated_count": 0,
+      "sim_time_s": 36.4,
+      "failures": [
+        {
+          "node": "red_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "red",
+          "error_m": 0.038629956169671874,
+          "rise": 0.10193783044815063,
+          "grasp_index": 4,
+          "grasp_heading": 135,
+          "grasp_lean": 75,
+          "handoff": null,
+          "disturbed_pieces": {}
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v36_red_diagnostic/result.json",
+      "graph": "graphs/pyramid_v36_red_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": true,
+      "diagnostic_preset": true,
+      "initial_preset_count": 11,
+      "final_seated_count": 12,
+      "new_seated_count": 1,
+      "sim_time_s": 45.18,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v39_cyan_diagnostic/result.json",
+      "graph": "graphs/pyramid_v39_cyan_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 5,
+      "final_seated_count": 6,
+      "new_seated_count": 1,
+      "sim_time_s": 41.72,
+      "failures": [
+        {
+          "node": "cyan_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "cyan",
+          "error_m": 0.01190932227096689,
+          "rise": 0.11241573095321655,
+          "grasp_index": 2,
+          "grasp_heading": 90.0,
+          "grasp_lean": 45,
+          "handoff": null,
+          "disturbed_pieces": {}
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v37_nominal/iq-s0/outputs/out/seed0/result.json",
+      "graph": "graphs/pyramid_v37",
+      "embodiment": "yam_bimanual",
+      "full_task_success": true,
+      "diagnostic_success": true,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 12,
+      "new_seated_count": 12,
+      "sim_time_s": 355.04,
+      "failures": [
+        {
+          "node": "cyan_sg.act",
+          "iteration": "000",
+          "failure": "disturbed_assembly",
+          "piece": "cyan",
+          "error_m": 0.0414683508312041,
+          "rise": 0.08661794662475586,
+          "grasp_index": 0,
+          "grasp_heading": 0.0,
+          "grasp_lean": 30,
+          "handoff": null,
+          "disturbed_pieces": {
+            "yellow": 0.034488924467166206
+          }
+        },
+        {
+          "node": "navy_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "navy",
+          "error_m": 0.004253548020334308,
+          "rise": 0.08461570739746094,
+          "grasp_index": 0,
+          "grasp_heading": 270.0,
+          "grasp_lean": 0,
+          "handoff": null,
+          "disturbed_pieces": {}
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v38_cyan_diagnostic/result.json",
+      "graph": "graphs/pyramid_v38_cyan_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 5,
+      "final_seated_count": 6,
+      "new_seated_count": 1,
+      "sim_time_s": 52.84,
+      "failures": []
+    },
+    {
+      "result": "runs/pyramid_v37_repeat/iq-s1/outputs/out/seed1/result.json",
+      "graph": "graphs/pyramid_v37",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 5,
+      "new_seated_count": 5,
+      "sim_time_s": 187.56,
+      "failures": [
+        {
+          "node": "cyan_sg.act",
+          "iteration": "000",
+          "failure": "disturbed_assembly",
+          "piece": "cyan",
+          "error_m": 0.04285056805461239,
+          "rise": 0.08661848306655884,
+          "grasp_index": 0,
+          "grasp_heading": 0.0,
+          "grasp_lean": 30,
+          "handoff": null,
+          "disturbed_pieces": {
+            "yellow": 0.03406712942711319
+          }
+        },
+        {
+          "node": "cyan_sg.act",
+          "iteration": "001",
+          "failure": "placement_error",
+          "piece": "cyan",
+          "error_m": 0.00669706614436975,
+          "rise": 0.08581525087356567,
+          "grasp_index": 0,
+          "grasp_heading": 0.0,
+          "grasp_lean": 0,
+          "handoff": null,
+          "disturbed_pieces": {}
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v41_cyan_diagnostic/result.json",
+      "graph": "graphs/pyramid_v41_cyan_diagnostic",
+      "embodiment": "yam_bimanual",
+      "full_task_success": false,
+      "diagnostic_success": false,
+      "diagnostic_preset": true,
+      "initial_preset_count": 5,
+      "final_seated_count": 5,
+      "new_seated_count": 0,
+      "sim_time_s": 32.6,
+      "failures": [
+        {
+          "node": "cyan_sg.act",
+          "iteration": "000",
+          "failure": "grasp_miss",
+          "piece": "cyan",
+          "rise": -5.960464477539063e-08
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v40_nominal/iq-s1/outputs/out/seed1/result.json",
+      "graph": "graphs/pyramid_v40",
+      "embodiment": "yam_bimanual",
+      "full_task_success": true,
+      "diagnostic_success": true,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 12,
+      "new_seated_count": 12,
+      "sim_time_s": 344.54,
+      "failures": [
+        {
+          "node": "navy_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "navy",
+          "error_m": 0.004631797341936444,
+          "rise": 0.08461582660675049,
+          "grasp_index": 0,
+          "grasp_heading": 270.0,
+          "grasp_lean": 0,
+          "handoff": null,
+          "disturbed_pieces": {}
+        }
+      ]
+    },
+    {
+      "result": "runs/pyramid_v40_nominal/iq-s0/outputs/out/seed0/result.json",
+      "graph": "graphs/pyramid_v40",
+      "embodiment": "yam_bimanual",
+      "full_task_success": true,
+      "diagnostic_success": true,
+      "diagnostic_preset": false,
+      "initial_preset_count": 0,
+      "final_seated_count": 12,
+      "new_seated_count": 12,
+      "sim_time_s": 363.28,
+      "failures": [
+        {
+          "node": "cyan_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "cyan",
+          "error_m": 0.012577376857490231,
+          "rise": 0.11263370513916016,
+          "grasp_index": 2,
+          "grasp_heading": 90.0,
+          "grasp_lean": 45,
+          "handoff": null,
+          "disturbed_pieces": {}
+        },
+        {
+          "node": "navy_sg.act",
+          "iteration": "000",
+          "failure": "placement_error",
+          "piece": "navy",
+          "error_m": 0.004475453724875929,
+          "rise": 0.08461576700210571,
+          "grasp_index": 0,
+          "grasp_heading": 270.0,
+          "grasp_lean": 0,
+          "handoff": null,
+          "disturbed_pieces": {}
+        }
+      ]
+    }
+  ]
+}

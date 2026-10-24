@@ -1,0 +1,139 @@
+[project]
+name = "open-robot-skills"
+version = "0.1.0.dev0"
+description = "Skill and tool bundles for gap (graph as policy) — Anthropic Agent Skills format, discovered by path."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "graph-as-policy authors" }]
+
+# The distribution itself is nearly empty: bundles are discovered from this
+# checkout by path (gap --skills <path> / GAP_SKILLS_PATH). The pyproject
+# exists for ONE reason — the dependency mechanism: each bundle declares its
+# deps as an extra (extra name == bundle name), so `pip` owns code installs
+# and one resolver run surfaces cross-bundle conflicts. `gap skills check`
+# only verifies; `--download` prefetches weights only.
+dependencies = [
+  "graph-as-policy",   # one-way runtime dep: ctx, gap.types, gap.errors, load_prompt
+]
+
+[project.optional-dependencies]
+# ---- tool / policy bundles own their deps in their own pyproject.toml -------
+# Each tool bundle under tools/<name>/ and each policy bundle under
+# policies/<name>/ ships its own pyproject.toml + .venv/, managed via
+# `gap skills install <name>`. They are NOT extras of this root pyproject —
+# the per-bundle venv carries the full ML stack (torch / transformers / sam3
+# / curobo / open3d / openpi / JAX / vLLM, …) and never leaks into gap's own
+# venv. The gap-runtime spawns one subprocess per bundle on demand and
+# dispatches over msgpack/stdio (see gap_core.rpc).
+#
+# ---- skills with no direct deps ---------------------------------------------
+# Pure subgraph skills (perceiving-*, grasping-*, transporting-*) run
+# in-process under gap-runtime's own venv — they only orchestrate tool
+# bundles. They declare an empty extra purely as a placeholder so
+# `gap skills check` can map their bundle name -> install line if extras
+# are ever needed.
+perceiving-objects = []
+tipping-over-a-surface-edge = []
+placing-held-feature = []
+proposing-short-axis-grasps = []
+proposing-side-grasps = []
+selecting-reachable-grasp = []
+perceiving-objects-oneshot = []
+perceiving-object-parts = []
+perceiving-next-item = []
+perceiving-functional-features = []
+perceiving-relational-correspondences = []
+perceiving-sorting-pairs = []
+grasping-with-planner = []
+grasping-direct-ik = []
+grasping-short-axis = []
+grasping-linear-feature = []
+grasping-concave-contour = []
+transporting-objects = []
+executing-feature-mating = []
+executing-held-object-motion = []
+planning-held-object-motion = []
+computing-feature-mating-poses = []
+registering-held-objects = []
+tracking-objects = []
+perceiving-deformable-linear-objects = []
+perceiving-routing-fixtures = []
+verifying-a-cable-route = []
+seating-a-cable-crossing = []
+anchoring-a-free-end = []
+plugging-a-cable-end = []
+reconstructing-collision-worlds = []
+verifying-grasps = []
+verifying-placement = []
+
+# Historical meta-extras: bundle deps now live in each bundle's own
+# pyproject.toml (synced via `gap skills install <name>`), so these are
+# no-ops. Kept as empty aliases so external `pip install open-robot-skills[all]`
+# and graph-as-policy's meta-extras (which reference these) don't break.
+quickstart = []
+grocery = []
+all = []
+
+[dependency-groups]
+# Installed by default with `uv sync` (pip users: `pip install --group dev`).
+dev = ["pytest>=8", "ruff>=0.5"]
+
+# uv resolves the gap engine from the documented side-by-side checkout
+# (pip users install it explicitly: `pip install -e ../graph-as-policy`).
+[tool.uv.sources]
+graph-as-policy = { path = "../graph-as-policy", editable = true }
+
+[tool.uv]
+# sam3's published metadata pins `numpy==1.26` exactly, which is unsolvable
+# next to decord2 (>=1.26.4) in one strict resolution. The pin is
+# over-strict — the live-measured quickstart environment runs sam3 against
+# numpy 2.x — so relax it for the lock. pip users are unaffected (pip does
+# not co-resolve the full extra set the way `uv lock` does).
+override-dependencies = ["numpy>=1.26"]
+
+# CuRobo compiles CUDA extensions at install time against the environment's
+# torch: build it unisolated (CUDA_HOME must point at a toolkit matching
+# torch's CUDA when syncing --extra curobo/grocery/all).
+no-build-isolation-package = ["nvidia-curobo"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# No python package ships — the wheel is a metadata carrier for the extras;
+# bundles are read from the checkout by path.
+[tool.hatch.build.targets.wheel]
+bypass-selection = true
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# Verbatim port of the dev tree's curobo wrapper: the warp compat shim must
+# run before the curobo imports (E402), the availability-probe imports are
+# intentionally unused (F401), and the remaining style debt (unused locals,
+# percent-format, zip-strict) is kept as-ported to ease diffing against the
+# source tree.
+"tools/curobo/_curobo_impl.py" = ["E402", "F401", "F841", "UP031", "B905"]
+# Vendored TrackDLO (MIT): kept byte-close to upstream so it diffs cleanly -- see
+# the file header. Its style debt (unused loop variables, an ambiguous name, an
+# unused import and locals, an unsorted import block, a percent-format) stays as
+# vendored. Never `ruff format` this file for the same reason.
+"tools/curve/_trackdlo.py" = ["B007", "E741", "F401", "F841", "I001", "UP032"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-m 'not gpu and not llm'"
+markers = [
+  "gpu: needs model weights + an NVIDIA GPU",
+  "llm: needs a live LLM API key",
+]

@@ -1,0 +1,26 @@
+{
+  "schema": "puzzler.website_evidence_summary.v1",
+  "title": "Shape-based identity under appearance changes",
+  "development_scene_seeds": [
+    401,
+    402,
+    403
+  ],
+  "shuffled_colors": {
+    "detected_pieces": 36,
+    "total_pieces": 36,
+    "maximum_bead_error_mm": 0.7479074705564259,
+    "example_image": "media/vision_shape_shuffled_401.jpg"
+  },
+  "all_gray": {
+    "detected_pieces": 36,
+    "total_pieces": 36,
+    "maximum_bead_error_mm": 0.8934734197031373,
+    "example_image": "media/vision_shape_monochrome_401.jpg"
+  },
+  "scope": "Perception only. Each appearance condition uses the same three development geometries. These are not manipulation or complete-assembly success counts.",
+  "source_artifacts": [
+    "results/vision_shape_shuffled.json",
+    "results/vision_shape_monochrome.json"
+  ]
+}
