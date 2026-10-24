@@ -11,8 +11,8 @@
   <link rel="canonical" href="https://bohanlyu.com/gap-puzzler/">
   <title>Puzzler — RoboSimStudio × Graph-as-Policy</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="style.css?v=visual2fix">
-  <script src="app.js?v=visual2fix" defer></script>
+  <link rel="stylesheet" href="style.css?v=visual3">
+  <script src="app.js?v=visual3" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -22,9 +22,7 @@
       <a href="#real2sim">Real2Sim</a>
       <a href="#policy">Policy</a>
       <a href="#refinement">Self-refinement</a>
-      <a href="#generalization">Generalization</a>
     </nav>
-    <a class="source-link" href="https://github.com/Imbernoulli/gap-puzzler" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
   </header>
 
   <main id="main">
@@ -32,7 +30,6 @@
       <div class="hero-main">
         <h1 id="hero-title">A visual policy for Puzzler.</h1>
         <p class="hero-description">12 pieces · 2 arms · RGB + robot feedback + known geometry</p>
-        <p class="hero-links"><a href="https://github.com/robosimstudio/robosimstudio" target="_blank" rel="noreferrer">RSS <span aria-hidden="true">↗</span></a><a href="https://github.com/graph-robots/graph-as-policy" target="_blank" rel="noreferrer">GaP <span aria-hidden="true">↗</span></a></p>
       </div>
       <p class="assembly-summary" id="assembly-summary">Reconstruct the scene. Execute a skill graph. Refine from physical trials.</p>
     </section>
@@ -53,7 +50,7 @@
         </div>
         <figcaption><span id="comparison-caption">Original demonstration</span><a href="https://www.youtube.com/watch?v=PSgC31TvdxA&amp;t=214" target="_blank" rel="noreferrer">Source video <span aria-hidden="true">↗</span></a></figcaption>
       </figure>
-      <p class="method-line"><strong>Scene + task specification + contact physics.</strong> Reconstructed geometry, friction, and release dynamics make physical rehearsal possible. <a href="https://github.com/robosimstudio/robosimstudio/tree/main/examples" target="_blank" rel="noreferrer">RSS examples <span aria-hidden="true">↗</span></a></p>
+      <p class="method-line"><strong>Scene + task specification + contact physics.</strong> Reconstructed geometry, friction, and release dynamics make physical rehearsal possible.</p>
       <aside class="apparatus" aria-labelledby="apparatus-title">
         <div class="apparatus-heading"><h3 id="apparatus-title">Apparatus / setup</h3><span>Custom simulation camera rig</span></div>
         <div class="apparatus-layout">
@@ -92,7 +89,7 @@
           <p>World coordinates in metres · all four cameras are fixed to the world · 1280 × 1024 RGB.</p>
           <div class="apparatus-table-scroll"><table><thead><tr><th>Camera</th><th>Eye (x, y, z)</th><th>Look at (x, y, z)</th><th>Vertical FOV</th></tr></thead><tbody><tr><td>Top</td><td>(0.60, 0, 1.65)</td><td>(0.60, 0, 0.75)</td><td>53°</td></tr><tr><td>Front</td><td>(1.00, −0.70, 1.40)</td><td>(0.55, 0, 0.78)</td><td>58°</td></tr><tr><td>Rear</td><td>(1.00, +0.70, 1.40)</td><td>(0.55, 0, 0.78)</td><td>58°</td></tr><tr><td>Side</td><td>(0.12, 0, 1.50)</td><td>(0.58, 0, 0.80)</td><td>65°</td></tr></tbody></table></div>
           <p>Top camera up vector: (1, 0, 0). Other views: (0, 0, 1). Wrist camera mounts exist in the selected Arena YAM model; they supply no policy images.</p>
-          <div class="evidence-links"><a href="data/evidence/camera-configuration.json" target="_blank" rel="noreferrer">Camera configuration and source audit</a><a href="https://github.com/Imbernoulli/gap-puzzler/blob/main/puzzler/vision.py" target="_blank" rel="noreferrer">Policy camera source</a></div>
+          <div class="evidence-links"><a href="data/evidence/camera-configuration.json" target="_blank" rel="noreferrer">Camera configuration and source audit</a></div>
         </details>
       </aside>
     </section>
@@ -102,7 +99,7 @@
         <p class="section-index">02 / Graph-as-Policy</p>
         <div><h2 id="policy-title">Watch the graph execute.</h2><p>One timeline for the video and graph. Select a piece or node to jump.</p></div>
       </div>
-      <p class="method-line"><strong>Typed skill graph.</strong> RGB + robot joints + public CAD → perception, grasping, transport, and placement. Independent checkpoints verify progress. <a href="https://github.com/graph-robots/graph-as-policy/blob/main/agent/skills/gap/SKILL.md" target="_blank" rel="noreferrer">GaP skill <span aria-hidden="true">↗</span></a></p>
+      <p class="method-line"><strong>Typed skill graph.</strong> RGB + robot joints + public CAD → perception, grasping, transport, and placement. Independent checkpoints verify progress.</p>
       <div class="policy-layout">
         <div class="policy-recording">
           <div class="video-frame policy-video-frame"><video id="policy-video" controls playsinline preload="metadata" aria-label="Recorded image-driven robot policy execution" aria-describedby="policy-status"></video></div>
@@ -116,7 +113,7 @@
         </div>
       </div>
       <div id="piece-selector" class="piece-selector" role="group" aria-label="Jump to a piece in the recorded execution"></div>
-      <noscript><p class="section-footnote">Enable JavaScript to synchronize the graph with the recording. The <a href="https://github.com/Imbernoulli/gap-puzzler">source repository</a> contains the policy and execution evidence.</p></noscript>
+      <noscript><p class="section-footnote">Enable JavaScript to synchronize the graph with the recording.</p></noscript>
     </section>
 
     <section class="project-section wrap" id="refinement" aria-labelledby="refinement-title">
@@ -129,19 +126,11 @@
       <div id="refinement-examples" class="refinement-examples"></div>
     </section>
 
-    <section class="project-section wrap" id="generalization" aria-labelledby="generalization-title">
-      <div class="section-heading">
-        <p class="section-index">04 / Generalization</p>
-        <div><h2 id="generalization-title">The same skills, different starts.</h2><p>Changed observations produce new grasps and motion plans.</p></div>
-      </div>
-      <div id="generalization-gallery" class="generalization-gallery"></div>
-      <div id="generalization-evidence" class="generalization-evidence"></div>
-    </section>
   </main>
 
   <footer class="site-footer wrap">
     <p>Puzzler <span aria-hidden="true">/</span> RoboSimStudio × Graph-as-Policy</p>
-    <div><a href="https://github.com/Imbernoulli/gap-puzzler" target="_blank" rel="noreferrer">Code & reproduction <span aria-hidden="true">↗</span></a><a href="report.html">Earlier baseline report <span aria-hidden="true">↗</span></a></div>
+    <div><a href="report.html">Earlier baseline report <span aria-hidden="true">↗</span></a></div>
   </footer>
 </body>
 </html>

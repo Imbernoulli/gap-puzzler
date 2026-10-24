@@ -247,6 +247,7 @@
       method.style.display = 'block';
     }
     const generalization = byId('generalization-evidence');
+    if (!generalization) return;
     generalization.replaceChildren();
     const gallery = data.generalizationGallery;
     const galleryContainer = byId('generalization-gallery');
@@ -585,7 +586,7 @@
       activeStage ? `${failedTerminal ? 'Terminal scope verification refused' : activeStage.terminalStatus ? 'Terminal verification' : activeStage.passed === null ? 'Checkpoint not yet recorded' : `Native checkpoint window ${activeStage.simStart.toFixed(2)}–${activeStage.simEnd.toFixed(2)} s`}.` :
       'Topology comes from the executable workflow. Dashed lines share the abort route.';
     const links = element('p', 'evidence-links');
-    [['Workflow', data.evidence.workflow], ['Physical checks', data.evidence.checkpoints], ['Recording timing', data.evidence.media],
+    [['Physical checks', data.evidence.checkpoints], ['Recording timing', data.evidence.media],
       ...(data.evidence.audit ? [['Final audit', data.evidence.audit]] : [])].forEach(([label, href]) => {
       const link = element('a', '', label);
       link.href = href;
@@ -690,7 +691,7 @@
       });
       synchronize();
     } catch (error) {
-      byId('policy-status').textContent = 'The execution evidence could not load. Open the source repository for the policy and recorded checks.';
+      byId('policy-status').textContent = 'The execution evidence could not load. Reload the page to access the recording and checks.';
       byId('policy-current-phase').textContent = 'Unavailable';
       byId('policy-graph').textContent = 'The graph needs the exported execution data.';
       console.error(error);
