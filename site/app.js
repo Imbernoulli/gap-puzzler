@@ -8,7 +8,13 @@
   let displayedPiece = '';
   let displayedState = '';
   let frameRequest;
+  let inspectedStage = null;
+  let overviewEdges = [];
+  let overviewRenderKey = '';
+  let pendingSeek = null;
   const titleCase = value => String(value).replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
+  const pieceNumber = name => String(data.pieces.findIndex(piece => piece.name === name) + 1).padStart(2, '0');
+  const pieceLabel = name => `Piece ${pieceNumber(name)}`;
 
   function element(tag, className, text) {
     const node = document.createElement(tag);
@@ -56,18 +62,34 @@
     parent.append(links);
   }
 
-  function addMedia(parent, media) {
+  function addMedia(parent, media, options = {}) {
     if (!media || !safeURL(media.src)) return;
     const figure = element('figure', 'case-media');
-    const isVideo = /\.(mp4|webm)(?:$|[?#])/i.test(media.src);
+    const isVideo = media.type === 'video' || /\.(mp4|webm)(?:$|[?#])/i.test(media.src);
     const asset = element(isVideo ? 'video' : 'img');
     asset.src = safeURL(media.src);
+    if (Number.isFinite(media.width)) asset.width = media.width;
+    if (Number.isFinite(media.height)) asset.height = media.height;
     if (isVideo) {
       asset.controls = true;
       asset.playsInline = true;
       asset.preload = 'none';
       if (safeURL(media.poster)) asset.poster = safeURL(media.poster);
       asset.setAttribute('aria-label', media.alt || media.caption || 'Recorded experiment');
+      if (options.loop) {
+        asset.muted = true;
+        asset.loop = true;
+        asset.preload = 'metadata';
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+              if (entry.isIntersecting) asset.play().catch(() => {});
+              else asset.pause();
+            }), {threshold: .2});
+            observer.observe(asset);
+          }
+        }
+      }
     } else {
       asset.alt = media.alt || '';
       asset.loading = 'eager';
@@ -75,6 +97,42 @@
     figure.append(asset);
     if (media.caption) figure.append(element('figcaption', '', media.caption));
     parent.append(figure);
+    return figure;
+  }
+
+  function initializeComparison() {
+    const comparison = byId('real2sim-comparison');
+    const slider = byId('comparison-slider');
+    if (!comparison || !slider) return;
+    const update = () => {
+      const position = Math.max(0, Math.min(100, Number(slider.value)));
+      comparison.style.setProperty('--comparison-split', `${position}%`);
+      slider.setAttribute('aria-valuetext', `Real ${position}%, simulation ${100 - position}%`);
+    };
+    slider.addEventListener('input', update);
+    slider.addEventListener('change', update);
+    update();
+  }
+
+  function renderAttemptHistory(parent, item) {
+    addParagraph(parent, 'Problem.', item.problem);
+    if (Array.isArray(item.attempts) && item.attempts.length) {
+      const attempts = element('ol', 'case-attempts');
+      item.attempts.forEach((attempt, index) => {
+        const step = element('li', 'case-attempt');
+        step.append(element('strong', 'case-attempt-label', attempt.label || `Round ${index + 1}`));
+        addParagraph(step, '', attempt.attempt);
+        addParagraph(step, 'Diagnosis.', attempt.diagnosis);
+        addParagraph(step, 'Change.', attempt.change);
+        addParagraph(step, 'Outcome.', attempt.outcome);
+        attempts.append(step);
+      });
+      parent.append(attempts);
+    } else {
+      addParagraph(parent, 'Diagnosis.', item.diagnosis);
+      addParagraph(parent, 'Refinement.', item.change);
+    }
+    addParagraph(parent, 'Result.', item.result);
   }
 
   function renderStories() {
@@ -84,43 +142,76 @@
       const article = element('article', 'refinement-case');
       const heading = element('div', 'case-heading');
       heading.append(element('h3', '', item.title));
-      if (item.scope) heading.append(element('p', 'evidence-scope', item.scope));
       article.append(heading);
-      addParagraph(article, 'Problem.', item.problem);
-      if (Array.isArray(item.attempts) && item.attempts.length) {
-        const attempts = element('ol', 'case-attempts');
-        item.attempts.forEach((attempt, index) => {
-          const step = element('li', 'case-attempt');
-          step.append(element('strong', 'case-attempt-label', attempt.label || `Round ${index + 1}`));
-          addParagraph(step, '', attempt.attempt);
-          addParagraph(step, 'Diagnosis.', attempt.diagnosis);
-          addParagraph(step, 'Change.', attempt.change);
-          addParagraph(step, 'Outcome.', attempt.outcome);
-          attempts.append(step);
+      const visual = Array.isArray(item.visualSteps) && item.visualSteps.length;
+      if (visual) {
+        addParagraph(article, '', item.caption, 'case-caption');
+        const steps = element('ol', 'case-visual-steps');
+        item.visualSteps.forEach((item, index) => {
+          const step = element('li', 'case-visual-step');
+          step.append(element('span', 'visual-step-label', item.label || String(index + 1).padStart(2, '0')));
+          if (item.title) step.append(element('h4', '', item.title));
+          addMedia(step, item.media);
+          addParagraph(step, '', item.description, 'visual-step-description');
+          steps.append(step);
         });
-        article.append(attempts);
+        article.append(steps);
       } else {
-        addParagraph(article, 'Diagnosis.', item.diagnosis);
-        addParagraph(article, 'Refinement.', item.change);
+        renderAttemptHistory(article, item);
+        addMedia(article, item.media);
       }
-      addParagraph(article, 'Result.', item.result);
-      addMedia(article, item.media);
-      if (Array.isArray(item.evidence) && item.evidence.length) {
+      if (visual || item.evidence?.length) {
         const details = element('details', 'case-evidence');
-        details.append(element('summary', '', 'Inspect evidence'));
+        details.append(element('summary', '', 'Trials and evidence'));
+        if (visual) renderAttemptHistory(details, item);
+        addParagraph(details, '', item.scope, 'evidence-scope');
         addLinks(details, item.evidence);
         article.append(details);
       }
       cases.append(article);
     });
+    if (data.additionalRefinement?.length) {
+      const details = element('details', 'case-evidence additional-refinement');
+      details.append(element('summary', '', 'More refinements and evidence'));
+      data.additionalRefinement.forEach(item => {
+        const group = element('div', 'additional-refinement-item');
+        group.append(element('strong', '', item.title));
+        addLinks(group, item.evidence);
+        details.append(group);
+      });
+      cases.append(details);
+    }
+    const bimanual = data.bimanualShowcase;
+    const bimanualContainer = byId('bimanual-showcase');
+    if (bimanualContainer && bimanual?.media) {
+      bimanualContainer.replaceChildren();
+      bimanualContainer.append(element('h3', '', bimanual.title));
+      addParagraph(bimanualContainer, '', bimanual.caption, 'case-caption');
+      const grid = element('div', 'bimanual-media-grid');
+      addMedia(grid, bimanual.media, {loop: true});
+      addMedia(grid, bimanual.geometryMedia);
+      bimanualContainer.append(grid);
+      addParagraph(bimanualContainer, '', bimanual.reason, 'bimanual-reason');
+      if (bimanual.evidence?.length) {
+        const details = element('details', 'case-evidence');
+        details.append(element('summary', '', 'Geometry and execution evidence'));
+        addLinks(details, bimanual.evidence);
+        bimanualContainer.append(details);
+      }
+    }
     const method = byId('refinement-method');
     const alignment = data.methodAlignment;
     if (method && alignment && (alignment.description || alignment.steps?.length)) {
       method.replaceChildren();
-      if (alignment.title) method.append(element('strong', '', alignment.title));
-      addParagraph(method, '', alignment.description, '');
+      if (Array.isArray(alignment.flow)) {
+        const flow = element('ol', 'refinement-flow');
+        alignment.flow.forEach(step => flow.append(element('li', '', step.label)));
+        method.append(flow);
+      }
       const details = element('details', 'case-evidence');
-      details.append(element('summary', '', 'How the workflow is applied'));
+      details.append(element('summary', '', 'Method and evidence'));
+      if (alignment.title) details.append(element('strong', '', alignment.title));
+      addParagraph(details, '', alignment.description, '');
       if (Array.isArray(alignment.steps)) {
         const steps = element('ol');
         alignment.steps.forEach(item => {
@@ -137,6 +228,37 @@
     }
     const generalization = byId('generalization-evidence');
     generalization.replaceChildren();
+    const gallery = data.generalizationGallery;
+    const galleryContainer = byId('generalization-gallery');
+    let evidenceContainer = generalization;
+    if (galleryContainer && gallery?.cases?.length) {
+      galleryContainer.replaceChildren();
+      if (gallery.title) galleryContainer.append(element('h3', '', gallery.title));
+      addParagraph(galleryContainer, '', gallery.caption, 'gallery-caption');
+      const grid = element('div', 'generalization-grid');
+      const runLinks = element('div', 'evidence-links gallery-run-links');
+      if (gallery.gridVideo) addLinks(runLinks, gallery.individualVideos || gallery.cases.map(item =>
+        ({label: item.title, href: item.media.src, scope: item.scope})));
+      gallery.cases.forEach(item => {
+        if (gallery.gridVideo) return;
+        const card = element('article', 'generalization-case');
+        card.append(element('h4', '', item.title));
+        addMedia(card, item.media, {loop: !gallery.gridVideo});
+        addParagraph(card, '', item.scope, 'evidence-scope');
+        grid.append(card);
+      });
+      const details = element('details', 'case-evidence generalization-details');
+      details.append(element('summary', '', 'Individual runs and evidence'));
+      evidenceContainer = element('div', 'generalization-evidence-grid');
+      if (gallery.gridVideo) {
+        addMedia(galleryContainer, gallery.gridVideo, {loop: true})?.classList.add('generalization-grid-media');
+        details.append(runLinks);
+      } else galleryContainer.append(grid);
+      addParagraph(details, '', gallery.scope, 'evidence-scope');
+      addLinks(details, gallery.evidence);
+      details.append(evidenceContainer);
+      generalization.append(details);
+    }
     data.generalization.forEach(item => {
       const article = element('article', 'generalization-item');
       article.append(element('h3', '', item.title));
@@ -145,7 +267,7 @@
       addParagraph(article, '', item.scope, 'evidence-scope');
       addMedia(article, item.media);
       addLinks(article, item.evidence);
-      generalization.append(article);
+      evidenceContainer.append(article);
     });
   }
 
@@ -167,10 +289,25 @@
     return point.simTime + fraction * (next.simTime - point.simTime);
   }
 
-  function seek(time) {
+  function seek(time, stage = null) {
     if (!Number.isFinite(time)) return;
+    if (video.readyState < 1) {
+      pendingSeek = {time, stage};
+      video.preload = 'auto';
+      return;
+    }
+    pendingSeek = null;
+    inspectedStage = stage;
     video.currentTime = Math.max(0, Math.min(time, Number.isFinite(video.duration) ? video.duration : time));
     synchronize();
+  }
+
+  function seekNode(node, restoreFocus = false) {
+    const stage = data.timeline.find(item => item.nodeId === node.nodeId);
+    if (!stage || !node.seek?.available) return;
+    seek(node.seek.videoTime, stage);
+    if (restoreFocus) requestAnimationFrame(() =>
+      byId('policy-graph').querySelector(`[data-node-id="${node.nodeId}"]`)?.focus({preventScroll: true}));
   }
 
   function nodeState(nodeId, simTime) {
@@ -183,29 +320,110 @@
   function renderPieceButtons() {
     const selector = byId('piece-selector');
     selector.replaceChildren();
+    selector.classList.add('policy-overview');
+    selector.append(element('p', 'assembly-overview-heading', 'Assembly policy'));
+    const grid = element('div', 'assembly-overview-grid');
+    const edgeCanvas = svg('svg', {class: 'assembly-overview-edges', 'aria-hidden': 'true'});
+    grid.append(edgeCanvas);
+    const start = element('span', 'assembly-terminal assembly-start', 'Start');
+    start.dataset.overviewId = 'START';
+    grid.append(start);
     data.pieces.forEach((piece, index) => {
-      const button = element('button', 'piece-button');
+      const button = element('button', 'piece-button assembly-node');
       button.type = 'button';
       button.dataset.piece = piece.name;
-      button.style.setProperty('--piece-color', piece.color);
+      button.dataset.overviewId = piece.name;
       button.setAttribute('aria-pressed', 'false');
+      button.setAttribute('aria-label', `${pieceLabel(piece.name)} (${piece.name}), inspect its subgraph`);
       button.disabled = !Number.isFinite(piece.videoStart);
-      button.title = button.disabled ? 'No recorded observations for this piece yet.' : `Jump to ${titleCase(piece.name)}`;
-      const dot = element('span', 'piece-dot');
-      dot.setAttribute('aria-hidden', 'true');
-      button.append(dot, document.createTextNode(`${String(index + 1).padStart(2, '0')} ${titleCase(piece.name)}`));
+      button.title = button.disabled ? 'No recorded observations for this piece yet.' : pieceLabel(piece.name);
+      if (piece.shapeSrc) {
+        const shape = element('img', 'piece-shape');
+        shape.src = piece.shapeSrc;
+        shape.alt = '';
+        shape.setAttribute('aria-hidden', 'true');
+        button.append(shape);
+      }
+      button.append(element('span', 'piece-number', String(index + 1).padStart(2, '0')));
       button.addEventListener('click', () => seek(piece.videoStart));
       button.addEventListener('keydown', event => {
         if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
         event.preventDefault();
-        const buttons = Array.from(selector.querySelectorAll('button:not(:disabled)'));
+        const buttons = Array.from(selector.querySelectorAll('button[data-piece]:not(:disabled)'));
         const current = buttons.indexOf(button);
         const target = event.key === 'Home' ? 0 : event.key === 'End' ? buttons.length - 1 :
           (current + (event.key === 'ArrowRight' ? 1 : -1) + buttons.length) % buttons.length;
         buttons[target].focus();
         buttons[target].click();
       });
-      selector.append(button);
+      grid.append(button);
+    });
+    const finish = data.graph.nodes.find(node => node.phase === 'finish');
+    const finalButton = element('button', 'assembly-terminal', 'Final verify');
+    finalButton.type = 'button';
+    finalButton.dataset.overviewId = finish.nodeId;
+    finalButton.dataset.finalNodeId = finish.nodeId;
+    finalButton.disabled = !finish.seek?.available;
+    finalButton.title = finish.seek?.reason || 'Jump to final verification';
+    if (finish.seek?.available) finalButton.addEventListener('click', () => seekNode(finish));
+    grid.append(finalButton);
+    selector.append(grid);
+
+    const owner = nodeId => {
+      if (nodeId === 'START' || nodeId === finish.nodeId) return nodeId;
+      return data.pieces.find(piece => piece.nodeIds.includes(nodeId))?.name;
+    };
+    const seen = new Set();
+    overviewEdges = data.graph.edges.flatMap(edge => {
+      const source = owner(edge.source);
+      const target = owner(edge.target);
+      const key = `${source}:${target}`;
+      if (!source || !target || source === target || seen.has(key)) return [];
+      seen.add(key);
+      return [{source, target}];
+    });
+    drawAssemblyOverview(0, null);
+  }
+
+  function drawAssemblyOverview(simTime, actualStage) {
+    const grid = byId('piece-selector').querySelector('.assembly-overview-grid');
+    if (!grid) return;
+    const columns = window.matchMedia('(max-width: 720px)').matches ? 3 : 7;
+    const lastStage = name => [...data.timeline].reverse().find(stage => stage.piece === name && stage.checkpoint);
+    const completedNames = data.pieces.filter(piece => piece.complete && simTime >= lastStage(piece.name)?.simEnd).map(piece => piece.name).join(',');
+    const renderKey = `${columns}|${grid.clientWidth}|${grid.clientHeight}|${completedNames}|${actualStage?.piece}`;
+    if (renderKey === overviewRenderKey) return;
+    overviewRenderKey = renderKey;
+    grid.style.setProperty('--overview-columns', columns);
+    const nodes = Array.from(grid.querySelectorAll('[data-overview-id]'));
+    nodes.forEach((node, index) => {
+      const row = Math.floor(index / columns);
+      const column = row % 2 ? columns - 1 - index % columns : index % columns;
+      node.style.gridRow = row + 1;
+      node.style.gridColumn = column + 1;
+    });
+    const bounds = grid.getBoundingClientRect();
+    const canvas = grid.querySelector('svg');
+    canvas.setAttribute('viewBox', `0 0 ${bounds.width} ${bounds.height}`);
+    const defs = svg('defs');
+    const arrow = svg('marker', {id: 'assembly-arrow', viewBox: '0 0 8 8', refX: 7, refY: 4,
+      markerWidth: 5, markerHeight: 5, orient: 'auto'});
+    arrow.append(svg('path', {d: 'M 0 0 L 8 4 L 0 8 z', fill: '#a6b5aa'}));
+    defs.append(arrow);
+    canvas.replaceChildren(defs);
+    overviewEdges.forEach(edge => {
+      const source = nodes.find(node => node.dataset.overviewId === edge.source).getBoundingClientRect();
+      const target = nodes.find(node => node.dataset.overviewId === edge.target).getBoundingClientRect();
+      const sameRow = Math.abs(source.y - target.y) < 3;
+      const forward = target.x > source.x;
+      const path = sameRow ?
+        `M ${source.x - bounds.x + (forward ? source.width : 0)} ${source.y - bounds.y + source.height / 2} H ${target.x - bounds.x + (forward ? 0 : target.width)}` :
+        `M ${source.x - bounds.x + source.width / 2} ${source.bottom - bounds.y} V ${target.y - bounds.y}`;
+      const sourcePiece = data.pieces.find(piece => piece.name === edge.source);
+      const completed = edge.source === 'START' || sourcePiece?.complete && simTime >= lastStage(edge.source)?.simEnd;
+      const current = actualStage?.piece === edge.source;
+      canvas.append(svg('path', {d: path, class: `assembly-edge${completed ? ' is-complete' : current ? ' is-current' : ''}`,
+        'data-source': edge.source, 'data-target': edge.target, 'marker-end': 'url(#assembly-arrow)'}));
     });
   }
 
@@ -282,21 +500,25 @@
       const stage = data.timeline.find(item => item.nodeId === node.nodeId);
       const state = nodeState(node.nodeId, simTime);
       const group = svg('g', {class: state, 'data-node-id': node.nodeId});
-      const canSeek = stage && Number.isFinite(stage.videoStart) &&
-        data.media.mapping.some(point => point.simTime >= stage.simStart && point.simTime < stage.simEnd);
+      const canSeek = node.seek?.available;
       if (canSeek) {
         group.setAttribute('role', 'button');
         group.setAttribute('tabindex', '0');
-        group.setAttribute('aria-label', `Jump to ${node.label}`);
+        group.setAttribute('aria-label', `Jump to ${node.label}${node.seek.mode === 'checkpoint_boundary' ? ', recorded checkpoint boundary' : ''}`);
+        group.setAttribute('data-seek-mode', node.seek.mode);
         group.style.cursor = 'pointer';
-        group.addEventListener('click', () => seek(stage.videoStart));
+        group.addEventListener('click', () => seekNode(node));
         group.addEventListener('keydown', event => {
           if (event.key === 'Enter' || event.key === ' ') {
             event.preventDefault();
-            seek(stage.videoStart);
+            seekNode(node, true);
           }
         });
+      } else {
+        group.setAttribute('aria-disabled', 'true');
+        group.setAttribute('data-disabled-reason', node.seek?.reason || 'Not recorded.');
       }
+      if (inspectedStage?.nodeId === node.nodeId) group.classList.add('is-inspected');
       const checkpointText = stage?.terminalStatus ? 'Terminal scope verification refused; no checkpoint earned' :
         stage && stage.checkpoint ? `Independent CP ${stage.checkpoint.number}: ${stage.passed ? 'passed' : 'failed'}` : 'Checkpoint not yet recorded';
       group.append(svg('title', {}, `${node.nodeId}\nSubgraph: ${node.ref}\n${checkpointText}`));
@@ -308,14 +530,39 @@
     });
     const nextTarget = edgeDescriptions[0] || 'done';
     const nextPiece = data.pieces.find(piece => piece.nodeIds.includes(nextTarget));
-    const nextLabel = nextPiece ? `Next: ${titleCase(nextPiece.name)}` : nextTarget === 'finish_all12' ? 'Final check' : 'Complete';
+    const nextLabel = nextPiece ? `Next: ${pieceLabel(nextPiece.name)}` : nextTarget === 'finish_all12' ? 'Final check' : 'Complete';
     [[terminal, nextLabel], [abort, 'Abort on error']].forEach(([position, label]) => {
-      canvas.append(svg('rect', {x: position.x, y: position.y, width: nodeWidth, height: nodeHeight - 8, rx: 6,
+      const group = svg('g');
+      const targetNode = position === terminal ? data.graph.nodes.find(node => node.nodeId === nextTarget) : null;
+      if (targetNode && targetNode.type !== 'end') {
+        group.setAttribute('data-next-node-id', targetNode.nodeId);
+        if (targetNode.nodeId === 'finish_all12') group.setAttribute('data-node-id', targetNode.nodeId);
+        group.setAttribute('aria-label', targetNode.label);
+        if (targetNode.seek?.available) {
+          group.setAttribute('role', 'button');
+          group.setAttribute('tabindex', '0');
+          group.style.cursor = 'pointer';
+          group.addEventListener('click', () => seekNode(targetNode));
+          group.addEventListener('keydown', event => {
+            if (['Enter', ' '].includes(event.key)) { event.preventDefault(); seekNode(targetNode, true); }
+          });
+        } else {
+          group.setAttribute('aria-disabled', 'true');
+          group.setAttribute('data-disabled-reason', targetNode.seek?.reason || 'Not executed.');
+          group.append(svg('title', {}, targetNode.seek?.reason || 'Not executed.'));
+          label = `${label} · not run`;
+        }
+      }
+      group.append(svg('rect', {x: position.x, y: position.y, width: nodeWidth, height: nodeHeight - 8, rx: 6,
         class: `graph-node-terminal${position === abort && failedTerminal ? ' graph-node is-failed' : ''}`}));
-      canvas.append(svg('text', {x: position.x + 12, y: position.y + 29, class: 'graph-phase'}, label));
+      group.append(svg('text', {x: position.x + 12, y: position.y + 29, class: 'graph-phase'}, label));
+      canvas.append(group);
     });
     const description = element('p', 'graph-description');
-    description.textContent = activeStage ? `${activeStage.nodeId} · ${failedTerminal ? 'terminal scope verification refused' : activeStage.terminalStatus ? 'terminal verification' : activeStage.passed === null ? 'checkpoint not yet recorded' : `native checkpoint window ${activeStage.simStart.toFixed(2)}–${activeStage.simEnd.toFixed(2)} s`}.` :
+    const boundary = inspectedStage?.nodeId === activeStage?.nodeId && activeStage.seek?.mode === 'checkpoint_boundary';
+    description.textContent = boundary ?
+      `Checkpoint at ${activeStage.simEnd.toFixed(2)} s; nearest recorded completion frame ${activeStage.seek.simTime.toFixed(2)} s. No separate sampled motion frame.` :
+      activeStage ? `${failedTerminal ? 'Terminal scope verification refused' : activeStage.terminalStatus ? 'Terminal verification' : activeStage.passed === null ? 'Checkpoint not yet recorded' : `Native checkpoint window ${activeStage.simStart.toFixed(2)}–${activeStage.simEnd.toFixed(2)} s`}.` :
       'Topology comes from the executable workflow. Dashed lines share the abort route.';
     const links = element('p', 'evidence-links');
     [['Workflow', data.evidence.workflow], ['Physical checks', data.evidence.checkpoints], ['Recording timing', data.evidence.media],
@@ -326,29 +573,47 @@
       link.rel = 'noreferrer';
       links.append(link);
     });
-    container.replaceChildren(canvas, description, links);
+    const details = element('details', 'case-evidence graph-source-details');
+    details.append(element('summary', '', 'Execution evidence'));
+    if (activeStage) details.append(element('p', '', `Source node: ${activeStage.nodeId}`));
+    details.append(links);
+    container.replaceChildren(canvas, description, details);
   }
 
   function synchronize() {
     if (!data || !data.media.mapping.length) return;
     const simTime = simulationTime(video.currentTime);
     byId('policy-sim-time').textContent = `${simTime.toFixed(2)} s`;
-    let current = data.timeline.find(stage => simTime >= stage.simStart && simTime < stage.simEnd);
-    if (!current) current = [...data.timeline].reverse().find(stage => simTime >= stage.simStart) || data.timeline[0];
+    if (inspectedStage && (!video.paused || Math.abs(video.currentTime - inspectedStage.seek.videoTime) > .02)) inspectedStage = null;
+    let actualCurrent = data.timeline.find(stage => simTime >= stage.simStart && simTime < stage.simEnd);
+    if (!actualCurrent) actualCurrent = [...data.timeline].reverse().find(stage => simTime >= stage.simStart) || data.timeline[0];
+    const current = inspectedStage || actualCurrent;
     if (!current) return;
     const pieceName = current.piece;
     const phase = data.graph.nodes.find(node => node.nodeId === current.nodeId);
-    byId('policy-current-piece').textContent = pieceName === 'all12' ? 'Final verification' : titleCase(pieceName);
+    const pieceHeading = byId('policy-current-piece');
+    if (pieceHeading.dataset.currentPiece !== pieceName) {
+      pieceHeading.replaceChildren();
+      const piece = data.pieces.find(item => item.name === pieceName);
+      if (piece?.shapeSrc) {
+        const shape = element('img', 'piece-shape');
+        shape.src = piece.shapeSrc;
+        shape.alt = '';
+        pieceHeading.append(shape);
+      }
+      pieceHeading.append(element('span', '', pieceName === 'all12' ? 'Final verification' : pieceLabel(pieceName)));
+      pieceHeading.dataset.currentPiece = pieceName;
+    }
     byId('policy-current-phase').textContent = current.terminalStatus && simTime >= current.simEnd ?
-      'Terminal verification refused' : phase ? phase.label : titleCase(current.phase);
+      'Terminal verification refused' : `${phase ? phase.label : titleCase(current.phase)}${inspectedStage?.seek.mode === 'checkpoint_boundary' ? ' · checkpoint boundary' : ''}`;
     const stateKey = data.graph.nodes.filter(node => node.piece === pieceName).map(node => nodeState(node.nodeId, simTime)).join('|') +
-      `|${window.matchMedia('(max-width: 720px)').matches ? 2 : 3}`;
+      `|${window.matchMedia('(max-width: 720px)').matches ? 2 : 3}|${inspectedStage?.nodeId || ''}`;
     if (pieceName !== displayedPiece || `${current.nodeId}|${stateKey}` !== displayedState) {
       drawGraph(pieceName, simTime, current);
       displayedPiece = pieceName;
       displayedState = `${current.nodeId}|${stateKey}`;
     }
-    document.querySelectorAll('#piece-selector button').forEach(button => {
+    document.querySelectorAll('#piece-selector button[data-piece]').forEach(button => {
       const piece = data.pieces.find(item => item.name === button.dataset.piece);
       const lastStage = [...data.timeline].reverse().find(stage => stage.piece === piece.name && stage.checkpoint);
       const complete = piece.complete && lastStage && simTime >= lastStage.simEnd;
@@ -357,6 +622,7 @@
       button.classList.toggle('is-complete', Boolean(complete));
       button.setAttribute('aria-pressed', String(selected));
     });
+    drawAssemblyOverview(simTime, actualCurrent);
   }
 
   function renderStatus() {
@@ -382,7 +648,7 @@
 
   async function load() {
     try {
-      const response = await fetch('data/research.json');
+      const response = await fetch('data/research.json', {cache: 'no-store'});
       if (!response.ok) throw new Error(`Research evidence unavailable (${response.status})`);
       data = await response.json();
       if (!data.graph || !Array.isArray(data.media.mapping)) throw new Error('Unsupported research data format.');
@@ -392,7 +658,10 @@
       if (safeURL(data.media.poster)) video.poster = safeURL(data.media.poster);
       if (safeURL(data.media.src)) video.src = safeURL(data.media.src);
       ['loadedmetadata', 'timeupdate', 'seeking', 'seeked', 'pause', 'ended', 'ratechange'].forEach(event => video.addEventListener(event, synchronize));
-      video.addEventListener('play', () => { cancelAnimationFrame(frameRequest); animate(); });
+      video.addEventListener('loadedmetadata', () => {
+        if (pendingSeek) seek(pendingSeek.time, pendingSeek.stage);
+      });
+      video.addEventListener('play', () => { inspectedStage = null; cancelAnimationFrame(frameRequest); animate(); });
       video.addEventListener('pause', () => cancelAnimationFrame(frameRequest));
       window.addEventListener('resize', synchronize);
       video.addEventListener('error', () => {
@@ -407,5 +676,6 @@
     }
   }
 
+  initializeComparison();
   if (video) load();
 })();

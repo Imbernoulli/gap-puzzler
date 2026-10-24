@@ -56,5 +56,29 @@
     "runs/cyan_bimanual_delivery_native_v6/workspace/puzzler/cyan_receiver_motion_feedback.py",
     "runs/cyan_bimanual_delivery_native_v6/OUTCOME.json",
     "runs/gap_delivery_independent_audit_v1/cyan_gpu7_v6_subset_native_independent_review.json"
-  ]
+  ],
+  "narrative": {
+    "title": "Cyan: continue from the state actually reached.",
+    "problem": "A safe intermediate carry stopped just short of its requested waypoint.",
+    "diagnosis": "",
+    "change": "",
+    "result": "The revised skill recovered, replanned, and completed Purple → Cyan → Mint with all 22 checkpoints passing.",
+    "scope": "Continuous three-piece rehearsal.",
+    "attempts": [
+      {
+        "label": "Rigid waypoint",
+        "attempt": "The first joined rehearsal aborted during carry.",
+        "diagnosis": "The hand was stable, but its intermediate position missed the requested tolerance.",
+        "change": "Inspect the actual state rather than treating a missed waypoint as a completed motion.",
+        "outcome": "The failure record isolated a stable intermediate pose, not a dropped piece."
+      },
+      {
+        "label": "Local recovery",
+        "attempt": "Retain the real intermediate state and check it again.",
+        "diagnosis": "A task-independent waypoint can be replaced only after stability and geometry checks.",
+        "change": "Verify the held state, acquire fresh RGB, and replan the next leg.",
+        "outcome": "The recovery ran in simulation; all three pieces were released and independently verified."
+      }
+    ]
+  }
 }

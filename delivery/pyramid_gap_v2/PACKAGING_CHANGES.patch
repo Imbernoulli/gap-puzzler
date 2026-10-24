@@ -1,0 +1,47 @@
+--- a/tools/unified_native.py
++++ b/tools/unified_native.py
+@@ -14,7 +14,7 @@
+ 
+ 
+ class UnifiedPyramidGraph(PooledVisionGraph):
+-    def __init__(self, env, *, independent_verifier_path, verification_prefix=(), **kwargs):
++    def __init__(self, env, *, independent_verifier_path, verification_prefix=(), native_manifest_path, **kwargs):
+         self._verifier_ready = False
+         self._verifier_path = Path(independent_verifier_path)
+         self._verification_prefix = tuple(verification_prefix)
+@@ -54,10 +54,22 @@
+             *ROOT.joinpath('profiles').glob('*.json'),
+             ROOT / 'registry_modular/skills/modular-rgb-puzzler/SKILL.md',
+             ROOT / 'tools/layout_c_native.py',
+-            ROOT / 'runs/full12_original_order_layout_c_v10/native_jobs.py',
+-            ROOT / 'runs/full12_original_order_layout_c_v10/manifest.json']))
++            ROOT / 'tools/delivery.py',
++            ROOT / 'delivery_status.json']))
++        # Launch inputs may live outside the bundle. Archive their exact bytes
++        # separately; project source-integrity keys remain relative to ROOT.
++        import hashlib
++        native_manifest_path = Path(native_manifest_path).resolve()
++        request = json.loads(native_manifest_path.read_text())
++        inputs = self.output / 'native_launch_inputs'
++        inputs.mkdir()
++        launch_inputs = {}
++        for source in (native_manifest_path, Path(request['jobfile'])):
++            content = source.read_bytes()
++            (inputs / source.name).write_bytes(content)
++            launch_inputs[source.name] = hashlib.sha256(content).hexdigest()
+         launch = json.loads((self.output / 'launch.json').read_text())
+-        launch.update(source_sha256=self.source_hashes,
++        launch.update(source_sha256=self.source_hashes, native_launch_inputs_sha256=launch_inputs,
+             bimanual_typed_candidate=True, full12_acceptance=False,
+             canonical_original_staging=False,
+             public_initial_layout=dict(name='C_Lime_world_y_plus070',piece='lime',
+@@ -147,7 +159,8 @@
+     spec = task.task_spec(variant, manifest['max_steps'], suite=manifest['suite'], terminate_on_success=False, contact_capacity=4096)
+     kwargs = dict(graph=manifest['graph'], output_dir=manifest['episode'], variant=asdict(variant),
+                   max_steps=manifest['max_steps'], observation='rgb-shape',
+-                  independent_verifier_path=str(ROOT / 'verification/bimanual_independent.py'))
++                  independent_verifier_path=str(ROOT / 'verification/bimanual_independent.py'),
++                  native_manifest_path=str(Path(manifest_path).resolve()))
+     return [JobSpec(name='pyramid_unified', task=spec.full_name,
+         solution='tools.unified_native:UnifiedPyramidGraph', solution_kwargs=tuple(kwargs.items()),
+         episodes=(0, 1), seed=variant.seed, max_steps=manifest['max_steps'], device='cuda:0',

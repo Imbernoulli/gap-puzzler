@@ -1,0 +1,1270 @@
+{
+  "schema": "puzzler.site.public_piece_shape_icons.v1",
+  "source_CAD": {
+    "bead_centers": "puzzler.model.local_beads(name)",
+    "bead_radius_m": 0.0125,
+    "pitch_m": 0.025,
+    "connectors": "puzzler.vision.cad_necks(name)",
+    "neck_radius_m": 0.0045,
+    "geometry": "Exact public sphere circles and cylindrical neck top projection; no invented silhouette"
+  },
+  "order": [
+    "azure",
+    "orange",
+    "yellow",
+    "teal",
+    "purple",
+    "cyan",
+    "mint",
+    "lime",
+    "maroon",
+    "navy",
+    "pink",
+    "red"
+  ],
+  "viewBox": [
+    0,
+    0,
+    128,
+    128
+  ],
+  "background": "transparent",
+  "palette": "Identical neutral gray for every piece; identity is geometry, never material color",
+  "projection": {
+    "type": "orthographic_top",
+    "axes": "public local x/y, SVG y inverted",
+    "orientation": "Only quarter turns, prefer landscape; canonical lexicographic tie break. No reflections.",
+    "pixels_per_m": 960.0,
+    "common_bead_diameter_px": 24.0
+  },
+  "CPU_only": true,
+  "Env_created": false,
+  "GPU_used": false,
+  "pieces": {
+    "azure": {
+      "order": 1,
+      "shapeSrc": "media/pieces/azure.svg",
+      "file": "site/media/pieces/azure.svg",
+      "bead_count": 5,
+      "neck_count": 4,
+      "source_local_bead_centers_m": [
+        [
+          0.034999999999999996,
+          -0.014999999999999986,
+          0.0
+        ],
+        [
+          0.009999999999999995,
+          -0.014999999999999986,
+          0.0
+        ],
+        [
+          -0.015000000000000006,
+          0.035,
+          0.0
+        ],
+        [
+          -0.015000000000000006,
+          0.010000000000000009,
+          0.0
+        ],
+        [
+          -0.015000000000000006,
+          -0.014999999999999986,
+          0.0
+        ]
+      ],
+      "source_neck_bead_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "quarter_turns": 3,
+      "rotation_degrees": 270,
+      "projected_centers_svg": [
+        [
+          40.0,
+          88.0
+        ],
+        [
+          40.00000000000001,
+          64.0
+        ],
+        [
+          88.0,
+          40.00000000000001
+        ],
+        [
+          64.0,
+          40.0
+        ],
+        [
+          40.000000000000014,
+          40.0
+        ]
+      ],
+      "projected_bounds_including_stroke": [
+        27.3,
+        27.3,
+        100.7,
+        100.7
+      ],
+      "normalized_projected_lattice_points": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "no_bead_interior_overlap": true,
+      "no_crop": true
+    },
+    "orange": {
+      "order": 2,
+      "shapeSrc": "media/pieces/orange.svg",
+      "file": "site/media/pieces/orange.svg",
+      "bead_count": 5,
+      "neck_count": 4,
+      "source_local_bead_centers_m": [
+        [
+          0.025,
+          -0.020000000000000004,
+          0.0
+        ],
+        [
+          0.0,
+          0.030000000000000006,
+          0.0
+        ],
+        [
+          0.0,
+          0.0049999999999999975,
+          0.0
+        ],
+        [
+          0.0,
+          -0.020000000000000004,
+          0.0
+        ],
+        [
+          -0.025,
+          0.0049999999999999975,
+          0.0
+        ]
+      ],
+      "source_neck_bead_pairs": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "quarter_turns": 2,
+      "rotation_degrees": 180,
+      "projected_centers_svg": [
+        [
+          40.0,
+          39.99999999999999
+        ],
+        [
+          63.99999999999999,
+          88.0
+        ],
+        [
+          64.0,
+          64.0
+        ],
+        [
+          64.0,
+          40.0
+        ],
+        [
+          88.0,
+          64.0
+        ]
+      ],
+      "projected_bounds_including_stroke": [
+        27.3,
+        27.299999999999994,
+        100.7,
+        100.7
+      ],
+      "normalized_projected_lattice_points": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "no_bead_interior_overlap": true,
+      "no_crop": true
+    },
+    "yellow": {
+      "order": 3,
+      "shapeSrc": "media/pieces/yellow.svg",
+      "file": "site/media/pieces/yellow.svg",
+      "bead_count": 5,
+      "neck_count": 4,
+      "source_local_bead_centers_m": [
+        [
+          0.04,
+          0.0050000000000000044,
+          0.0
+        ],
+        [
+          0.015,
+          0.0050000000000000044,
+          0.0
+        ],
+        [
+          -0.010000000000000002,
+          0.0050000000000000044,
+          0.0
+        ],
+        [
+          -0.010000000000000002,
+          -0.01999999999999999,
+          0.0
+        ],
+        [
+          -0.035,
+          0.0050000000000000044,
+          0.0
+        ]
+      ],
+      "source_neck_bead_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "quarter_turns": 0,
+      "rotation_degrees": 0,
+      "projected_centers_svg": [
+        [
+          100.0,
+          52.0
+        ],
+        [
+          76.0,
+          52.0
+        ],
+        [
+          52.0,
+          52.0
+        ],
+        [
+          52.0,
+          76.0
+        ],
+        [
+          27.999999999999993,
+          52.0
+        ]
+      ],
+      "projected_bounds_including_stroke": [
+        15.299999999999994,
+        39.3,
+        112.7,
+        88.7
+      ],
+      "normalized_projected_lattice_points": [
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "no_bead_interior_overlap": true,
+      "no_crop": true
+    },
+    "teal": {
+      "order": 4,
+      "shapeSrc": "media/pieces/teal.svg",
+      "file": "site/media/pieces/teal.svg",
+      "bead_count": 4,
+      "neck_count": 3,
+      "source_local_bead_centers_m": [
+        [
+          0.018749999999999996,
+          0.0,
+          0.0
+        ],
+        [
+          -0.0062500000000000056,
+          0.024999999999999994,
+          0.0
+        ],
+        [
+          -0.0062500000000000056,
+          0.0,
+          0.0
+        ],
+        [
+          -0.0062500000000000056,
+          -0.024999999999999994,
+          0.0
+        ]
+      ],
+      "source_neck_bead_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "quarter_turns": 3,
+      "rotation_degrees": 270,
+      "projected_centers_svg": [
+        [
+          64.0,
+          76.0
+        ],
+        [
+          88.0,
+          52.00000000000001
+        ],
+        [
+          64.0,
+          52.0
+        ],
+        [
+          40.00000000000001,
+          52.0
+        ]
+      ],
+      "projected_bounds_including_stroke": [
+        27.300000000000008,
+        39.3,
+        100.7,
+        88.7
+      ],
+      "normalized_projected_lattice_points": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "no_bead_interior_overlap": true,
+      "no_crop": true
+    },
+    "purple": {
+      "order": 5,
+      "shapeSrc": "media/pieces/purple.svg",
+      "file": "site/media/pieces/purple.svg",
+      "bead_count": 5,
+      "neck_count": 4,
+      "source_local_bead_centers_m": [
+        [
+          0.030000000000000002,
+          0.020000000000000004,
+          0.0
+        ],
+        [
+          0.005000000000000001,
+          0.020000000000000004,
+          0.0
+        ],
+        [
+          0.005000000000000001,
+          -0.0049999999999999906,
+          0.0
+        ],
+        [
+          -0.02,
+          -0.0049999999999999906,
+          0.0
+        ],
+        [
+          -0.02,
+          -0.03,
+          0.0
+        ]
+      ],
+      "source_neck_bead_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "quarter_turns": 3,
+      "rotation_degrees": 270,
+      "projected_centers_svg": [
+        [
+          88.0,
+          88.0
+        ],
+        [
+          88.0,
+          64.0
+        ],
+        [
+          64.0,
+          64.0
+        ],
+        [
+          64.00000000000001,
+          40.0
+        ],
+        [
+          40.0,
+          39.99999999999999
+        ]
+      ],
+      "projected_bounds_including_stroke": [
+        27.3,
+        27.299999999999994,
+        100.7,
+        100.7
+      ],
+      "normalized_projected_lattice_points": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "no_bead_interior_overlap": true,
+      "no_crop": true
+    },
+    "cyan": {
+      "order": 6,
+      "shapeSrc": "media/pieces/cyan.svg",
+      "file": "site/media/pieces/cyan.svg",
+      "bead_count": 3,
+      "neck_count": 2,
+      "source_local_bead_centers_m": [
+        [
+          0.008333333333333338,
+          0.016666666666666684,
+          0.0
+        ],
+        [
+          0.008333333333333338,
+          -0.008333333333333325,
+          0.0
+        ],
+        [
+          -0.016666666666666663,
+          -0.008333333333333325,
+          0.0
+        ]
+      ],
+      "source_neck_bead_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "quarter_turns": 2,
+      "rotation_degrees": 180,
+      "projected_centers_svg": [
+        [
+          52.0,
+          76.0
+        ],
+        [
+          52.0,
+          52.0
+        ],
+        [
+          76.0,
+          52.0
+        ]
+      ],
+      "projected_bounds_including_stroke": [
+        39.3,
+        39.3,
+        88.7,
+        88.7
+      ],
+      "normalized_projected_lattice_points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "no_bead_interior_overlap": true,
+      "no_crop": true
+    },
+    "mint": {
+      "order": 7,
+      "shapeSrc": "media/pieces/mint.svg",
+      "file": "site/media/pieces/mint.svg",
+      "bead_count": 5,
+      "neck_count": 5,
+      "source_local_bead_centers_m": [
+        [
+          0.010000000000000002,
+          0.020000000000000004,
+          0.0
+        ],
+        [
+          0.010000000000000002,
+          -0.0050000000000000044,
+          0.0
+        ],
+        [
+          0.010000000000000002,
+          -0.03,
+          0.0
+        ],
+        [
+          -0.015,
+          0.020000000000000004,
+          0.0
+        ],
+        [
+          -0.015,
+          -0.0050000000000000044,
+          0.0
+        ]
+      ],
+      "source_neck_bead_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "quarter_turns": 1,
+      "rotation_degrees": 90,
+      "projected_centers_svg": [
+        [
+          40.0,
+          52.0
+        ],
+        [
+          64.00000000000001,
+          52.0
+        ],
+        [
+          88.0,
+          52.0
+        ],
+        [
+          40.0,
+          76.0
+        ],
+        [
+          64.0,
+          76.0
+        ]
+      ],
+      "projected_bounds_including_stroke": [
+        27.3,
+        39.3,
+        100.7,
+        88.7
+      ],
+      "normalized_projected_lattice_points": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "no_bead_interior_overlap": true,
+      "no_crop": true
+    },
+    "lime": {
+      "order": 8,
+      "shapeSrc": "media/pieces/lime.svg",
+      "file": "site/media/pieces/lime.svg",
+      "bead_count": 5,
+      "neck_count": 4,
+      "source_local_bead_centers_m": [
+        [
+          0.010000000000000002,
+          0.025,
+          0.0
+        ],
+        [
+          0.010000000000000002,
+          0.0,
+          0.0
+        ],
+        [
+          0.010000000000000002,
+          -0.025,
+          0.0
+        ],
+        [
+          -0.015,
+          0.025,
+          0.0
+        ],
+        [
+          -0.015,
+          -0.025,
+          0.0
+        ]
+      ],
+      "source_neck_bead_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "quarter_turns": 1,
+      "rotation_degrees": 90,
+      "projected_centers_svg": [
+        [
+          40.0,
+          52.0
+        ],
+        [
+          64.0,
+          52.0
+        ],
+        [
+          88.0,
+          52.0
+        ],
+        [
+          40.0,
+          76.0
+        ],
+        [
+          88.0,
+          76.0
+        ]
+      ],
+      "projected_bounds_including_stroke": [
+        27.3,
+        39.3,
+        100.7,
+        88.7
+      ],
+      "normalized_projected_lattice_points": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "no_bead_interior_overlap": true,
+      "no_crop": true
+    },
+    "maroon": {
+      "order": 9,
+      "shapeSrc": "media/pieces/maroon.svg",
+      "file": "site/media/pieces/maroon.svg",
+      "bead_count": 4,
+      "neck_count": 3,
+      "source_local_bead_centers_m": [
+        [
+          0.025,
+          -0.012500000000000011,
+          0.0
+        ],
+        [
+          0.0,
+          0.012499999999999983,
+          0.0
+        ],
+        [
+          0.0,
+          -0.012500000000000011,
+          0.0
+        ],
+        [
+          -0.025,
+          0.012499999999999983,
+          0.0
+        ]
+      ],
+      "source_neck_bead_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "quarter_turns": 0,
+      "rotation_degrees": 0,
+      "projected_centers_svg": [
+        [
+          88.0,
+          76.0
+        ],
+        [
+          64.0,
+          52.0
+        ],
+        [
+          64.0,
+          76.0
+        ],
+        [
+          40.0,
+          52.0
+        ]
+      ],
+      "projected_bounds_including_stroke": [
+        27.3,
+        39.3,
+        100.7,
+        88.7
+      ],
+      "normalized_projected_lattice_points": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "no_bead_interior_overlap": true,
+      "no_crop": true
+    },
+    "navy": {
+      "order": 10,
+      "shapeSrc": "media/pieces/navy.svg",
+      "file": "site/media/pieces/navy.svg",
+      "bead_count": 4,
+      "neck_count": 3,
+      "source_local_bead_centers_m": [
+        [
+          0.03125,
+          0.00625,
+          0.0
+        ],
+        [
+          0.00625,
+          0.00625,
+          0.0
+        ],
+        [
+          -0.018750000000000003,
+          0.00625,
+          0.0
+        ],
+        [
+          -0.018750000000000003,
+          -0.018750000000000003,
+          0.0
+        ]
+      ],
+      "source_neck_bead_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "quarter_turns": 0,
+      "rotation_degrees": 0,
+      "projected_centers_svg": [
+        [
+          88.0,
+          52.0
+        ],
+        [
+          64.0,
+          52.0
+        ],
+        [
+          40.0,
+          52.0
+        ],
+        [
+          40.0,
+          76.0
+        ]
+      ],
+      "projected_bounds_including_stroke": [
+        27.3,
+        39.3,
+        100.7,
+        88.7
+      ],
+      "normalized_projected_lattice_points": [
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "no_bead_interior_overlap": true,
+      "no_crop": true
+    },
+    "pink": {
+      "order": 11,
+      "shapeSrc": "media/pieces/pink.svg",
+      "file": "site/media/pieces/pink.svg",
+      "bead_count": 5,
+      "neck_count": 4,
+      "source_local_bead_centers_m": [
+        [
+          0.01,
+          0.040000000000000015,
+          0.0
+        ],
+        [
+          0.01,
+          0.015000000000000013,
+          0.0
+        ],
+        [
+          0.01,
+          -0.009999999999999995,
+          0.0
+        ],
+        [
+          -0.015000000000000001,
+          -0.009999999999999995,
+          0.0
+        ],
+        [
+          -0.015000000000000001,
+          -0.03499999999999999,
+          0.0
+        ]
+      ],
+      "source_neck_bead_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "quarter_turns": 1,
+      "rotation_degrees": 90,
+      "projected_centers_svg": [
+        [
+          27.999999999999993,
+          52.0
+        ],
+        [
+          52.0,
+          52.0
+        ],
+        [
+          76.0,
+          52.0
+        ],
+        [
+          76.0,
+          76.0
+        ],
+        [
+          100.0,
+          76.0
+        ]
+      ],
+      "projected_bounds_including_stroke": [
+        15.299999999999994,
+        39.3,
+        112.7,
+        88.7
+      ],
+      "normalized_projected_lattice_points": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "no_bead_interior_overlap": true,
+      "no_crop": true
+    },
+    "red": {
+      "order": 12,
+      "shapeSrc": "media/pieces/red.svg",
+      "file": "site/media/pieces/red.svg",
+      "bead_count": 5,
+      "neck_count": 4,
+      "source_local_bead_centers_m": [
+        [
+          0.019999999999999997,
+          -0.030000000000000002,
+          0.0
+        ],
+        [
+          -0.0050000000000000044,
+          0.045,
+          0.0
+        ],
+        [
+          -0.0050000000000000044,
+          0.02,
+          0.0
+        ],
+        [
+          -0.0050000000000000044,
+          -0.005000000000000001,
+          0.0
+        ],
+        [
+          -0.0050000000000000044,
+          -0.030000000000000002,
+          0.0
+        ]
+      ],
+      "source_neck_bead_pairs": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "quarter_turns": 3,
+      "rotation_degrees": 270,
+      "projected_centers_svg": [
+        [
+          27.999999999999993,
+          76.0
+        ],
+        [
+          100.0,
+          52.000000000000014
+        ],
+        [
+          76.0,
+          52.00000000000001
+        ],
+        [
+          52.0,
+          52.0
+        ],
+        [
+          28.0,
+          52.0
+        ]
+      ],
+      "projected_bounds_including_stroke": [
+        15.299999999999994,
+        39.3,
+        112.7,
+        88.7
+      ],
+      "normalized_projected_lattice_points": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "no_bead_interior_overlap": true,
+      "no_crop": true
+    }
+  },
+  "validation": {
+    "piece_count": 12,
+    "total_beads": 55,
+    "all_12_unique_up_to_rotation": true,
+    "exact_bead_and_neck_counts": true,
+    "all_12_share_one_viewBox": true,
+    "no_inadvertent_projected_bead_overlap": true,
+    "no_crop": true,
+    "smallest_canvas_margin_px": 15.299999999999994,
+    "small_node_raster_masks": {
+      "24": {
+        "all_12_pixel_masks_distinct": true,
+        "closest_pair": {
+          "names": [
+            "mint",
+            "navy"
+          ],
+          "different_fraction_of_union": 0.18181818181818182
+        }
+      },
+      "32": {
+        "all_12_pixel_masks_distinct": true,
+        "closest_pair": {
+          "names": [
+            "teal",
+            "mint"
+          ],
+          "different_fraction_of_union": 0.2
+        }
+      }
+    }
+  },
+  "preview": "results/site_piece_shapes/preview.png",
+  "preview_method": "CPU Pillow rasterization of generated SVG circle/neck coordinates, 4x supersampling; no Env/GPU."
+}

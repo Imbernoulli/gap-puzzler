@@ -1,0 +1,245 @@
+{
+  "yellow": {
+    "path": "yellow.obj",
+    "collision_path": "yellow_000.obj",
+    "collision_paths": [
+      "yellow_001.obj",
+      "yellow_002.obj",
+      "yellow_003.obj",
+      "yellow_004.obj",
+      "yellow_005.obj",
+      "yellow_006.obj",
+      "yellow_007.obj",
+      "yellow_008.obj"
+    ]
+  },
+  "purple": {
+    "path": "purple.obj",
+    "collision_path": "purple_000.obj",
+    "collision_paths": [
+      "purple_001.obj",
+      "purple_002.obj",
+      "purple_003.obj",
+      "purple_004.obj",
+      "purple_005.obj",
+      "purple_006.obj",
+      "purple_007.obj",
+      "purple_008.obj"
+    ]
+  },
+  "cyan": {
+    "path": "cyan.obj",
+    "collision_path": "cyan_000.obj",
+    "collision_paths": [
+      "cyan_001.obj",
+      "cyan_002.obj",
+      "cyan_003.obj",
+      "cyan_004.obj"
+    ]
+  },
+  "lime": {
+    "path": "lime.obj",
+    "collision_path": "lime_000.obj",
+    "collision_paths": [
+      "lime_001.obj",
+      "lime_002.obj",
+      "lime_003.obj",
+      "lime_004.obj",
+      "lime_005.obj",
+      "lime_006.obj",
+      "lime_007.obj",
+      "lime_008.obj"
+    ]
+  },
+  "mint": {
+    "path": "mint.obj",
+    "collision_path": "mint_000.obj",
+    "collision_paths": [
+      "mint_001.obj",
+      "mint_002.obj",
+      "mint_003.obj",
+      "mint_004.obj",
+      "mint_005.obj",
+      "mint_006.obj",
+      "mint_007.obj",
+      "mint_008.obj",
+      "mint_009.obj"
+    ]
+  },
+  "maroon": {
+    "path": "maroon.obj",
+    "collision_path": "maroon_000.obj",
+    "collision_paths": [
+      "maroon_001.obj",
+      "maroon_002.obj",
+      "maroon_003.obj",
+      "maroon_004.obj",
+      "maroon_005.obj",
+      "maroon_006.obj"
+    ]
+  },
+  "teal": {
+    "path": "teal.obj",
+    "collision_path": "teal_000.obj",
+    "collision_paths": [
+      "teal_001.obj",
+      "teal_002.obj",
+      "teal_003.obj",
+      "teal_004.obj",
+      "teal_005.obj",
+      "teal_006.obj"
+    ]
+  },
+  "orange": {
+    "path": "orange.obj",
+    "collision_path": "orange_000.obj",
+    "collision_paths": [
+      "orange_001.obj",
+      "orange_002.obj",
+      "orange_003.obj",
+      "orange_004.obj",
+      "orange_005.obj",
+      "orange_006.obj",
+      "orange_007.obj",
+      "orange_008.obj"
+    ]
+  },
+  "navy": {
+    "path": "navy.obj",
+    "collision_path": "navy_000.obj",
+    "collision_paths": [
+      "navy_001.obj",
+      "navy_002.obj",
+      "navy_003.obj",
+      "navy_004.obj",
+      "navy_005.obj",
+      "navy_006.obj"
+    ]
+  },
+  "pink": {
+    "path": "pink.obj",
+    "collision_path": "pink_000.obj",
+    "collision_paths": [
+      "pink_001.obj",
+      "pink_002.obj",
+      "pink_003.obj",
+      "pink_004.obj",
+      "pink_005.obj",
+      "pink_006.obj",
+      "pink_007.obj",
+      "pink_008.obj"
+    ]
+  },
+  "red": {
+    "path": "red.obj",
+    "collision_path": "red_000.obj",
+    "collision_paths": [
+      "red_001.obj",
+      "red_002.obj",
+      "red_003.obj",
+      "red_004.obj",
+      "red_005.obj",
+      "red_006.obj",
+      "red_007.obj",
+      "red_008.obj"
+    ]
+  },
+  "azure": {
+    "path": "azure.obj",
+    "collision_path": "azure_000.obj",
+    "collision_paths": [
+      "azure_001.obj",
+      "azure_002.obj",
+      "azure_003.obj",
+      "azure_004.obj",
+      "azure_005.obj",
+      "azure_006.obj",
+      "azure_007.obj",
+      "azure_008.obj"
+    ]
+  },
+  "board": {
+    "path": "board.obj",
+    "collision_path": "board_000.obj",
+    "collision_paths": [
+      "board_001.obj",
+      "board_002.obj",
+      "board_003.obj",
+      "board_004.obj",
+      "board_005.obj",
+      "board_006.obj",
+      "board_007.obj",
+      "board_008.obj",
+      "board_009.obj",
+      "board_010.obj",
+      "board_011.obj",
+      "board_012.obj",
+      "board_013.obj",
+      "board_014.obj",
+      "board_015.obj",
+      "board_016.obj",
+      "board_017.obj",
+      "board_018.obj",
+      "board_019.obj",
+      "board_020.obj",
+      "board_021.obj",
+      "board_022.obj",
+      "board_023.obj",
+      "board_024.obj",
+      "board_025.obj",
+      "board_026.obj",
+      "board_027.obj",
+      "board_028.obj",
+      "board_029.obj",
+      "board_030.obj",
+      "board_031.obj",
+      "board_032.obj",
+      "board_033.obj",
+      "board_034.obj",
+      "board_035.obj",
+      "board_036.obj",
+      "board_037.obj",
+      "board_038.obj",
+      "board_039.obj",
+      "board_040.obj",
+      "board_041.obj",
+      "board_042.obj",
+      "board_043.obj",
+      "board_044.obj",
+      "board_045.obj",
+      "board_046.obj",
+      "board_047.obj",
+      "board_048.obj",
+      "board_049.obj",
+      "board_050.obj",
+      "board_051.obj",
+      "board_052.obj",
+      "board_053.obj",
+      "board_054.obj",
+      "board_055.obj",
+      "board_056.obj",
+      "board_057.obj",
+      "board_058.obj",
+      "board_059.obj",
+      "board_060.obj",
+      "board_061.obj",
+      "board_062.obj",
+      "board_063.obj",
+      "board_064.obj",
+      "board_065.obj",
+      "board_066.obj",
+      "board_067.obj",
+      "board_068.obj",
+      "board_069.obj",
+      "board_070.obj",
+      "board_071.obj",
+      "board_072.obj",
+      "board_073.obj",
+      "board_074.obj",
+      "board_075.obj",
+      "board_076.obj",
+      "board_077.obj",
+      "board_078.obj"
+    ]
+  }
+}

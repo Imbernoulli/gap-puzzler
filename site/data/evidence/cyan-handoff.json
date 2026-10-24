@@ -122,5 +122,36 @@
       "exact_synchronous_native_q16": true,
       "actual_maximum_bead_error_m": 0.0006393972474516673
     }
+  },
+  "narrative": {
+    "title": "Cyan: find a reachable handover.",
+    "problem": "The receiving hand needed a reachable approach and a correctly centered closing contact.",
+    "diagnosis": "",
+    "change": "",
+    "result": "In the continuous twelve-piece run, Cyan passed all four handover checks and continued through placement.",
+    "scope": "Continuous twelve-piece physical assembly.",
+    "attempts": [
+      {
+        "label": "Approach",
+        "attempt": "Early receiver routes were refused.",
+        "diagnosis": "The paths ran out of joint reserve or missed the pose.",
+        "change": "Move the held piece to a shared workspace, relative to the observed board.",
+        "outcome": "Public-geometry rehearsal found screened donor and receiver routes."
+      },
+      {
+        "label": "Close",
+        "attempt": "The new approach reached the piece, but closing was refused.",
+        "diagnosis": "The selected finger would penetrate too far.",
+        "change": "Reobserve the held piece and recenter the receiving jaw before closing.",
+        "outcome": "The next rehearsal passed approach, dual hold, donor withdrawal, and receiver hold."
+      },
+      {
+        "label": "Verify",
+        "attempt": "Repeat the complete transfer in the joined sequence.",
+        "diagnosis": "",
+        "change": "",
+        "outcome": "The continuous twelve-piece run passed all four transfer windows, with an independently verified fresh receiver RGB binding."
+      }
+    ]
   }
 }

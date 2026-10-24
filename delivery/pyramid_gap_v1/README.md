@@ -1,6 +1,6 @@
 This is a runnable delivery **draft**, scoped to a fresh seed-0, all12-loose pyramid under the declared public layout C (Lime starts 70 mm farther along world Y). It preserves the original piece order, typed GaP subgraphs, RGB/proprioception/public CAD policy inputs, and independent physical checkpoints. It has no prefix, restored state, action tape, or cached receipt.
 
-The packaged entry has not completed a native run. Copying a candidate or passing static checks does not establish all12 success. Consult the new run's own result and independent checkpoint records.
+The packaged entry has now completed a fresh native trial: all twelve physical placements and RSS success passed, while the graph stopped at its original terminal-visual rule after 82 of 84 checkpoints. See `RUN_EVIDENCE.json` for the recorded main V13 scope; the clean-entry trial is separately documented in the repository's packaging evidence. This version preserves that original behavior; v2 contains the subsequent terminal repair.
 
 On a clean machine with git and uv, `python3 tools/bootstrap_runtime.py` installs the revisions in `RUNTIME.lock` and numerical dependencies in `requirements-runtime.lock`, including the official **Warp 1.18.0+cu12** wheel used by the native candidates. The default PyPI 1.18.0 wheel uses CUDA 13.4 and fails on the current host's driver. The bootstrap recipe still requires clean-machine validation.
 

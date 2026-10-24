@@ -1,0 +1,1690 @@
+{
+  "checkedAt": "2026-10-24T18:58:56.193Z",
+  "url": "http://127.0.0.1:8771/gap-puzzler/",
+  "policyRun": "pyramid_full12_bimanual_layout_c_v13",
+  "total": 84,
+  "seekable": 83,
+  "checkpointBoundary": 6,
+  "terminalOutcome": 1,
+  "notExecuted": 1,
+  "passed": 84,
+  "errors": [],
+  "rows": [
+    {
+      "nodeId": "azure_perceive_plan",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 0,
+        "end": 0.44
+      },
+      "targetVideoTime": 0,
+      "targetSimTime": 0,
+      "actual": {
+        "videoTime": 0,
+        "simTime": 0,
+        "piece": "Piece 01",
+        "phase": "Observe & plan",
+        "inspected": "azure_perceive_plan"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "azure_grasp",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 0.44,
+        "end": 8.1
+      },
+      "targetVideoTime": 0.1,
+      "targetSimTime": 0.8,
+      "actual": {
+        "videoTime": 0.1,
+        "simTime": 0.8,
+        "piece": "Piece 01",
+        "phase": "Grasp",
+        "inspected": "azure_grasp"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "azure_transport",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 8.1,
+        "end": 13.14
+      },
+      "targetVideoTime": 1.05,
+      "targetSimTime": 8.4,
+      "actual": {
+        "videoTime": 1.05,
+        "simTime": 8.4,
+        "piece": "Piece 01",
+        "phase": "Transport",
+        "inspected": "azure_transport"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "azure_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 13.14,
+        "end": 25.5
+      },
+      "targetVideoTime": 1.65,
+      "targetSimTime": 13.2,
+      "actual": {
+        "videoTime": 1.65,
+        "simTime": 13.2,
+        "piece": "Piece 01",
+        "phase": "Release",
+        "inspected": "azure_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "azure_receipt_settle",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 25.5,
+        "end": 25.62
+      },
+      "targetVideoTime": 3.2,
+      "targetSimTime": 25.6,
+      "actual": {
+        "videoTime": 3.2,
+        "simTime": 25.6,
+        "piece": "Piece 01",
+        "phase": "Observe & settle",
+        "inspected": "azure_receipt_settle"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "azure_handoff",
+      "available": true,
+      "mode": "checkpoint_boundary",
+      "window": {
+        "start": 25.62,
+        "end": 25.74
+      },
+      "targetVideoTime": 3.25,
+      "targetSimTime": 26,
+      "actual": {
+        "videoTime": 3.25,
+        "simTime": 26,
+        "piece": "Piece 01",
+        "phase": "Verify & advance · checkpoint boundary",
+        "inspected": "azure_handoff"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "orange_perceive_plan",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 25.74,
+        "end": 26.06
+      },
+      "targetVideoTime": 3.25,
+      "targetSimTime": 26,
+      "actual": {
+        "videoTime": 3.25,
+        "simTime": 26,
+        "piece": "Piece 02",
+        "phase": "Observe & plan",
+        "inspected": "orange_perceive_plan"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "orange_grasp",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 26.06,
+        "end": 33.98
+      },
+      "targetVideoTime": 3.3,
+      "targetSimTime": 26.4,
+      "actual": {
+        "videoTime": 3.3,
+        "simTime": 26.4,
+        "piece": "Piece 02",
+        "phase": "Grasp",
+        "inspected": "orange_grasp"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "orange_transport",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 33.98,
+        "end": 38.82
+      },
+      "targetVideoTime": 4.25,
+      "targetSimTime": 34,
+      "actual": {
+        "videoTime": 4.25,
+        "simTime": 34,
+        "piece": "Piece 02",
+        "phase": "Transport",
+        "inspected": "orange_transport"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "orange_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 38.82,
+        "end": 51.88
+      },
+      "targetVideoTime": 4.9,
+      "targetSimTime": 39.2,
+      "actual": {
+        "videoTime": 4.9,
+        "simTime": 39.2,
+        "piece": "Piece 02",
+        "phase": "Release",
+        "inspected": "orange_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "orange_receipt_settle",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 51.88,
+        "end": 52.02
+      },
+      "targetVideoTime": 6.5,
+      "targetSimTime": 52,
+      "actual": {
+        "videoTime": 6.5,
+        "simTime": 52,
+        "piece": "Piece 02",
+        "phase": "Observe & settle",
+        "inspected": "orange_receipt_settle"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "orange_handoff",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 52.02,
+        "end": 52.42
+      },
+      "targetVideoTime": 6.55,
+      "targetSimTime": 52.4,
+      "actual": {
+        "videoTime": 6.55,
+        "simTime": 52.4,
+        "piece": "Piece 02",
+        "phase": "Verify & advance",
+        "inspected": "orange_handoff"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "yellow_perceive_plan",
+      "available": true,
+      "mode": "checkpoint_boundary",
+      "window": {
+        "start": 52.42,
+        "end": 52.76
+      },
+      "targetVideoTime": 6.6,
+      "targetSimTime": 52.8,
+      "actual": {
+        "videoTime": 6.6,
+        "simTime": 52.8,
+        "piece": "Piece 03",
+        "phase": "Observe & plan · checkpoint boundary",
+        "inspected": "yellow_perceive_plan"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "yellow_grasp",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 52.76,
+        "end": 61.36
+      },
+      "targetVideoTime": 6.6,
+      "targetSimTime": 52.8,
+      "actual": {
+        "videoTime": 6.6,
+        "simTime": 52.8,
+        "piece": "Piece 03",
+        "phase": "Grasp",
+        "inspected": "yellow_grasp"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "yellow_transport",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 61.36,
+        "end": 70.86
+      },
+      "targetVideoTime": 7.7,
+      "targetSimTime": 61.6,
+      "actual": {
+        "videoTime": 7.7,
+        "simTime": 61.6,
+        "piece": "Piece 03",
+        "phase": "Transport",
+        "inspected": "yellow_transport"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "yellow_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 70.86,
+        "end": 83.26
+      },
+      "targetVideoTime": 8.9,
+      "targetSimTime": 71.2,
+      "actual": {
+        "videoTime": 8.9,
+        "simTime": 71.2,
+        "piece": "Piece 03",
+        "phase": "Release",
+        "inspected": "yellow_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "yellow_receipt_settle",
+      "available": true,
+      "mode": "checkpoint_boundary",
+      "window": {
+        "start": 83.26,
+        "end": 83.46
+      },
+      "targetVideoTime": 10.45,
+      "targetSimTime": 83.6,
+      "actual": {
+        "videoTime": 10.45,
+        "simTime": 83.6,
+        "piece": "Piece 03",
+        "phase": "Observe & settle · checkpoint boundary",
+        "inspected": "yellow_receipt_settle"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "yellow_handoff",
+      "available": true,
+      "mode": "checkpoint_boundary",
+      "window": {
+        "start": 83.46,
+        "end": 83.6
+      },
+      "targetVideoTime": 10.45,
+      "targetSimTime": 83.6,
+      "actual": {
+        "videoTime": 10.45,
+        "simTime": 83.6,
+        "piece": "Piece 03",
+        "phase": "Verify & advance · checkpoint boundary",
+        "inspected": "yellow_handoff"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "teal_perceive_plan",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 83.6,
+        "end": 83.96
+      },
+      "targetVideoTime": 10.45,
+      "targetSimTime": 83.6,
+      "actual": {
+        "videoTime": 10.45,
+        "simTime": 83.6,
+        "piece": "Piece 04",
+        "phase": "Observe & plan",
+        "inspected": "teal_perceive_plan"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "teal_grasp",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 83.96,
+        "end": 90.62
+      },
+      "targetVideoTime": 10.5,
+      "targetSimTime": 84,
+      "actual": {
+        "videoTime": 10.5,
+        "simTime": 84,
+        "piece": "Piece 04",
+        "phase": "Grasp",
+        "inspected": "teal_grasp"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "teal_transport",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 90.62,
+        "end": 93.94
+      },
+      "targetVideoTime": 11.35,
+      "targetSimTime": 90.8,
+      "actual": {
+        "videoTime": 11.35,
+        "simTime": 90.8,
+        "piece": "Piece 04",
+        "phase": "Transport",
+        "inspected": "teal_transport"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "teal_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 93.94,
+        "end": 106.5
+      },
+      "targetVideoTime": 11.75,
+      "targetSimTime": 94,
+      "actual": {
+        "videoTime": 11.75,
+        "simTime": 94,
+        "piece": "Piece 04",
+        "phase": "Release",
+        "inspected": "teal_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "teal_receipt_settle",
+      "available": true,
+      "mode": "checkpoint_boundary",
+      "window": {
+        "start": 106.5,
+        "end": 106.72
+      },
+      "targetVideoTime": 13.35,
+      "targetSimTime": 106.8,
+      "actual": {
+        "videoTime": 13.35,
+        "simTime": 106.8,
+        "piece": "Piece 04",
+        "phase": "Observe & settle · checkpoint boundary",
+        "inspected": "teal_receipt_settle"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "teal_handoff",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 106.72,
+        "end": 106.9
+      },
+      "targetVideoTime": 13.35,
+      "targetSimTime": 106.8,
+      "actual": {
+        "videoTime": 13.35,
+        "simTime": 106.8,
+        "piece": "Piece 04",
+        "phase": "Verify & advance",
+        "inspected": "teal_handoff"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "purple_perceive_plan",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 106.9,
+        "end": 107.54
+      },
+      "targetVideoTime": 13.4,
+      "targetSimTime": 107.2,
+      "actual": {
+        "videoTime": 13.4,
+        "simTime": 107.2,
+        "piece": "Piece 05",
+        "phase": "Observe & plan",
+        "inspected": "purple_perceive_plan"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "purple_grasp",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 107.54,
+        "end": 115.5
+      },
+      "targetVideoTime": 13.45,
+      "targetSimTime": 107.6,
+      "actual": {
+        "videoTime": 13.45,
+        "simTime": 107.6,
+        "piece": "Piece 05",
+        "phase": "Grasp",
+        "inspected": "purple_grasp"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "purple_transport",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 115.5,
+        "end": 121.58
+      },
+      "targetVideoTime": 14.45,
+      "targetSimTime": 115.6,
+      "actual": {
+        "videoTime": 14.45,
+        "simTime": 115.6,
+        "piece": "Piece 05",
+        "phase": "Transport",
+        "inspected": "purple_transport"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "purple_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 121.58,
+        "end": 133.86
+      },
+      "targetVideoTime": 15.2,
+      "targetSimTime": 121.6,
+      "actual": {
+        "videoTime": 15.2,
+        "simTime": 121.6,
+        "piece": "Piece 05",
+        "phase": "Release",
+        "inspected": "purple_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "purple_receipt_settle",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 133.86,
+        "end": 134.04
+      },
+      "targetVideoTime": 16.75,
+      "targetSimTime": 134,
+      "actual": {
+        "videoTime": 16.75,
+        "simTime": 134,
+        "piece": "Piece 05",
+        "phase": "Observe & settle",
+        "inspected": "purple_receipt_settle"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "purple_handoff",
+      "available": true,
+      "mode": "checkpoint_boundary",
+      "window": {
+        "start": 134.04,
+        "end": 134.22
+      },
+      "targetVideoTime": 16.8,
+      "targetSimTime": 134.4,
+      "actual": {
+        "videoTime": 16.8,
+        "simTime": 134.4,
+        "piece": "Piece 05",
+        "phase": "Verify & advance · checkpoint boundary",
+        "inspected": "purple_handoff"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "cyan_perceive_plan",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 134.22,
+        "end": 134.86
+      },
+      "targetVideoTime": 16.8,
+      "targetSimTime": 134.4,
+      "actual": {
+        "videoTime": 16.8,
+        "simTime": 134.4,
+        "piece": "Piece 06",
+        "phase": "Observe & plan",
+        "inspected": "cyan_perceive_plan"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "cyan_grasp",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 134.86,
+        "end": 152.06
+      },
+      "targetVideoTime": 16.9,
+      "targetSimTime": 135.2,
+      "actual": {
+        "videoTime": 16.9,
+        "simTime": 135.2,
+        "piece": "Piece 06",
+        "phase": "Grasp",
+        "inspected": "cyan_grasp"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "cyan_cyan_approach",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 152.06,
+        "end": 179.32
+      },
+      "targetVideoTime": 19.05,
+      "targetSimTime": 152.4,
+      "actual": {
+        "videoTime": 19.05,
+        "simTime": 152.4,
+        "piece": "Piece 06",
+        "phase": "Transfer approach",
+        "inspected": "cyan_cyan_approach"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "cyan_cyan_receiver_close",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 179.32,
+        "end": 187.04
+      },
+      "targetVideoTime": 22.45,
+      "targetSimTime": 179.6,
+      "actual": {
+        "videoTime": 22.45,
+        "simTime": 179.6,
+        "piece": "Piece 06",
+        "phase": "Receiver closes",
+        "inspected": "cyan_cyan_receiver_close"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "cyan_cyan_donor_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 187.04,
+        "end": 194.56
+      },
+      "targetVideoTime": 23.4,
+      "targetSimTime": 187.2,
+      "actual": {
+        "videoTime": 23.4,
+        "simTime": 187.2,
+        "piece": "Piece 06",
+        "phase": "Donor releases",
+        "inspected": "cyan_cyan_donor_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "cyan_cyan_receiver_bind",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 194.56,
+        "end": 195.6
+      },
+      "targetVideoTime": 24.35,
+      "targetSimTime": 194.8,
+      "actual": {
+        "videoTime": 24.35,
+        "simTime": 194.8,
+        "piece": "Piece 06",
+        "phase": "Rebind from RGB",
+        "inspected": "cyan_cyan_receiver_bind"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "cyan_cyan_receiver_transport",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 195.6,
+        "end": 238.86
+      },
+      "targetVideoTime": 24.45,
+      "targetSimTime": 195.6,
+      "actual": {
+        "videoTime": 24.45,
+        "simTime": 195.6,
+        "piece": "Piece 06",
+        "phase": "Receiver transports",
+        "inspected": "cyan_cyan_receiver_transport"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "cyan_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 238.86,
+        "end": 263.4
+      },
+      "targetVideoTime": 29.9,
+      "targetSimTime": 239.2,
+      "actual": {
+        "videoTime": 29.9,
+        "simTime": 239.2,
+        "piece": "Piece 06",
+        "phase": "Release",
+        "inspected": "cyan_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "cyan_receipt_settle",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 263.4,
+        "end": 264.76
+      },
+      "targetVideoTime": 32.95,
+      "targetSimTime": 263.6,
+      "actual": {
+        "videoTime": 32.95,
+        "simTime": 263.6,
+        "piece": "Piece 06",
+        "phase": "Observe & settle",
+        "inspected": "cyan_receipt_settle"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "cyan_handoff",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 264.76,
+        "end": 265.74
+      },
+      "targetVideoTime": 33.1,
+      "targetSimTime": 264.8,
+      "actual": {
+        "videoTime": 33.1,
+        "simTime": 264.8,
+        "piece": "Piece 06",
+        "phase": "Verify & advance",
+        "inspected": "cyan_handoff"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "mint_perceive_plan",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 265.74,
+        "end": 266.5
+      },
+      "targetVideoTime": 33.25,
+      "targetSimTime": 266,
+      "actual": {
+        "videoTime": 33.25,
+        "simTime": 266,
+        "piece": "Piece 07",
+        "phase": "Observe & plan",
+        "inspected": "mint_perceive_plan"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "mint_grasp",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 266.5,
+        "end": 275.18
+      },
+      "targetVideoTime": 33.35,
+      "targetSimTime": 266.8,
+      "actual": {
+        "videoTime": 33.35,
+        "simTime": 266.8,
+        "piece": "Piece 07",
+        "phase": "Grasp",
+        "inspected": "mint_grasp"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "mint_transport",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 275.18,
+        "end": 285.08
+      },
+      "targetVideoTime": 34.4,
+      "targetSimTime": 275.2,
+      "actual": {
+        "videoTime": 34.4,
+        "simTime": 275.2,
+        "piece": "Piece 07",
+        "phase": "Transport",
+        "inspected": "mint_transport"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "mint_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 285.08,
+        "end": 297.84
+      },
+      "targetVideoTime": 35.65,
+      "targetSimTime": 285.2,
+      "actual": {
+        "videoTime": 35.65,
+        "simTime": 285.2,
+        "piece": "Piece 07",
+        "phase": "Release",
+        "inspected": "mint_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "mint_receipt_settle",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 297.84,
+        "end": 298.54
+      },
+      "targetVideoTime": 37.25,
+      "targetSimTime": 298,
+      "actual": {
+        "videoTime": 37.25,
+        "simTime": 298,
+        "piece": "Piece 07",
+        "phase": "Observe & settle",
+        "inspected": "mint_receipt_settle"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "mint_handoff",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 298.54,
+        "end": 299.18
+      },
+      "targetVideoTime": 37.35,
+      "targetSimTime": 298.8,
+      "actual": {
+        "videoTime": 37.35,
+        "simTime": 298.8,
+        "piece": "Piece 07",
+        "phase": "Verify & advance",
+        "inspected": "mint_handoff"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "lime_perceive_plan",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 299.18,
+        "end": 300.12
+      },
+      "targetVideoTime": 37.4,
+      "targetSimTime": 299.2,
+      "actual": {
+        "videoTime": 37.4,
+        "simTime": 299.2,
+        "piece": "Piece 08",
+        "phase": "Observe & plan",
+        "inspected": "lime_perceive_plan"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "lime_grasp",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 300.12,
+        "end": 308.78
+      },
+      "targetVideoTime": 37.55,
+      "targetSimTime": 300.4,
+      "actual": {
+        "videoTime": 37.55,
+        "simTime": 300.4,
+        "piece": "Piece 08",
+        "phase": "Grasp",
+        "inspected": "lime_grasp"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "lime_transport",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 308.78,
+        "end": 316.2
+      },
+      "targetVideoTime": 38.6,
+      "targetSimTime": 308.8,
+      "actual": {
+        "videoTime": 38.6,
+        "simTime": 308.8,
+        "piece": "Piece 08",
+        "phase": "Transport",
+        "inspected": "lime_transport"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "lime_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 316.2,
+        "end": 328.72
+      },
+      "targetVideoTime": 39.55,
+      "targetSimTime": 316.4,
+      "actual": {
+        "videoTime": 39.55,
+        "simTime": 316.4,
+        "piece": "Piece 08",
+        "phase": "Release",
+        "inspected": "lime_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "lime_receipt_settle",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 328.72,
+        "end": 329.42
+      },
+      "targetVideoTime": 41.1,
+      "targetSimTime": 328.8,
+      "actual": {
+        "videoTime": 41.1,
+        "simTime": 328.8,
+        "piece": "Piece 08",
+        "phase": "Observe & settle",
+        "inspected": "lime_receipt_settle"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "lime_handoff",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 329.42,
+        "end": 330.08
+      },
+      "targetVideoTime": 41.2,
+      "targetSimTime": 329.6,
+      "actual": {
+        "videoTime": 41.2,
+        "simTime": 329.6,
+        "piece": "Piece 08",
+        "phase": "Verify & advance",
+        "inspected": "lime_handoff"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "maroon_perceive_plan",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 330.08,
+        "end": 340.48
+      },
+      "targetVideoTime": 41.3,
+      "targetSimTime": 330.4,
+      "actual": {
+        "videoTime": 41.3,
+        "simTime": 330.4,
+        "piece": "Piece 09",
+        "phase": "Observe & plan",
+        "inspected": "maroon_perceive_plan"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "maroon_grasp",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 340.48,
+        "end": 349.6
+      },
+      "targetVideoTime": 42.6,
+      "targetSimTime": 340.8,
+      "actual": {
+        "videoTime": 42.6,
+        "simTime": 340.8,
+        "piece": "Piece 09",
+        "phase": "Grasp",
+        "inspected": "maroon_grasp"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "maroon_transport",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 349.6,
+        "end": 355.2
+      },
+      "targetVideoTime": 43.7,
+      "targetSimTime": 349.6,
+      "actual": {
+        "videoTime": 43.7,
+        "simTime": 349.6,
+        "piece": "Piece 09",
+        "phase": "Transport",
+        "inspected": "maroon_transport"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "maroon_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 355.2,
+        "end": 391.3
+      },
+      "targetVideoTime": 44.4,
+      "targetSimTime": 355.2,
+      "actual": {
+        "videoTime": 44.4,
+        "simTime": 355.2,
+        "piece": "Piece 09",
+        "phase": "Release",
+        "inspected": "maroon_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "maroon_receipt_settle",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 391.3,
+        "end": 392.26
+      },
+      "targetVideoTime": 48.95,
+      "targetSimTime": 391.6,
+      "actual": {
+        "videoTime": 48.95,
+        "simTime": 391.6,
+        "piece": "Piece 09",
+        "phase": "Observe & settle",
+        "inspected": "maroon_receipt_settle"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "maroon_handoff",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 392.26,
+        "end": 392.96
+      },
+      "targetVideoTime": 49.05,
+      "targetSimTime": 392.4,
+      "actual": {
+        "videoTime": 49.05,
+        "simTime": 392.4,
+        "piece": "Piece 09",
+        "phase": "Verify & advance",
+        "inspected": "maroon_handoff"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "navy_perceive_plan",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 392.96,
+        "end": 393.84
+      },
+      "targetVideoTime": 49.15,
+      "targetSimTime": 393.2,
+      "actual": {
+        "videoTime": 49.15,
+        "simTime": 393.2,
+        "piece": "Piece 10",
+        "phase": "Observe & plan",
+        "inspected": "navy_perceive_plan"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "navy_grasp",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 393.84,
+        "end": 403.48
+      },
+      "targetVideoTime": 49.25,
+      "targetSimTime": 394,
+      "actual": {
+        "videoTime": 49.25,
+        "simTime": 394,
+        "piece": "Piece 10",
+        "phase": "Grasp",
+        "inspected": "navy_grasp"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "navy_transport",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 403.48,
+        "end": 411.12
+      },
+      "targetVideoTime": 50.45,
+      "targetSimTime": 403.6,
+      "actual": {
+        "videoTime": 50.45,
+        "simTime": 403.6,
+        "piece": "Piece 10",
+        "phase": "Transport",
+        "inspected": "navy_transport"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "navy_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 411.12,
+        "end": 424.76
+      },
+      "targetVideoTime": 51.4,
+      "targetSimTime": 411.2,
+      "actual": {
+        "videoTime": 51.4,
+        "simTime": 411.2,
+        "piece": "Piece 10",
+        "phase": "Release",
+        "inspected": "navy_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "navy_receipt_settle",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 424.76,
+        "end": 425.48
+      },
+      "targetVideoTime": 53.1,
+      "targetSimTime": 424.8,
+      "actual": {
+        "videoTime": 53.1,
+        "simTime": 424.8,
+        "piece": "Piece 10",
+        "phase": "Observe & settle",
+        "inspected": "navy_receipt_settle"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "navy_handoff",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 425.48,
+        "end": 426.08
+      },
+      "targetVideoTime": 53.2,
+      "targetSimTime": 425.6,
+      "actual": {
+        "videoTime": 53.2,
+        "simTime": 425.6,
+        "piece": "Piece 10",
+        "phase": "Verify & advance",
+        "inspected": "navy_handoff"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "pink_perceive_plan",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 426.08,
+        "end": 426.86
+      },
+      "targetVideoTime": 53.3,
+      "targetSimTime": 426.4,
+      "actual": {
+        "videoTime": 53.3,
+        "simTime": 426.4,
+        "piece": "Piece 11",
+        "phase": "Observe & plan",
+        "inspected": "pink_perceive_plan"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "pink_grasp",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 426.86,
+        "end": 435.42
+      },
+      "targetVideoTime": 53.4,
+      "targetSimTime": 427.2,
+      "actual": {
+        "videoTime": 53.4,
+        "simTime": 427.2,
+        "piece": "Piece 11",
+        "phase": "Grasp",
+        "inspected": "pink_grasp"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "pink_transport",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 435.42,
+        "end": 444.22
+      },
+      "targetVideoTime": 54.45,
+      "targetSimTime": 435.6,
+      "actual": {
+        "videoTime": 54.45,
+        "simTime": 435.6,
+        "piece": "Piece 11",
+        "phase": "Transport",
+        "inspected": "pink_transport"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "pink_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 444.22,
+        "end": 460.22
+      },
+      "targetVideoTime": 55.55,
+      "targetSimTime": 444.4,
+      "actual": {
+        "videoTime": 55.55,
+        "simTime": 444.4,
+        "piece": "Piece 11",
+        "phase": "Release",
+        "inspected": "pink_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "pink_receipt_settle",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 460.22,
+        "end": 461.04
+      },
+      "targetVideoTime": 57.55,
+      "targetSimTime": 460.4,
+      "actual": {
+        "videoTime": 57.55,
+        "simTime": 460.4,
+        "piece": "Piece 11",
+        "phase": "Observe & settle",
+        "inspected": "pink_receipt_settle"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "pink_handoff",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 461.04,
+        "end": 461.7
+      },
+      "targetVideoTime": 57.65,
+      "targetSimTime": 461.2,
+      "actual": {
+        "videoTime": 57.65,
+        "simTime": 461.2,
+        "piece": "Piece 11",
+        "phase": "Verify & advance",
+        "inspected": "pink_handoff"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_perceive_plan",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 461.7,
+        "end": 462.68
+      },
+      "targetVideoTime": 57.75,
+      "targetSimTime": 462,
+      "actual": {
+        "videoTime": 57.75,
+        "simTime": 462,
+        "piece": "Piece 12",
+        "phase": "Observe & plan",
+        "inspected": "red_perceive_plan"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_grasp",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 462.68,
+        "end": 471.54
+      },
+      "targetVideoTime": 57.85,
+      "targetSimTime": 462.8,
+      "actual": {
+        "videoTime": 57.85,
+        "simTime": 462.8,
+        "piece": "Piece 12",
+        "phase": "Grasp",
+        "inspected": "red_grasp"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_red_handoff_prepare",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 471.54,
+        "end": 517.26
+      },
+      "targetVideoTime": 58.95,
+      "targetSimTime": 471.6,
+      "actual": {
+        "videoTime": 58.95,
+        "simTime": 471.6,
+        "piece": "Piece 12",
+        "phase": "First transfer",
+        "inspected": "red_red_handoff_prepare"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_red_receiver_close",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 517.26,
+        "end": 524.16
+      },
+      "targetVideoTime": 64.7,
+      "targetSimTime": 517.6,
+      "actual": {
+        "videoTime": 64.7,
+        "simTime": 517.6,
+        "piece": "Piece 12",
+        "phase": "Receiver closes",
+        "inspected": "red_red_receiver_close"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_red_sender_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 524.16,
+        "end": 531.92
+      },
+      "targetVideoTime": 65.55,
+      "targetSimTime": 524.4,
+      "actual": {
+        "videoTime": 65.55,
+        "simTime": 524.4,
+        "piece": "Piece 12",
+        "phase": "Sender releases",
+        "inspected": "red_red_sender_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_red_receiver_bind",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 531.92,
+        "end": 533.5
+      },
+      "targetVideoTime": 66.5,
+      "targetSimTime": 532,
+      "actual": {
+        "videoTime": 66.5,
+        "simTime": 532,
+        "piece": "Piece 12",
+        "phase": "Rebind from RGB",
+        "inspected": "red_red_receiver_bind"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_red_return_prepare",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 533.5,
+        "end": 563.42
+      },
+      "targetVideoTime": 66.7,
+      "targetSimTime": 533.6,
+      "actual": {
+        "videoTime": 66.7,
+        "simTime": 533.6,
+        "piece": "Piece 12",
+        "phase": "Return transfer",
+        "inspected": "red_red_return_prepare"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_red_return_close",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 563.42,
+        "end": 570.96
+      },
+      "targetVideoTime": 70.45,
+      "targetSimTime": 563.6,
+      "actual": {
+        "videoTime": 70.45,
+        "simTime": 563.6,
+        "piece": "Piece 12",
+        "phase": "Receiver closes",
+        "inspected": "red_red_return_close"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_red_return_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 570.96,
+        "end": 581.82
+      },
+      "targetVideoTime": 71.4,
+      "targetSimTime": 571.2,
+      "actual": {
+        "videoTime": 71.4,
+        "simTime": 571.2,
+        "piece": "Piece 12",
+        "phase": "Sender releases",
+        "inspected": "red_red_return_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_red_return_bind",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 581.82,
+        "end": 583.68
+      },
+      "targetVideoTime": 72.75,
+      "targetSimTime": 582,
+      "actual": {
+        "videoTime": 72.75,
+        "simTime": 582,
+        "piece": "Piece 12",
+        "phase": "Rebind from RGB",
+        "inspected": "red_red_return_bind"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_red_goal_transport",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 583.68,
+        "end": 611.14
+      },
+      "targetVideoTime": 73,
+      "targetSimTime": 584,
+      "actual": {
+        "videoTime": 73,
+        "simTime": 584,
+        "piece": "Piece 12",
+        "phase": "Apex approach",
+        "inspected": "red_red_goal_transport"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_red_goal_release",
+      "available": true,
+      "mode": "within_window",
+      "window": {
+        "start": 611.14,
+        "end": 650.04
+      },
+      "targetVideoTime": 76.4,
+      "targetSimTime": 611.2,
+      "actual": {
+        "videoTime": 76.4,
+        "simTime": 611.2,
+        "piece": "Piece 12",
+        "phase": "Apex release",
+        "inspected": "red_red_goal_release"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "red_red_goal_verify",
+      "available": true,
+      "mode": "terminal_outcome",
+      "window": {
+        "start": 650.04,
+        "end": 654.54
+      },
+      "targetVideoTime": 81.85,
+      "targetSimTime": 654.54,
+      "actual": {
+        "videoTime": 81.85,
+        "simTime": 654.54,
+        "piece": "Piece 12",
+        "phase": "Terminal verification refused",
+        "inspected": "red_red_goal_verify"
+      },
+      "reason": null,
+      "pass": true
+    },
+    {
+      "nodeId": "finish_all12",
+      "available": false,
+      "mode": "not_executed",
+      "window": null,
+      "targetVideoTime": null,
+      "targetSimTime": null,
+      "actual": {
+        "videoTime": 57.75,
+        "simTime": 462,
+        "piece": "Piece 12",
+        "phase": "Observe & plan"
+      },
+      "reason": "Not executed: the preceding terminal verification refused its scope.",
+      "pass": true
+    }
+  ]
+}

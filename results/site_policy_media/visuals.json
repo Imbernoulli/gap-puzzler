@@ -1,0 +1,316 @@
+{
+  "selfRefine": {
+    "cyan": {
+      "steps": [
+        {
+          "src": "media/refine_cyan_observe.jpg",
+          "source": "runs/pyramid_full12_bimanual_layout_c_v10/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0047.npz",
+          "observation": 47,
+          "camera": "top",
+          "simTime": 260.7,
+          "sourceCropXYXY": [
+            562,
+            617,
+            802,
+            767
+          ],
+          "size": [
+            800,
+            500
+          ],
+          "meaning": "55 mm opening; current Cyan RGB estimate refused due to occlusion"
+        },
+        {
+          "src": "media/refine_cyan_adjust.jpg",
+          "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0047.npz",
+          "observation": 47,
+          "camera": "top",
+          "simTime": 246.3,
+          "sourceCropXYXY": [
+            562,
+            617,
+            802,
+            767
+          ],
+          "size": [
+            800,
+            500
+          ],
+          "meaning": "75 mm opening; current Cyan RGB estimate accepted"
+        },
+        {
+          "src": "media/refine_cyan_verify.jpg",
+          "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0048.npz",
+          "observation": 48,
+          "camera": "top",
+          "simTime": 247.52,
+          "sourceCropXYXY": [
+            562,
+            617,
+            802,
+            767
+          ],
+          "size": [
+            800,
+            500
+          ],
+          "meaning": "Next actual 75 mm capture independently re-observes Cyan"
+        }
+      ],
+      "scope": "Two actual development runs; larger opening repairs observation occlusion. These are not three frames of a continuous same-run replay."
+    },
+    "board": {
+      "steps": [
+        {
+          "src": "media/refine_board_observe.jpg",
+          "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0031.npz",
+          "observation": 31,
+          "camera": "top",
+          "simTime": 178.86,
+          "sourceCropXYXY": [
+            360,
+            410,
+            920,
+            760
+          ],
+          "size": [
+            800,
+            500
+          ],
+          "meaning": "Same current RGB packet: top-only board outline rejected"
+        },
+        {
+          "src": "media/refine_board_adjust.jpg",
+          "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0031.npz",
+          "observation": 31,
+          "camera": "front",
+          "simTime": 178.86,
+          "sourceCropXYXY": [
+            360,
+            335,
+            920,
+            685
+          ],
+          "size": [
+            800,
+            500
+          ],
+          "meaning": "Same current RGB packet: front board fit accepted"
+        },
+        {
+          "src": "media/refine_board_verify.jpg",
+          "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0031.npz",
+          "observation": 31,
+          "camera": "side",
+          "simTime": 178.86,
+          "sourceCropXYXY": [
+            370,
+            430,
+            930,
+            780
+          ],
+          "size": [
+            800,
+            500
+          ],
+          "meaning": "Same current RGB packet: side board fit agrees; camera fusion is a perception repair, not a motion sequence"
+        }
+      ],
+      "scope": "Three cameras from one actual current observation packet; no invented camera motion or temporal changes."
+    },
+    "red": {
+      "steps": [
+        {
+          "src": "media/refine_red_observe.jpg",
+          "source": "runs/red_bimanual_goal_runner_gpu_v7/workspace/runs/red_bimanual_goal_given_prefix11_gpu_v7/episode/rgb/0021.npz",
+          "observation": 21,
+          "camera": "side",
+          "simTime": 121.58,
+          "sourceCropXYXY": [
+            510,
+            554,
+            750,
+            704
+          ],
+          "size": [
+            800,
+            500
+          ],
+          "meaning": "Earlier run: receiver bead depth extends 1.43 mm past the 16.5 mm front edge"
+        },
+        {
+          "src": "media/refine_red_adjust.jpg",
+          "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0107.npz",
+          "observation": 107,
+          "camera": "side",
+          "simTime": 582.54,
+          "sourceCropXYXY": [
+            551,
+            519,
+            791,
+            669
+          ],
+          "size": [
+            800,
+            500
+          ],
+          "meaning": "Current run: second receiver binding with public geometry reserve"
+        },
+        {
+          "src": "media/refine_red_verify.jpg",
+          "source": "media/policy_v13_native_latest.jpg",
+          "nativeStep": 32727,
+          "simTime": 654.54,
+          "sourceCropXYXY": [
+            310,
+            228,
+            650,
+            440
+          ],
+          "size": [
+            800,
+            500
+          ],
+          "meaning": "Current full native recorded-state final frame; physical placement and independent audit passed, terminal graph visual scope refused"
+        }
+      ],
+      "scope": "Older failed contact diagnostic, improved current handoff contact, and current final recorded state; different source runs are explicit."
+    }
+  },
+  "real2sim": {
+    "real": "media/real2sim_real.jpg",
+    "sim": "media/real2sim_sim.jpg",
+    "size": [
+      960,
+      720
+    ],
+    "realSource": "/srv/home/bohanlyu/gap-puzzler/video/source.mp4",
+    "realVideoTime": 214,
+    "simSource": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/frames.json",
+    "simNativeStep": 32727,
+    "simTime": 654.54,
+    "cropXYXY": [
+      120,
+      0,
+      600,
+      360
+    ],
+    "renderer": "RSS tiled on CUDA; recorded body and joint poses; no physics steps",
+    "alignment": "Approximate visual comparison of the same completed puzzle. A shared crop and phone-like camera preserve the views; no pixel-registration or exact appearance match is claimed.",
+    "camera": {
+      "eye": [
+        0.354,
+        0.201,
+        1.075
+      ],
+      "lookAt": [
+        0.486,
+        0.005,
+        0.775
+      ],
+      "up": [
+        0.559,
+        -0.829,
+        0
+      ],
+      "fovY": 42
+    }
+  },
+  "generalization": {
+    "cases": [
+      {
+        "case": "azure_nominal",
+        "src": "media/azure_variation_nominal.mp4",
+        "poster": "media/azure_variation_nominal_poster.jpg",
+        "scope": "One real RGB/CAD/proprio AZURE skill under one bounded cold TaskSpec scene variation. No full12 success or heldout success-rate claim.",
+        "variation": {
+          "board_translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "board_yaw_rad": 0.0,
+          "source_translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_yaw_rad": 0.0
+        },
+        "modulePhysicalSuccess": true,
+        "full12Success": false,
+        "provenance": "results/site_policy_media/azure_nominal.json"
+      },
+      {
+        "case": "azure_board_shift2mm_yaw_halfdeg",
+        "src": "media/azure_variation_board.mp4",
+        "poster": "media/azure_variation_board_poster.jpg",
+        "scope": "One real RGB/CAD/proprio AZURE skill under one bounded cold TaskSpec scene variation. No full12 success or heldout success-rate claim.",
+        "variation": {
+          "board_translation_m": [
+            0.002,
+            0.0,
+            0.0
+          ],
+          "board_yaw_rad": 0.008726646259971648,
+          "source_translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_yaw_rad": 0.0
+        },
+        "modulePhysicalSuccess": true,
+        "full12Success": false,
+        "provenance": "results/site_policy_media/azure_board.json"
+      },
+      {
+        "case": "azure_source_shift3mm_yaw3deg",
+        "src": "media/azure_variation_source.mp4",
+        "poster": "media/azure_variation_source_poster.jpg",
+        "scope": "One real RGB/CAD/proprio AZURE skill under one bounded cold TaskSpec scene variation. No full12 success or heldout success-rate claim.",
+        "variation": {
+          "board_translation_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "board_yaw_rad": 0.0,
+          "source_translation_m": [
+            0.003,
+            0.0,
+            0.0
+          ],
+          "source_yaw_rad": 0.05235987755982989
+        },
+        "modulePhysicalSuccess": true,
+        "full12Success": false,
+        "provenance": "results/site_policy_media/azure_source.json"
+      }
+    ],
+    "scope": "Three selected development cases of one Azure module. No full12 or heldout success-rate claim.",
+    "evidence": "results/reviews/modular_azure_variational_independent_summary_v1.json",
+    "grid": {
+      "src": "media/azure_variations_grid.mp4",
+      "poster": "media/azure_variations_grid_poster.jpg",
+      "duration": 15.3,
+      "size": [
+        960,
+        600
+      ],
+      "cells": [
+        "Actual nominal Azure execution",
+        "Actual board-perturbed Azure execution",
+        "Actual source-perturbed Azure execution",
+        "Recorded observation/action response plot; not a fourth trial"
+      ],
+      "sources": [
+        "media/azure_variation_nominal.mp4",
+        "media/azure_variation_board.mp4",
+        "media/azure_variation_source.mp4",
+        "media/azure_pose_response.png"
+      ],
+      "scope": "Three selected one-module development cases, not full12 successes or a fourth trial."
+    }
+  }
+}

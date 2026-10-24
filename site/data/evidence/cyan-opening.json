@@ -59,7 +59,8 @@
     "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0047.npz",
     "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/independent_verification/checkpoint_results.jsonl",
     "runs/gap_delivery_independent_audit_v1/v13_terminal_site_summary.json",
-    "runs/gap_delivery_independent_audit_v1/v13_terminal_full_native_independent_review.json"
+    "runs/gap_delivery_independent_audit_v1/v13_terminal_full_native_independent_review.json",
+    "results/site_policy_media/visuals.json"
   ],
   "rounds": [
     {
@@ -116,5 +117,112 @@
       "pink",
       "red"
     ]
+  },
+  "narrative": {
+    "title": "Cyan: make the release visible.",
+    "problem": "The piece was released, but a finger still covered the bead needed by the next visual check.",
+    "diagnosis": "",
+    "change": "",
+    "result": "The wider opening exposed Cyan, earned two accepted observations, and enabled the continuous run to place all twelve pieces.",
+    "scope": "Continuous twelve-piece physical assembly.",
+    "attempts": [
+      {
+        "label": "Release",
+        "attempt": "The original opening left the next RGB check unaccepted.",
+        "diagnosis": "The moving finger still crossed the middle bead in the top image.",
+        "change": "Use the recorded joint state and public finger mesh to locate the occlusion.",
+        "outcome": "The geometry identified the finger responsible."
+      },
+      {
+        "label": "Calculate",
+        "attempt": "Compare several wider jaw openings.",
+        "diagnosis": "A small increase still left some bead rays blocked.",
+        "change": "Select the smallest tested opening that cleared every sampled ray and passed the existing guards.",
+        "outcome": "The calculation selected a 75 mm opening."
+      },
+      {
+        "label": "Replay",
+        "attempt": "Execute the revised opening and look again.",
+        "diagnosis": "",
+        "change": "",
+        "outcome": "Cyan passed release and next-piece handoff checks; independent audit confirmed all twelve physical placements at the end of the run."
+      }
+    ]
+  },
+  "visual_sequence": [
+    {
+      "label": "Observe",
+      "title": "Locate the occlusion.",
+      "media": "media/refine_cyan_observe.jpg"
+    },
+    {
+      "label": "Adjust",
+      "title": "Open wider.",
+      "media": "media/refine_cyan_adjust.jpg"
+    },
+    {
+      "label": "Verify",
+      "title": "Look again, then continue.",
+      "media": "media/refine_cyan_verify.jpg"
+    }
+  ],
+  "visual_provenance": {
+    "steps": [
+      {
+        "src": "media/refine_cyan_observe.jpg",
+        "source": "runs/pyramid_full12_bimanual_layout_c_v10/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0047.npz",
+        "observation": 47,
+        "camera": "top",
+        "simTime": 260.7,
+        "sourceCropXYXY": [
+          562,
+          617,
+          802,
+          767
+        ],
+        "size": [
+          800,
+          500
+        ],
+        "meaning": "55 mm opening; current Cyan RGB estimate refused due to occlusion"
+      },
+      {
+        "src": "media/refine_cyan_adjust.jpg",
+        "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0047.npz",
+        "observation": 47,
+        "camera": "top",
+        "simTime": 246.3,
+        "sourceCropXYXY": [
+          562,
+          617,
+          802,
+          767
+        ],
+        "size": [
+          800,
+          500
+        ],
+        "meaning": "75 mm opening; current Cyan RGB estimate accepted"
+      },
+      {
+        "src": "media/refine_cyan_verify.jpg",
+        "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0048.npz",
+        "observation": 48,
+        "camera": "top",
+        "simTime": 247.52,
+        "sourceCropXYXY": [
+          562,
+          617,
+          802,
+          767
+        ],
+        "size": [
+          800,
+          500
+        ],
+        "meaning": "Next actual 75 mm capture independently re-observes Cyan"
+      }
+    ],
+    "scope": "Two actual development runs; larger opening repairs observation occlusion. These are not three frames of a continuous same-run replay."
   }
 }

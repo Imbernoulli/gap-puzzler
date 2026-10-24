@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import inspect
 import math
 import os
 from pathlib import Path
@@ -178,9 +179,10 @@ def render_native(episode: Path, output: Path, manifest_path: Path,
         frames.append(all_frames[-1])
     if limit is not None:
         frames = frames[:limit]
-    workspace = episode.parents[2]
-    if not (workspace / "puzzler/task.py").exists():
-        raise ValueError(f"Cannot identify original policy workspace at {workspace}")
+    workspace = next((parent for parent in episode.parents
+                      if (parent / "puzzler/task.py").exists()), None)
+    if workspace is None:
+        raise ValueError(f"Cannot identify original policy workspace for {episode}")
     # Use the run's task/asset code, not whichever puzzler package the launcher
     # might otherwise select. The model's body order must match the recording.
     sys.path.insert(0, str(workspace))
@@ -193,8 +195,13 @@ def render_native(episode: Path, output: Path, manifest_path: Path,
     if not wp.get_device("cuda:0").is_cuda:
         raise RuntimeError("Native replay requires a CUDA GPU; CPU is forbidden")
     variant = task.Variant(**result["variant"])
-    spec = task.task_spec(variant, max_steps=1, suite="site_native_pose_replay",
-                          terminate_on_success=False, contact_capacity=512)
+    options = dict(max_steps=1, suite="site_native_pose_replay")
+    parameters = inspect.signature(task.task_spec).parameters
+    if "terminate_on_success" in parameters:
+        options["terminate_on_success"] = False
+    if "contact_capacity" in parameters:
+        options["contact_capacity"] = 512
+    spec = task.task_spec(variant, **options)
     # Env construction compiles the native geometry but does not reset/step it.
     # Small contact storage is sufficient because no physics is executed.
     env = bench.Env(spec, device="cuda:0", renderer="", control_mode="joint_position")

@@ -87,6 +87,21 @@ def validate(site: Path, require_complete=False):
                     local_link(item["media"][key])
     for link in research.get("evidence", {}).values():
         local_link(link)
+    def nested_assets(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in ("src", "poster", "shapeSrc", "href") and isinstance(child, str):
+                    local_link(child)
+                else:
+                    nested_assets(child)
+        elif isinstance(value, list):
+            for child in value:
+                nested_assets(child)
+
+    nested_assets(research)
+    if run.get("physicalAccepted"):
+        audit = json.loads((site / "data/policy_final_audit.json").read_text())
+        assert audit["full12Physical"] is True and audit["physicalPlacedPieces"] == 12
     if run["full12Accepted"] or require_complete:
         assert run["full12Accepted"] and run["checkpointComplete"]
         assert run["completePieces"] == 12

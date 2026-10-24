@@ -1,0 +1,786 @@
+{
+  "schema": "puzzler.website_evidence_summary.v1",
+  "title": "Red two-hop regrasp: actual clip and public grasp geometry",
+  "problem": "The recorded direct-grasp ingress proposal fell below its unchanged0.035rad joint-reserve requirement.",
+  "selection": "Two handoffs change the object-to-gripper transform on the same selected public CAD bead4. The final clip attachment is taken from actual posttransfer RGB582.54s and synchronous robot encoders.",
+  "original_route": {
+    "path": "runs/pink_red_adjacent_gpu_v10/failed_ingress_evidence.json",
+    "actual_call_timestamp": 77.0,
+    "arm": 1,
+    "feasible": false,
+    "requested_reserve_rad": 0.035,
+    "recorded_minimum_reserve_rad": 0.02911090850830078
+  },
+  "original_attachment": {
+    "id": "original_single_arm",
+    "source_timestamp": 76.46,
+    "source_role": "Actual accepted postrotation outside RGB and its same-image q16; refreshed attachment, never goal fill",
+    "arm": 1,
+    "selected_public_CAD_bead": 4,
+    "owned_H_object_in_TCP_position_m": [
+      0.0029862147081994896,
+      0.016551662873714634,
+      0.040699785304878305
+    ],
+    "owned_H_object_in_TCP_rotation": [
+      [
+        -0.23976800728597472,
+        -0.11399629882821358,
+        -0.9641141771261234
+      ],
+      [
+        -0.7347942128548548,
+        0.6703507974749097,
+        0.10347595411382805
+      ],
+      [
+        0.6344988317066685,
+        0.7332357412034832,
+        -0.244492495558967
+      ]
+    ],
+    "public_beads_in_TCP_m": [
+      [
+        0.0016107435273264032,
+        -0.018254745307629754,
+        0.03139268970290718
+      ],
+      [
+        -0.0009447787026402466,
+        0.05039141982435985,
+        0.0705228995005017
+      ],
+      [
+        0.0019051287680650925,
+        0.033632649887487105,
+        0.05219200597041462
+      ],
+      [
+        0.004755036238770432,
+        0.016873879950614363,
+        0.033861112440327544
+      ],
+      [
+        0.007604943709475772,
+        0.00011511001374162055,
+        0.015530218910240461
+      ]
+    ],
+    "selected_bead_in_TCP_m": [
+      0.007604943709475772,
+      0.00011511001374162055,
+      0.015530218910240461
+    ],
+    "selected_bead_abs_TCP_x_m": 0.007604943709475772,
+    "selected_bead_TCP_z_m": 0.015530218910240461,
+    "public_pad_front_z_m": 0.0165,
+    "bead_center_front_face_reserve_m": 0.0009697810897595395,
+    "actual_jaw_width_m": 0.023230034857988358,
+    "selected_recipe": null,
+    "body_relative_TCP_position_m": [
+      -0.012945901384014392,
+      -0.04059754022753442,
+      0.0111171449059935
+    ],
+    "body_relative_TCP_rotation": [
+      [
+        -0.23976800728597472,
+        -0.7347942128548548,
+        0.6344988317066685
+      ],
+      [
+        -0.11399629882821358,
+        0.6703507974749097,
+        0.7332357412034832
+      ],
+      [
+        -0.9641141771261234,
+        0.10347595411382805,
+        -0.244492495558967
+      ]
+    ],
+    "body_relative_TCP_origin_shift_from_original_m": 0.0,
+    "grasp_orientation_change_from_original_deg": 0.0,
+    "common_public_goal_illustration": {
+      "TCP_position_world_m": [
+        0.45846481087129853,
+        0.0091868279722215,
+        0.8883228714287178
+      ],
+      "TCP_quaternion_xyzw": [
+        0.8965746156824302,
+        -0.42393531841299775,
+        0.10419182633261415,
+        0.07467842822025027
+      ],
+      "scope": "Algebraic H composition at same public goal body pose; illustration only, no new IK/collision/physical certificate."
+    },
+    "provenance": {
+      "path": "runs/pink_red_adjacent_gpu_v10/failed_ingress_evidence.json",
+      "json_pointer": "/latest_authentic_held_belief/result"
+    }
+  },
+  "clip_final_attachment": {
+    "id": "full12_v13_final_receiver",
+    "source_timestamp": 582.54,
+    "native_propagation_timestamp": 582.58,
+    "source_step": 29127,
+    "source_role": "Fresh posttransfer actual Red RGB and same-image receiver q16",
+    "arm": 1,
+    "selected_public_CAD_bead": 4,
+    "handoff_hop": 2,
+    "handoff_stage": "verified",
+    "owned_H_object_in_TCP_position_m": [
+      0.018056139304430455,
+      -0.0020443974279316843,
+      0.037284037644819586
+    ],
+    "owned_H_object_in_TCP_rotation": [
+      [
+        -0.7175203423855495,
+        0.6965074623986096,
+        0.006474031663022831
+      ],
+      [
+        -0.045041738069492715,
+        -0.05567172787440969,
+        0.9974326546424864
+      ],
+      [
+        0.6950797077275408,
+        0.7153866182271847,
+        0.07131750393044684
+      ]
+    ],
+    "public_beads_in_TCP_m": [
+      [
+        -0.01718949141523882,
+        -0.0012750803530892476,
+        0.029724033252554856
+      ],
+      [
+        0.05298657682429564,
+        -0.004324416491932656,
+        0.06600103692640519
+      ],
+      [
+        0.0355738902643304,
+        -0.002932623295072414,
+        0.048116371470725575
+      ],
+      [
+        0.018161203704365157,
+        -0.001540830098212172,
+        0.030231706015045955
+      ],
+      [
+        0.0007485171443999163,
+        -0.00014903690135192969,
+        0.012347040559366335
+      ]
+    ],
+    "selected_bead_in_TCP_m": [
+      0.0007485171443999163,
+      -0.00014903690135192969,
+      0.012347040559366335
+    ],
+    "selected_bead_abs_TCP_x_m": 0.0007485171443999163,
+    "selected_bead_TCP_z_m": 0.012347040559366335,
+    "public_pad_front_z_m": 0.0165,
+    "bead_center_front_face_reserve_m": 0.004152959440633666,
+    "actual_jaw_width_m": 0.024070173501968384,
+    "actual_jaw_timestamp": 582.56,
+    "native_current_jaw_width_m": 0.02406985219568014,
+    "selected_recipe": {
+      "bead": 4,
+      "bead_in_tcp_m": [
+        0.0,
+        0.0,
+        0.0132
+      ],
+      "hand_in_body_position": [
+        -0.014333809511662434,
+        -0.03933380951166243,
+        -2.9309887850104133e-18
+      ],
+      "hand_in_body_rotation": [
+        [
+          -0.7071067811865475,
+          -1.5700924586837754e-16,
+          0.7071067811865477
+        ],
+        [
+          0.7071067811865477,
+          -1.570092458683775e-16,
+          0.7071067811865475
+        ],
+        [
+          0.0,
+          1.0,
+          2.220446049250313e-16
+        ]
+      ],
+      "base_yaw_deg": 135.0,
+      "finite_face_qualification": {
+        "minimum_bead_depth_m": 0.006,
+        "maximum_bead_depth_m": 0.0135,
+        "maximum_abs_bead_x_m": 0.002,
+        "minimum_front_face_reserve_m": 0.003
+      },
+      "handoff_pose_proposal": {
+        "body_center_board_relative_m": [
+          -0.08500000000000002,
+          6.462348535570529e-27,
+          0.19000000000000006
+        ],
+        "body_rotation_board_relative": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "proposal_scope": "Public CAD body-relative interior grasp Rz135 Rx90 depth13.2mm; nominal endpoint math only; fresh RGB/q16, full-path and independent physical hold checkpoints mandatory",
+      "arm": 1
+    },
+    "body_relative_TCP_position_m": [
+      -0.013051813946646552,
+      -0.039362552509502144,
+      -0.0007367517651600112
+    ],
+    "body_relative_TCP_rotation": [
+      [
+        -0.7175203423855495,
+        -0.045041738069492715,
+        0.6950797077275408
+      ],
+      [
+        0.6965074623986096,
+        -0.05567172787440969,
+        0.7153866182271847
+      ],
+      [
+        0.006474031663022831,
+        0.9974326546424864,
+        0.07131750393044684
+      ]
+    ],
+    "body_relative_TCP_origin_shift_from_original_m": 0.011918526688521454,
+    "grasp_orientation_change_from_original_deg": 86.1720216548384,
+    "common_public_goal_illustration": {
+      "TCP_position_world_m": [
+        0.4661763314506236,
+        0.00013440711223199238,
+        0.8875244947298652
+      ],
+      "TCP_quaternion_xyzw": [
+        -0.37919394142647583,
+        0.9246010526948285,
+        0.03014565303529548,
+        -0.020398228946280288
+      ],
+      "scope": "Algebraic same-goal composition using exact clip run ownedH; illustration only, no new IK/geometry/physical certificate."
+    },
+    "provenance": {
+      "path": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/tools.jsonl",
+      "jsonl_line": 5222,
+      "call_id": 2611,
+      "event": "return",
+      "result_key": "result"
+    },
+    "actual_jaw_provenance": {
+      "path": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/tools.jsonl",
+      "jsonl_line": 5220,
+      "call_id": 2610,
+      "event": "return",
+      "result_key": "result"
+    },
+    "handoff_context_provenance": {
+      "path": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/trace/0000/node_data/red_goal_transport_sg.act/resolved_inputs.json",
+      "json_pointer": "/state/handoff"
+    },
+    "exact_native_public_belief": {
+      "contract": "pyramid_rgb_owned_held_control_v1",
+      "piece": "red",
+      "source": {
+        "mode": "pyramid",
+        "piece": "red",
+        "pose": [
+          0.4083668412955906,
+          -0.035687790242463206,
+          0.9313293281986758,
+          -0.07024623658194824,
+          0.01726294224205831,
+          -0.018153388585145,
+          0.9972150778814454
+        ],
+        "timestamp": 582.54,
+        "frame_sha256": {
+          "top": "088339e5b32c786e66ff62786c0e1e2f477b4dcb684ef44c7bdc58f7b303a9ae",
+          "front": "4ff5f1eaa6c473d925328cacffc50a52091916ce24191894c05bc308b192e13d",
+          "rear": "147402ecd990d741e88e4acfbfbea45af1abfa3b52adbd2bde0213e3fb002cdb",
+          "side": "5212748917bda8ed62b3a17c35d9ce68618f140caf9a3599bf8741dfa9b231e9"
+        },
+        "observation_source": "rgb_shape_geometry",
+        "robot_encoder_values": [
+          -0.5985221266746521,
+          0.9128857254981995,
+          0.3909139633178711,
+          0.7007505297660828,
+          0.9385912418365479,
+          -0.04963848739862442,
+          0.027471842244267464,
+          -0.02747069112956524,
+          1.0402761697769165,
+          0.4353976249694824,
+          0.05558440089225769,
+          0.3254718780517578,
+          0.27577728033065796,
+          1.5167205333709717,
+          0.011807586997747421,
+          -0.01226290687918663
+        ],
+        "robot_encoder_sha256": "d5ac2cf772bc18e05d88e9734f437d6dc295743bbcaf7f60d798a9deaf203fbe",
+        "source_step": 29127,
+        "source_role": "Fresh posttransfer actual Red RGB and same-image receiver q16"
+      },
+      "source_sha256": "2b8c4df58b598b8c09ac4521c997441718d46ef8ed32e53a55e265244993c1ed",
+      "source_hand_bead_gap_m": 0.01237060631044666,
+      "current_timestamp": 582.58,
+      "source_age_s": 0.04000000000007731,
+      "maximum_source_age_s": 30.0,
+      "current_robot_encoder_values": [
+        -0.5985221266746521,
+        0.9128857254981995,
+        0.39091336727142334,
+        0.7007505297660828,
+        0.9385912418365479,
+        -0.04963848739862442,
+        0.02747236378490925,
+        -0.027471212670207024,
+        1.0402761697769165,
+        0.4353976249694824,
+        0.05558440834283829,
+        0.3254718780517578,
+        0.27577728033065796,
+        1.5167205333709717,
+        0.011807267554104328,
+        -0.012262584641575813
+      ],
+      "current_robot_encoder_sha256": "28dd590124b20d8b752dbe1442c503b0a948a0323a3d93f481df9eee69f39fd3",
+      "current_tcp": [
+        0.3939744827282644,
+        -0.07423448125488372,
+        0.9365557818134271,
+        0.26155283776950305,
+        0.6765510486199459,
+        0.623461889404142,
+        0.29182882675738
+      ],
+      "object_in_tcp_position": [
+        0.018056139304430455,
+        -0.0020443974279316843,
+        0.037284037644819586
+      ],
+      "object_in_tcp_rotation": [
+        [
+          -0.7175203423855495,
+          0.6965074623986096,
+          0.006474031663022831
+        ],
+        [
+          -0.045041738069492715,
+          -0.05567172787440969,
+          0.9974326546424864
+        ],
+        [
+          0.6950797077275408,
+          0.7153866182271847,
+          0.07131750393044684
+        ]
+      ],
+      "predicted_body_pose": [
+        0.4083668412955906,
+        -0.035687790242463185,
+        0.9313293281986758,
+        -0.07024623658194824,
+        0.01726294224205832,
+        -0.018153388585144984,
+        0.9972150778814454
+      ],
+      "uncertainty_m": 0.006,
+      "current_target_measured": false,
+      "verified_pose_error_m": null,
+      "retained_jaw_proprioception": {
+        "contract": "robot_jaw_held_contradiction_v1",
+        "source_jaw_width_m": 0.02407049387693405,
+        "current_jaw_width_m": 0.02406985219568014,
+        "loaded_source_minimum_width_m": 0.01,
+        "closed_empty_contradiction_width_m": 0.004,
+        "contradicted": false,
+        "source": "Declared robot encoder jaw coordinates only; no object poses or contact state",
+        "retained_grasp_proven_by_this_check": false
+      },
+      "assumption": "Rigid sourceRGB target-to-TCP transform persists through the bounded declared control; slip is unobserved and not certified. 6mm is a declared planning envelope, not covariance or a measured error bound.",
+      "scope": "Conditional control proposal only, never current RGB poses or a release receipt."
+    },
+    "clip_alignment": {
+      "run": "pyramid_full12_bimanual_layout_c_v13",
+      "near_clip_final_bind_sim_time": 583.68,
+      "most_recent_accepted_RGB_source_before_clip_final_bind": 582.54,
+      "bound_before_clip_final_bind": 582.58,
+      "source_timestamp_not_changed_to_clip_checkpoint": true
+    }
+  },
+  "public_CAD": {
+    "piece": "red",
+    "bead_radius_m": 0.0125,
+    "bead_pitch_m": 0.025,
+    "local_bead_centers_m": [
+      [
+        0.019999999999999997,
+        -0.030000000000000002,
+        0.0
+      ],
+      [
+        -0.0050000000000000044,
+        0.045,
+        0.0
+      ],
+      [
+        -0.0050000000000000044,
+        0.02,
+        0.0
+      ],
+      [
+        -0.0050000000000000044,
+        -0.005000000000000001,
+        0.0
+      ],
+      [
+        -0.0050000000000000044,
+        -0.030000000000000002,
+        0.0
+      ]
+    ],
+    "selected_bead_index_zero_based": 4,
+    "callable": "puzzler.model.local_beads(\"red\")",
+    "source": "runs/pyramid_suffix10_12_bimanual_gpu_v9/workspace/puzzler/model.py"
+  },
+  "clip": {
+    "sourceVideoStart_s": 62.5,
+    "sourceVideoEnd_s": 74.0,
+    "duration_s": 11.5,
+    "mappedStart": {
+      "simTime": 500.0,
+      "nominalVideoTime": 62.5,
+      "frameBeforeOrAt": {
+        "videoTime": 62.5,
+        "simTime": 500.0,
+        "nativeStep": 25000
+      },
+      "firstFrameAtOrAfter": {
+        "videoTime": 62.5,
+        "simTime": 500.0,
+        "nativeStep": 25000
+      }
+    },
+    "mappedEnd": {
+      "simTime": 592.0,
+      "nominalVideoTime": 74.0,
+      "frameBeforeOrAt": {
+        "videoTime": 74.0,
+        "simTime": 592.0,
+        "nativeStep": 29600
+      },
+      "firstFrameAtOrAfter": {
+        "videoTime": 74.0,
+        "simTime": 592.0,
+        "nativeStep": 29600
+      }
+    },
+    "display": "First receiver approach; right-to-left grip and donor withdrawal; left-to-right return grip and donor withdrawal; second receiver-bound checkpoint.",
+    "bothActualHandoffsCovered": true,
+    "poster": {
+      "sourceVideoTime_s": 65.35,
+      "clipTime_s": 2.85,
+      "mappedSimulationTime_s": 522.8,
+      "nativeStep": 26140,
+      "reason": "First handover: both grippers meet the visible Red part just after the final receiver-close command and before donor opening.",
+      "contactSheetSample": "results/site_bimanual/red_handoff_v13_frames/exact_04.jpg"
+    }
+  },
+  "native_handoffs": [
+    {
+      "hop": 1,
+      "senderArm": 1,
+      "receiverArm": 0,
+      "label": "Right to left",
+      "approachActualSimulationRange_s": [
+        504.72,
+        516.22
+      ],
+      "receiverCloseCommandSimulationTimes_s": [
+        519.5,
+        520.44,
+        521.28,
+        522.14
+      ],
+      "donorOpenCommandSimulationTime_s": 525.08,
+      "donorWithdrawalSimulationRange_s": [
+        527.46,
+        531.0
+      ],
+      "preparedCP_sim_s": 517.26,
+      "dualHoldCP_sim_s": 524.16,
+      "receiverOnlyCP_sim_s": 531.92,
+      "boundCP_sim_s": 533.5
+    },
+    {
+      "hop": 2,
+      "senderArm": 0,
+      "receiverArm": 1,
+      "label": "Left to right",
+      "approachActualSimulationRange_s": [
+        551.4,
+        562.32
+      ],
+      "receiverCloseCommandSimulationTimes_s": [
+        566.24,
+        567.18,
+        568.08,
+        568.86
+      ],
+      "donorOpenCommandSimulationTime_s": 575.02,
+      "donorWithdrawalSimulationRange_s": [
+        577.16,
+        580.46
+      ],
+      "preparedCP_sim_s": 563.42,
+      "dualHoldCP_sim_s": 570.96,
+      "receiverOnlyCP_sim_s": 581.82,
+      "boundCP_sim_s": 583.68
+    }
+  ],
+  "native_checkpoint_events": [
+    {
+      "phase": "handoff_prepared",
+      "senderArm": 1,
+      "receiverArm": 0,
+      "nativeStep": 25863,
+      "passed": true,
+      "simTime": 517.26,
+      "nominalVideoTime": 64.6575,
+      "frameBeforeOrAt": {
+        "videoTime": 64.65,
+        "simTime": 517.2,
+        "nativeStep": 25860
+      },
+      "firstFrameAtOrAfter": {
+        "videoTime": 64.7,
+        "simTime": 517.6,
+        "nativeStep": 25880
+      }
+    },
+    {
+      "phase": "handoff_dualhold",
+      "senderArm": 1,
+      "receiverArm": 0,
+      "nativeStep": 26208,
+      "passed": true,
+      "simTime": 524.16,
+      "nominalVideoTime": 65.52,
+      "frameBeforeOrAt": {
+        "videoTime": 65.5,
+        "simTime": 524.0,
+        "nativeStep": 26200
+      },
+      "firstFrameAtOrAfter": {
+        "videoTime": 65.55,
+        "simTime": 524.4,
+        "nativeStep": 26220
+      }
+    },
+    {
+      "phase": "handoff_receiver_only",
+      "senderArm": 1,
+      "receiverArm": 0,
+      "nativeStep": 26596,
+      "passed": true,
+      "simTime": 531.92,
+      "nominalVideoTime": 66.49,
+      "frameBeforeOrAt": {
+        "videoTime": 66.45,
+        "simTime": 531.6,
+        "nativeStep": 26580
+      },
+      "firstFrameAtOrAfter": {
+        "videoTime": 66.5,
+        "simTime": 532.0,
+        "nativeStep": 26600
+      }
+    },
+    {
+      "phase": "handoff_receiver_bound",
+      "senderArm": 1,
+      "receiverArm": 0,
+      "nativeStep": 26675,
+      "passed": true,
+      "simTime": 533.5,
+      "nominalVideoTime": 66.6875,
+      "frameBeforeOrAt": {
+        "videoTime": 66.65,
+        "simTime": 533.2,
+        "nativeStep": 26660
+      },
+      "firstFrameAtOrAfter": {
+        "videoTime": 66.7,
+        "simTime": 533.6,
+        "nativeStep": 26680
+      }
+    },
+    {
+      "phase": "return_handoff_prepared",
+      "senderArm": 0,
+      "receiverArm": 1,
+      "nativeStep": 28171,
+      "passed": true,
+      "simTime": 563.42,
+      "nominalVideoTime": 70.4275,
+      "frameBeforeOrAt": {
+        "videoTime": 70.4,
+        "simTime": 563.2,
+        "nativeStep": 28160
+      },
+      "firstFrameAtOrAfter": {
+        "videoTime": 70.45,
+        "simTime": 563.6,
+        "nativeStep": 28180
+      }
+    },
+    {
+      "phase": "return_handoff_dualhold",
+      "senderArm": 0,
+      "receiverArm": 1,
+      "nativeStep": 28548,
+      "passed": true,
+      "simTime": 570.96,
+      "nominalVideoTime": 71.37,
+      "frameBeforeOrAt": {
+        "videoTime": 71.35,
+        "simTime": 570.8,
+        "nativeStep": 28540
+      },
+      "firstFrameAtOrAfter": {
+        "videoTime": 71.4,
+        "simTime": 571.2,
+        "nativeStep": 28560
+      }
+    },
+    {
+      "phase": "return_handoff_receiver_only",
+      "senderArm": 0,
+      "receiverArm": 1,
+      "nativeStep": 29091,
+      "passed": true,
+      "simTime": 581.82,
+      "nominalVideoTime": 72.7275,
+      "frameBeforeOrAt": {
+        "videoTime": 72.7,
+        "simTime": 581.6,
+        "nativeStep": 29080
+      },
+      "firstFrameAtOrAfter": {
+        "videoTime": 72.75,
+        "simTime": 582.0,
+        "nativeStep": 29100
+      }
+    },
+    {
+      "phase": "return_handoff_receiver_bound",
+      "senderArm": 0,
+      "receiverArm": 1,
+      "nativeStep": 29184,
+      "passed": true,
+      "simTime": 583.68,
+      "nominalVideoTime": 72.96,
+      "frameBeforeOrAt": {
+        "videoTime": 72.95,
+        "simTime": 583.6,
+        "nativeStep": 29180
+      },
+      "firstFrameAtOrAfter": {
+        "videoTime": 73.0,
+        "simTime": 584.0,
+        "nativeStep": 29200
+      }
+    }
+  ],
+  "later_same_run_red_release_evaluator_only": {
+    "phase": "release",
+    "piece": "red",
+    "native_step": 32502,
+    "policy_input": false,
+    "passed": true,
+    "target_goal_bead_error_m": 0.0025292548962233138,
+    "released_stable_tail_s": 4.88,
+    "actual_target_robot_loaded": false,
+    "provenance": {
+      "path": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/independent_verification/checkpoint_results.jsonl",
+      "line": 82
+    }
+  },
+  "media": {
+    "video": "media/bimanual_red_twohop_v13.mp4",
+    "poster": "media/bimanual_red_twohop_v13_poster.jpg",
+    "geometry": "media/bimanual_red_grasp_geometry.png",
+    "geometryVector": "media/bimanual_red_grasp_geometry.svg",
+    "videoKind": "Crop of native recorded-state execution render; no resimulation",
+    "duration_s": 11.5,
+    "width": 960,
+    "height": 600,
+    "fps": 20,
+    "nominalSimulationSpeed": 8,
+    "cropSourcePixels": [
+      100,
+      40,
+      720,
+      450
+    ],
+    "sourceVideo": "media/policy_v13_native.mp4",
+    "sourceVideoTimeRange_s": [
+      62.5,
+      74.0
+    ],
+    "sourceSimulationRange_s": [
+      500.0,
+      592.0
+    ]
+  },
+  "geometry_method": "Public five-bead CAD and exact public MJCF distal finger collision primitives transformed by each dated RGB/q16-owned H; shared piece frame and view. The wrist/arm is omitted. This diagram is an illustration, not a fresh IK/contact certificate.",
+  "scope": "Original single-arm rejection and V13 regrasp are different dated scenes/routes. This establishes a blocked recorded proposal and a successful actual pair of handoffs; it does not prove single-arm theoretical impossibility or controlled causal attribution. V13 final Red release physically passes later in the same run; full graph terminal admission remains false.",
+  "source_artifacts": [
+    "runs/pink_red_adjacent_gpu_v10/failed_ingress_evidence.json",
+    "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/tools.jsonl",
+    "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/independent_verification/checkpoint_results.jsonl",
+    "results/site_bimanual/red_geometry_evidence.json",
+    "results/site_bimanual/red_handoff_v13_evidence.json",
+    "puzzler/gripper_geometry.py",
+    "results/site_bimanual/bimanual_evidence_summary.json",
+    "results/site_bimanual/bimanual_showcase_schema.json"
+  ],
+  "policy_edits": false,
+  "new_simulation": false,
+  "privileged_state_used_for_figure_or_control": false
+}

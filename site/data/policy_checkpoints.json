@@ -3,7 +3,7 @@
     "id": "pyramid_full12_bimanual_layout_c_v13",
     "name": "pyramid_original_order_layout_c_v10",
     "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10",
-    "updatedAt": "2026-10-24T18:26:42.452496+00:00",
+    "updatedAt": "2026-10-24T18:57:35.602144+00:00",
     "checkpointCount": 82,
     "expectedCheckpoints": 84,
     "passedCheckpoints": 82,

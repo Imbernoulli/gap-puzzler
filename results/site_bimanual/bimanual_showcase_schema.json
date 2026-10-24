@@ -1,0 +1,29 @@
+{
+  "bimanualShowcase": {
+    "title": "Regrasp to change the approach",
+    "caption": "Recorded Red handoffs · 8×",
+    "reason": [
+      "This grasp’s ingress failed the original joint-reserve gate.",
+      "Two handoffs changed its grasp frame by 86.2° before placement."
+    ],
+    "media": {
+      "type": "video",
+      "src": "media/bimanual_red_twohop_v13.mp4",
+      "poster": "media/bimanual_red_twohop_v13_poster.jpg",
+      "alt": "Actual recorded Red transfer from right to left hand and back to right."
+    },
+    "geometryMedia": {
+      "type": "image",
+      "src": "media/bimanual_red_grasp_geometry.png",
+      "alt": "Public Red and fingertip CAD in a shared piece frame: original grip and actual V13 grip after two handoffs.",
+      "caption": "Public CAD + recorded RGB / robot FK"
+    },
+    "evidence": [
+      {
+        "label": "Recorded handoffs and grasp geometry",
+        "href": "data/evidence/bimanual-regrasp.json",
+        "scope": "Original proposal reserve refusal; actual V13 two-hop checkpoints; exact posttransfer RGB/q16 attachment. Different dated routes, with no universal single-arm impossibility claim."
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "puzzler.delivery_candidate.v1",
+  "status": "DRAFT_ENTRY_NOT_NATIVE_VALIDATED",
+  "source_candidate": "pyramid_full12_bimanual_layout_c_v17",
+  "source_graph_name": "pyramid_original_order_layout_c_v10",
+  "full12_accepted": false,
+  "native_entry_validated": false,
+  "qualification_inferred_from_history": false,
+  "scope": "Fresh seed-0 all12 loose, original order, explicitly declared public layout C",
+  "next_required": "Run the packaged entry on an allocated GPU; audit its own complete native physical evidence."
+}

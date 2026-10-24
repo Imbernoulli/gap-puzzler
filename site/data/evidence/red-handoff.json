@@ -22,7 +22,8 @@
     "runs/gap_delivery_independent_audit_v1/suffix7_12_c_v2_full_native_independent_review.json",
     "runs/gap_delivery_independent_audit_v1/v13_terminal_red_twohop_independent_review.json",
     "runs/gap_delivery_independent_audit_v1/v13_terminal_full_native_independent_review.json",
-    "runs/gap_delivery_independent_audit_v1/v13_terminal_site_summary.json"
+    "runs/gap_delivery_independent_audit_v1/v13_terminal_site_summary.json",
+    "results/site_policy_media/visuals.json"
   ],
   "rounds": [
     {
@@ -126,5 +127,111 @@
         "actual_front_face_reserve_mm": 4.058381843257917
       }
     ]
+  },
+  "narrative": {
+    "title": "Red: repair the receiving contact.",
+    "problem": "A jaw could look loaded while holding the edge of a bead, allowing the piece to roll.",
+    "diagnosis": "",
+    "change": "",
+    "result": "In the continuous twelve-piece run, Red passed both handoffs and its final release. Independent audit confirmed the completed physical assembly.",
+    "scope": "Continuous twelve-piece physical assembly.",
+    "attempts": [
+      {
+        "label": "Diagnose",
+        "attempt": "Earlier handoffs passed, but the held piece rolled during the follow-up motion.",
+        "diagnosis": "RGB and robot kinematics placed the bead beyond the front of the blade.",
+        "change": "Check the actual finite contact face throughout closing.",
+        "outcome": "Saved observations explained why a loaded jaw alone was insufficient."
+      },
+      {
+        "label": "Repair",
+        "attempt": "Keep the donor holding while the receiver is corrected.",
+        "diagnosis": "Closing can move the far bead away from its preclose position.",
+        "change": "Reopen locally, reobserve, recenter, and reclose under the same geometry checks.",
+        "outcome": "The bounded recovery and contact checks passed independent API review."
+      },
+      {
+        "label": "Rejoin",
+        "attempt": "Run both handoffs with fresh receiver bindings in the complete sequence.",
+        "diagnosis": "",
+        "change": "",
+        "outcome": "All eight Red transfer windows and its release passed. The final physical assembly and arms-home state passed independent audit."
+      }
+    ]
+  },
+  "visual_sequence": [
+    {
+      "label": "Observe",
+      "title": "Inspect the contact.",
+      "media": "media/refine_red_observe.jpg"
+    },
+    {
+      "label": "Adjust",
+      "title": "Recenter and rebind.",
+      "media": "media/refine_red_adjust.jpg"
+    },
+    {
+      "label": "Verify",
+      "title": "Place and withdraw.",
+      "media": "media/refine_red_verify.jpg"
+    }
+  ],
+  "visual_provenance": {
+    "steps": [
+      {
+        "src": "media/refine_red_observe.jpg",
+        "source": "runs/red_bimanual_goal_runner_gpu_v7/workspace/runs/red_bimanual_goal_given_prefix11_gpu_v7/episode/rgb/0021.npz",
+        "observation": 21,
+        "camera": "side",
+        "simTime": 121.58,
+        "sourceCropXYXY": [
+          510,
+          554,
+          750,
+          704
+        ],
+        "size": [
+          800,
+          500
+        ],
+        "meaning": "Earlier run: receiver bead depth extends 1.43 mm past the 16.5 mm front edge"
+      },
+      {
+        "src": "media/refine_red_adjust.jpg",
+        "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0107.npz",
+        "observation": 107,
+        "camera": "side",
+        "simTime": 582.54,
+        "sourceCropXYXY": [
+          551,
+          519,
+          791,
+          669
+        ],
+        "size": [
+          800,
+          500
+        ],
+        "meaning": "Current run: second receiver binding with public geometry reserve"
+      },
+      {
+        "src": "media/refine_red_verify.jpg",
+        "source": "media/policy_v13_native_latest.jpg",
+        "nativeStep": 32727,
+        "simTime": 654.54,
+        "sourceCropXYXY": [
+          310,
+          228,
+          650,
+          440
+        ],
+        "size": [
+          800,
+          500
+        ],
+        "meaning": "Current full native recorded-state final frame; physical placement and independent audit passed, terminal graph visual scope refused"
+      }
+    ],
+    "scope": "Older failed contact diagnostic, improved current handoff contact, and current final recorded state; different source runs are explicit."
   }
 }

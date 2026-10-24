@@ -4,12 +4,12 @@ A real assembly puzzle reconstructed in GPU simulation, controlled by a modular,
 observation-conditioned robot skill graph.
 
 [Project website](https://bohanlyu.com/gap-puzzler/) ·
-[Runnable policy source](delivery/pyramid_gap_v1/) ·
+[Runnable policy source](delivery/pyramid_gap_v2/) ·
 [Independent recorded-run review](site/data/policy_full_independent_review.json) ·
 [Original demonstration](https://www.youtube.com/watch?v=PSgC31TvdxA)
 
 The website presents four parts: real2sim reconstruction, a video synchronized
-with the executing graph, five self-refinement examples with fourteen iterations,
+with the executing graph, visual self-refinement examples, a separate bimanual demonstration,
 and measured adaptation experiments. Its video is a GPU replay of recorded native
 states, with an explicit time mapping to the actual workflow and checkpoints.
 
@@ -25,8 +25,10 @@ The recorded graph passed **82 of its 84 required checkpoints**; the remaining
 terminal verification refused because four historical visual receipts had become
 uncertain. Physical completion and graph completion are reported separately.
 The original trajectory, refusal, and missing checkpoints are preserved in
-[the terminal record](site/data/policy_final_audit.json). Active visual confirmation
-and terminal-ledger refinement are ongoing.
+[the terminal record](site/data/policy_final_audit.json). The terminal-ledger repair and current-RGB whole-assembly verification have since
+passed an isolated native terminal test. The corrected V17 policy and its
+packaged v2 entry are now running new, separate, all-twelve-piece trials; their
+full-run verdicts are pending.
 
 ## Method
 
@@ -51,14 +53,15 @@ Each experiment retains its own scope in the linked evidence.
 
 ## Reproduce and inspect
 
-The [self-contained source bundle](delivery/pyramid_gap_v1/README.md) contains the
+The [self-contained source bundle](delivery/pyramid_gap_v2/README.md) contains the
 reviewed policy, typed graph, public assets, skill registry, separate verifier,
 pinned runtime recipe, and GPU-only entry point. Its clean-entry run is still in
-progress; the bundle remains a draft. It reproduces the displayed V13 policy,
-including its terminal-ledger behavior.
+progress; the bundle remains a draft. Version 2 contains the V17 policy,
+with the corrected terminal logic. The [v1 snapshot](delivery/pyramid_gap_v1/)
+preserves the displayed V13 policy and its original terminal refusal.
 
 ```bash
-cd delivery/pyramid_gap_v1
+cd delivery/pyramid_gap_v2
 python3 tools/bootstrap_runtime.py
 CUDA_VISIBLE_DEVICES=0 ./run.sh --output /absolute/path/to/new-run
 ```

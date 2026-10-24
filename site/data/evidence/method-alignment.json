@@ -57,7 +57,8 @@
     "third_party/graph-as-policy/docs/runtime.md",
     "third_party/robosimstudio/robosimstudio_policy_agent/graph_solution.py",
     "delivery/pyramid_gap_v1/registry_modular/skills/modular-rgb-puzzler/SKILL.md",
-    "runs/gap_delivery_independent_audit_v1/v13_terminal_site_summary.json"
+    "runs/gap_delivery_independent_audit_v1/v13_terminal_site_summary.json",
+    "runs/gap_camera_independent_audit_v1/camera_audit.json"
   ],
   "current_execution_measurement": {
     "run_id": "pyramid_full12_bimanual_layout_c_v13",
@@ -91,5 +92,10 @@
       "pink",
       "red"
     ]
+  },
+  "cameraConfiguration": {
+    "policy_inputs": "Four calibrated virtual workcell RGB cameras: top, front, rear and side; rendering and perception share camera intrinsics and extrinsics.",
+    "calibration_scope": "Project virtual camera rig, not measured YAM hardware intrinsics or hand-eye calibration.",
+    "display_video": "Native recorded-state replay uses a separate offline observer view. This presentation camera is not a policy sensor."
   }
 }

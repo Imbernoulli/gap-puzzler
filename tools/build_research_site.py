@@ -181,6 +181,23 @@ def build(args):
                          "videoStart": video_at(end), "videoEnd": media.get("duration"),
                          "passed": None, "checkpoint": None})
 
+    for stage in timeline:
+        own_frames = [point for point in mapping if stage["simStart"] <= point["simTime"] < stage["simEnd"]]
+        terminal_frame = next((point for point in mapping if point["simTime"] >= stage["simEnd"]), None) if stage.get("terminalStatus") else None
+        if terminal_frame:
+            point, mode = terminal_frame, "terminal_outcome"
+        elif own_frames:
+            point, mode = own_frames[0], "within_window"
+        elif stage["checkpoint"]:
+            point = next((point for point in mapping if point["simTime"] >= stage["simEnd"]), None)
+            mode = "checkpoint_boundary"
+        else:
+            point, mode = None, "unavailable"
+        stage["seek"] = ({"available": True, "mode": mode, "videoTime": point["videoTime"],
+                           "simTime": point["simTime"], "checkpointTime": stage["simEnd"]}
+                          if point else {"available": False, "mode": mode,
+                                         "reason": "This stage has no recorded frame in the exported excerpt."})
+
     edges = []
     for start, target in workflow.get("edges", []):
         edges.append({"source": start, "target": target, "conditions": [], "kind": "direct"})
@@ -194,7 +211,10 @@ def build(args):
     graph_nodes = []
     for item in schedule:
         node = workflow["nodes"][item["nodeId"]]
-        graph_nodes.append({**item, "label": LABELS.get(item["phase"], item["phase"]), "ref": node.get("ref")})
+        stage = next((stage for stage in timeline if stage["nodeId"] == item["nodeId"]), None)
+        graph_nodes.append({**item, "label": LABELS.get(item["phase"], item["phase"]), "ref": node.get("ref"),
+                            "seek": stage["seek"] if stage else {"available": False, "mode": "not_executed",
+                                "reason": "Not executed: the preceding terminal verification refused its scope." if terminal else "Not executed in this recording."}})
     for node_id in ("abort", "done"):
         if node_id in workflow["nodes"]:
             graph_nodes.append({"nodeId": node_id, "piece": "all12", "phase": node_id,
@@ -205,6 +225,7 @@ def build(args):
         observed = [x for x in timeline if x["piece"] == piece and x["checkpoint"]]
         first = next((x for x in timeline if x["piece"] == piece), None)
         pieces.append({"name": piece, "color": COLORS.get(piece, "#68776d"),
+                       "shapeSrc": f"media/pieces/{piece}.svg" if (site / "media/pieces" / f"{piece}.svg").exists() else None,
                        "nodeIds": [x["nodeId"] for x in stages],
                        "simStart": first["simStart"] if first else None,
                        "videoStart": first["videoStart"] if first else None,
@@ -228,6 +249,9 @@ def build(args):
     export = {"schema": "puzzler-research-site-v1", "run": run_info, "media": media,
               "timeline": timeline, "pieces": pieces, "graph": {"nodes": graph_nodes, "edges": edges},
               "refinement": content.get("refinement", []), "generalization": content.get("generalization", []),
+              "generalizationGallery": content.get("generalizationGallery", {}),
+              "additionalRefinement": content.get("additionalRefinement", []),
+              "bimanualShowcase": content.get("bimanualShowcase", {}),
               "intro": content.get("intro", {}), "real2sim": content.get("real2sim", {}),
               "methodAlignment": content.get("methodAlignment", {}),
               "evidence": {"workflow": "data/policy_workflow.json", "checkpoints": "data/policy_checkpoints.json",
@@ -271,11 +295,36 @@ def validate_export(site: Path):
     assert mapping and mapping[-1]["videoTime"] <= data["media"]["duration"] + .001
     assert all(a["videoTime"] < b["videoTime"] and a["simTime"] <= b["simTime"] for a, b in zip(mapping, mapping[1:]))
     refs = [data["media"]["src"], data["media"]["poster"], *data["evidence"].values()]
+    refs.extend(piece["shapeSrc"] for piece in data["pieces"] if piece.get("shapeSrc"))
     refs.extend(link["href"] for link in data.get("methodAlignment", {}).get("evidence", []))
     for item in data["refinement"] + data["generalization"]:
         refs.extend(link["href"] for link in item.get("evidence", []))
         if item.get("media"):
             refs.append(item["media"]["src"])
+        for step in item.get("visualSteps", []):
+            refs.append(step["media"]["src"])
+            if step["media"].get("poster"):
+                refs.append(step["media"]["poster"])
+    gallery = data.get("generalizationGallery", {})
+    refs.extend(link["href"] for link in gallery.get("individualVideos", []))
+    if gallery.get("gridVideo"):
+        refs.append(gallery["gridVideo"]["src"])
+        if gallery["gridVideo"].get("poster"):
+            refs.append(gallery["gridVideo"]["poster"])
+    refs.extend(link["href"] for link in gallery.get("evidence", []))
+    for item in gallery.get("cases", []):
+        refs.append(item["media"]["src"])
+        if item["media"].get("poster"):
+            refs.append(item["media"]["poster"])
+    for item in data.get("additionalRefinement", []):
+        refs.extend(link["href"] for link in item.get("evidence", []))
+    bimanual = data.get("bimanualShowcase", {})
+    refs.extend(link["href"] for link in bimanual.get("evidence", []))
+    for key in ("media", "geometryMedia"):
+        if bimanual.get(key):
+            refs.append(bimanual[key]["src"])
+            if bimanual[key].get("poster"):
+                refs.append(bimanual[key]["poster"])
     for ref in refs:
         if ref.startswith(("https://", "http://")):
             continue

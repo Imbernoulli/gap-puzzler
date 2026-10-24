@@ -4,7 +4,7 @@
     "id": "pyramid_full12_bimanual_layout_c_v13",
     "name": "pyramid_original_order_layout_c_v10",
     "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10",
-    "updatedAt": "2026-10-24T18:26:42.452496+00:00",
+    "updatedAt": "2026-10-24T18:57:35.602144+00:00",
     "checkpointCount": 82,
     "expectedCheckpoints": 84,
     "passedCheckpoints": 82,
@@ -18105,6 +18105,13 @@
         "maximum_prefix_bead_error_m": 0.0,
         "target_max_matched_bead_error_m": 0.0003951484149825573,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 0.0,
+        "simTime": 0.0,
+        "checkpointTime": 0.44
       }
     },
     {
@@ -18130,6 +18137,13 @@
         "actual_attachment_bead_drift_m": 1.5298312497768234e-05,
         "actual_jaw_width_m": 0.02416849322617054,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 0.1,
+        "simTime": 0.8,
+        "checkpointTime": 8.1
       }
     },
     {
@@ -18155,6 +18169,13 @@
         "actual_attachment_bead_drift_m": 1.5383289308723457e-05,
         "actual_jaw_width_m": 0.024165663868188858,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 1.05,
+        "simTime": 8.4,
+        "checkpointTime": 13.14
       }
     },
     {
@@ -18177,6 +18198,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 1.65,
+        "simTime": 13.2,
+        "checkpointTime": 25.5
       }
     },
     {
@@ -18199,6 +18227,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 3.2,
+        "simTime": 25.6,
+        "checkpointTime": 25.62
       }
     },
     {
@@ -18221,6 +18256,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0
+      },
+      "seek": {
+        "available": true,
+        "mode": "checkpoint_boundary",
+        "videoTime": 3.25,
+        "simTime": 26.0,
+        "checkpointTime": 25.74
       }
     },
     {
@@ -18245,6 +18287,13 @@
         "maximum_prefix_bead_error_m": 0.0005012930947786615,
         "target_max_matched_bead_error_m": 0.0005072226671234115,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 3.25,
+        "simTime": 26.0,
+        "checkpointTime": 26.06
       }
     },
     {
@@ -18270,6 +18319,13 @@
         "actual_attachment_bead_drift_m": 1.4794253153205276e-05,
         "actual_jaw_width_m": 0.02415728196501732,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 3.3,
+        "simTime": 26.4,
+        "checkpointTime": 33.98
       }
     },
     {
@@ -18295,6 +18351,13 @@
         "actual_attachment_bead_drift_m": 1.5024506692972485e-05,
         "actual_jaw_width_m": 0.024153921753168106,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 4.25,
+        "simTime": 34.0,
+        "checkpointTime": 38.82
       }
     },
     {
@@ -18317,6 +18380,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0005012931661791832
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 4.9,
+        "simTime": 39.2,
+        "checkpointTime": 51.88
       }
     },
     {
@@ -18339,6 +18409,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.00038569628460436806
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 6.5,
+        "simTime": 52.0,
+        "checkpointTime": 52.02
       }
     },
     {
@@ -18361,6 +18438,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.00038465965834492136
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 6.55,
+        "simTime": 52.4,
+        "checkpointTime": 52.42
       }
     },
     {
@@ -18385,6 +18469,13 @@
         "maximum_prefix_bead_error_m": 0.00047552250291883286,
         "target_max_matched_bead_error_m": 0.0003784829801187158,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "checkpoint_boundary",
+        "videoTime": 6.6,
+        "simTime": 52.8,
+        "checkpointTime": 52.76
       }
     },
     {
@@ -18410,6 +18501,13 @@
         "actual_attachment_bead_drift_m": 2.1343024799661218e-05,
         "actual_jaw_width_m": 0.02404288947582245,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 6.6,
+        "simTime": 52.8,
+        "checkpointTime": 61.36
       }
     },
     {
@@ -18435,6 +18533,13 @@
         "actual_attachment_bead_drift_m": 1.4290809566937061e-05,
         "actual_jaw_width_m": 0.023843657225370407,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 7.7,
+        "simTime": 61.6,
+        "checkpointTime": 70.86
       }
     },
     {
@@ -18457,6 +18562,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0004891112887962536
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 8.9,
+        "simTime": 71.2,
+        "checkpointTime": 83.26
       }
     },
     {
@@ -18479,6 +18591,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0004862497302099584
+      },
+      "seek": {
+        "available": true,
+        "mode": "checkpoint_boundary",
+        "videoTime": 10.45,
+        "simTime": 83.6,
+        "checkpointTime": 83.46
       }
     },
     {
@@ -18501,6 +18620,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0004861997260882161
+      },
+      "seek": {
+        "available": true,
+        "mode": "checkpoint_boundary",
+        "videoTime": 10.45,
+        "simTime": 83.6,
+        "checkpointTime": 83.6
       }
     },
     {
@@ -18525,6 +18651,13 @@
         "maximum_prefix_bead_error_m": 0.0005968145768645389,
         "target_max_matched_bead_error_m": 0.0003542783804371423,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 10.45,
+        "simTime": 83.6,
+        "checkpointTime": 83.96
       }
     },
     {
@@ -18550,6 +18683,13 @@
         "actual_attachment_bead_drift_m": 6.863905815009275e-06,
         "actual_jaw_width_m": 0.024122964590787888,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 10.5,
+        "simTime": 84.0,
+        "checkpointTime": 90.62
       }
     },
     {
@@ -18575,6 +18715,13 @@
         "actual_attachment_bead_drift_m": 7.706733124058784e-06,
         "actual_jaw_width_m": 0.024122869595885277,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 11.35,
+        "simTime": 90.8,
+        "checkpointTime": 93.94
       }
     },
     {
@@ -18597,6 +18744,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.000594683355318143
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 11.75,
+        "simTime": 94.0,
+        "checkpointTime": 106.5
       }
     },
     {
@@ -18619,6 +18773,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.00048707469175505514
+      },
+      "seek": {
+        "available": true,
+        "mode": "checkpoint_boundary",
+        "videoTime": 13.35,
+        "simTime": 106.8,
+        "checkpointTime": 106.72
       }
     },
     {
@@ -18641,6 +18802,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0004868554308336868
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 13.35,
+        "simTime": 106.8,
+        "checkpointTime": 106.9
       }
     },
     {
@@ -18665,6 +18833,13 @@
         "maximum_prefix_bead_error_m": 0.0005535860832410029,
         "target_max_matched_bead_error_m": 0.0007040408028153464,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 13.4,
+        "simTime": 107.2,
+        "checkpointTime": 107.54
       }
     },
     {
@@ -18690,6 +18865,13 @@
         "actual_attachment_bead_drift_m": 3.228075534424891e-05,
         "actual_jaw_width_m": 0.023731959983706474,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 13.45,
+        "simTime": 107.6,
+        "checkpointTime": 115.5
       }
     },
     {
@@ -18715,6 +18897,13 @@
         "actual_attachment_bead_drift_m": 3.2789860629990383e-05,
         "actual_jaw_width_m": 0.023804396390914917,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 14.45,
+        "simTime": 115.6,
+        "checkpointTime": 121.58
       }
     },
     {
@@ -18737,6 +18926,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0006111896071024324
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 15.2,
+        "simTime": 121.6,
+        "checkpointTime": 133.86
       }
     },
     {
@@ -18759,6 +18955,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0006075323039989668
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 16.75,
+        "simTime": 134.0,
+        "checkpointTime": 134.04
       }
     },
     {
@@ -18781,6 +18984,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0006074883128834558
+      },
+      "seek": {
+        "available": true,
+        "mode": "checkpoint_boundary",
+        "videoTime": 16.8,
+        "simTime": 134.4,
+        "checkpointTime": 134.22
       }
     },
     {
@@ -18805,6 +19015,13 @@
         "maximum_prefix_bead_error_m": 0.0006074748284039679,
         "target_max_matched_bead_error_m": 0.000346527785127157,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 16.8,
+        "simTime": 134.4,
+        "checkpointTime": 134.86
       }
     },
     {
@@ -18830,6 +19047,13 @@
         "actual_attachment_bead_drift_m": 1.2361518183105788e-05,
         "actual_jaw_width_m": 0.02410007081925869,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 16.9,
+        "simTime": 135.2,
+        "checkpointTime": 152.06
       }
     },
     {
@@ -18856,6 +19080,13 @@
         "actual_jaw_width_m": 0.023998457938432693,
         "continuous_dual_finger_no_external_support": true,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 19.05,
+        "simTime": 152.4,
+        "checkpointTime": 179.32
       }
     },
     {
@@ -18879,6 +19110,13 @@
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0006056895672101793,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 22.45,
+        "simTime": 179.6,
+        "checkpointTime": 187.04
       }
     },
     {
@@ -18905,6 +19143,13 @@
         "actual_jaw_width_m": 0.02407502382993698,
         "continuous_dual_finger_no_external_support": true,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 23.4,
+        "simTime": 187.2,
+        "checkpointTime": 194.56
       }
     },
     {
@@ -18931,6 +19176,13 @@
         "actual_jaw_width_m": 0.024079877883195877,
         "continuous_dual_finger_no_external_support": true,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 24.35,
+        "simTime": 194.8,
+        "checkpointTime": 195.6
       }
     },
     {
@@ -18956,6 +19208,13 @@
         "actual_attachment_bead_drift_m": 1.9365663384424584e-05,
         "actual_jaw_width_m": 0.023321151733398438,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 24.45,
+        "simTime": 195.6,
+        "checkpointTime": 238.86
       }
     },
     {
@@ -18978,6 +19237,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0006057034952070215
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 29.9,
+        "simTime": 239.2,
+        "checkpointTime": 263.4
       }
     },
     {
@@ -19000,6 +19266,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0006056500134060076
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 32.95,
+        "simTime": 263.6,
+        "checkpointTime": 264.76
       }
     },
     {
@@ -19022,6 +19295,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.000605661266383183
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 33.1,
+        "simTime": 264.8,
+        "checkpointTime": 265.74
       }
     },
     {
@@ -19046,6 +19326,13 @@
         "maximum_prefix_bead_error_m": 0.0007793467897758278,
         "target_max_matched_bead_error_m": 0.0004023527000444145,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 33.25,
+        "simTime": 266.0,
+        "checkpointTime": 266.5
       }
     },
     {
@@ -19071,6 +19358,13 @@
         "actual_attachment_bead_drift_m": 9.63762336719964e-06,
         "actual_jaw_width_m": 0.02416864037513733,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 33.35,
+        "simTime": 266.8,
+        "checkpointTime": 275.18
       }
     },
     {
@@ -19096,6 +19390,13 @@
         "actual_attachment_bead_drift_m": 8.747754610723605e-06,
         "actual_jaw_width_m": 0.024164587259292603,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 34.4,
+        "simTime": 275.2,
+        "checkpointTime": 285.08
       }
     },
     {
@@ -19118,6 +19419,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0012511649311365278
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 35.65,
+        "simTime": 285.2,
+        "checkpointTime": 297.84
       }
     },
     {
@@ -19140,6 +19448,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0012846912569650715
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 37.25,
+        "simTime": 298.0,
+        "checkpointTime": 298.54
       }
     },
     {
@@ -19162,6 +19477,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0013155242737232736
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 37.35,
+        "simTime": 298.8,
+        "checkpointTime": 299.18
       }
     },
     {
@@ -19186,6 +19508,13 @@
         "maximum_prefix_bead_error_m": 0.0013474309249406765,
         "target_max_matched_bead_error_m": 0.00029346850996214084,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 37.4,
+        "simTime": 299.2,
+        "checkpointTime": 300.12
       }
     },
     {
@@ -19211,6 +19540,13 @@
         "actual_attachment_bead_drift_m": 1.1199902928457894e-05,
         "actual_jaw_width_m": 0.024137359112501144,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 37.55,
+        "simTime": 300.4,
+        "checkpointTime": 308.78
       }
     },
     {
@@ -19236,6 +19572,13 @@
         "actual_attachment_bead_drift_m": 1.604568001429873e-05,
         "actual_jaw_width_m": 0.024127725511789322,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 38.6,
+        "simTime": 308.8,
+        "checkpointTime": 316.2
       }
     },
     {
@@ -19258,6 +19601,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0013417966678536568
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 39.55,
+        "simTime": 316.4,
+        "checkpointTime": 328.72
       }
     },
     {
@@ -19280,6 +19630,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0013203655693437223
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 41.1,
+        "simTime": 328.8,
+        "checkpointTime": 329.42
       }
     },
     {
@@ -19302,6 +19659,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0013187762892106847
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 41.2,
+        "simTime": 329.6,
+        "checkpointTime": 330.08
       }
     },
     {
@@ -19326,6 +19690,13 @@
         "maximum_prefix_bead_error_m": 0.001317144403566155,
         "target_max_matched_bead_error_m": 0.0004269199064201277,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 41.3,
+        "simTime": 330.4,
+        "checkpointTime": 340.48
       }
     },
     {
@@ -19351,6 +19722,13 @@
         "actual_attachment_bead_drift_m": 9.060670538397956e-06,
         "actual_jaw_width_m": 0.02415015548467636,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 42.6,
+        "simTime": 340.8,
+        "checkpointTime": 349.6
       }
     },
     {
@@ -19376,6 +19754,13 @@
         "actual_attachment_bead_drift_m": 2.5532139852959385e-05,
         "actual_jaw_width_m": 0.02413259632885456,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 43.7,
+        "simTime": 349.6,
+        "checkpointTime": 355.2
       }
     },
     {
@@ -19398,6 +19783,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0013405188823252296
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 44.4,
+        "simTime": 355.2,
+        "checkpointTime": 391.3
       }
     },
     {
@@ -19420,6 +19812,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0012857209562852619
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 48.95,
+        "simTime": 391.6,
+        "checkpointTime": 392.26
       }
     },
     {
@@ -19442,6 +19841,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0012860091904027457
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 49.05,
+        "simTime": 392.4,
+        "checkpointTime": 392.96
       }
     },
     {
@@ -19466,6 +19872,13 @@
         "maximum_prefix_bead_error_m": 0.0018855763132753962,
         "target_max_matched_bead_error_m": 0.0004987618705435719,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 49.15,
+        "simTime": 393.2,
+        "checkpointTime": 393.84
       }
     },
     {
@@ -19491,6 +19904,13 @@
         "actual_attachment_bead_drift_m": 7.36403929054438e-06,
         "actual_jaw_width_m": 0.02416159026324749,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 49.25,
+        "simTime": 394.0,
+        "checkpointTime": 403.48
       }
     },
     {
@@ -19516,6 +19936,13 @@
         "actual_attachment_bead_drift_m": 9.171107416770134e-06,
         "actual_jaw_width_m": 0.02416054718196392,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 50.45,
+        "simTime": 403.6,
+        "checkpointTime": 411.12
       }
     },
     {
@@ -19538,6 +19965,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0019258984716785548
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 51.4,
+        "simTime": 411.2,
+        "checkpointTime": 424.76
       }
     },
     {
@@ -19558,6 +19992,13 @@
         "protected_window_start": 21238,
         "policy_input": false,
         "maximum_prefix_bead_error_m": 0.0019157521525091225
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 53.1,
+        "simTime": 424.8,
+        "checkpointTime": 425.48
       }
     },
     {
@@ -19580,6 +20021,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0019163700986218142
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 53.2,
+        "simTime": 425.6,
+        "checkpointTime": 426.08
       }
     },
     {
@@ -19604,6 +20052,13 @@
         "maximum_prefix_bead_error_m": 0.0020214906316551808,
         "target_max_matched_bead_error_m": 0.0003421523981065141,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 53.3,
+        "simTime": 426.4,
+        "checkpointTime": 426.86
       }
     },
     {
@@ -19629,6 +20084,13 @@
         "actual_attachment_bead_drift_m": 5.128608523782786e-05,
         "actual_jaw_width_m": 0.024549324065446854,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 53.4,
+        "simTime": 427.2,
+        "checkpointTime": 435.42
       }
     },
     {
@@ -19654,6 +20116,13 @@
         "actual_attachment_bead_drift_m": 5.547105994090929e-05,
         "actual_jaw_width_m": 0.024359896779060364,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 54.45,
+        "simTime": 435.6,
+        "checkpointTime": 444.22
       }
     },
     {
@@ -19676,6 +20145,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0020694167557122364
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 55.55,
+        "simTime": 444.4,
+        "checkpointTime": 460.22
       }
     },
     {
@@ -19696,6 +20172,13 @@
         "protected_window_start": 23011,
         "policy_input": false,
         "maximum_prefix_bead_error_m": 0.002060861322971052
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 57.55,
+        "simTime": 460.4,
+        "checkpointTime": 461.04
       }
     },
     {
@@ -19718,6 +20201,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.002060928560149761
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 57.65,
+        "simTime": 461.2,
+        "checkpointTime": 461.7
       }
     },
     {
@@ -19742,6 +20232,13 @@
         "maximum_prefix_bead_error_m": 0.0025192734888124717,
         "target_max_matched_bead_error_m": 0.0002297746647341597,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 57.75,
+        "simTime": 462.0,
+        "checkpointTime": 462.68
       }
     },
     {
@@ -19767,6 +20264,13 @@
         "actual_attachment_bead_drift_m": 5.78282607152322e-05,
         "actual_jaw_width_m": 0.023439275100827217,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 57.85,
+        "simTime": 462.8,
+        "checkpointTime": 471.54
       }
     },
     {
@@ -19793,6 +20297,13 @@
         "actual_jaw_width_m": 0.023156391456723213,
         "continuous_dual_finger_no_external_support": true,
         "continuous_no_foreign_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 58.95,
+        "simTime": 471.6,
+        "checkpointTime": 517.26
       }
     },
     {
@@ -19815,6 +20326,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.0026208143418622867
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 64.7,
+        "simTime": 517.6,
+        "checkpointTime": 524.16
       }
     },
     {
@@ -19841,6 +20359,13 @@
         "actual_jaw_width_m": 0.024128776043653488,
         "continuous_dual_finger_no_external_support": true,
         "continuous_no_foreign_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 65.55,
+        "simTime": 524.4,
+        "checkpointTime": 531.92
       }
     },
     {
@@ -19868,6 +20393,13 @@
         "continuous_dual_finger_no_external_support": true,
         "continuous_no_foreign_support": true,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 66.5,
+        "simTime": 532.0,
+        "checkpointTime": 533.5
       }
     },
     {
@@ -19894,6 +20426,13 @@
         "actual_jaw_width_m": 0.024002589285373688,
         "continuous_dual_finger_no_external_support": true,
         "continuous_no_foreign_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 66.7,
+        "simTime": 533.6,
+        "checkpointTime": 563.42
       }
     },
     {
@@ -19916,6 +20455,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.002670696456819552
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 70.45,
+        "simTime": 563.6,
+        "checkpointTime": 570.96
       }
     },
     {
@@ -19942,6 +20488,13 @@
         "actual_jaw_width_m": 0.02408120594918728,
         "continuous_dual_finger_no_external_support": true,
         "continuous_no_foreign_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 71.4,
+        "simTime": 571.2,
+        "checkpointTime": 581.82
       }
     },
     {
@@ -19969,6 +20522,13 @@
         "continuous_dual_finger_no_external_support": true,
         "continuous_no_foreign_support": true,
         "visual_diagnostics_affect_physical_result": false
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 72.75,
+        "simTime": 582.0,
+        "checkpointTime": 583.68
       }
     },
     {
@@ -19994,6 +20554,13 @@
         "actual_attachment_bead_drift_m": 1.9883972502378156e-05,
         "actual_jaw_width_m": 0.023614544421434402,
         "continuous_dual_finger_no_external_support": true
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 73.0,
+        "simTime": 584.0,
+        "checkpointTime": 611.14
       }
     },
     {
@@ -20016,6 +20583,13 @@
         "functional_postcondition_passed": true,
         "prefix_postcondition_passed": true,
         "maximum_prefix_bead_error_m": 0.002752133920809373
+      },
+      "seek": {
+        "available": true,
+        "mode": "within_window",
+        "videoTime": 76.4,
+        "simTime": 611.2,
+        "checkpointTime": 650.04
       }
     },
     {
@@ -20028,13 +20602,21 @@
       "videoEnd": 81.85,
       "passed": false,
       "checkpoint": null,
-      "terminalStatus": "refused"
+      "terminalStatus": "refused",
+      "seek": {
+        "available": true,
+        "mode": "terminal_outcome",
+        "videoTime": 81.85,
+        "simTime": 654.54,
+        "checkpointTime": 654.54
+      }
     }
   ],
   "pieces": [
     {
       "name": "azure",
       "color": "#0473e8",
+      "shapeSrc": "media/pieces/azure.svg",
       "nodeIds": [
         "azure_perceive_plan",
         "azure_grasp",
@@ -20052,6 +20634,7 @@
     {
       "name": "orange",
       "color": "#ff6403",
+      "shapeSrc": "media/pieces/orange.svg",
       "nodeIds": [
         "orange_perceive_plan",
         "orange_grasp",
@@ -20069,6 +20652,7 @@
     {
       "name": "yellow",
       "color": "#d5a400",
+      "shapeSrc": "media/pieces/yellow.svg",
       "nodeIds": [
         "yellow_perceive_plan",
         "yellow_grasp",
@@ -20086,6 +20670,7 @@
     {
       "name": "teal",
       "color": "#06908a",
+      "shapeSrc": "media/pieces/teal.svg",
       "nodeIds": [
         "teal_perceive_plan",
         "teal_grasp",
@@ -20103,6 +20688,7 @@
     {
       "name": "purple",
       "color": "#8743b9",
+      "shapeSrc": "media/pieces/purple.svg",
       "nodeIds": [
         "purple_perceive_plan",
         "purple_grasp",
@@ -20120,6 +20706,7 @@
     {
       "name": "cyan",
       "color": "#25a9c8",
+      "shapeSrc": "media/pieces/cyan.svg",
       "nodeIds": [
         "cyan_perceive_plan",
         "cyan_grasp",
@@ -20141,6 +20728,7 @@
     {
       "name": "mint",
       "color": "#46a984",
+      "shapeSrc": "media/pieces/mint.svg",
       "nodeIds": [
         "mint_perceive_plan",
         "mint_grasp",
@@ -20158,6 +20746,7 @@
     {
       "name": "lime",
       "color": "#87a91e",
+      "shapeSrc": "media/pieces/lime.svg",
       "nodeIds": [
         "lime_perceive_plan",
         "lime_grasp",
@@ -20175,6 +20764,7 @@
     {
       "name": "maroon",
       "color": "#a34360",
+      "shapeSrc": "media/pieces/maroon.svg",
       "nodeIds": [
         "maroon_perceive_plan",
         "maroon_grasp",
@@ -20192,6 +20782,7 @@
     {
       "name": "navy",
       "color": "#555b9b",
+      "shapeSrc": "media/pieces/navy.svg",
       "nodeIds": [
         "navy_perceive_plan",
         "navy_grasp",
@@ -20209,6 +20800,7 @@
     {
       "name": "pink",
       "color": "#d35d99",
+      "shapeSrc": "media/pieces/pink.svg",
       "nodeIds": [
         "pink_perceive_plan",
         "pink_grasp",
@@ -20226,6 +20818,7 @@
     {
       "name": "red",
       "color": "#d64e43",
+      "shapeSrc": "media/pieces/red.svg",
       "nodeIds": [
         "red_perceive_plan",
         "red_grasp",
@@ -20255,588 +20848,1174 @@
         "phase": "perceive_plan",
         "nodeId": "azure_perceive_plan",
         "label": "Observe & plan",
-        "ref": "perceive_plan_sg"
+        "ref": "perceive_plan_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 0.0,
+          "simTime": 0.0,
+          "checkpointTime": 0.44
+        }
       },
       {
         "piece": "azure",
         "phase": "grasp",
         "nodeId": "azure_grasp",
         "label": "Grasp",
-        "ref": "grasp_sg"
+        "ref": "grasp_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 0.1,
+          "simTime": 0.8,
+          "checkpointTime": 8.1
+        }
       },
       {
         "piece": "azure",
         "phase": "transport",
         "nodeId": "azure_transport",
         "label": "Transport",
-        "ref": "transport_sg"
+        "ref": "transport_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 1.05,
+          "simTime": 8.4,
+          "checkpointTime": 13.14
+        }
       },
       {
         "piece": "azure",
         "phase": "release",
         "nodeId": "azure_release",
         "label": "Release",
-        "ref": "release_sg"
+        "ref": "release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 1.65,
+          "simTime": 13.2,
+          "checkpointTime": 25.5
+        }
       },
       {
         "piece": "azure",
         "phase": "receipt_settle",
         "nodeId": "azure_receipt_settle",
         "label": "Observe & settle",
-        "ref": "receipt_settle_sg"
+        "ref": "receipt_settle_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 3.2,
+          "simTime": 25.6,
+          "checkpointTime": 25.62
+        }
       },
       {
         "piece": "azure",
         "phase": "handoff",
         "nodeId": "azure_handoff",
         "label": "Verify & advance",
-        "ref": "handoff_sg"
+        "ref": "handoff_sg",
+        "seek": {
+          "available": true,
+          "mode": "checkpoint_boundary",
+          "videoTime": 3.25,
+          "simTime": 26.0,
+          "checkpointTime": 25.74
+        }
       },
       {
         "piece": "orange",
         "phase": "perceive_plan",
         "nodeId": "orange_perceive_plan",
         "label": "Observe & plan",
-        "ref": "perceive_plan_sg"
+        "ref": "perceive_plan_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 3.25,
+          "simTime": 26.0,
+          "checkpointTime": 26.06
+        }
       },
       {
         "piece": "orange",
         "phase": "grasp",
         "nodeId": "orange_grasp",
         "label": "Grasp",
-        "ref": "grasp_sg"
+        "ref": "grasp_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 3.3,
+          "simTime": 26.4,
+          "checkpointTime": 33.98
+        }
       },
       {
         "piece": "orange",
         "phase": "transport",
         "nodeId": "orange_transport",
         "label": "Transport",
-        "ref": "transport_sg"
+        "ref": "transport_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 4.25,
+          "simTime": 34.0,
+          "checkpointTime": 38.82
+        }
       },
       {
         "piece": "orange",
         "phase": "release",
         "nodeId": "orange_release",
         "label": "Release",
-        "ref": "release_sg"
+        "ref": "release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 4.9,
+          "simTime": 39.2,
+          "checkpointTime": 51.88
+        }
       },
       {
         "piece": "orange",
         "phase": "receipt_settle",
         "nodeId": "orange_receipt_settle",
         "label": "Observe & settle",
-        "ref": "receipt_settle_sg"
+        "ref": "receipt_settle_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 6.5,
+          "simTime": 52.0,
+          "checkpointTime": 52.02
+        }
       },
       {
         "piece": "orange",
         "phase": "handoff",
         "nodeId": "orange_handoff",
         "label": "Verify & advance",
-        "ref": "handoff_sg"
+        "ref": "handoff_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 6.55,
+          "simTime": 52.4,
+          "checkpointTime": 52.42
+        }
       },
       {
         "piece": "yellow",
         "phase": "perceive_plan",
         "nodeId": "yellow_perceive_plan",
         "label": "Observe & plan",
-        "ref": "perceive_plan_sg"
+        "ref": "perceive_plan_sg",
+        "seek": {
+          "available": true,
+          "mode": "checkpoint_boundary",
+          "videoTime": 6.6,
+          "simTime": 52.8,
+          "checkpointTime": 52.76
+        }
       },
       {
         "piece": "yellow",
         "phase": "grasp",
         "nodeId": "yellow_grasp",
         "label": "Grasp",
-        "ref": "grasp_sg"
+        "ref": "grasp_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 6.6,
+          "simTime": 52.8,
+          "checkpointTime": 61.36
+        }
       },
       {
         "piece": "yellow",
         "phase": "transport",
         "nodeId": "yellow_transport",
         "label": "Transport",
-        "ref": "transport_sg"
+        "ref": "transport_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 7.7,
+          "simTime": 61.6,
+          "checkpointTime": 70.86
+        }
       },
       {
         "piece": "yellow",
         "phase": "release",
         "nodeId": "yellow_release",
         "label": "Release",
-        "ref": "release_sg"
+        "ref": "release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 8.9,
+          "simTime": 71.2,
+          "checkpointTime": 83.26
+        }
       },
       {
         "piece": "yellow",
         "phase": "receipt_settle",
         "nodeId": "yellow_receipt_settle",
         "label": "Observe & settle",
-        "ref": "receipt_settle_sg"
+        "ref": "receipt_settle_sg",
+        "seek": {
+          "available": true,
+          "mode": "checkpoint_boundary",
+          "videoTime": 10.45,
+          "simTime": 83.6,
+          "checkpointTime": 83.46
+        }
       },
       {
         "piece": "yellow",
         "phase": "handoff",
         "nodeId": "yellow_handoff",
         "label": "Verify & advance",
-        "ref": "handoff_sg"
+        "ref": "handoff_sg",
+        "seek": {
+          "available": true,
+          "mode": "checkpoint_boundary",
+          "videoTime": 10.45,
+          "simTime": 83.6,
+          "checkpointTime": 83.6
+        }
       },
       {
         "piece": "teal",
         "phase": "perceive_plan",
         "nodeId": "teal_perceive_plan",
         "label": "Observe & plan",
-        "ref": "perceive_plan_sg"
+        "ref": "perceive_plan_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 10.45,
+          "simTime": 83.6,
+          "checkpointTime": 83.96
+        }
       },
       {
         "piece": "teal",
         "phase": "grasp",
         "nodeId": "teal_grasp",
         "label": "Grasp",
-        "ref": "grasp_sg"
+        "ref": "grasp_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 10.5,
+          "simTime": 84.0,
+          "checkpointTime": 90.62
+        }
       },
       {
         "piece": "teal",
         "phase": "transport",
         "nodeId": "teal_transport",
         "label": "Transport",
-        "ref": "transport_sg"
+        "ref": "transport_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 11.35,
+          "simTime": 90.8,
+          "checkpointTime": 93.94
+        }
       },
       {
         "piece": "teal",
         "phase": "release",
         "nodeId": "teal_release",
         "label": "Release",
-        "ref": "release_sg"
+        "ref": "release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 11.75,
+          "simTime": 94.0,
+          "checkpointTime": 106.5
+        }
       },
       {
         "piece": "teal",
         "phase": "receipt_settle",
         "nodeId": "teal_receipt_settle",
         "label": "Observe & settle",
-        "ref": "receipt_settle_sg"
+        "ref": "receipt_settle_sg",
+        "seek": {
+          "available": true,
+          "mode": "checkpoint_boundary",
+          "videoTime": 13.35,
+          "simTime": 106.8,
+          "checkpointTime": 106.72
+        }
       },
       {
         "piece": "teal",
         "phase": "handoff",
         "nodeId": "teal_handoff",
         "label": "Verify & advance",
-        "ref": "handoff_sg"
+        "ref": "handoff_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 13.35,
+          "simTime": 106.8,
+          "checkpointTime": 106.9
+        }
       },
       {
         "piece": "purple",
         "phase": "perceive_plan",
         "nodeId": "purple_perceive_plan",
         "label": "Observe & plan",
-        "ref": "perceive_plan_sg"
+        "ref": "perceive_plan_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 13.4,
+          "simTime": 107.2,
+          "checkpointTime": 107.54
+        }
       },
       {
         "piece": "purple",
         "phase": "grasp",
         "nodeId": "purple_grasp",
         "label": "Grasp",
-        "ref": "grasp_sg"
+        "ref": "grasp_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 13.45,
+          "simTime": 107.6,
+          "checkpointTime": 115.5
+        }
       },
       {
         "piece": "purple",
         "phase": "transport",
         "nodeId": "purple_transport",
         "label": "Transport",
-        "ref": "transport_sg"
+        "ref": "transport_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 14.45,
+          "simTime": 115.6,
+          "checkpointTime": 121.58
+        }
       },
       {
         "piece": "purple",
         "phase": "release",
         "nodeId": "purple_release",
         "label": "Release",
-        "ref": "release_sg"
+        "ref": "release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 15.2,
+          "simTime": 121.6,
+          "checkpointTime": 133.86
+        }
       },
       {
         "piece": "purple",
         "phase": "receipt_settle",
         "nodeId": "purple_receipt_settle",
         "label": "Observe & settle",
-        "ref": "receipt_settle_sg"
+        "ref": "receipt_settle_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 16.75,
+          "simTime": 134.0,
+          "checkpointTime": 134.04
+        }
       },
       {
         "piece": "purple",
         "phase": "handoff",
         "nodeId": "purple_handoff",
         "label": "Verify & advance",
-        "ref": "handoff_sg"
+        "ref": "handoff_sg",
+        "seek": {
+          "available": true,
+          "mode": "checkpoint_boundary",
+          "videoTime": 16.8,
+          "simTime": 134.4,
+          "checkpointTime": 134.22
+        }
       },
       {
         "piece": "cyan",
         "phase": "perceive_plan",
         "nodeId": "cyan_perceive_plan",
         "label": "Observe & plan",
-        "ref": "perceive_plan_sg"
+        "ref": "perceive_plan_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 16.8,
+          "simTime": 134.4,
+          "checkpointTime": 134.86
+        }
       },
       {
         "piece": "cyan",
         "phase": "grasp",
         "nodeId": "cyan_grasp",
         "label": "Grasp",
-        "ref": "grasp_sg"
+        "ref": "grasp_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 16.9,
+          "simTime": 135.2,
+          "checkpointTime": 152.06
+        }
       },
       {
         "piece": "cyan",
         "phase": "cyan_approach",
         "nodeId": "cyan_cyan_approach",
         "label": "Transfer approach",
-        "ref": "cyan_approach_sg"
+        "ref": "cyan_approach_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 19.05,
+          "simTime": 152.4,
+          "checkpointTime": 179.32
+        }
       },
       {
         "piece": "cyan",
         "phase": "cyan_receiver_close",
         "nodeId": "cyan_cyan_receiver_close",
         "label": "Receiver closes",
-        "ref": "cyan_receiver_close_sg"
+        "ref": "cyan_receiver_close_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 22.45,
+          "simTime": 179.6,
+          "checkpointTime": 187.04
+        }
       },
       {
         "piece": "cyan",
         "phase": "cyan_donor_release",
         "nodeId": "cyan_cyan_donor_release",
         "label": "Donor releases",
-        "ref": "cyan_donor_release_sg"
+        "ref": "cyan_donor_release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 23.4,
+          "simTime": 187.2,
+          "checkpointTime": 194.56
+        }
       },
       {
         "piece": "cyan",
         "phase": "cyan_receiver_bind",
         "nodeId": "cyan_cyan_receiver_bind",
         "label": "Rebind from RGB",
-        "ref": "cyan_receiver_bind_sg"
+        "ref": "cyan_receiver_bind_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 24.35,
+          "simTime": 194.8,
+          "checkpointTime": 195.6
+        }
       },
       {
         "piece": "cyan",
         "phase": "cyan_receiver_transport",
         "nodeId": "cyan_cyan_receiver_transport",
         "label": "Receiver transports",
-        "ref": "cyan_receiver_transport_sg"
+        "ref": "cyan_receiver_transport_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 24.45,
+          "simTime": 195.6,
+          "checkpointTime": 238.86
+        }
       },
       {
         "piece": "cyan",
         "phase": "release",
         "nodeId": "cyan_release",
         "label": "Release",
-        "ref": "release_sg"
+        "ref": "release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 29.9,
+          "simTime": 239.2,
+          "checkpointTime": 263.4
+        }
       },
       {
         "piece": "cyan",
         "phase": "receipt_settle",
         "nodeId": "cyan_receipt_settle",
         "label": "Observe & settle",
-        "ref": "receipt_settle_sg"
+        "ref": "receipt_settle_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 32.95,
+          "simTime": 263.6,
+          "checkpointTime": 264.76
+        }
       },
       {
         "piece": "cyan",
         "phase": "handoff",
         "nodeId": "cyan_handoff",
         "label": "Verify & advance",
-        "ref": "handoff_sg"
+        "ref": "handoff_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 33.1,
+          "simTime": 264.8,
+          "checkpointTime": 265.74
+        }
       },
       {
         "piece": "mint",
         "phase": "perceive_plan",
         "nodeId": "mint_perceive_plan",
         "label": "Observe & plan",
-        "ref": "perceive_plan_sg"
+        "ref": "perceive_plan_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 33.25,
+          "simTime": 266.0,
+          "checkpointTime": 266.5
+        }
       },
       {
         "piece": "mint",
         "phase": "grasp",
         "nodeId": "mint_grasp",
         "label": "Grasp",
-        "ref": "grasp_sg"
+        "ref": "grasp_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 33.35,
+          "simTime": 266.8,
+          "checkpointTime": 275.18
+        }
       },
       {
         "piece": "mint",
         "phase": "transport",
         "nodeId": "mint_transport",
         "label": "Transport",
-        "ref": "transport_sg"
+        "ref": "transport_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 34.4,
+          "simTime": 275.2,
+          "checkpointTime": 285.08
+        }
       },
       {
         "piece": "mint",
         "phase": "release",
         "nodeId": "mint_release",
         "label": "Release",
-        "ref": "release_sg"
+        "ref": "release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 35.65,
+          "simTime": 285.2,
+          "checkpointTime": 297.84
+        }
       },
       {
         "piece": "mint",
         "phase": "receipt_settle",
         "nodeId": "mint_receipt_settle",
         "label": "Observe & settle",
-        "ref": "receipt_settle_sg"
+        "ref": "receipt_settle_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 37.25,
+          "simTime": 298.0,
+          "checkpointTime": 298.54
+        }
       },
       {
         "piece": "mint",
         "phase": "handoff",
         "nodeId": "mint_handoff",
         "label": "Verify & advance",
-        "ref": "handoff_sg"
+        "ref": "handoff_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 37.35,
+          "simTime": 298.8,
+          "checkpointTime": 299.18
+        }
       },
       {
         "piece": "lime",
         "phase": "perceive_plan",
         "nodeId": "lime_perceive_plan",
         "label": "Observe & plan",
-        "ref": "perceive_plan_sg"
+        "ref": "perceive_plan_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 37.4,
+          "simTime": 299.2,
+          "checkpointTime": 300.12
+        }
       },
       {
         "piece": "lime",
         "phase": "grasp",
         "nodeId": "lime_grasp",
         "label": "Grasp",
-        "ref": "grasp_sg"
+        "ref": "grasp_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 37.55,
+          "simTime": 300.4,
+          "checkpointTime": 308.78
+        }
       },
       {
         "piece": "lime",
         "phase": "transport",
         "nodeId": "lime_transport",
         "label": "Transport",
-        "ref": "transport_sg"
+        "ref": "transport_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 38.6,
+          "simTime": 308.8,
+          "checkpointTime": 316.2
+        }
       },
       {
         "piece": "lime",
         "phase": "release",
         "nodeId": "lime_release",
         "label": "Release",
-        "ref": "release_sg"
+        "ref": "release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 39.55,
+          "simTime": 316.4,
+          "checkpointTime": 328.72
+        }
       },
       {
         "piece": "lime",
         "phase": "receipt_settle",
         "nodeId": "lime_receipt_settle",
         "label": "Observe & settle",
-        "ref": "receipt_settle_sg"
+        "ref": "receipt_settle_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 41.1,
+          "simTime": 328.8,
+          "checkpointTime": 329.42
+        }
       },
       {
         "piece": "lime",
         "phase": "handoff",
         "nodeId": "lime_handoff",
         "label": "Verify & advance",
-        "ref": "handoff_sg"
+        "ref": "handoff_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 41.2,
+          "simTime": 329.6,
+          "checkpointTime": 330.08
+        }
       },
       {
         "piece": "maroon",
         "phase": "perceive_plan",
         "nodeId": "maroon_perceive_plan",
         "label": "Observe & plan",
-        "ref": "perceive_plan_sg"
+        "ref": "perceive_plan_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 41.3,
+          "simTime": 330.4,
+          "checkpointTime": 340.48
+        }
       },
       {
         "piece": "maroon",
         "phase": "grasp",
         "nodeId": "maroon_grasp",
         "label": "Grasp",
-        "ref": "grasp_sg"
+        "ref": "grasp_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 42.6,
+          "simTime": 340.8,
+          "checkpointTime": 349.6
+        }
       },
       {
         "piece": "maroon",
         "phase": "transport",
         "nodeId": "maroon_transport",
         "label": "Transport",
-        "ref": "transport_sg"
+        "ref": "transport_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 43.7,
+          "simTime": 349.6,
+          "checkpointTime": 355.2
+        }
       },
       {
         "piece": "maroon",
         "phase": "release",
         "nodeId": "maroon_release",
         "label": "Release",
-        "ref": "release_sg"
+        "ref": "release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 44.4,
+          "simTime": 355.2,
+          "checkpointTime": 391.3
+        }
       },
       {
         "piece": "maroon",
         "phase": "receipt_settle",
         "nodeId": "maroon_receipt_settle",
         "label": "Observe & settle",
-        "ref": "receipt_settle_sg"
+        "ref": "receipt_settle_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 48.95,
+          "simTime": 391.6,
+          "checkpointTime": 392.26
+        }
       },
       {
         "piece": "maroon",
         "phase": "handoff",
         "nodeId": "maroon_handoff",
         "label": "Verify & advance",
-        "ref": "handoff_sg"
+        "ref": "handoff_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 49.05,
+          "simTime": 392.4,
+          "checkpointTime": 392.96
+        }
       },
       {
         "piece": "navy",
         "phase": "perceive_plan",
         "nodeId": "navy_perceive_plan",
         "label": "Observe & plan",
-        "ref": "perceive_plan_sg"
+        "ref": "perceive_plan_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 49.15,
+          "simTime": 393.2,
+          "checkpointTime": 393.84
+        }
       },
       {
         "piece": "navy",
         "phase": "grasp",
         "nodeId": "navy_grasp",
         "label": "Grasp",
-        "ref": "grasp_sg"
+        "ref": "grasp_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 49.25,
+          "simTime": 394.0,
+          "checkpointTime": 403.48
+        }
       },
       {
         "piece": "navy",
         "phase": "transport",
         "nodeId": "navy_transport",
         "label": "Transport",
-        "ref": "transport_sg"
+        "ref": "transport_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 50.45,
+          "simTime": 403.6,
+          "checkpointTime": 411.12
+        }
       },
       {
         "piece": "navy",
         "phase": "release",
         "nodeId": "navy_release",
         "label": "Release",
-        "ref": "release_sg"
+        "ref": "release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 51.4,
+          "simTime": 411.2,
+          "checkpointTime": 424.76
+        }
       },
       {
         "piece": "navy",
         "phase": "receipt_settle",
         "nodeId": "navy_receipt_settle",
         "label": "Observe & settle",
-        "ref": "receipt_settle_sg"
+        "ref": "receipt_settle_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 53.1,
+          "simTime": 424.8,
+          "checkpointTime": 425.48
+        }
       },
       {
         "piece": "navy",
         "phase": "handoff",
         "nodeId": "navy_handoff",
         "label": "Verify & advance",
-        "ref": "handoff_sg"
+        "ref": "handoff_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 53.2,
+          "simTime": 425.6,
+          "checkpointTime": 426.08
+        }
       },
       {
         "piece": "pink",
         "phase": "perceive_plan",
         "nodeId": "pink_perceive_plan",
         "label": "Observe & plan",
-        "ref": "perceive_plan_sg"
+        "ref": "perceive_plan_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 53.3,
+          "simTime": 426.4,
+          "checkpointTime": 426.86
+        }
       },
       {
         "piece": "pink",
         "phase": "grasp",
         "nodeId": "pink_grasp",
         "label": "Grasp",
-        "ref": "grasp_sg"
+        "ref": "grasp_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 53.4,
+          "simTime": 427.2,
+          "checkpointTime": 435.42
+        }
       },
       {
         "piece": "pink",
         "phase": "transport",
         "nodeId": "pink_transport",
         "label": "Transport",
-        "ref": "transport_sg"
+        "ref": "transport_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 54.45,
+          "simTime": 435.6,
+          "checkpointTime": 444.22
+        }
       },
       {
         "piece": "pink",
         "phase": "release",
         "nodeId": "pink_release",
         "label": "Release",
-        "ref": "release_sg"
+        "ref": "release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 55.55,
+          "simTime": 444.4,
+          "checkpointTime": 460.22
+        }
       },
       {
         "piece": "pink",
         "phase": "receipt_settle",
         "nodeId": "pink_receipt_settle",
         "label": "Observe & settle",
-        "ref": "receipt_settle_sg"
+        "ref": "receipt_settle_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 57.55,
+          "simTime": 460.4,
+          "checkpointTime": 461.04
+        }
       },
       {
         "piece": "pink",
         "phase": "handoff",
         "nodeId": "pink_handoff",
         "label": "Verify & advance",
-        "ref": "handoff_sg"
+        "ref": "handoff_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 57.65,
+          "simTime": 461.2,
+          "checkpointTime": 461.7
+        }
       },
       {
         "piece": "red",
         "phase": "perceive_plan",
         "nodeId": "red_perceive_plan",
         "label": "Observe & plan",
-        "ref": "perceive_plan_sg"
+        "ref": "perceive_plan_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 57.75,
+          "simTime": 462.0,
+          "checkpointTime": 462.68
+        }
       },
       {
         "piece": "red",
         "phase": "grasp",
         "nodeId": "red_grasp",
         "label": "Grasp",
-        "ref": "grasp_sg"
+        "ref": "grasp_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 57.85,
+          "simTime": 462.8,
+          "checkpointTime": 471.54
+        }
       },
       {
         "piece": "red",
         "phase": "red_handoff_prepare",
         "nodeId": "red_red_handoff_prepare",
         "label": "First transfer",
-        "ref": "red_handoff_prepare_sg"
+        "ref": "red_handoff_prepare_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 58.95,
+          "simTime": 471.6,
+          "checkpointTime": 517.26
+        }
       },
       {
         "piece": "red",
         "phase": "red_receiver_close",
         "nodeId": "red_red_receiver_close",
         "label": "Receiver closes",
-        "ref": "red_receiver_close_sg"
+        "ref": "red_receiver_close_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 64.7,
+          "simTime": 517.6,
+          "checkpointTime": 524.16
+        }
       },
       {
         "piece": "red",
         "phase": "red_sender_release",
         "nodeId": "red_red_sender_release",
         "label": "Sender releases",
-        "ref": "red_sender_release_sg"
+        "ref": "red_sender_release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 65.55,
+          "simTime": 524.4,
+          "checkpointTime": 531.92
+        }
       },
       {
         "piece": "red",
         "phase": "red_receiver_bind",
         "nodeId": "red_red_receiver_bind",
         "label": "Rebind from RGB",
-        "ref": "red_receiver_bind_sg"
+        "ref": "red_receiver_bind_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 66.5,
+          "simTime": 532.0,
+          "checkpointTime": 533.5
+        }
       },
       {
         "piece": "red",
         "phase": "red_return_prepare",
         "nodeId": "red_red_return_prepare",
         "label": "Return transfer",
-        "ref": "red_return_prepare_sg"
+        "ref": "red_return_prepare_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 66.7,
+          "simTime": 533.6,
+          "checkpointTime": 563.42
+        }
       },
       {
         "piece": "red",
         "phase": "red_return_close",
         "nodeId": "red_red_return_close",
         "label": "Receiver closes",
-        "ref": "red_return_close_sg"
+        "ref": "red_return_close_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 70.45,
+          "simTime": 563.6,
+          "checkpointTime": 570.96
+        }
       },
       {
         "piece": "red",
         "phase": "red_return_release",
         "nodeId": "red_red_return_release",
         "label": "Sender releases",
-        "ref": "red_return_release_sg"
+        "ref": "red_return_release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 71.4,
+          "simTime": 571.2,
+          "checkpointTime": 581.82
+        }
       },
       {
         "piece": "red",
         "phase": "red_return_bind",
         "nodeId": "red_red_return_bind",
         "label": "Rebind from RGB",
-        "ref": "red_return_bind_sg"
+        "ref": "red_return_bind_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 72.75,
+          "simTime": 582.0,
+          "checkpointTime": 583.68
+        }
       },
       {
         "piece": "red",
         "phase": "red_goal_transport",
         "nodeId": "red_red_goal_transport",
         "label": "Apex approach",
-        "ref": "red_goal_transport_sg"
+        "ref": "red_goal_transport_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 73.0,
+          "simTime": 584.0,
+          "checkpointTime": 611.14
+        }
       },
       {
         "piece": "red",
         "phase": "red_goal_release",
         "nodeId": "red_red_goal_release",
         "label": "Apex release",
-        "ref": "red_goal_release_sg"
+        "ref": "red_goal_release_sg",
+        "seek": {
+          "available": true,
+          "mode": "within_window",
+          "videoTime": 76.4,
+          "simTime": 611.2,
+          "checkpointTime": 650.04
+        }
       },
       {
         "piece": "red",
         "phase": "red_goal_verify",
         "nodeId": "red_red_goal_verify",
         "label": "Verify & advance",
-        "ref": "red_goal_verify_sg"
+        "ref": "red_goal_verify_sg",
+        "seek": {
+          "available": true,
+          "mode": "terminal_outcome",
+          "videoTime": 81.85,
+          "simTime": 654.54,
+          "checkpointTime": 654.54
+        }
       },
       {
         "piece": "all12",
         "phase": "finish",
         "nodeId": "finish_all12",
         "label": "Home & final check",
-        "ref": "finish_sg"
+        "ref": "finish_sg",
+        "seek": {
+          "available": false,
+          "mode": "not_executed",
+          "reason": "Not executed: the preceding terminal verification refused its scope."
+        }
       },
       {
         "nodeId": "abort",
@@ -22265,88 +23444,12 @@
   },
   "refinement": [
     {
-      "id": "cyan-handoff",
-      "title": "Cyan: find a reachable handover.",
-      "problem": "The receiving hand needed a reachable approach and a correctly centered closing contact.",
-      "diagnosis": "",
-      "change": "",
-      "result": "In the continuous twelve-piece run, Cyan passed all four handover checks and continued through placement.",
-      "scope": "Continuous twelve-piece physical assembly.",
-      "attempts": [
-        {
-          "label": "Approach",
-          "attempt": "Early receiver routes were refused.",
-          "diagnosis": "The paths ran out of joint reserve or missed the pose.",
-          "change": "Move the held piece to a shared workspace, relative to the observed board.",
-          "outcome": "Public-geometry rehearsal found screened donor and receiver routes."
-        },
-        {
-          "label": "Close",
-          "attempt": "The new approach reached the piece, but closing was refused.",
-          "diagnosis": "The selected finger would penetrate too far.",
-          "change": "Reobserve the held piece and recenter the receiving jaw before closing.",
-          "outcome": "The next rehearsal passed approach, dual hold, donor withdrawal, and receiver hold."
-        },
-        {
-          "label": "Verify",
-          "attempt": "Repeat the complete transfer in the joined sequence.",
-          "diagnosis": "",
-          "change": "",
-          "outcome": "The continuous twelve-piece run passed all four transfer windows, with an independently verified fresh receiver RGB binding."
-        }
-      ],
-      "evidence": [
-        {
-          "label": "See the refinement record",
-          "href": "data/evidence/cyan-handoff.json",
-          "scope": "Recorded attempts, local changes, and verification."
-        }
-      ]
-    },
-    {
-      "id": "cyan-motion-recovery",
-      "title": "Cyan: continue from the state actually reached.",
-      "problem": "A safe intermediate carry stopped just short of its requested waypoint.",
-      "diagnosis": "",
-      "change": "",
-      "result": "The revised skill recovered, replanned, and completed Purple → Cyan → Mint with all 22 checkpoints passing.",
-      "scope": "Continuous three-piece rehearsal.",
-      "attempts": [
-        {
-          "label": "Rigid waypoint",
-          "attempt": "The first joined rehearsal aborted during carry.",
-          "diagnosis": "The hand was stable, but its intermediate position missed the requested tolerance.",
-          "change": "Inspect the actual state rather than treating a missed waypoint as a completed motion.",
-          "outcome": "The failure record isolated a stable intermediate pose, not a dropped piece."
-        },
-        {
-          "label": "Local recovery",
-          "attempt": "Retain the real intermediate state and check it again.",
-          "diagnosis": "A task-independent waypoint can be replaced only after stability and geometry checks.",
-          "change": "Verify the held state, acquire fresh RGB, and replan the next leg.",
-          "outcome": "The recovery ran in simulation; all three pieces were released and independently verified."
-        }
-      ],
-      "evidence": [
-        {
-          "label": "See the refinement record",
-          "href": "data/evidence/cyan-motion-recovery.json",
-          "scope": "Recorded attempts, local changes, and verification."
-        }
-      ]
-    },
-    {
       "id": "cyan-opening",
-      "title": "Cyan: make the release visible.",
+      "title": "Cyan · open a clear view.",
       "problem": "The piece was released, but a finger still covered the bead needed by the next visual check.",
       "diagnosis": "",
       "change": "",
       "result": "The wider opening exposed Cyan, earned two accepted observations, and enabled the continuous run to place all twelve pieces.",
-      "media": {
-        "src": "media/self_refine_cyan_opening.png",
-        "alt": "Top-camera crops from two executions: the 55 mm opening covers Cyan's middle bead, while the 75 mm opening reveals it.",
-        "caption": "Actual saved RGB from V10 and V13. Two executions; the public-geometry sweep supplied the opening choice."
-      },
       "evidence": [
         {
           "label": "See the refinement record",
@@ -22377,11 +23480,47 @@
           "change": "",
           "outcome": "Cyan passed release and next-piece handoff checks; independent audit confirmed all twelve physical placements at the end of the run."
         }
+      ],
+      "caption": "A wider opening reveals the bead and lets the policy continue.",
+      "visualSteps": [
+        {
+          "label": "Observe",
+          "title": "Locate the occlusion.",
+          "media": {
+            "type": "image",
+            "src": "media/refine_cyan_observe.jpg",
+            "alt": "Actual earlier RGB: the finger covers Cyan after the original jaw opening.",
+            "width": 800,
+            "height": 500
+          }
+        },
+        {
+          "label": "Adjust",
+          "title": "Open wider.",
+          "media": {
+            "type": "image",
+            "src": "media/refine_cyan_adjust.jpg",
+            "alt": "Actual V13 RGB after the 75 mm opening reveals Cyan.",
+            "width": 800,
+            "height": 500
+          }
+        },
+        {
+          "label": "Verify",
+          "title": "Look again, then continue.",
+          "media": {
+            "type": "image",
+            "src": "media/refine_cyan_verify.jpg",
+            "alt": "A second actual V13 observation supports the released Cyan pose.",
+            "width": 800,
+            "height": 500
+          }
+        }
       ]
     },
     {
       "id": "red-handoff",
-      "title": "Red: repair the receiving contact.",
+      "title": "Red · seat the receiving grasp.",
       "problem": "A jaw could look loaded while holding the edge of a bead, allowing the piece to roll.",
       "diagnosis": "",
       "change": "",
@@ -22416,11 +23555,47 @@
           "change": "",
           "outcome": "All eight Red transfer windows and its release passed. The final physical assembly and arms-home state passed independent audit."
         }
+      ],
+      "caption": "Recenter while supported, regrasp, and finish the placement.",
+      "visualSteps": [
+        {
+          "label": "Observe",
+          "title": "Inspect the contact.",
+          "media": {
+            "type": "image",
+            "src": "media/refine_red_observe.jpg",
+            "alt": "Actual earlier Red close in the diagnostic run; the receiving bead lies beyond the blade front.",
+            "width": 800,
+            "height": 500
+          }
+        },
+        {
+          "label": "Adjust",
+          "title": "Recenter and rebind.",
+          "media": {
+            "type": "image",
+            "src": "media/refine_red_adjust.jpg",
+            "alt": "Actual V13 Red receiver binding after the repaired second handoff.",
+            "width": 800,
+            "height": 500
+          }
+        },
+        {
+          "label": "Verify",
+          "title": "Place and withdraw.",
+          "media": {
+            "type": "image",
+            "src": "media/refine_red_verify.jpg",
+            "alt": "Actual V13 final reconstructed native state: twelve placed pieces and both arms home.",
+            "width": 800,
+            "height": 500
+          }
+        }
       ]
     },
     {
       "id": "board-reacquisition",
-      "title": "Board: recover the rim from another view.",
+      "title": "Board · combine the clear views.",
       "problem": "The arms and puzzle pieces could hide the rim used to estimate the board pose.",
       "diagnosis": "",
       "change": "",
@@ -22449,16 +23624,47 @@
           "outcome": "The joined V13 execution recovered the rim from front + side views with close cross-view agreement."
         }
       ],
-      "media": {
-        "src": "media/self_refine_board_views.jpg",
-        "alt": "The same recorded observation from top, front, and side cameras. The top board fit rejects; front and side support a consistent board pose.",
-        "caption": "One actual observation. Two supported views recover the board while the top fit rejects it."
-      },
       "evidence": [
         {
           "label": "See the refinement record",
           "href": "data/evidence/board-reacquisition.json",
           "scope": "Recorded attempts, local changes, and verification."
+        }
+      ],
+      "caption": "Two supported camera views recover the board rim.",
+      "visualSteps": [
+        {
+          "label": "Observe",
+          "title": "Inspect the top view.",
+          "media": {
+            "type": "image",
+            "src": "media/refine_board_observe.jpg",
+            "alt": "Actual V13 top image from a packet whose top board fit is rejected.",
+            "width": 800,
+            "height": 500
+          }
+        },
+        {
+          "label": "Adjust",
+          "title": "Use the front view.",
+          "media": {
+            "type": "image",
+            "src": "media/refine_board_adjust.jpg",
+            "alt": "Actual front image from the same V13 RGB packet supports the board rim.",
+            "width": 800,
+            "height": 500
+          }
+        },
+        {
+          "label": "Verify",
+          "title": "Check the side view.",
+          "media": {
+            "type": "image",
+            "src": "media/refine_board_verify.jpg",
+            "alt": "Actual side image from the same current packet independently supports a consistent board pose.",
+            "width": 800,
+            "height": 500
+          }
         }
       ]
     }
@@ -22517,6 +23723,149 @@
       ]
     }
   ],
+  "generalizationGallery": {
+    "title": "",
+    "caption": "3 pose variations · same policy",
+    "scope": "Local pose variations",
+    "cases": [
+      {
+        "id": "azure-nominal",
+        "title": "Nominal",
+        "media": {
+          "type": "video",
+          "src": "media/azure_variation_nominal.mp4",
+          "poster": "media/azure_variation_nominal_poster.jpg",
+          "alt": "Recorded native Azure placement in the nominal development scene.",
+          "width": 960,
+          "height": 600
+        },
+        "scope": "Same frozen skill"
+      },
+      {
+        "id": "azure-source",
+        "title": "Source moved",
+        "media": {
+          "type": "video",
+          "src": "media/azure_variation_source.mp4",
+          "poster": "media/azure_variation_source_poster.jpg",
+          "alt": "Recorded native Azure placement after the source is shifted 3 mm and rotated 3 degrees.",
+          "width": 960,
+          "height": 600
+        },
+        "scope": "+3 mm · +3°"
+      },
+      {
+        "id": "azure-board",
+        "title": "Board moved",
+        "media": {
+          "type": "video",
+          "src": "media/azure_variation_board.mp4",
+          "poster": "media/azure_variation_board_poster.jpg",
+          "alt": "Recorded native Azure placement after the board is shifted 2 mm and rotated 0.5 degrees.",
+          "width": 960,
+          "height": 600
+        },
+        "scope": "+2 mm · +0.5°"
+      },
+      {
+        "id": "azure-response",
+        "title": "Targets adapt",
+        "media": {
+          "type": "image",
+          "src": "media/azure_pose_response.png",
+          "alt": "A plot of actual planar changes in RGB pose estimates and generated grasp or transport targets for the source and board variations.",
+          "width": 1280,
+          "height": 720
+        },
+        "scope": "Measured pose → target response"
+      }
+    ],
+    "evidence": [
+      {
+        "label": "Trials and data",
+        "href": "data/evidence/azure-physical.json",
+        "scope": "Three selected physical Azure rehearsals; the fourth tile visualizes input-response data, not a fourth trial."
+      }
+    ],
+    "gridVideo": {
+      "type": "video",
+      "src": "media/azure_variations_grid.mp4",
+      "poster": "media/azure_variations_grid_poster.jpg",
+      "width": 960,
+      "height": 600,
+      "alt": "Two-by-two view: three actual Azure placement trials with nominal, source-shifted and board-shifted poses, plus an observed-pose-to-generated-target response illustration in the fourth panel."
+    },
+    "individualVideos": [
+      {
+        "label": "Nominal",
+        "href": "media/azure_variation_nominal.mp4",
+        "scope": "Same frozen skill"
+      },
+      {
+        "label": "Source moved",
+        "href": "media/azure_variation_source.mp4",
+        "scope": "+3 mm · +3°"
+      },
+      {
+        "label": "Board moved",
+        "href": "media/azure_variation_board.mp4",
+        "scope": "+2 mm · +0.5°"
+      }
+    ]
+  },
+  "additionalRefinement": [
+    {
+      "title": "Cyan: find a reachable handover.",
+      "evidence": [
+        {
+          "label": "See the refinement record",
+          "href": "data/evidence/cyan-handoff.json",
+          "scope": "Recorded attempts, local changes, and verification."
+        }
+      ]
+    },
+    {
+      "title": "Cyan: continue from the state actually reached.",
+      "evidence": [
+        {
+          "label": "See the refinement record",
+          "href": "data/evidence/cyan-motion-recovery.json",
+          "scope": "Recorded attempts, local changes, and verification."
+        }
+      ]
+    }
+  ],
+  "bimanualShowcase": {
+    "title": "Regrasp to change the approach",
+    "caption": "Recorded Red handoffs · 8×",
+    "reason": [
+      "This grasp’s ingress failed the original joint-reserve gate.",
+      "Two handoffs changed its grasp frame by 86.2° before placement."
+    ],
+    "media": {
+      "type": "video",
+      "src": "media/bimanual_red_twohop_v13.mp4",
+      "poster": "media/bimanual_red_twohop_v13_poster.jpg",
+      "alt": "Actual recorded Red transfer from right to left hand and back to right.",
+      "width": 960,
+      "height": 600
+    },
+    "geometryMedia": {
+      "type": "image",
+      "src": "media/bimanual_red_grasp_geometry.png",
+      "alt": "Public Red and fingertip CAD in a shared piece frame: original grip and actual V13 grip after two handoffs.",
+      "caption": "Public CAD + recorded RGB / robot FK",
+      "width": 1960,
+      "height": 980
+    },
+    "evidence": [
+      {
+        "label": "Recorded handoffs and grasp geometry",
+        "href": "data/evidence/bimanual-regrasp.json",
+        "scope": "Original proposal reserve refusal; actual V13 two-hop checkpoints; exact posttransfer RGB/q16 attachment. Different dated routes, with no universal single-arm impossibility claim."
+      }
+    ]
+  },
   "intro": {
     "title": "From a real puzzle to a visual robot policy.",
     "description": "Twelve pieces, two arms. Reconstruct the scene, compose a feedback-driven policy, and improve it through physical trials.",
@@ -22532,7 +23881,7 @@
     "scope": "Native episode replay of the image-driven policy in the reconstructed RSS workcell. The source video supplies the puzzle and task; the simulation uses an accessible loose-piece layout and keeps the case on the table."
   },
   "methodAlignment": {
-    "title": "One graph, locally refined skills.",
+    "title": "RSS scene → typed skills → parallel trials → refine → verify.",
     "description": "GaP decomposes the task into reusable skills with typed inputs and independent checkpoints. Failed rehearsals identify the module to repair; the revised skills are then tested together.",
     "steps": [
       {
@@ -22561,6 +23910,28 @@
         "label": "RSS / GaP method and implementation",
         "href": "data/evidence/method-alignment.json",
         "scope": "Upstream sources, actual graph and skill contracts, and independent source review."
+      },
+      {
+        "label": "Camera configuration",
+        "href": "data/evidence/camera-configuration.json",
+        "scope": "Four project virtual views; calibration/rendering chain and hardware-model distinction."
+      }
+    ],
+    "flow": [
+      {
+        "label": "RSS scene"
+      },
+      {
+        "label": "Typed skills"
+      },
+      {
+        "label": "Parallel trials"
+      },
+      {
+        "label": "Refine"
+      },
+      {
+        "label": "Verify"
       }
     ]
   },

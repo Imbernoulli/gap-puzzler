@@ -46,6 +46,40 @@
   },
   "scope": "Three selected development rehearsals of the earlier Azure module. All twelve pieces start loose; only Azure executes. No full-assembly, current-Cyan/Red or statistical held-out robustness claim.",
   "source_artifacts": [
-    "results/reviews/modular_azure_variational_independent_summary_v1.json"
-  ]
+    "results/reviews/modular_azure_variational_independent_summary_v1.json",
+    "results/site_policy_media/azure_nominal.json",
+    "results/site_policy_media/azure_board.json",
+    "results/site_policy_media/azure_source.json"
+  ],
+  "gallery": {
+    "videos": [
+      {
+        "case": "azure-nominal",
+        "video": "media/azure_variation_nominal.mp4",
+        "poster": "media/azure_variation_nominal_poster.jpg"
+      },
+      {
+        "case": "azure-source",
+        "video": "media/azure_variation_source.mp4",
+        "poster": "media/azure_variation_source_poster.jpg"
+      },
+      {
+        "case": "azure-board",
+        "video": "media/azure_variation_board.mp4",
+        "poster": "media/azure_variation_board_poster.jpg"
+      }
+    ],
+    "response_plot": {
+      "src": "media/azure_pose_response.png",
+      "description": "A data illustration, not an additional experiment: planar translation differences of measured RGB estimates and generated targets between each actual variation and nominal. Source/board yaw also changed according to the three-case protocol.",
+      "source_fields": "native_input_action_dependence in results/reviews/modular_azure_variational_independent_summary_v1.json"
+    },
+    "recording": "Recorded native states replayed at 2×, about 15 seconds per scene, 960×600. No new physical trial was created for the video.",
+    "media_grading_scope": "Each recording executes only Azure. Full12 task success fields in generic media metadata remain false; Azure module physical success is independently reported in the three-case physical review.",
+    "combined_grid": {
+      "src": "media/azure_variations_grid.mp4",
+      "poster": "media/azure_variations_grid_poster.jpg",
+      "description": "The same three actual Azure clips plus the measured response data illustration; not an additional trial."
+    }
+  }
 }

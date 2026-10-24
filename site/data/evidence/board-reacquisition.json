@@ -76,6 +76,114 @@
     "runs/cyan_v3_board_rgb_recovery_v1/reviewed_api_replay.json",
     "runs/gap_delivery_independent_audit_v1/board_any2_independent_review.json",
     "runs/cyan_board_any2_rgb_v1/manifest.json",
-    "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/observations.json"
-  ]
+    "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/observations.json",
+    "results/site_policy_media/visuals.json"
+  ],
+  "narrative": {
+    "title": "Board: recover the rim from another view.",
+    "problem": "The arms and puzzle pieces could hide the rim used to estimate the board pose.",
+    "diagnosis": "",
+    "change": "",
+    "result": "The executing graph recovered the board from front and side images while the top-view fit rejected it.",
+    "scope": "Current-image board estimation.",
+    "attempts": [
+      {
+        "label": "One view",
+        "attempt": "The top-camera outline fit lost the rim.",
+        "diagnosis": "Hands and pieces interrupted the visible boundary.",
+        "change": "Fit the known board outline independently in front and rear images.",
+        "outcome": "Recorded-packet checks recovered a top-view failure."
+      },
+      {
+        "label": "Fixed pair",
+        "attempt": "The rear view became blocked during the transfer.",
+        "diagnosis": "A fixed camera pair could still lose a required boundary.",
+        "change": "Use any two independently supported current views, with the original acceptance checks.",
+        "outcome": "Four previously rejected recorded packets were recovered."
+      },
+      {
+        "label": "Online use",
+        "attempt": "Bind the multi-view result to the current observation.",
+        "diagnosis": "",
+        "change": "",
+        "outcome": "The joined V13 execution recovered the rim from front + side views with close cross-view agreement."
+      }
+    ]
+  },
+  "visual_sequence": [
+    {
+      "label": "Observe",
+      "title": "Inspect the top view.",
+      "media": "media/refine_board_observe.jpg"
+    },
+    {
+      "label": "Adjust",
+      "title": "Use the front view.",
+      "media": "media/refine_board_adjust.jpg"
+    },
+    {
+      "label": "Verify",
+      "title": "Check the side view.",
+      "media": "media/refine_board_verify.jpg"
+    }
+  ],
+  "visual_provenance": {
+    "steps": [
+      {
+        "src": "media/refine_board_observe.jpg",
+        "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0031.npz",
+        "observation": 31,
+        "camera": "top",
+        "simTime": 178.86,
+        "sourceCropXYXY": [
+          360,
+          410,
+          920,
+          760
+        ],
+        "size": [
+          800,
+          500
+        ],
+        "meaning": "Same current RGB packet: top-only board outline rejected"
+      },
+      {
+        "src": "media/refine_board_adjust.jpg",
+        "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0031.npz",
+        "observation": 31,
+        "camera": "front",
+        "simTime": 178.86,
+        "sourceCropXYXY": [
+          360,
+          335,
+          920,
+          685
+        ],
+        "size": [
+          800,
+          500
+        ],
+        "meaning": "Same current RGB packet: front board fit accepted"
+      },
+      {
+        "src": "media/refine_board_verify.jpg",
+        "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10/episode/rgb/0031.npz",
+        "observation": 31,
+        "camera": "side",
+        "simTime": 178.86,
+        "sourceCropXYXY": [
+          370,
+          430,
+          930,
+          780
+        ],
+        "size": [
+          800,
+          500
+        ],
+        "meaning": "Same current RGB packet: side board fit agrees; camera fusion is a perception repair, not a motion sequence"
+      }
+    ],
+    "scope": "Three cameras from one actual current observation packet; no invented camera motion or temporal changes."
+  }
 }
