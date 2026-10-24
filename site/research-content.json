@@ -7,11 +7,22 @@
   },
   "real2sim": {
     "title": "From demonstration to simulation.",
-    "description": "A human demonstration supplies the puzzle and task. RoboSimStudio provides the reconstructed objects, two YAM arms, and contact simulation.",
+    "description": "Reference reconstruction being aligned",
     "referenceUrl": "https://www.youtube.com/watch?v=PSgC31TvdxA",
-    "simulationVideo": "media/policy_v13_native.mp4",
-    "comparisonImage": "media/pyramid_live_reference_strip.png",
-    "scope": "Native episode replay of the image-driven policy in the reconstructed RSS workcell. The source video supplies the puzzle and task; the simulation uses an accessible loose-piece layout and keeps the case on the table."
+    "scope": "Reference-only display while the reconstruction is aligned to the demonstrated packing.",
+    "displayMode": "reference-only",
+    "alignmentStatus": "in-progress",
+    "statusCaption": "Reference reconstruction being aligned",
+    "supersededComparison": {
+      "status": "superseded",
+      "referenceStrip": "media/pyramid_live_reference_strip.png",
+      "policyExecutionVideo": "media/policy_v13_native.mp4",
+      "reason": "The prior side-by-side scenes use different packing and cannot establish reference-matched reconstruction. The recorded policy video remains valid as execution footage in the policy section."
+    },
+    "comparison": {
+      "ready": false,
+      "caption": "Reference reconstruction being aligned"
+    }
   },
   "refinement": [
     {
@@ -158,81 +169,6 @@
             "type": "image",
             "src": "media/refine_red_verify.jpg",
             "alt": "Actual V13 final reconstructed native state: twelve placed pieces and both arms home.",
-            "width": 800,
-            "height": 500
-          }
-        }
-      ]
-    },
-    {
-      "id": "board-reacquisition",
-      "title": "Board · combine the clear views.",
-      "problem": "The arms and puzzle pieces could hide the rim used to estimate the board pose.",
-      "diagnosis": "",
-      "change": "",
-      "result": "The executing graph recovered the board from front and side images while the top-view fit rejected it.",
-      "scope": "Current-image board estimation.",
-      "attempts": [
-        {
-          "label": "One view",
-          "attempt": "The top-camera outline fit lost the rim.",
-          "diagnosis": "Hands and pieces interrupted the visible boundary.",
-          "change": "Fit the known board outline independently in front and rear images.",
-          "outcome": "Recorded-packet checks recovered a top-view failure."
-        },
-        {
-          "label": "Fixed pair",
-          "attempt": "The rear view became blocked during the transfer.",
-          "diagnosis": "A fixed camera pair could still lose a required boundary.",
-          "change": "Use any two independently supported current views, with the original acceptance checks.",
-          "outcome": "Four previously rejected recorded packets were recovered."
-        },
-        {
-          "label": "Online use",
-          "attempt": "Bind the multi-view result to the current observation.",
-          "diagnosis": "",
-          "change": "",
-          "outcome": "The joined V13 execution recovered the rim from front + side views with close cross-view agreement."
-        }
-      ],
-      "evidence": [
-        {
-          "label": "See the refinement record",
-          "href": "data/evidence/board-reacquisition.json",
-          "scope": "Recorded attempts, local changes, and verification."
-        }
-      ],
-      "caption": "Two supported camera views recover the board rim.",
-      "visualSteps": [
-        {
-          "label": "Observe",
-          "title": "Inspect the top view.",
-          "media": {
-            "type": "image",
-            "src": "media/refine_board_observe.jpg",
-            "alt": "Actual V13 top image from a packet whose top board fit is rejected.",
-            "width": 800,
-            "height": 500
-          }
-        },
-        {
-          "label": "Adjust",
-          "title": "Use the front view.",
-          "media": {
-            "type": "image",
-            "src": "media/refine_board_adjust.jpg",
-            "alt": "Actual front image from the same V13 RGB packet supports the board rim.",
-            "width": 800,
-            "height": 500
-          }
-        },
-        {
-          "label": "Verify",
-          "title": "Check the side view.",
-          "media": {
-            "type": "image",
-            "src": "media/refine_board_verify.jpg",
-            "alt": "Actual side image from the same current packet independently supports a consistent board pose.",
             "width": 800,
             "height": 500
           }
@@ -1224,7 +1160,7 @@
           "side"
         ]
       },
-      "scope": "Board-pose perception module refined on recorded failures and then actually used by the joined policy observer. Cross-view disagreement is an image-estimator consistency measure, not a physical placement error or full-task generalization result.",
+      "scope": "Simulation perception module using the project four-camera virtual workcell rig. These external virtual views are not stock YAM hardware cameras or measured real-robot camera coverage. Saved and online V13 observations validate the virtual-image board estimator; this is kept as implementation evidence rather than a main robot-capability showcase.",
       "source_artifacts": [
         "runs/gap_delivery_independent_audit_v1/board_reacquire_independent_review.json",
         "runs/gap_delivery_independent_audit_v1/board_caller_independent_review.json",
@@ -1340,7 +1276,84 @@
           }
         ],
         "scope": "Three cameras from one actual current observation packet; no invented camera motion or temporal changes."
-      }
+      },
+      "visual_case_archived": {
+        "id": "board-reacquisition",
+        "title": "Board · combine the clear views.",
+        "problem": "The arms and puzzle pieces could hide the rim used to estimate the board pose.",
+        "diagnosis": "",
+        "change": "",
+        "result": "The executing graph recovered the board from front and side images while the top-view fit rejected it.",
+        "scope": "Current-image board estimation.",
+        "attempts": [
+          {
+            "label": "One view",
+            "attempt": "The top-camera outline fit lost the rim.",
+            "diagnosis": "Hands and pieces interrupted the visible boundary.",
+            "change": "Fit the known board outline independently in front and rear images.",
+            "outcome": "Recorded-packet checks recovered a top-view failure."
+          },
+          {
+            "label": "Fixed pair",
+            "attempt": "The rear view became blocked during the transfer.",
+            "diagnosis": "A fixed camera pair could still lose a required boundary.",
+            "change": "Use any two independently supported current views, with the original acceptance checks.",
+            "outcome": "Four previously rejected recorded packets were recovered."
+          },
+          {
+            "label": "Online use",
+            "attempt": "Bind the multi-view result to the current observation.",
+            "diagnosis": "",
+            "change": "",
+            "outcome": "The joined V13 execution recovered the rim from front + side views with close cross-view agreement."
+          }
+        ],
+        "evidence": [
+          {
+            "label": "See the refinement record",
+            "href": "data/evidence/board-reacquisition.json",
+            "scope": "Recorded attempts, local changes, and verification."
+          }
+        ],
+        "caption": "Two supported camera views recover the board rim.",
+        "visualSteps": [
+          {
+            "label": "Observe",
+            "title": "Inspect the top view.",
+            "media": {
+              "type": "image",
+              "src": "media/refine_board_observe.jpg",
+              "alt": "Actual V13 top image from a packet whose top board fit is rejected.",
+              "width": 800,
+              "height": 500
+            }
+          },
+          {
+            "label": "Adjust",
+            "title": "Use the front view.",
+            "media": {
+              "type": "image",
+              "src": "media/refine_board_adjust.jpg",
+              "alt": "Actual front image from the same V13 RGB packet supports the board rim.",
+              "width": 800,
+              "height": 500
+            }
+          },
+          {
+            "label": "Verify",
+            "title": "Check the side view.",
+            "media": {
+              "type": "image",
+              "src": "media/refine_board_verify.jpg",
+              "alt": "Actual side image from the same current packet independently supports a consistent board pose.",
+              "width": 800,
+              "height": 500
+            }
+          }
+        ]
+      },
+      "camera_configuration_evidence": "data/evidence/camera-configuration.json",
+      "presentation_status": "Removed from main self-refinement showcase; retained in simulation implementation evidence."
     },
     "method-alignment": {
       "schema": "puzzler.website_evidence_summary.v1",
@@ -1441,6 +1454,11 @@
         "policy_inputs": "Four calibrated virtual workcell RGB cameras: top, front, rear and side; rendering and perception share camera intrinsics and extrinsics.",
         "calibration_scope": "Project virtual camera rig, not measured YAM hardware intrinsics or hand-eye calibration.",
         "display_video": "Native recorded-state replay uses a separate offline observer view. This presentation camera is not a policy sensor."
+      },
+      "reference_reconstruction_status": {
+        "status": "alignment_in_progress",
+        "active_comparison": "Reference only until a matching reconstruction is available.",
+        "superseded_comparison": "Earlier different-packing comparison removed from the active reconstruction showcase."
       }
     },
     "camera-configuration": {
@@ -2414,6 +2432,21 @@
           "label": "See the refinement record",
           "href": "data/evidence/cyan-motion-recovery.json",
           "scope": "Recorded attempts, local changes, and verification."
+        }
+      ]
+    },
+    {
+      "title": "Virtual-view board estimation",
+      "evidence": [
+        {
+          "label": "Virtual camera rig and board fitting",
+          "href": "data/evidence/board-reacquisition.json",
+          "scope": "Project virtual workcell RGB views; simulation perception implementation evidence."
+        },
+        {
+          "label": "Camera configuration",
+          "href": "data/evidence/camera-configuration.json",
+          "scope": "Four calibrated virtual views, distinct from stock YAM hardware cameras."
         }
       ]
     }

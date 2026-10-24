@@ -11,8 +11,8 @@
   <link rel="canonical" href="https://bohanlyu.com/gap-puzzler/">
   <title>Puzzler — RoboSimStudio × Graph-as-Policy</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="style.css?v=visual2">
-  <script src="app.js?v=visual2" defer></script>
+  <link rel="stylesheet" href="style.css?v=visual2fix">
+  <script src="app.js?v=visual2fix" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -40,20 +40,61 @@
     <section class="project-section wrap" id="real2sim" aria-labelledby="real2sim-title">
       <div class="section-heading">
         <p class="section-index">01 / RoboSimStudio</p>
-        <div><h2 id="real2sim-title">From demonstration to simulation.</h2><p>Drag the divider to compare the real puzzle and the reconstructed scene.</p></div>
+        <div><h2 id="real2sim-title">From demonstration to simulation.</h2><p>The original puzzle demonstration.</p></div>
       </div>
       <figure class="real2sim-figure">
-        <div id="real2sim-comparison" class="real2sim-comparison" style="--comparison-split: 50%; --comparison-aspect: 4 / 3">
+        <div id="real2sim-comparison" class="real2sim-comparison" data-ready="false" style="--comparison-split: 50%; --comparison-aspect: 4 / 3">
           <img id="comparison-real" class="comparison-image" src="media/real2sim_real.jpg" width="960" height="720" alt="A real demonstration frame showing the completed puzzle pyramid">
-          <div class="comparison-sim"><img id="comparison-sim" class="comparison-image" src="media/real2sim_sim.jpg" width="960" height="720" alt="The reconstructed puzzle pyramid in the final recorded simulation state, seen from a similar angle"></div>
+          <div class="comparison-sim" hidden><img id="comparison-sim" class="comparison-image" width="960" height="720" alt="A corresponding simulation reconstruction, when available"></div>
           <span class="comparison-label comparison-label-real">Real</span>
-          <span class="comparison-label comparison-label-sim">Sim</span>
-          <span class="comparison-divider" aria-hidden="true"><span>↔</span></span>
-          <input id="comparison-slider" class="comparison-slider" type="range" min="0" max="100" value="50" aria-label="Reveal real or simulated scene" aria-valuetext="50 percent simulation">
+          <span class="comparison-label comparison-label-sim" hidden>Sim</span>
+          <span class="comparison-divider" aria-hidden="true" hidden><span>↔</span></span>
+          <input id="comparison-slider" class="comparison-slider" type="range" min="0" max="100" value="50" aria-label="Reveal real or simulated scene" aria-valuetext="50 percent simulation" hidden disabled>
         </div>
-        <figcaption><span id="comparison-caption">Real frame · 214 s / Sim · final state. Similar viewpoints.</span><a href="https://www.youtube.com/watch?v=PSgC31TvdxA&amp;t=214" target="_blank" rel="noreferrer">Original demonstration <span aria-hidden="true">↗</span></a></figcaption>
+        <figcaption><span id="comparison-caption">Original demonstration</span><a href="https://www.youtube.com/watch?v=PSgC31TvdxA&amp;t=214" target="_blank" rel="noreferrer">Source video <span aria-hidden="true">↗</span></a></figcaption>
       </figure>
       <p class="method-line"><strong>Scene + task specification + contact physics.</strong> Reconstructed geometry, friction, and release dynamics make physical rehearsal possible. <a href="https://github.com/robosimstudio/robosimstudio/tree/main/examples" target="_blank" rel="noreferrer">RSS examples <span aria-hidden="true">↗</span></a></p>
+      <aside class="apparatus" aria-labelledby="apparatus-title">
+        <div class="apparatus-heading"><h3 id="apparatus-title">Apparatus / setup</h3><span>Custom simulation camera rig</span></div>
+        <div class="apparatus-layout">
+          <svg class="apparatus-diagram" viewBox="0 0 760 300" role="img" aria-labelledby="apparatus-svg-title apparatus-svg-desc">
+            <title id="apparatus-svg-title">Four added fixed RGB cameras around a dual YAM workcell</title>
+            <desc id="apparatus-svg-desc">Top-view schematic. The table and puzzle lie between two YAM arms. Four task-added fixed virtual cameras named top, front, rear and side provide policy RGB. The two wrist cameras included in the robot model are unused. Arm poses are illustrative.</desc>
+            <defs>
+              <g id="apparatus-camera"><rect x="-11" y="-7" width="18" height="14" rx="2"/><path d="M7 -4L14 -8V8L7 4Z"/></g>
+              <marker id="apparatus-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L8 4L0 8Z"/></marker>
+            </defs>
+            <rect class="apparatus-table" x="224" y="83" width="312" height="143" rx="5"/>
+            <text class="apparatus-label" x="380" y="213" text-anchor="middle">Table · z = 0.75 m</text>
+            <g class="apparatus-sightlines"><path d="M548 250L395 139"/><path d="M212 250L365 139"/><path d="M380 39L380 104"/></g>
+            <g class="apparatus-arm"><path d="M306 71L280 104L330 107"/><path d="M454 71L480 104L430 107"/><circle cx="306" cy="71" r="11"/><circle cx="454" cy="71" r="11"/><circle cx="280" cy="104" r="5"/><circle cx="480" cy="104" r="5"/></g>
+            <text class="apparatus-label" x="253" y="66" text-anchor="end">Left YAM</text><text class="apparatus-label" x="507" y="66">Right YAM</text>
+            <rect class="apparatus-board" x="350" y="104" width="60" height="38" rx="3"/>
+            <text class="apparatus-label apparatus-board-label" x="380" y="128" text-anchor="middle">Puzzle</text>
+            <g class="apparatus-wrist"><use href="#apparatus-camera" transform="translate(330 107) scale(.65)"/><use href="#apparatus-camera" transform="translate(430 107) scale(.65)"/></g>
+            <g class="apparatus-fixed"><use href="#apparatus-camera" transform="translate(380 39)"/><use href="#apparatus-camera" transform="translate(548 250) rotate(-145)"/><use href="#apparatus-camera" transform="translate(212 250) rotate(-35)"/><use href="#apparatus-camera" transform="translate(380 158) rotate(90)"/></g>
+            <text class="apparatus-camera-label" x="410" y="43">Side · z 1.50 m</text>
+            <text class="apparatus-camera-label" x="579" y="254">Front · z 1.40 m</text>
+            <text class="apparatus-camera-label" x="181" y="254" text-anchor="end">Rear · z 1.40 m</text>
+            <text class="apparatus-camera-label" x="410" y="163">Top · z 1.65 m</text>
+            <path class="apparatus-axis" d="M647 77H684M647 77V113" marker-end="url(#apparatus-arrow)"/><text class="apparatus-label" x="692" y="82">−y</text><text class="apparatus-label" x="640" y="132">+x</text>
+            <text class="apparatus-small" x="380" y="290" text-anchor="middle">Top-view schematic · camera positions from configuration · arm poses illustrative</text>
+          </svg>
+          <div class="apparatus-notes">
+            <p><span class="apparatus-key apparatus-key-fixed" aria-hidden="true"></span><strong>4 added fixed RGB cameras</strong><br>Top / front / rear / side · used by this policy</p>
+            <p><span class="apparatus-key apparatus-key-unused" aria-hidden="true"></span><strong>2 wrist cameras in the model</strong><br>Unused by this policy</p>
+            <p class="apparatus-scope">This is a custom simulation rig, not an official RSS / GaP hardware setup. The replay video uses a separate presentation camera.</p>
+          </div>
+        </div>
+        <p class="apparatus-changes">Layout C: Lime moved +70 mm. Solver-generated packing differs from the source demonstration.</p>
+        <details class="case-evidence apparatus-parameters">
+          <summary>Camera parameters and setup evidence</summary>
+          <p>World coordinates in metres · all four cameras are fixed to the world · 1280 × 1024 RGB.</p>
+          <div class="apparatus-table-scroll"><table><thead><tr><th>Camera</th><th>Eye (x, y, z)</th><th>Look at (x, y, z)</th><th>Vertical FOV</th></tr></thead><tbody><tr><td>Top</td><td>(0.60, 0, 1.65)</td><td>(0.60, 0, 0.75)</td><td>53°</td></tr><tr><td>Front</td><td>(1.00, −0.70, 1.40)</td><td>(0.55, 0, 0.78)</td><td>58°</td></tr><tr><td>Rear</td><td>(1.00, +0.70, 1.40)</td><td>(0.55, 0, 0.78)</td><td>58°</td></tr><tr><td>Side</td><td>(0.12, 0, 1.50)</td><td>(0.58, 0, 0.80)</td><td>65°</td></tr></tbody></table></div>
+          <p>Top camera up vector: (1, 0, 0). Other views: (0, 0, 1). Wrist camera mounts exist in the selected Arena YAM model; they supply no policy images.</p>
+          <div class="evidence-links"><a href="data/evidence/camera-configuration.json" target="_blank" rel="noreferrer">Camera configuration and source audit</a><a href="https://github.com/Imbernoulli/gap-puzzler/blob/main/puzzler/vision.py" target="_blank" rel="noreferrer">Policy camera source</a></div>
+        </details>
+      </aside>
     </section>
 
     <section class="project-section wrap" id="policy" aria-labelledby="policy-title">

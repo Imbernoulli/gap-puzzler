@@ -111,7 +111,27 @@
     };
     slider.addEventListener('input', update);
     slider.addEventListener('change', update);
+    configureComparison({ready: false});
     update();
+  }
+
+  function configureComparison(record = {}) {
+    const comparison = byId('real2sim-comparison');
+    if (!comparison) return;
+    const ready = record.ready === true;
+    comparison.dataset.ready = String(ready);
+    comparison.querySelectorAll('.comparison-sim, .comparison-label-sim, .comparison-divider, #comparison-slider').forEach(node => {
+      node.hidden = !ready;
+      node.style.display = ready ? '' : 'none';
+    });
+    const slider = byId('comparison-slider');
+    if (slider) slider.disabled = !ready;
+    const real = byId('comparison-real');
+    const sim = byId('comparison-sim');
+    if (real && safeURL(record.realSrc || record.real?.src)) real.src = safeURL(record.realSrc || record.real.src);
+    if (ready && sim && safeURL(record.simSrc || record.sim?.src)) sim.src = safeURL(record.simSrc || record.sim.src);
+    const caption = byId('comparison-caption');
+    if (caption) caption.textContent = ready ? record.caption || 'Real and reconstructed scene' : 'Original demonstration';
   }
 
   function renderAttemptHistory(parent, item) {
@@ -652,6 +672,7 @@
       if (!response.ok) throw new Error(`Research evidence unavailable (${response.status})`);
       data = await response.json();
       if (!data.graph || !Array.isArray(data.media.mapping)) throw new Error('Unsupported research data format.');
+      configureComparison(data.real2sim?.comparison);
       renderStories();
       renderPieceButtons();
       renderStatus();

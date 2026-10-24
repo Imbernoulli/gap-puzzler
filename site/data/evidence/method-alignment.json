@@ -97,5 +97,10 @@
     "policy_inputs": "Four calibrated virtual workcell RGB cameras: top, front, rear and side; rendering and perception share camera intrinsics and extrinsics.",
     "calibration_scope": "Project virtual camera rig, not measured YAM hardware intrinsics or hand-eye calibration.",
     "display_video": "Native recorded-state replay uses a separate offline observer view. This presentation camera is not a policy sensor."
+  },
+  "reference_reconstruction_status": {
+    "status": "alignment_in_progress",
+    "active_comparison": "Reference only until a matching reconstruction is available.",
+    "superseded_comparison": "Earlier different-packing comparison removed from the active reconstruction showcase."
   }
 }
