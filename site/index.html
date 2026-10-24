@@ -11,8 +11,8 @@
   <link rel="canonical" href="https://bohanlyu.com/gap-puzzler/">
   <title>Puzzler — RoboSimStudio × Graph-as-Policy</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="style.css?v=visual3">
-  <script src="app.js?v=visual3" defer></script>
+  <link rel="stylesheet" href="style.css?v=visual4">
+  <script src="app.js?v=visual4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -37,18 +37,18 @@
     <section class="project-section wrap" id="real2sim" aria-labelledby="real2sim-title">
       <div class="section-heading">
         <p class="section-index">01 / RoboSimStudio</p>
-        <div><h2 id="real2sim-title">From demonstration to simulation.</h2><p>The original puzzle demonstration.</p></div>
+        <div><h2 id="real2sim-title">From demonstration to simulation.</h2><p>Drag to compare the demonstration and reconstructed geometry.</p></div>
       </div>
       <figure class="real2sim-figure">
-        <div id="real2sim-comparison" class="real2sim-comparison" data-ready="false" style="--comparison-split: 50%; --comparison-aspect: 4 / 3">
-          <img id="comparison-real" class="comparison-image" src="media/real2sim_real.jpg" width="960" height="720" alt="A real demonstration frame showing the completed puzzle pyramid">
-          <div class="comparison-sim" hidden><img id="comparison-sim" class="comparison-image" width="960" height="720" alt="A corresponding simulation reconstruction, when available"></div>
+        <div id="real2sim-comparison" class="real2sim-comparison" data-ready="true" style="--comparison-split: 50%; --comparison-aspect: 960 / 787">
+          <img id="comparison-real" class="comparison-image" src="media/reference214_real.jpg" width="960" height="787" alt="The source demonstration at 214 seconds, cropped around its pyramid">
+          <div class="comparison-sim"><img id="comparison-sim" class="comparison-image" src="media/reference214_sim.jpg" width="960" height="787" alt="Independent reconstruction of the same demonstrated packing from video and known piece geometry"></div>
           <span class="comparison-label comparison-label-real">Real</span>
-          <span class="comparison-label comparison-label-sim" hidden>Sim</span>
-          <span class="comparison-divider" aria-hidden="true" hidden><span>↔</span></span>
-          <input id="comparison-slider" class="comparison-slider" type="range" min="0" max="100" value="50" aria-label="Reveal real or simulated scene" aria-valuetext="50 percent simulation" hidden disabled>
+          <span class="comparison-label comparison-label-sim">Sim</span>
+          <span class="comparison-divider" aria-hidden="true"><span>↔</span></span>
+          <input id="comparison-slider" class="comparison-slider" type="range" min="0" max="100" value="50" aria-label="Reveal real or simulated scene" aria-valuetext="50 percent simulation">
         </div>
-        <figcaption><span id="comparison-caption">Original demonstration</span><a href="https://www.youtube.com/watch?v=PSgC31TvdxA&amp;t=214" target="_blank" rel="noreferrer">Source video <span aria-hidden="true">↗</span></a></figcaption>
+        <figcaption><span id="comparison-caption">Video-derived geometry · reference 214 s</span><a href="https://www.youtube.com/watch?v=PSgC31TvdxA&amp;t=214" target="_blank" rel="noreferrer">Source video <span aria-hidden="true">↗</span></a></figcaption>
       </figure>
       <p class="method-line"><strong>Scene + task specification + contact physics.</strong> Reconstructed geometry, friction, and release dynamics make physical rehearsal possible.</p>
       <aside class="apparatus" aria-labelledby="apparatus-title">

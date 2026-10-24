@@ -7,12 +7,12 @@
   },
   "real2sim": {
     "title": "From demonstration to simulation.",
-    "description": "Reference reconstruction being aligned",
+    "description": "Drag to compare the demonstration and reconstructed geometry.",
     "referenceUrl": "https://www.youtube.com/watch?v=PSgC31TvdxA",
-    "scope": "Reference-only display while the reconstruction is aligned to the demonstrated packing.",
-    "displayMode": "reference-only",
-    "alignmentStatus": "in-progress",
-    "statusCaption": "Reference reconstruction being aligned",
+    "scope": "Independent static reference reconstruction from video and public CAD; not a policy execution result.",
+    "displayMode": "reference-comparison",
+    "alignmentStatus": "packing-matched-approximate-geometry",
+    "statusCaption": "Video-derived geometry · reference 214 s",
     "supersededComparison": {
       "status": "superseded",
       "referenceStrip": "media/pyramid_live_reference_strip.png",
@@ -20,9 +20,20 @@
       "reason": "The prior side-by-side scenes use different packing and cannot establish reference-matched reconstruction. The recorded policy video remains valid as execution footage in the policy section."
     },
     "comparison": {
-      "ready": false,
-      "caption": "Reference reconstruction being aligned"
-    }
+      "ready": true,
+      "realSrc": "media/reference214_real.jpg",
+      "simSrc": "media/reference214_sim.jpg",
+      "width": 960,
+      "height": 787,
+      "caption": "Video-derived geometry · reference 214 s"
+    },
+    "evidence": [
+      {
+        "label": "Reference reconstruction provenance",
+        "href": "data/evidence/reference-reconstruction.json",
+        "scope": "Independent static reference reconstruction from video and public CAD; not a policy execution result."
+      }
+    ]
   },
   "refinement": [
     {
@@ -2357,6 +2368,54 @@
       "policy_edits": false,
       "new_simulation": false,
       "privileged_state_used_for_figure_or_control": false
+    },
+    "reference-reconstruction": {
+      "status": "reviewed_reference_reconstruction_frozen",
+      "real": "media/reference214_real.jpg",
+      "sim": "media/reference214_sim.jpg",
+      "stagedReal": "runs/real_reference_reconstruction_v1/review/site_ready/reference214_real.jpg",
+      "stagedSim": "runs/real_reference_reconstruction_v1/review/site_ready/reference214_sim.jpg",
+      "size": [
+        960,
+        787
+      ],
+      "caption": "Video-derived geometry · reference 214 s",
+      "sourceVideo": "/srv/home/bohanlyu/gap-puzzler/video/source.mp4",
+      "sourceVideoTime": 214.0,
+      "sourceFrame": "runs/real_reference_reconstruction_v1/frames/t214.00.png",
+      "packingSource": "runs/real_reference_reconstruction_v1/review/site_ready/source_packing.json",
+      "sceneSpec": "runs/real_reference_reconstruction_v1/review/site_ready/scene_spec.json",
+      "cameraSource": "runs/real_reference_reconstruction_v1/review/site_ready/camera_214.json",
+      "sourceDimensions": [
+        640,
+        360
+      ],
+      "commonRenderCoordinateSize": [
+        1280,
+        720
+      ],
+      "commonCropXYXYAt1280": [
+        430,
+        100,
+        1040,
+        600
+      ],
+      "sharedResizeFrom": [
+        610,
+        500
+      ],
+      "independentWarpOrRecolor": false,
+      "observedMaterialSites": 35,
+      "inferredMaterialSites": 20,
+      "sphereRmsPxAt640": 2.704242790449054,
+      "boardSocketRmsPxAt640": 10.542315979256028,
+      "inference": "Unique public rigid-CAD exact-cover completion constrained by actual 212/214 views; source61 confirms shape-to-color identity.",
+      "policyEpisodeUsed": false,
+      "policySuccessEvidence": false,
+      "simulationSteps": 0,
+      "renderer": "RSS tiled on CUDA; independent static source reconstruction",
+      "geometryLimit": "Tray is an approximate public post lattice; concave socket appearance and hole positions are not fully reconstructed.",
+      "frozenReviewPair": "runs/real_reference_reconstruction_v1/review/pair214_common_crop.jpg"
     }
   },
   "methodAlignment": {

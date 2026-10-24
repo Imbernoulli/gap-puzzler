@@ -111,7 +111,7 @@
     };
     slider.addEventListener('input', update);
     slider.addEventListener('change', update);
-    configureComparison({ready: false});
+    configureComparison({ready: comparison.dataset.ready === 'true'});
     update();
   }
 

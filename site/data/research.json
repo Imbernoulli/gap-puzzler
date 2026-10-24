@@ -4,7 +4,7 @@
     "id": "pyramid_full12_bimanual_layout_c_v13",
     "name": "pyramid_original_order_layout_c_v10",
     "source": "runs/pyramid_full12_bimanual_layout_c_v13/workspace/runs/full12_original_order_layout_c_v10",
-    "updatedAt": "2026-10-24T19:07:10.100081+00:00",
+    "updatedAt": "2026-10-24T19:27:47.248743+00:00",
     "checkpointCount": 82,
     "expectedCheckpoints": 84,
     "passedCheckpoints": 82,
@@ -23814,12 +23814,12 @@
   },
   "real2sim": {
     "title": "From demonstration to simulation.",
-    "description": "Reference reconstruction being aligned",
+    "description": "Drag to compare the demonstration and reconstructed geometry.",
     "referenceUrl": "https://www.youtube.com/watch?v=PSgC31TvdxA",
-    "scope": "Reference-only display while the reconstruction is aligned to the demonstrated packing.",
-    "displayMode": "reference-only",
-    "alignmentStatus": "in-progress",
-    "statusCaption": "Reference reconstruction being aligned",
+    "scope": "Independent static reference reconstruction from video and public CAD; not a policy execution result.",
+    "displayMode": "reference-comparison",
+    "alignmentStatus": "packing-matched-approximate-geometry",
+    "statusCaption": "Video-derived geometry · reference 214 s",
     "supersededComparison": {
       "status": "superseded",
       "referenceStrip": "media/pyramid_live_reference_strip.png",
@@ -23827,9 +23827,20 @@
       "reason": "The prior side-by-side scenes use different packing and cannot establish reference-matched reconstruction. The recorded policy video remains valid as execution footage in the policy section."
     },
     "comparison": {
-      "ready": false,
-      "caption": "Reference reconstruction being aligned"
-    }
+      "ready": true,
+      "realSrc": "media/reference214_real.jpg",
+      "simSrc": "media/reference214_sim.jpg",
+      "width": 960,
+      "height": 787,
+      "caption": "Video-derived geometry · reference 214 s"
+    },
+    "evidence": [
+      {
+        "label": "Reference reconstruction provenance",
+        "href": "data/evidence/reference-reconstruction.json",
+        "scope": "Independent static reference reconstruction from video and public CAD; not a policy execution result."
+      }
+    ]
   },
   "methodAlignment": {
     "title": "RSS scene → typed skills → parallel trials → refine → verify.",
