@@ -25,8 +25,7 @@
 
   <main id="top">
     <section class="hero wrap">
-      <h1>From camera images to a complete pyramid.</h1>
-      <p class="lede">Two arms · 12 pieces · one connected policy graph<br>RGB + joint encoders + known geometry</p>
+      <h1>Twelve loose pieces, two robot arms, one pyramid.</h1>
     </section>
 
     <div class="wrap rig-bar">
@@ -34,7 +33,6 @@
         <button type="button" role="tab" data-rig-tab="official" aria-selected="true">Official mounts · 3 cameras</button>
         <button type="button" role="tab" data-rig-tab="custom" aria-selected="false">Custom rig · 4 cameras</button>
       </div>
-      <p class="rig-note">First, a complete build with four custom fixed cameras. Then, after further refinement, a complete build with the official overhead + two wrist camera mounts.</p>
     </div>
 
     <section class="block wrap" id="rss" aria-labelledby="rss-title">
@@ -49,7 +47,6 @@
           <figcaption>Same arrangement, matched viewpoint. Drag to compare · demonstration at 3:33.</figcaption>
         </figure>
         <div class="rss-side">
-          {{VIEWS}}
           <dl class="facts">
             {{CAMERA_FACTS}}
             <div data-rig="official"><dt>Calibration</dt><dd>Public mounts · declared pinhole model in sim</dd></div>
@@ -60,6 +57,7 @@
           </dl>
         </div>
       </div>
+      {{VIEWS}}
     </section>
 
     <section class="block wrap" id="gap" aria-labelledby="gap-title">
@@ -67,7 +65,7 @@
       {{PLAYERS}}
       <p class="legend small"><span><i class="k-done"></i>checked</span><span><i class="k-now"></i>active</span><span><i class="k-abort"></i>error → stop</span><span>↻ bounded re-observation</span><span>Click a shape or node to seek.</span></p>
 
-      <h3 class="sub">Why Cyan and Red change hands</h3>
+      <h3 class="sub">Why {{P:cyan}} and {{P:red}} change hands</h3>
       {{HANDS}}
     </section>
 
@@ -76,47 +74,32 @@
       <div class="refine-flow" aria-label="Refinement workflow"><span>Rehearse a skill</span><b>→</b><span>Inspect RGB + checks</span><b>→</b><span>Refine the module</span><b>→</b><span>Rejoin the full graph</span><b class="repeat">↻</b></div>
       <div class="rounds">
         <article>
-          <h3>A clean release <span class="rig-chip">3 cameras</span></h3>
-          <div class="strip">
-            <figure>
-              <video src="media/refine/lime_before.mp4" data-autoplay autoplay muted loop playsinline controls preload="metadata" aria-label="Before refinement: a slow jaw opening pushes Lime sideways"></video>
-              <figcaption><b class="bad">Before</b> Slow opening · sideways push · 5 mm offset</figcaption>
-            </figure>
-            <figure>
-              <video src="media/refine/lime_after.mp4" data-autoplay autoplay muted loop playsinline controls preload="metadata" aria-label="After refinement: both pads release together and Lime lands straight"></video>
-              <figcaption><b class="good">Refined</b> Both pads leave together · 1 mm offset</figcaption>
-            </figure>
-          </div>
+          <h3>Release {{P:lime}} cleanly <span class="rig-chip">3 cameras</span></h3>
+          <figure><a href="media/refine_lime_release.jpg" target="_blank" rel="noopener" aria-label="Enlarge the annotated release comparison"><img src="media/refine_lime_release.jpg" width="1390" height="589" loading="lazy" alt="Before: goal rings and arrows show piece 8 displaced by 4.8 mm. After: the beads sit in the rings, 1.0 mm off."></a><figcaption>Both pads release together. Sideways offset: 4.8 → 1.0 mm.</figcaption></figure>
+          <details class="refine-clips"><summary>Watch the release</summary><div class="strip">
+            <figure><video src="media/refine/lime_before.mp4" data-autoplay autoplay muted loop playsinline controls preload="metadata" aria-label="Before: slow opening pushes the piece sideways"></video><figcaption>Before · slow opening</figcaption></figure>
+            <figure><video src="media/refine/lime_after.mp4" data-autoplay autoplay muted loop playsinline controls preload="metadata" aria-label="After: both gripper pads release together"></video><figcaption>After · simultaneous release</figcaption></figure>
+          </div></details>
         </article>
         <article>
-          <h3>Look around an occlusion <span class="rig-chip">3 cameras</span></h3>
-          <div class="strip">
-            <figure><img src="media/refine_cyan_hidden.jpg" width="520" height="360" loading="lazy" alt="Right wrist camera: the held Red piece hangs over the pyramid and covers Cyan's spots"><figcaption><b class="bad">Before</b> Held Red hides Cyan; the old check treats occlusion as movement</figcaption></figure>
-            <figure class="bars" aria-label="Cyan's spots in this frame: matching versus against">
-              <div><span>old rule</span><i style="--v:.5"></i><em>2 vs 2</em></div>
-              <div><span>new rule</span><i style="--v:1"></i><em>3 vs 0</em></div>
-              <figcaption><b class="fix">Fix</b> Use unobstructed sites · <b class="good">Refined</b> Preserve Cyan through the occlusion</figcaption>
-            </figure>
-          </div>
+          <h3>See through an occlusion <span class="rig-chip">3 cameras</span></h3>
+          <figure><a href="media/refine_hidden_piece.jpg" target="_blank" rel="noopener" aria-label="Enlarge the annotated occlusion comparison"><img src="media/refine_hidden_piece.jpg" width="1390" height="709" loading="lazy" alt="Before: the held piece 12 hides piece 6 and is counted against it. After: hidden sites are skipped and the visible sites agree across cameras."></a><figcaption>Skip hidden sites; combine the unobstructed evidence from all three cameras.</figcaption></figure>
         </article>
         <article>
-          <h3>Make room to see the landing <span class="rig-chip">4 cameras</span></h3>
-          <div class="strip">
-            <figure><img src="media/refine_cyan_55.jpg" width="450" height="420" loading="lazy" alt="Top camera after release at a 55 mm opening; a finger covers Cyan's middle bead"><figcaption><b class="bad">Before</b> 55 mm opening · a finger blocks the bead</figcaption></figure>
-            <figure><img src="media/refine_cyan_75.jpg" width="450" height="420" loading="lazy" alt="Top camera after release at a 75 mm opening; Cyan is visible"><figcaption><b class="good">After</b> 75 mm opening · clear view · 0.8 mm placement</figcaption></figure>
-          </div>
+          <h3>Make room to see {{P:cyan}} land <span class="rig-chip">4 cameras</span></h3>
+          <figure><a href="media/refine_cyan_opening.jpg" target="_blank" rel="noopener" aria-label="Enlarge the annotated gripper opening comparison"><img src="media/refine_cyan_opening.jpg" width="1390" height="644" loading="lazy" alt="Before, 55 mm opening: a red circle marks the bead hidden by a finger. After, 75 mm opening: a green circle marks the visible bead."></a><figcaption>Camera-ray checks select a 75 mm opening. The landing becomes visible.</figcaption></figure>
         </article>
         <article>
           <h3>Recognize the finished pyramid <span class="rig-chip">4 cameras</span></h3>
-          <div class="strip">
-            <figure class="wide"><img src="media/refine_completion_witness.jpg" width="1530" height="300" loading="lazy" alt="Final camera frames with each expected bead site marked: with Red still held, its sites fail; with the pyramid complete, every site matches"><figcaption><b class="fix">Refined</b> Check visible bead sites across camera views · missing Red versus a complete pyramid</figcaption></figure>
-          </div>
+          <figure><a href="media/refine_completion_witness.jpg" target="_blank" rel="noopener" aria-label="Enlarge the visual completion check"><img src="media/refine_completion_witness.jpg" width="1530" height="300" loading="lazy" alt="Camera views with bead sites marked: red marks reject a missing piece; green marks confirm the complete pyramid."></a><figcaption>Compare visible bead sites across views: missing piece versus complete pyramid.</figcaption></figure>
         </article>
         <article>
-          <h3>Keep the next piece visible <span class="rig-chip">4 cameras</span></h3>
-          <div class="strip">
-            <figure class="wide lime"><img src="media/refine_lime_layout.jpg" width="938" height="376" loading="lazy" alt="Top camera during Cyan's transfer: in the first layout the arms hide Lime; with Lime 70 mm further out it stays visible"><figcaption><b class="bad">Before</b> The arms hide Lime, the carry waits · <b class="good">After</b> Lime starts 70 mm further out and stays in view</figcaption></figure>
-          </div>
+          <h3>Keep {{P:lime}} visible during the transfer <span class="rig-chip">4 cameras</span></h3>
+          <figure><a href="media/refine_lime_layout.jpg" target="_blank" rel="noopener" aria-label="Enlarge the annotated layout comparison"><img src="media/refine_lime_layout.jpg" width="938" height="376" loading="lazy" alt="Before: the arms hide piece 8 during the transfer. After: starting it 70 mm further out keeps it visible."></a><figcaption>A 70 mm shift in the initial layout keeps the next piece in view.</figcaption></figure>
+        </article>
+        <article>
+          <h3>Resolve a partial view of {{P:purple}} <span class="rig-chip">4 cameras</span></h3>
+          <figure><a href="media/refine_fit_alias.jpg" target="_blank" rel="noopener" aria-label="Enlarge the annotated partial-view comparison"><img src="media/refine_fit_alias.jpg" width="770" height="300" loading="lazy" alt="Red rings show an incorrect pose fit on neighbouring pieces. Green rings show piece 5 still occupies its own goal sites."></a><figcaption>Check the piece's own goal sites to resolve an ambiguous pose fit.</figcaption></figure>
         </article>
       </div>
     </section>
@@ -128,7 +111,8 @@
   </main>
 
   <footer class="wrap foot">
-    <p>Policy inputs: RGB, proprioception, public CAD. Independent physical checks evaluate each recorded run.</p>
+    <p>First completed with four custom fixed cameras, then refined for the official overhead and wrist mounts.</p>
+    <p>Policy: RGB + proprioception + known geometry. Evaluation: independent physical checks.</p>
     <p>Puzzler · RoboSimStudio × Graph-as-Policy</p>
   </footer>
   <script id="page-data" type="application/json">{{DATA}}</script>

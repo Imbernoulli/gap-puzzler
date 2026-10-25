@@ -350,6 +350,12 @@ RIG_TEXT = {
 }
 
 
+def piece_ref(name):
+    order = ('azure', 'orange', 'yellow', 'teal', 'purple', 'cyan', 'mint', 'lime', 'maroon', 'navy', 'pink', 'red')
+    return (f'<span class="piece-ref"><img src="media/pieces/{name}.svg" width="24" height="24" alt="">'
+            f'piece {order.index(name)+1}</span>')
+
+
 def player_html(rig):
     return (f'<div class="player" data-rig="{rig}">'
             f'<div class="screen"><video data-k="video" src="media/{rig}/gap_full12.mp4" poster="media/{rig}/gap_full12_poster.jpg" '
@@ -366,9 +372,9 @@ def player_html(rig):
 def hands_html(rig):
     return (f'<div class="hands" data-rig="{rig}">'
             f'<figure><video src="media/{rig}/cyan_transfer.mp4" {AUTOPLAY} aria-label="Cyan passed from one gripper to the other"></video>'
-            '<figcaption><b>Cyan · one transfer</b> An off-centre grip creeps or tilts. The other hand takes a centred grip.</figcaption></figure>'
+            f'<figcaption><b>{piece_ref("cyan")} · one transfer</b> An off-centre grip creeps or tilts. The other hand takes a centred grip.</figcaption></figure>'
             f'<figure><video src="media/{rig}/red_transfer.mp4" {AUTOPLAY} aria-label="Red passed between the grippers twice"></video>'
-            '<figcaption><b>Red · two transfers</b> The initial grip approaches a joint limit. Regrasping gives a reachable placement orientation.</figcaption></figure></div>')
+            f'<figcaption><b>{piece_ref("red")} · two transfers</b> The initial grip approaches a joint limit. Regrasping gives a reachable placement orientation.</figcaption></figure></div>')
 
 
 def main():
@@ -401,17 +407,25 @@ def main():
         data['camera_scope'] = ('Simulation with public station camera mounts and declared pinhole intrinsics; not measured hardware calibration.'
                                 if name == 'official' else 'Four custom fixed simulation cameras.')
         data['presentation_camera'] = 'The replay uses a separate presentation camera, not a policy input.'
-        for clip in ('gap_full12.mp4', 'cyan_transfer.mp4', 'red_transfer.mp4'):
+        main_clip = 'gap_full12_plain' if (media / 'gap_full12_plain.mp4').exists() else 'gap_full12'
+        shutil.copy2(media / (main_clip + '.mp4'), out / 'gap_full12.mp4')
+        for clip in ('cyan_transfer.mp4', 'red_transfer.mp4'):
             shutil.copy2(media / clip, out / clip)
-        Image.open(media / 'gap_full12_final.png').convert('RGB').save(out / 'gap_full12_poster.jpg', quality=85)
+        Image.open(media / (main_clip + '_final.png')).convert('RGB').save(out / 'gap_full12_poster.jpg', quality=85)
         if name == 'custom':
             camera_grid(run, out / 'policy_views.jpg')
             image = f'media/{name}/policy_views.jpg" width="1280" height="1024'
         else:
             image = 'media/policy_views_official.jpg" width="1280" height="720'
         text = RIG_TEXT[name]
-        views.append(f'<figure class="views" data-rig="{name}"><img src="{image}" loading="lazy" alt="{esc(text["views"])}">'
-                     f'<figcaption>{esc(text["views"])}</figcaption></figure>')
+        layout = ('Official station mounts · overhead + two moving wrist cameras · shown during the transfer.' if name == 'official'
+                  else 'Custom layout · four fixed cameras: top, front, rear and side.')
+        views.append(f'<div class="rig-row" data-rig="{name}">'
+                     f'<figure class="rig-diagram"><img src="media/rig_{name}.jpg" loading="lazy" '
+                     f'alt="3D camera positions and viewing frustums. {esc(layout)}">'
+                     f'<figcaption>{esc(layout)}</figcaption></figure>'
+                     f'<figure class="views"><img src="{image}" loading="lazy" alt="{esc(text["views"])}">'
+                     f'<figcaption>{esc(text["views"])}</figcaption></figure></div>')
         facts.append(f'<div data-rig="{name}"><dt>Cameras</dt><dd>{esc(text["cameras"])}</dd></div>')
         players.append(player_html(name))
         hands.append(hands_html(name))
@@ -450,7 +464,7 @@ def main():
                          f'<figcaption>{esc(label)} <span>12/12</span></figcaption></figure>')
             case_data.append(dict(rig=rig, run=case_id, label=label, graph_success=True, rss_success=True, scene=row['scene']))
         if cards:
-            note = ('One verified three-camera scene · case translated +6 / −6 mm and rotated 2.9°.' if name == 'official'
+            note = ('Three-camera replay · case translated +6 / −6 mm and rotated 2.9°.' if name == 'official'
                     else 'Eight complete four-camera runs · case pose, loose-part poses and friction varied.')
             grids.append(f'<div data-rig="{name}" class="case-section"><p class="note">{note}</p>'
                          f'<div class="case-grid {"single" if len(cards) == 1 else ""}">{"".join(cards)}</div></div>')
@@ -461,6 +475,7 @@ def main():
     page = (SRC / 'index.html').read_text()
     for key, value in fill.items():
         page = page.replace('{{' + key + '}}', value)
+    page = re.sub(r'\{\{P:([a-z]+)\}\}', lambda m: piece_ref(m.group(1)), page)
     missing = re.findall(r'\{\{[A-Z_]+\}\}', page)
     if missing:
         raise SystemExit('Unfilled placeholders: ' + ', '.join(missing))
