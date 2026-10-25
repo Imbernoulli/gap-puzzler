@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Puzzler GaP</title>
+  <meta name="description" content="Two simulated YAM arms build the IQ Puzzler Pro pyramid from twelve loose pieces with an RGB-only Graph-as-Policy controller in RoboSimStudio.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-rig="official">
+  <header class="top wrap">
+    <a class="mark" href="#top">Puzzler<span aria-hidden="true">·</span>GaP</a>
+    <nav aria-label="Sections">
+      <a href="#rss">Real to sim</a>
+      <a href="#gap">Graph as policy</a>
+      <a href="#refine">Self-refinement</a>
+      <a href="#generalize">Scene variations</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <h1>From camera images to a complete pyramid.</h1>
+      <p class="lede">Two arms · 12 pieces · one connected policy graph<br>RGB + joint encoders + known geometry</p>
+    </section>
+
+    <div class="wrap rig-bar">
+      <div class="rig-tabs" role="tablist" aria-label="Camera setup">
+        <button type="button" role="tab" data-rig-tab="official" aria-selected="true">Official mounts · 3 cameras</button>
+        <button type="button" role="tab" data-rig-tab="custom" aria-selected="false">Custom rig · 4 cameras</button>
+      </div>
+      <p class="rig-note">First, a complete build with four custom fixed cameras. Then, after further refinement, a complete build with the official overhead + two wrist camera mounts.</p>
+    </div>
+
+    <section class="block wrap" id="rss" aria-labelledby="rss-title">
+      <h2 id="rss-title"><span class="kicker">RoboSimStudio</span>Real to sim</h2>
+      <div class="rss-grid">
+        <figure class="compare" id="compare">
+          <div class="compare-frame"><img src="media/sim_aligned.jpg" width="960" height="540" alt="The same arrangement rebuilt in RoboSimStudio, rendered from the camera fitted to the real frame">
+          <div class="compare-real"><img src="media/real_aligned.jpg" width="960" height="540" alt="The finished IQ Puzzler Pro pyramid in the real case"></div>
+          <span class="compare-line" aria-hidden="true"></span>
+          <span class="tag left">Real</span><span class="tag right">RSS</span>
+          <input type="range" min="0" max="100" value="58" aria-label="Drag to compare the real frame with the simulation" id="compare-range"></div>
+          <figcaption>Same arrangement, matched viewpoint. Drag to compare · demonstration at 3:33.</figcaption>
+        </figure>
+        <div class="rss-side">
+          {{VIEWS}}
+          <dl class="facts">
+            {{CAMERA_FACTS}}
+            <div data-rig="official"><dt>Calibration</dt><dd>Public mounts · declared pinhole model in sim</dd></div>
+            <div><dt>Simulation</dt><dd>RoboSimStudio · GPU physics · 50 Hz control</dd></div>
+            <div><dt>Robot</dt><dd>Two YAM 6-DoF arms, parallel jaws</dd></div>
+            <div><dt>Parts</dt><dd>12 rigid pieces · 55 beads · 25 mm · μ 0.65</dd></div>
+            <div><dt>Goal</dt><dd>Within 4 mm · stable · hands home · hold 2 s</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="block wrap" id="gap" aria-labelledby="gap-title">
+      <h2 id="gap-title"><span class="kicker">Graph-as-Policy</span>Watch the graph execute</h2>
+      {{PLAYERS}}
+      <p class="legend small"><span><i class="k-done"></i>checked</span><span><i class="k-now"></i>active</span><span><i class="k-abort"></i>error → stop</span><span>↻ bounded re-observation</span><span>Click a shape or node to seek.</span></p>
+
+      <h3 class="sub">Why Cyan and Red change hands</h3>
+      {{HANDS}}
+    </section>
+
+    <section class="block wrap" id="refine" aria-labelledby="refine-title">
+      <h2 id="refine-title"><span class="kicker">Self-refinement</span>Each trial improves a skill</h2>
+      <div class="refine-flow" aria-label="Refinement workflow"><span>Rehearse a skill</span><b>→</b><span>Inspect RGB + checks</span><b>→</b><span>Refine the module</span><b>→</b><span>Rejoin the full graph</span><b class="repeat">↻</b></div>
+      <div class="rounds">
+        <article>
+          <h3>A clean release <span class="rig-chip">3 cameras</span></h3>
+          <div class="strip">
+            <figure>
+              <video src="media/refine/lime_before.mp4" data-autoplay autoplay muted loop playsinline controls preload="metadata" aria-label="Before refinement: a slow jaw opening pushes Lime sideways"></video>
+              <figcaption><b class="bad">Before</b> Slow opening · sideways push · 5 mm offset</figcaption>
+            </figure>
+            <figure>
+              <video src="media/refine/lime_after.mp4" data-autoplay autoplay muted loop playsinline controls preload="metadata" aria-label="After refinement: both pads release together and Lime lands straight"></video>
+              <figcaption><b class="good">Refined</b> Both pads leave together · 1 mm offset</figcaption>
+            </figure>
+          </div>
+        </article>
+        <article>
+          <h3>Look around an occlusion <span class="rig-chip">3 cameras</span></h3>
+          <div class="strip">
+            <figure><img src="media/refine_cyan_hidden.jpg" width="520" height="360" loading="lazy" alt="Right wrist camera: the held Red piece hangs over the pyramid and covers Cyan's spots"><figcaption><b class="bad">Before</b> Held Red hides Cyan; the old check treats occlusion as movement</figcaption></figure>
+            <figure class="bars" aria-label="Cyan's spots in this frame: matching versus against">
+              <div><span>old rule</span><i style="--v:.5"></i><em>2 vs 2</em></div>
+              <div><span>new rule</span><i style="--v:1"></i><em>3 vs 0</em></div>
+              <figcaption><b class="fix">Fix</b> Use unobstructed sites · <b class="good">Refined</b> Preserve Cyan through the occlusion</figcaption>
+            </figure>
+          </div>
+        </article>
+        <article>
+          <h3>Make room to see the landing <span class="rig-chip">4 cameras</span></h3>
+          <div class="strip">
+            <figure><img src="media/refine_cyan_55.jpg" width="450" height="420" loading="lazy" alt="Top camera after release at a 55 mm opening; a finger covers Cyan's middle bead"><figcaption><b class="bad">Before</b> 55 mm opening · a finger blocks the bead</figcaption></figure>
+            <figure><img src="media/refine_cyan_75.jpg" width="450" height="420" loading="lazy" alt="Top camera after release at a 75 mm opening; Cyan is visible"><figcaption><b class="good">After</b> 75 mm opening · clear view · 0.8 mm placement</figcaption></figure>
+          </div>
+        </article>
+        <article>
+          <h3>Recognize the finished pyramid <span class="rig-chip">4 cameras</span></h3>
+          <div class="strip">
+            <figure class="wide"><img src="media/refine_completion_witness.jpg" width="1530" height="300" loading="lazy" alt="Final camera frames with each expected bead site marked: with Red still held, its sites fail; with the pyramid complete, every site matches"><figcaption><b class="fix">Refined</b> Check visible bead sites across camera views · missing Red versus a complete pyramid</figcaption></figure>
+          </div>
+        </article>
+        <article>
+          <h3>Keep the next piece visible <span class="rig-chip">4 cameras</span></h3>
+          <div class="strip">
+            <figure class="wide lime"><img src="media/refine_lime_layout.jpg" width="938" height="376" loading="lazy" alt="Top camera during Cyan's transfer: in the first layout the arms hide Lime; with Lime 70 mm further out it stays visible"><figcaption><b class="bad">Before</b> The arms hide Lime, the carry waits · <b class="good">After</b> Lime starts 70 mm further out and stays in view</figcaption></figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block wrap" id="generalize" aria-labelledby="gen-title">
+      <h2 id="gen-title"><span class="kicker">Scene variations</span>From loose pieces to a full build</h2>
+      {{GRIDS}}
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Policy inputs: RGB, proprioception, public CAD. Independent physical checks evaluate each recorded run.</p>
+    <p>Puzzler · RoboSimStudio × Graph-as-Policy</p>
+  </footer>
+  <script id="page-data" type="application/json">{{DATA}}</script>
+</body>
+</html>

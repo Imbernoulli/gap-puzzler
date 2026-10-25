@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-labelledby="title-lime desc-lime">
+  <title id="title-lime">Piece 08: 5 beads</title>
+  <desc id="desc-lime">Public CAD shape with 5 spherical beads and 4 connecting necks. Orthographic top view.</desc>
+  <g fill="none" stroke="#424b55" stroke-linecap="round">
+    <line data-beads="0 1" x1="40.000000" y1="52.000000" x2="64.000000" y2="52.000000" stroke-width="8.640000"/>
+    <line data-beads="0 3" x1="40.000000" y1="52.000000" x2="40.000000" y2="76.000000" stroke-width="8.640000"/>
+    <line data-beads="1 2" x1="64.000000" y1="52.000000" x2="88.000000" y2="52.000000" stroke-width="8.640000"/>
+    <line data-beads="2 4" x1="88.000000" y1="52.000000" x2="88.000000" y2="76.000000" stroke-width="8.640000"/>
+  </g>
+  <g fill="#b9c0c7" stroke="#303943" stroke-width="1.4">
+    <circle data-bead="0" cx="40.000000" cy="52.000000" r="12.000000"/>
+    <circle data-bead="1" cx="64.000000" cy="52.000000" r="12.000000"/>
+    <circle data-bead="2" cx="88.000000" cy="52.000000" r="12.000000"/>
+    <circle data-bead="3" cx="40.000000" cy="76.000000" r="12.000000"/>
+    <circle data-bead="4" cx="88.000000" cy="76.000000" r="12.000000"/>
+  </g>
+</svg>
